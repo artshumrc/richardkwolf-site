@@ -1,0 +1,119 @@
+{
+  "type": "doc",
+  "version": 1,
+  "meta": {
+    "title": "Research",
+    "description": "Ethnomusicological research in South and Central Asia: research areas, fieldwork and recordings."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/b1789f3624892f44.webp",
+        "alt": "A musician sitting on a red carpet in a blue-walled room, talking across recording microphones and a camera on a tripod to a researcher seated opposite him.",
+        "eyebrow": "",
+        "headline": "Research",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I have been conducting ethnomusicological research in India, Pakistan, Tajikistan, Afghanistan and to a lesser extent in Iran, Uzbekistan, the Kyrgyz Republic and Xinjiang, China, for a total of about nine years. My interdisciplinary work has focused on questions of style, emotion, poetics, and the phenomenology of actions in space and time. As a music analyst and performer, I have been interested in aspects of improvisation, musical coordination and interaction, rhythmic elasticity, ornamentation, and the role of verbal texts as resources for music making. My research languages are Tamil, Kota, Urdu/Hindi, Persian/Tajiki/Dari, and Wakhi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cardRow",
+      "attrs": {
+        "columns": 3
+      },
+      "content": [
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/aca9131e992e8908.webp",
+            "alt": "Dancers in white wrapped cloth moving in a line across a grassy field at a village ceremony, with wooded hills and bunting behind them.",
+            "title": "Ritual & Daily Life in South India",
+            "blurb": "",
+            "link": "/ritual-daily-life-in-south-india/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/8405548bc93c8317.webp",
+            "alt": "Musicians seated on the floor of a South Indian temple hall beside a carved stone pillar, one holding a large barrel drum, a microphone stand between them.",
+            "title": "South Indian Classical Music",
+            "blurb": "",
+            "link": "/south-indian-classical-music/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/4278dd53d9b08754.webp",
+            "alt": "A bearded man in sunglasses and a white shawl holding a small book beside a tree, with a younger musician playing a small plucked lute behind him.",
+            "title": "Music of South Asia, other",
+            "blurb": "",
+            "link": "/music-of-south-asia-other/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/038f8b7db500a171.webp",
+            "alt": "A sepia photograph of elderly men in white cloth singing together indoors, one with his head tipped back and mouth open.",
+            "title": "Music in Islamic Contexts in India & Pakistan",
+            "blurb": "",
+            "link": "/music-in-islamic-contexts-in-india-pakistan/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/fcec40701caab538.webp",
+            "alt": "Two men singing into microphones indoors, one holding a frame drum and the other playing a long-necked plucked lute.",
+            "title": "Music of Central Asia",
+            "blurb": "",
+            "link": "/music-of-central-asia/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/b6900cdc5eac7a58.webp",
+            "alt": "The tiled entrance arch of an Iranian mosque, its half-dome filled with tiers of muqarnas and framed by blue calligraphic tilework.",
+            "title": "Music of Iran",
+            "blurb": "",
+            "link": "/music-of-iran/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/366c1d3f8aabd846.webp",
+            "alt": "A black-and-white photograph of a crowd filling a paved courtyard around drummers carrying large barrel drums.",
+            "title": "Drums & Drummers",
+            "blurb": "",
+            "link": "/drums-drummers/",
+            "externalUrl": ""
+          }
+        }
+      ]
+    }
+  ]
+}

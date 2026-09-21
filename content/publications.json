@@ -1,0 +1,224 @@
+{
+  "type": "doc",
+  "version": 2,
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/34c38331828f6f2f.webp",
+        "alt": "Four of Richard K. Wolf's book covers standing in a row on a pale textured ground.",
+        "eyebrow": "",
+        "headline": "Publications",
+        "lede": "",
+        "id": "8fb6a0a1-6270-44de-b495-faed21e5ee9f"
+      }
+    },
+    {
+      "type": "prose",
+      "attrs": {
+        "id": "8b916f3d-c6ac-426f-8d14-7c02cd635d82"
+      },
+      "content": [
+        {
+          "type": "paragraph",
+          "attrs": {
+            "id": "7b5b1c51-ca12-47e6-8e2a-9f6a0bf0400b"
+          },
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "SINGLE AUTHORED BOOKS"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/portfolio/the-voice-in-the-drum/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Voice in the Drum: Music, Language and Emotion in Islamicate South Asia."
+            },
+            {
+              "type": "text",
+              "text": " (Urbana: University of Illinois Press, 2014)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "id": "c478bfe8-3189-4528-bdef-e6cb2a2ef3ac"
+          },
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.press.uillinois.edu/books/catalog/35rkh7td9780252031168.html",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Black Cow’s Footprint: Time, Space and Music in the Lives of the Kotas of South India"
+            },
+            {
+              "type": "text",
+              "text": " (Delhi: Permanent Black, 2005; Urbana: University of Illinois Press, 2006.)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "id": "d2a05419-f540-4b21-a783-d6ba2935c67b"
+          },
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "EDITED VOLUMES"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://global.oup.com/us/companion.websites/9780195331387/book/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Theorizing the local: Music, practice and experience in south Asia and beyond"
+            },
+            {
+              "type": "text",
+              "text": ", (New York: Oxford University Press, 2009)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "id": "6a9802ca-9fab-4eed-bbd8-96d0646485a1"
+          },
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/en/publications/asian-ethnology/listofjournals/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The bison and the horn: Indigeneity, performance, and the state of India."
+            },
+            {
+              "type": "text",
+              "text": " Special Issue of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian Ethnology "
+            },
+            {
+              "type": "text",
+              "text": "73(1-2): 1-18. (coedited with Frank Heidemann, 2014)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "attrs": {
+            "id": "5c76108e-4862-4de7-80b1-a28ece6bdd9d"
+          },
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://global.oup.com/academic/product/thought-and-play-in-musical-rhythm-9780190841492?cc=us&lang=en&",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Thought and play in musical rhythm"
+            },
+            {
+              "type": "text",
+              "text": ". Edited by Richard K. Wolf, Stephen Blum and Christopher Hasty. (New York: Oxford University Press, 2019)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "attrs": {
+        "id": "89635467-8934-40d4-8048-79b5fff455db"
+      }
+    }
+  ],
+  "meta": {
+    "title": "Publications",
+    "description": "Books, edited volumes and articles by Richard K. Wolf."
+  }
+}
