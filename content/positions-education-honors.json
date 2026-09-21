@@ -1,0 +1,575 @@
+{
+  "type": "doc",
+  "version": 1,
+  "meta": {
+    "title": "Positions, Education, Honors",
+    "description": "Academic positions, education, languages, field research, awards and honors for Richard K. Wolf."
+  },
+  "content": [
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "CURRENT AND PAST POSITIONS"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Professor of Music and South Asian Studies, Departments of Music and South Asian Studies. Harvard University, 7/12-present"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Professor of Music, Harvard University Music Department, 7/07-present"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Gastwissenschaftler/Visiting Fellow, Institut für Ethnologie, University of Munich, 5/9-7/2/14"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Gastprofessur für ethnologische Nilgiriforschung, Institut für Ethnologie, University of Munich, 6/09-8/09"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Professeur invité à l’École des hautes études en sciences sociales, Paris, 5/09-6/1/09"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Harris K. Weston Associate Professor of the Humanities, Harvard University Music Department: 7/03–7/07"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Assistant Professor, Harvard University Music Department: 7/99–7/03"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Postdoctoral research on ritual drumming in India and Pakistan: 12/96–2/99"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Director, Folk Arts Program, Brooklyn Arts Council: 1/96–10/96"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Project Consultant and Office Manager"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Association for Cultural Equity, NY, NY (Alan Lomax, President): 12/94–7/96."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Visiting Scholar, Columbia University:"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Southern Asian Institute (6/95–5/97)"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Department of Music (1/95–6/95)"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "EDUCATION"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "University of Illinois at Urbana-Champaign: Ph.D., Music (Ethnomusicology): 1/97"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Master of Music: 5/89; Phi Kappa Phi: 1987."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "University of Chicago, CIC Visiting Scholar: 1/90-6/90."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Independent study, Karnatak music (India and U.S.): 1980-present."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Madurai Kamaraj University (India). Tamil Diploma: 1985."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "American College (India). Tamil Certificate: 5/83."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "University of Wisconsin at Madison, Language study: Tamil (1982); Telugu (1987)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Oberlin College, B.A. Mathematics: 5/84"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "LANGUAGES"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Field: Tamil, Urdu/Hindi, Kota (South Dravidian spoken language), Persian/Tajiki, Wakhi (Eastern Iranian spoken language)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Reading: French, German, Russian, Telugu"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "FIELD RESEARCH"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "More than six years in South India (mainly Tamil Nadu); fourteen months in North India (mainly Uttar Pradesh); fifteen months in Pakistan (mainly Panjab); eleven months in Tajikistan. Brief field visits to Kyrgyzstan, Uzbekistan, China (Xinjiang), Iran (Isfahan, Tehran, Qazvin), and Ghana (Ashanti region)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Recent:"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Fieldwork in Dushanbe and Ishkoshim, Tajikistan (funded by Asia Center, Harvard) 7/3-8/21/14"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "affiliated with the University of Central Asia, Dushanbe"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "AWARDS AND HONORS SINCE 1990"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "(excludes language study grants and funds applied for within Harvard University)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Carl and Lily Pforzheimer Fellow, National Humanities Center, Research Triangle Park, NC. 2018-2019."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Fulbright South and Central Asia Regional Research Grant, 2012-2013"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "American Institute of Indian Studies Research Grant, 2012-2013"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Friedrich Wilhelm Bessel Research Award, Alexander von Humboldt Foundation 2012"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "(A lifetime achievement award)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Artium Magistrum",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " (honorary). Harvard University, 4/08"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "American Institute of Pakistan Studies",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": grant for collaboration on music and folklore in Baluchistan 5/06-8/06"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The Edward Cameron Dimock, Jr. Prize in the Humanities for book, "
+            },
+            {
+              "type": "text",
+              "text": "The Black Cow’s Footprint: Time, Space and Music in the Lives of the Kotas of South India",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": " (Award for 2005); Delhi: Permanent Black, 2005; University of Illinois Press, 2006. Awarded by the American Institute of Indian Studies."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Presidential Leave",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ", academic year 2004–2005, Harvard University."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Radcliffe Institute for Advanced Study, Advanced Seminar",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": “Local Theory, Local Practice” 2/27-3/2/04"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Radcliffe Institute for Advanced Study Fellowship",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": Manuscript preparation (9/02–6/03)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "American Council of Learned Societies",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": Manuscript preparation (7/02–6/03)"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "NEH summer stipend",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": Manuscript preparation (6/01–8/01)."
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "American Institute of Pakistan Studies",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": Postdoctoral Research in Pakistan (3/97–5/97)"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "American Institute of Indian Studies",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": Doctoral research in South India (12/91–11/92)."
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Fulbright-Hays",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "text": ": Doctoral research in South India (9/90–9/91)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Award:"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "Jon B. Higgins Memorial Scholarship for the study of Indian classical music, Raga Mala Performing Arts of Canada, 1987 and 1988. (Awarded on the basis of demonstrated skill on the Karnatak vīṇā)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
