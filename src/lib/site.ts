@@ -16,6 +16,18 @@ export const STATIC_DIR = 'static';
 /** Repo-root-relative media directory served at `/uploads/`. */
 export const MEDIA_DIR = `${STATIC_DIR}/uploads`;
 
+/**
+ * Content-directory JSON that is not a Content document. The Image manifest is
+ * the image port's output: it renders no reader page, and an Editor variant for
+ * it would let a save rewrite it as a Content document, taking every responsive
+ * image on the site down. See docs/adr/0001-single-content-addressed-media-tree.
+ */
+const GENERATED_DOCUMENTS = ['image-manifest'];
+
+function isGenerated(entry: ContentEntry): boolean {
+	return GENERATED_DOCUMENTS.includes(entry.path.replace(/^\/+|\/+$/g, ''));
+}
+
 // The owning GitHub account is not yet decided (personal account or org).
 // OPEN DECISION: replace the placeholder repo below once hosting is settled.
 // Nothing in this epic needs the real account; deployment is deferred.
@@ -43,18 +55,14 @@ export const siteConfig: UncialCmsSiteConfig = {
 };
 
 /**
- * Whether a Content entry renders a reader page. Currently every entry does;
- * the Site document will need to be excluded here later.
+ * Whether a Content entry renders a reader page. The Site document will need to
+ * be excluded here later.
  */
-export function isContentPage(_entry: ContentEntry): boolean {
-	return true;
+export function isContentPage(entry: ContentEntry): boolean {
+	return !isGenerated(entry);
 }
 
-/**
- * Whether a Content entry gets an Editor variant. Currently every entry does;
- * the Image manifest (generated data, not a Content document) will need to be
- * excluded here later.
- */
-export function isEditablePage(_entry: ContentEntry): boolean {
-	return true;
+/** Whether a Content entry gets an Editor variant. */
+export function isEditablePage(entry: ContentEntry): boolean {
+	return !isGenerated(entry);
 }
