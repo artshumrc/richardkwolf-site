@@ -20,6 +20,7 @@
 
 <svelte:head>
 	<title>Site index</title>
+	<meta name="description" content="Index of every editable page on this site." />
 </svelte:head>
 
 <main>

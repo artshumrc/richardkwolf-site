@@ -1,8 +1,12 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { Renderer } from 'uncial/render';
 	import { blocks, schema } from '$lib/blocks.js';
+	import { canonicalUrl } from '$lib/site-origin.js';
 
 	let { data } = $props();
+
+	const canonical = $derived(canonicalUrl(data.path, base));
 </script>
 
 <svelte:head>
@@ -10,6 +14,7 @@
 	{#if data.meta.description}
 		<meta name="description" content={String(data.meta.description)} />
 	{/if}
+	<link rel="canonical" href={canonical} />
 </svelte:head>
 
 <main>
