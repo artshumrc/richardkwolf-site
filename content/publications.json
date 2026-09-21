@@ -1,6 +1,10 @@
 {
   "type": "doc",
   "version": 2,
+  "meta": {
+    "title": "Publications",
+    "description": "Books, edited volumes, articles, reviews and recordings by Richard K. Wolf, many of them available here as offprints."
+  },
   "content": [
     {
       "type": "hero",
@@ -9,21 +13,14 @@
         "alt": "Four of Richard K. Wolf's book covers standing in a row on a pale textured ground.",
         "eyebrow": "",
         "headline": "Publications",
-        "lede": "",
-        "id": "8fb6a0a1-6270-44de-b495-faed21e5ee9f"
+        "lede": ""
       }
     },
     {
       "type": "prose",
-      "attrs": {
-        "id": "8b916f3d-c6ac-426f-8d14-7c02cd635d82"
-      },
       "content": [
         {
           "type": "paragraph",
-          "attrs": {
-            "id": "7b5b1c51-ca12-47e6-8e2a-9f6a0bf0400b"
-          },
           "content": [
             {
               "type": "text",
@@ -39,19 +36,23 @@
             },
             {
               "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
               "marks": [
-                {
-                  "type": "italic"
-                },
                 {
                   "type": "link",
                   "attrs": {
                     "href": "http://richardkwolf.com/portfolio/the-voice-in-the-drum/",
-                    "target": null,
-                    "rel": null,
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
                     "title": null,
                     "class": null
                   }
+                },
+                {
+                  "type": "italic"
                 }
               ],
               "text": "The Voice in the Drum: Music, Language and Emotion in Islamicate South Asia."
@@ -64,25 +65,22 @@
         },
         {
           "type": "paragraph",
-          "attrs": {
-            "id": "c478bfe8-3189-4528-bdef-e6cb2a2ef3ac"
-          },
           "content": [
             {
               "type": "text",
               "marks": [
                 {
-                  "type": "italic"
-                },
-                {
                   "type": "link",
                   "attrs": {
                     "href": "http://www.press.uillinois.edu/books/catalog/35rkh7td9780252031168.html",
-                    "target": null,
-                    "rel": null,
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
                     "title": null,
                     "class": null
                   }
+                },
+                {
+                  "type": "italic"
                 }
               ],
               "text": "The Black Cow’s Footprint: Time, Space and Music in the Lives of the Kotas of South India"
@@ -95,9 +93,6 @@
         },
         {
           "type": "paragraph",
-          "attrs": {
-            "id": "d2a05419-f540-4b21-a783-d6ba2935c67b"
-          },
           "content": [
             {
               "type": "text",
@@ -113,50 +108,51 @@
             },
             {
               "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
               "marks": [
-                {
-                  "type": "italic"
-                },
                 {
                   "type": "link",
                   "attrs": {
                     "href": "http://global.oup.com/us/companion.websites/9780195331387/book/",
-                    "target": null,
-                    "rel": null,
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
                     "title": null,
                     "class": null
                   }
+                },
+                {
+                  "type": "italic"
                 }
               ],
               "text": "Theorizing the local: Music, practice and experience in south Asia and beyond"
             },
             {
               "type": "text",
-              "text": ", (New York: Oxford University Press, 2009)."
+              "text": ",  (New York: Oxford University Press, 2009)."
             }
           ]
         },
         {
           "type": "paragraph",
-          "attrs": {
-            "id": "6a9802ca-9fab-4eed-bbd8-96d0646485a1"
-          },
           "content": [
             {
               "type": "text",
               "marks": [
                 {
-                  "type": "italic"
-                },
-                {
                   "type": "link",
                   "attrs": {
                     "href": "http://nirc.nanzan-u.ac.jp/en/publications/asian-ethnology/listofjournals/",
-                    "target": null,
-                    "rel": null,
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
                     "title": null,
                     "class": null
                   }
+                },
+                {
+                  "type": "italic"
                 }
               ],
               "text": "The bison and the horn: Indigeneity, performance, and the state of India."
@@ -182,9 +178,6 @@
         },
         {
           "type": "paragraph",
-          "attrs": {
-            "id": "5c76108e-4862-4de7-80b1-a28ece6bdd9d"
-          },
           "content": [
             {
               "type": "text",
@@ -207,18 +200,2373 @@
               "text": ". Edited by Richard K. Wolf, Stephen Blum and Christopher Hasty. (New York: Oxford University Press, 2019)."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "PUBLISHED ARTICLES"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2021"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://journal.oraltradition.org/the-musical-poetry-of-endangered-languages/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Musical Poetry of Endangered Languages: Kota and Wakhi Poem-Songs in South and Central Asia"
+            },
+            {
+              "type": "text",
+              "text": ". "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Oral Tradition"
+            },
+            {
+              "type": "text",
+              "text": ", 35 (2021):103-66"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2019"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n“Rhythm,” “Beat,” and “Freedom” in South Asian Musical Traditions. In, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Thought and play in musical rhythm: Asian, African and Euro-American perspectives"
+            },
+            {
+              "type": "text",
+              "text": ", 314-336. Ed. Richard K. Wolf, Stephen Blum, Christopher Hasty.  New York: Oxford University Press."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2019"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n(with Stephen Blum and Christopher Hasty). Introduction.  In, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Thought and play in musical rhythm: Asian, African and Euro-American perspectives"
+            },
+            {
+              "type": "text",
+              "text": ", 1-19. Ed. Richard K. Wolf, Stephen Blum, Christopher Hasty.  New York: Oxford University Press."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2015"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.openbookpublishers.com/htmlreader/978-1-78374-102-1/ch17.xhtml#_idTextAnchor067",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Musical Lives of Texts: Rhythms and Communal Relationships among the Nizamis and Some of Their Neighbours in South and West Asia"
+            },
+            {
+              "type": "text",
+              "text": ", in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Tellings and Texts: Music, Literature and Performance in North India,"
+            },
+            {
+              "type": "text",
+              "text": " ed. Francesca Orsini and Katherine Butler Schofield, 445-484. Cambridge, UK: Open Book Publishers."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2015"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-music-and-the-emotions.pdf",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Music and the emotions: Perspectives from 30 years in South and Central Asia"
+            },
+            {
+              "type": "text",
+              "text": ". In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Черия Открытых лекций по тематическому “Междисциплинарный дискурс в контексте взаимоотношнения гуманитарных и естественнонауных исследований,” "
+            },
+            {
+              "type": "text",
+              "text": "46-61. Dushanbe: University of Central Asia, Aga Khan Humanities Project."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2014"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n(With Frank Heidemann). "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/4352",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Guest Editors’ Introduction: Indigeneity, Performance, and the State in South Asia and Beyond"
+            },
+            {
+              "type": "text",
+              "text": ". In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/en/publications/asian-ethnology/listofjournals/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The bison and the horn: Indigeneity, performance, and the state of India."
+            },
+            {
+              "type": "text",
+              "text": " Special Issue of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian Ethnology "
+            },
+            {
+              "type": "text",
+              "text": "73(1-2): 1-18."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2014"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/4355",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Tribal and Modern Voices in South Indian Kota Society"
+            },
+            {
+              "type": "text",
+              "text": ". In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The bison and the horn: Indigeneity, performance, and the state of India"
+            },
+            {
+              "type": "text",
+              "text": ". Special Issue of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian Ethnology"
+            },
+            {
+              "type": "text",
+              "text": " 73(1-2): 61–89."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2014"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.intellectbooks.co.uk/journals/view-Article,id=17798/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The drums of Islam, a shrine and a story set in Pakistan. "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.intellectbooks.co.uk/journals/view-Article,id=17798/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Performing Islam"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.intellectbooks.co.uk/journals/view-Article,id=17798/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": " 2(2): 127-44"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2013"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.routledge.com/books/details/9780415665629/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Manifest and the Hidden: Agency and loss in Muslim performance traditions of south and west Asia, in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.routledge.com/books/details/9780415665629/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Music, Culture and Identity in the Muslim World: Performance, Politics and Piety"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.routledge.com/books/details/9780415665629/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", chapter 6, ed. Kamal Salhi"
+            },
+            {
+              "type": "text",
+              "text": " (Routledge Advances in Middle East and Islamic Studies). New York: Routledge."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2012"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Encyclopaedia-Nilgiri-Hills-2-Parts/dp/8173048932",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Entries in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Encyclopaedia-Nilgiri-Hills-2-Parts/dp/8173048932",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Encyclopedia of the Nilgiri Hills"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Encyclopaedia-Nilgiri-Hills-2-Parts/dp/8173048932",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", ed. Paul Hockings"
+            },
+            {
+              "type": "text",
+              "text": ". Manohar and AltaMira Press: 1. “Architecture, Kota.” pp 41-42; 2. “Funerary Rituals, Kota,” 353-64; 3. Kollimalai,” pp 478-80; 4. “Kota Culture,” 480-82; 5. “Kota Eschatology,” 482-87 ;6. “Kota Kinship,” 494-95; 7. “Kota Speech,” 495-501 [INSERT LINK TO FILE CALLED “Kota-language.PDF”]; 8. “Music and Performance: Kota and Tribal,” 611-18."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2010"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/wolf_2010_rhythms_of_alapana.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The rhythms of rāga ālāpana in south Indian music: A preliminary introduction."
+            },
+            {
+              "type": "text",
+              "text": " 121-141. "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Perspectives on Korean Music:Sanjo and Issues of Improvisation in Musical Traditions of Asia."
+            },
+            {
+              "type": "text",
+              "text": " vol 1."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2010"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/wolf_2010_music_translocation.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Music and translocation in south Asia: Two case studies.”"
+            },
+            {
+              "type": "text",
+              "text": " In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Relationship between Eurasia and Japan: Mutual Interaction and Representation. Proceedings of the international symposium, Performance and Culture: Exchange and Symbols in Eurasia and Japan"
+            },
+            {
+              "type": "text",
+              "text": " (held on March 28-29, 2009), 116-121, ed. by Koike, Jun’ichi, Shoji Ueno, Yoshitaka Terada and Ryoji Sasahara. Tokyo: National Institutes for the Humanities."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2009"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://global.oup.com/us/companion.websites/9780195331387/book/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Introduction.” In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://global.oup.com/us/companion.websites/9780195331387/book/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Theorizing the Local: Music, practice, and experience in South Asia and beyond"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://global.oup.com/us/companion.websites/9780195331387/book/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", 5-26, edited by Richard K. Wolf"
+            },
+            {
+              "type": "text",
+              "text": " (Oxford University Press, NY)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2009"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://global.oup.com/us/companion.websites/9780195331387/book/",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Varnams and vocalizations: The special significance of some musical beginnings.”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "In Theorizing the Local: Music, practice, and experience in South Asia and beyond"
+            },
+            {
+              "type": "text",
+              "text": ", 243-302, edited by Richard K. Wolf (Oxford University Press, NY)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2007"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Pain-Its-Transformations-Interface-Initiative/dp/0674024567",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Doubleness, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Pain-Its-Transformations-Interface-Initiative/dp/0674024567",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "mātam"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Pain-Its-Transformations-Interface-Initiative/dp/0674024567",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", and Muharram drumming in South Asia.”"
+            },
+            {
+              "type": "text",
+              "text": " In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Pain and its transformation"
+            },
+            {
+              "type": "text",
+              "text": ", 331-50., ed. Sarah Coakley and Kay Kaufman Shelemay. Cambridge: Harvard University Press."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2006"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/poetics_of_sufi_practice.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“The Poetics of ‘Sufi’ Practice: Drumming, Dancing, and Complex Agency at Madho Lāl Husain (And Beyond).”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "American Ethnologist"
+            },
+            {
+              "type": "text",
+              "text": " 33(2): 246-268. (Reprinted 2010 in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Islam and Society in Pakistan: Anthropological Perspectives"
+            },
+            {
+              "type": "text",
+              "text": ", ed. Magnus Marsden. Karachi: OUP)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2003"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/wolf_return_to_tears.pdf",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Return to Tears”"
+            },
+            {
+              "type": "text",
+              "text": " In, The "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Living and the Dead: Social dimensions of death in South Asian religions"
+            },
+            {
+              "type": "text",
+              "text": ", 95–112, ed. Elizabeth Wilson. Albany: State University of New York Press."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2002"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_tribalmusic_nilgiris.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Tribal Music (Nilgiris)”"
+            },
+            {
+              "type": "text",
+              "text": " pp 615–17; In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "South Asian Folklore: An Encyclopedia"
+            },
+            {
+              "type": "text",
+              "text": ". Eds. M. Mills, P. Claus, and S. Diamond. New York: Routledge."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2002"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_Tribal_communities.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Tribal Communities (S. India)”"
+            },
+            {
+              "type": "text",
+              "text": " pp 611-13. In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "South Asian Folklore: An Encyclopedia"
+            },
+            {
+              "type": "text",
+              "text": ". Eds. M. Mills, P. Claus, and S. Diamond. New York: Routledge."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2001"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/emotional-dimensions-ritual-Kota.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Emotional dimensions of ritual music among the Kotas, a south Indian tribe.”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Ethnomusicology"
+            },
+            {
+              "type": "text",
+              "text": " 45(3): 379–422."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2000/01"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Three-perspectives.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Three perspectives on music and the idea of tribe in India.”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian Music "
+            },
+            {
+              "type": "text",
+              "text": "32(1): 5–34."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2000/01"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Mourning-Songs.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Mourning songs and human pasts among the Kotas of south India.”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian M"
+            },
+            {
+              "type": "text",
+              "text": ". 32(1): 141–183."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2000"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-Embodiment-YTM.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Embodiment and ambivalence: Emotion in south Asian Muharram drumming.”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Yearbook for Traditional Music"
+            },
+            {
+              "type": "text",
+              "text": " 32: 81–116."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2000"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_seasonal_lifecycle.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Music in Seasonal and Life-Cycle Rituals.”"
+            },
+            {
+              "type": "text",
+              "text": " In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Garland Encyclopedia of World Music, Vol 5, South Asia: The Indian Subcontinent"
+            },
+            {
+              "type": "text",
+              "text": ", ed. A. Arnold, 272–87. New York: Garland Pub., Inc."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2000"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_Music_Tamilnadu.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Tamil Nadu.”"
+            },
+            {
+              "type": "text",
+              "text": " In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Garland Encyclopedia of World Music, Vol 5, South Asia:The Indian Subcontinent"
+            },
+            {
+              "type": "text",
+              "text": ", ed. Alison Arnold, 903–21. New York: Garland Pub., Inc."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "1997"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Rain_god_unity.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Rain, God and Unity among the Kotas.”"
+            },
+            {
+              "type": "text",
+              "text": " In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Blue Mountains Revisited"
+            },
+            {
+              "type": "text",
+              "text": ", ed. Paul Hockings, 231–292. Delhi: Oxford University Press."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "1991"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wol_MA_VinaStyle.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Style and tradition in Karaikkudi "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wol_MA_VinaStyle.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "vina"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wol_MA_VinaStyle.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": " playing.”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian Theatre Journal"
+            },
+            {
+              "type": "text",
+              "text": " 8(2): 118–41."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "SCHOLARLY RECORDINGS AND LINER NOTES"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n2014 "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.folkways.si.edu/south-india-ranganayaki-rajagopalan-continuity-in-the-karaikudi-vina-style/world/music/album/smithsonian",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Continuity: Ranganayaki Rajagopalan.”"
+            },
+            {
+              "type": "text",
+              "text": " 2 CD set, classical "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "vina"
+            },
+            {
+              "type": "text",
+              "text": " music of south India. Scholarly notes and production, Richard Wolf. International Council for Traditional Music/UNESCO. Smithsonian Folkways."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://media.smithsonianfolkways.org/liner_notes/unesco/UNES08311.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Liner notes only (free download)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "THESES"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n1997"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dissexpress.umi.com/dxweb/results.html?QryTxt=&By=&Title=&pubnum=9717346",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Of God and death: Music in ritual and everyday life."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-diss.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "A musical ethnography of the Kotas of south India"
+            },
+            {
+              "type": "text",
+              "text": ". PhD Dissertation. University of Illinois at Urbana-Champaign"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_diss_index.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Index to PhD dissertation"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "1989"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wol_MA_VinaStyle.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Innovation, interpretation, and the maintenance of tradition in the Karaikkudi style of vina playing. Master of Music Thesis. University of Illinois at Urbana-Champaign."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "REVIEWS"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n2013"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/4311",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Review of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/4311",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Dancing with Devtās: Drums, Power and Possession in the Music of Garhwal, North India"
+            },
+            {
+              "type": "text",
+              "text": ", by Andrew Alter. Asian Ethnology 72(2): 347-351."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2013"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Shrine_Heart-Footsteps_Babur_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Review of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Shrine_Heart-Footsteps_Babur_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "In the Shrine of the Heart: Popular Classics from Bukhara and Beyond."
+            },
+            {
+              "type": "text",
+              "text": " 2010. Music of Central Asia, 7. Smithsonian Folkways Recordings SFW CD 40526. Yearbook for Traditional Music 45: 275-276."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2013"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Shrine_Heart-Footsteps_Babur_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Review of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Shrine_Heart-Footsteps_Babur_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "In the Footsteps of Babur: Musical Encounters from the Lands of the Mughals"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Shrine_Heart-Footsteps_Babur_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "."
+            },
+            {
+              "type": "text",
+              "text": " 2010, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Music of Central Asia"
+            },
+            {
+              "type": "text",
+              "text": ", 9. Smithsonian Folkways Recordings SFW CD 40528. In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Yearbook for Traditional Music"
+            },
+            {
+              "type": "text",
+              "text": " 45: 276-277."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2010"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/880",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Review of James Kippen, Gurudev’s Drumming Legacy: Music, Theory and Nationalism in the Mrdang aur Tabla Vadanpaddhati of Gurudev Patwardhan, in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/880",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian Ethnology"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/880",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": " 69(2) 377-378."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2008"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-review-of-Weidman-and-Subramanian.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Review essay: "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-review-of-Weidman-and-Subramanian.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Singing the classical, voicing the modern: The postcolonial politics of music in south India"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-review-of-Weidman-and-Subramanian.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", by Amanda Weidman; "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-review-of-Weidman-and-Subramanian.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "From the Tanjore court to the Madras Music Academy: A social history of music in South India"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf-review-of-Weidman-and-Subramanian.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Ethnomusicology Forum"
+            },
+            {
+              "type": "text",
+              "text": " 17(2): 287-292"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2004"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_GarlandEncyc_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Garland Encyclopedia of World Music, Vol 5, South Asia: The Indian Subcontinent"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_GarlandEncyc_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", ed."
+            },
+            {
+              "type": "text",
+              "text": " Alison Arnold. Ethnomusicology 48(2): 278–82."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2003"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_review_time_indianmusic.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Time in Indian Music"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_review_time_indianmusic.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", by Martin Clayton."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Asian Music"
+            },
+            {
+              "type": "text",
+              "text": " 34(2): 133–139."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "2000–01"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_horsekarbala_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Horse of Karbala: Muslim Devotional Life in India"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_horsekarbala_review.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", by David Pinault."
+            },
+            {
+              "type": "text",
+              "text": " New York: Palgrave, 2001. "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Harvard Middle Eastern and Islamic Review"
+            },
+            {
+              "type": "text",
+              "text": " 6: 123–129."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "MANUSCRIPTS"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Kota-dictionary-9-2014.pdf",
+                    "target": "_blank",
+                    "rel": "noopener noreferrer",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Kota Dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". Dravidian language of the Nilgiri Hills of South India."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Wolf_Symbolism_and_social_structure_in_Kota_ritual.pdf",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Symbolism and Social Structure in Kota Ritual."
+            },
+            {
+              "type": "text",
+              "text": " Unpublished manuscript. Cite as Wolf, Richard K. 2020. “Symbolism and Social Structure in Kota Ritual,” richardkwolf.com/publications accessed (date)."
+            }
+          ]
         }
       ]
-    },
-    {
-      "type": "paragraph",
-      "attrs": {
-        "id": "89635467-8934-40d4-8048-79b5fff455db"
-      }
     }
-  ],
-  "meta": {
-    "title": "Publications",
-    "description": "Books, edited volumes and articles by Richard K. Wolf."
-  }
+  ]
 }

@@ -1,0 +1,56 @@
+{
+	"//": "Editorial values the rendered source pages do not carry, read by scripts/extract-pages.mjs. Keys of `pages` are the batch the script ports; `alt` is keyed by served media path.",
+	"alt": {
+		"/uploads/671978dc180ec4f2.webp": "Richard K. Wolf crouching beside a camera tripod on a rocky, grassy riverbank, wearing a hat and a checked shirt.",
+		"/uploads/34c38331828f6f2f.webp": "Four of Richard K. Wolf's book covers standing in a row on a pale textured ground.",
+		"/uploads/cfd269ceee26b06b.webp": "A spoked wooden cartwheel leaning against a wall, repeated across a narrow banner in grainy black and white.",
+		"/uploads/2b871a03c7f316bc.webp": "Seven musicians seated in a row on a low stage, playing plucked lutes and a keyboard before a pale curtain.",
+		"/uploads/5df6ec242a60ca09.webp": "A banner pairing a hillside village under cloud with a speaker standing at a lectern in a darkened hall.",
+		"/uploads/b7675f43253e7939.webp": "Aerial view of arid red and brown mountain ridges cut by a broad braided riverbed, with snow-capped peaks on the horizon.",
+		"/uploads/4278dd53d9b08754.webp": "A bearded man in white, wearing mirrored sunglasses, reading from a small book beneath a tree.",
+		"/uploads/0cc799d0f06e2c56.webp": "A young woman seated on the floor beside a hand-cranked string winder, in a sepia photograph from the 1940s.",
+		"/uploads/0779ac0cf2b7bee1.webp": "A woman singing with her eyes closed, held by other women pressed close around her.",
+		"/uploads/96650b20f0fd9699.webp": "Two men dancing with arms raised, ringed by a crowd of onlookers, in black and white.",
+		"/uploads/9644261ba839530a.webp": "A man wrapped in a patterned blanket standing before a tall bonfire of brushwood at dusk.",
+		"/uploads/8520540057866f78.webp": "A crowded old-city street of shopfronts, handcarts and parked cars, in warm sepia tones.",
+		"/uploads/3a4301b3d677b41f.webp": "An elderly woman in a white shawl seated on the ground, looking towards the camera.",
+		"/uploads/18bf15087c9ea979.webp": "Richard K. Wolf playing the vīṇā on a school stage, flanked by a mridangam player and a singer.",
+		"/uploads/02856ad8e81c0461.webp": "Students in costume standing in a line on stage holding scripts, with a shrouded figure lying before them.",
+		"/uploads/2be8c1f312d864c9.webp": "Two kora players seated on a darkened stage with a hand drummer standing behind them."
+	},
+	"pages": {
+		"about": {
+			"description": "Richard K. Wolf's path from rock guitar at Oberlin to ethnomusicological fieldwork in South and Central Asia, and the awards, editorships and service that followed."
+		},
+		"positions-education-honors": {
+			"description": "Academic positions, education, languages, field research, awards and honors for Richard K. Wolf."
+		},
+		"publications": {
+			"description": "Books, edited volumes, articles, reviews and recordings by Richard K. Wolf, many of them available here as offprints."
+		},
+		"concepts": {
+			"description": "Conceptual overviews of Richard K. Wolf's work on style, emotion, poetics, space and time, rhythm, and ethnographic creative writing, with links to the writings."
+		},
+		"performance": {
+			"description": "Richard K. Wolf on playing the South Indian vīṇā, and recordings of the teachers and students who have performed with him at Harvard."
+		},
+		"pedagogy": {
+			"description": "Teaching materials, course listings and student creative work from Richard K. Wolf's courses on music in Islamic contexts, South Asia and Central Asia."
+		},
+		"resources": {
+			"description": "Syllabi, handouts, romanisation tables, keyboards, fonts, maps and area studies links gathered for students and researchers of South and Central Asian music."
+		},
+		"archives": {
+			"description": "The archives holding Richard K. Wolf's field recordings and videos, where researchers may consult them on site."
+		},
+		"bibliographies": {
+			"description": "Bibliographies related to Richard K. Wolf's research, beginning with a bibliography of music in Islam."
+		},
+		"dictionaries": {
+			"description": "Online dictionaries of Hindi, Urdu, Panjabi, Sindhi, Tamil, Telugu, Persian and Wakhi that Richard K. Wolf uses in his work, with his own Kota dictionary."
+		},
+		"music-of-south-asia-other": {
+			"description": "Indo-Caribbean music in New York, the Nanda Devi festival in Almora, and other South Asian fieldwork outside Richard K. Wolf's main research areas."
+		}
+	}
+}

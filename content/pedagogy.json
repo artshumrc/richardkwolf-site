@@ -1,0 +1,294 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Pedagogy",
+    "description": "Teaching materials, course listings and student creative work from Richard K. Wolf's courses on music in Islamic contexts, South Asia and Central Asia."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/5df6ec242a60ca09.webp",
+        "alt": "A banner pairing a hillside village under cloud with a speaker standing at a lectern in a darkened hall.",
+        "eyebrow": "",
+        "headline": "Pedagogy",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "This is a repository of selected readings lists, syllabi and other teaching materials as well as examples of my students’ creative work. The courses I have taught include: Music in Islamic Contexts, South Indian Classical Music, Music and Language, Music and Ritual, Music of Iran, Rhythmic Thinking in Africa and Asia, Creative Ethnographic Writing, Music and Subjectivity in Asia, Music of Central Asia and its Neighbors, Vernacular Music of India, the Ethnomusicology of Space and Time, Music and Mediation in South Asia, Music and Mourning, and Music of the Silk Road."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Student Performances"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207143335",
+            "poster": "/uploads/02856ad8e81c0461.webp",
+            "title": "Ta'ziyeh of Qasim",
+            "caption": "Student-written and directed musical play based on Iranian passion play genre, ta'ziyeh. Performed by members of Richard Wolf's Music, Debate and Islam class, Paine Hall, Jan 2011"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "120201554",
+            "poster": "/uploads/2be8c1f312d864c9.webp",
+            "title": "Morikeba Kouyate",
+            "caption": "Senegal-born Morikeba Kouyate was a visiting artist at the Harvard Music Department for 6 weeks in Nov. 2011, working with Prof. Richard Wolf. During his residency he taught students in Richard Wolf’s class Music in Cross-Cultural Perspective to sing and accompany themselves on the kora, a kind of harp-lute from West Africa."
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Like all teachers, I am always seeking new ways to engage and sustain the attention of my students. In some classes, this has involved incorporating simple performance exercises; other classes have involved more ambitious goals, including performing public concerts. Some of my favorite assignments have been to have students adopt opposing positions in a debate on the legality of music in Islamic jurisprudence, in which they were tasked with formulating arguments based on translations of primary sources."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In my Music and Language class, I ask students to analyze a recording of a story told in the Kota language as if it were a piece of music. For a final project in a course entitled Music, Debate and Islam, I asked students to collaborate in writing, directing, and staging their own passion play based on the concept of the "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "taziyeh"
+            },
+            {
+              "type": "text",
+              "text": " of Iran."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Regarding reading and writing, after years of receiving so-called response papers that did not necessarily show that students had read or understood the articles or books they were assigned, I have shifted to a format in which students must craft an elegant "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "précis"
+            },
+            {
+              "type": "text",
+              "text": " followed by a discussion of a particular point. This way students must come to terms with representing the whole of a work as well as think through an argument regarding one of its parts. My course Creative Ethnographic Writing was focused on reading and critiquing weekly writing samples in the genres of short story (fiction and creative non-fiction), poetry, and mixed media visual objects with captions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Syllabi"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "View syllabi in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/resources/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Resources"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Student Websites"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Kapena Baptista:"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://kuehawaii.weebly.com/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "http://kuehawaii.weebly.com"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Student Creative Writing"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Readings Lists"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Lectures and Demonstrations"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Other Teaching Materials"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "View Teaching Materials in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/resources/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Resources"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

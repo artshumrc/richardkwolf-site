@@ -1,9 +1,34 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "Music of South Asia, other",
-    "description": "Richard K. Wolf on South Asian musical traditions outside his South Indian and Islamicate fieldwork."
+    "description": "Indo-Caribbean music in New York, the Nanda Devi festival in Almora, and other South Asian fieldwork outside Richard K. Wolf's main research areas."
   },
-  "content": []
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/4278dd53d9b08754.webp",
+        "alt": "A bearded man in white, wearing mirrored sunglasses, reading from a small book beneath a tree.",
+        "eyebrow": "",
+        "headline": "Music of South Asia, other",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Some of my field research does not fit squarely within the regional and conceptual rubrics under which I have organized this website. Examples from my audiovisual documentation of Indo-Caribbean music in New York, the Nanda Devi Festival in Almora (now in Uttarakhand state, India), and other miscellaneous South Asia-related musical activities reside in this section of the website."
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

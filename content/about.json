@@ -1,0 +1,355 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "About",
+    "description": "Richard K. Wolf's path from rock guitar at Oberlin to ethnomusicological fieldwork in South and Central Asia, and the awards, editorships and service that followed."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/671978dc180ec4f2.webp",
+        "alt": "Richard K. Wolf crouching beside a camera tripod on a rocky, grassy riverbank, wearing a hat and a checked shirt.",
+        "eyebrow": "",
+        "headline": "About",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Richard K. Wolf"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "As a freshman at Oberlin College in 1980, Richard Wolf was an active rock music composer, lead guitarist and student of Renaissance lute and classical guitar. Then an extraordinary concert of south Indian classical (Karnatak) music at Oberlin led him to make life-changing decisions. He traveled to south India a few years later, where he studied Karnatak vina, vocal music, mridangam and Tamil. Back in the US as a senior, he completed the last few courses toward a bachelor’s degree in mathematics (1984), performed a senior recital of lute and vina, and devoted himself to full-time ethnomusicological study."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Following fourteen months of further study in India, Wolf began his graduate work at the University of Illinois at Urbana-Champaign. There he completed a Master of Music thesis exploring social-cultural as well as technical components of Karnatak “style” ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "bāṇi"
+            },
+            {
+              "type": "text",
+              "text": ") (1989). For his PhD dissertation, supported by the American Institute of Indian Studies and a Fulbright-Hays grant, Wolf conducted fieldwork for two years on the music and ritual of one of the tribal minority populations of the Nilgiri Hills, the Kotas (1997)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In November 1996, the final draft of Wolf’s PhD thesis was still in the mail when he boarded a plane with his then wife to commence two-and-a-half years of new field research. This work in north India and Pakistan centered on drumming, “recitation,” and music in public Islamic contexts. Wolf returned from south Asia to take up a position at Harvard in 1999 and has remained there ever since."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Wolf’s thematic interests include ethnographic creative writing, rhythm, emotional complexity in ceremonial contexts, the constitutive properties of musical action in rituals, the poetics of verbal and non-verbal activities, the musical qualities of languages and the analytic potentials of particular languages for the study of music. Wolf speaks Tamil, Persian, and Urdu and draws from his studies of Kota, Wakhi and Russian in his research and writings."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Several publications address issues of music and Islam in south Asia, including “The poetics of Sufi practice: Drumming, dancing, and complex agency at Madho Lal Husain (and beyond),” (American Ethnologist 2006). His most recent monograph "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.press.uillinois.edu/books/catalog/95bsy6wx9780252038587.html",
+                    "target": "_blank",
+                    "rel": "noopener",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "(University of Illinois Press, October 2014), The Voice in the Drum"
+            },
+            {
+              "type": "text",
+              "text": ", uses the form of a novel to present analytical and cultural insights regarding rhythm, vocality, and drumming across south Asia. He has also drafted another monograph, provisionally titled Song and Subjectivity in Modern India, based on continuing research on south Indian folk and tribal music. Wolf’s interest in sociomusical processes that transcend the borders of South Asia is reflected in the edited volume, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://global.oup.com/us/companion.websites/9780195331387/",
+                    "target": "_blank",
+                    "rel": "noopener",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Theorizing the Local: Music, Practice, and Experience in South Asia and Beyond (Oxford University Press, New York, 2009)"
+            },
+            {
+              "type": "text",
+              "text": ". He co-edited (with Stephen Blum and Christopher Hasty) the volume "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://global.oup.com/academic/product/thought-and-play-in-musical-rhythm-9780190841492?cc=us&lang=en&",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Thought and Play in Musical Rhythm: Asian, African, and Euro-American Perspectives "
+            },
+            {
+              "type": "text",
+              "text": "(2019, Oxford University Press).  Another co-edited volume (with anthropologist Frank Heidemann), "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/nfile/4352",
+                    "target": "_blank",
+                    "rel": "noopener",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": " The Bison and the Horn: Indigeneity, Performance, and the State of India"
+            },
+            {
+              "type": "text",
+              "text": " was published as a special issue of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://nirc.nanzan-u.ac.jp/en/publications/asian-ethnology/listofjournals/",
+                    "target": "_blank",
+                    "rel": "noopener",
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Asian Ethnology"
+            },
+            {
+              "type": "text",
+              "text": " in 2014.  He is currently working on a monograph entitled "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Nightingale’s Despair: Music and Moral Being in Greater Central Asia"
+            },
+            {
+              "type": "text",
+              "text": ", which draws on fieldwork in Tajikistan, Afghanistan, India and Pakistan as well as medieval Persian writings on music and human character and the classical Greek works on which they comment. Wolf is also a "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://filmfreeway.com/RichardWolf683",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "photographer and filmmaker"
+            },
+            {
+              "type": "text",
+              "text": ". His recently completed film "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://filmfreeway.com/TwoPoetsandaRiver",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Two Poets and a River "
+            },
+            {
+              "type": "text",
+              "text": "explores the music and lives of two poet-singers who live on opposite sides of the Panj river, which divides Afghanistan and Tajikistan."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Wolf has been the recipient of a number of awards and fellowships. In 2018-2019 he was named the Carl and Lily Pforzheimer Fellow at the National Humanities Center, Research Triangle Park, NC. He has also received the The Friedrich Wilhelm Bessel Research Award from the Alexander von Humboldt Foundation, two American Institute of Indian Studies Research Grants, a Fulbright South and Central Asia Regional Research Grant, a yearlong residency at the Radcliffe Institute for Advanced Study, and funding from the American Council of Learned Societies, the Social Science Research Council, the National Endowment for the Humanities, two grants from the American Institute of Pakistan Studies, and one from the American Institute of Afghanistan Studies. Wolf’s first book, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Black Cow’s Footprint: Time, Space, and Music in the Lives of the Kotas of South India"
+            },
+            {
+              "type": "text",
+              "text": " (Permanent Black, 2005 and University of Illinois Press, 2006), earned him the Edward Cameron Dimock, Jr. Prize in the Humanities from the American Institute of Indian Studies."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In the summer of 2009, Wolf was Professeur Invité at the École des Hautes Études en Sciences Sociales in Paris and Gastprofessur für ethnologische Nilgiriforschung at the Institute for Social and Cultural Anthropology at the University of Munich. He has served as co-editor of South Asia book reviews for the "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Journal of Asian Studies"
+            },
+            {
+              "type": "text",
+              "text": ", on the board of trustees and executive committee of the American Institute of Pakistan Studies, on the board of trustees of the American Institute of Afghanistan Studies, on the board of directors of the Association for Central Asian and Silk Road Studies, on the editorial board of Performing Islam and, in 2005-2008, on the editorial board of the EVIA Digital Archive, Indiana University (Ethnomusicological Video for Instruction and Analysis)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Since 2012, when Wolf spent a Fulbright year in Tajikistan, he has been making annual field visits to Tajikistan, northern Afghanistan and/or Pakistan to investigate relationships between singing and performing on various lute types, as well as the further the broader “music-and-moral-being” project."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In addition to teaching and writing about music, Wolf performs professionally on the south Indian vina (lute) and is a disciple of the renowned performer, teh late Ranganayaki Rajagopalan. In 1988 Wolf was the recipient of the Jon B. Higgins Memorial Scholarship for the study of Indian classical music and in 2012 he was awarded a senior fellowship from the American Institute of Indian Studies for advanced training in Karnatak music with Smt Ranganayaki Rajagopalan and Shrimushnam Raja Rao."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/publications/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Publications"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/positions-education-honors/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Positions, Education, Honors"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

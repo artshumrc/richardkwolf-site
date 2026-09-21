@@ -1,40 +1,42 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "Positions, Education, Honors",
     "description": "Academic positions, education, languages, field research, awards and honors for Richard K. Wolf."
   },
   "content": [
     {
-      "type": "figure",
+      "type": "hero",
       "attrs": {
-        "path": "/uploads/b7675f43253e7939.webp",
+        "image": "/uploads/b7675f43253e7939.webp",
         "alt": "Aerial view of arid red and brown mountain ridges cut by a broad braided riverbed, with snow-capped peaks on the horizon.",
-        "caption": ""
+        "eyebrow": "",
+        "headline": "Positions, Education, Honors",
+        "lede": ""
       }
     },
     {
       "type": "prose",
       "content": [
         {
-          "type": "heading",
-          "attrs": {
-            "level": 2
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "CURRENT AND PAST POSITIONS"
-            }
-          ]
-        },
-        {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "text": "Professor of Music and South Asian Studies, Departments of Music and South Asian Studies. Harvard University, 7/12-present"
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "CURRENT AND PAST POSITIONS"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\nProfessor of Music and South Asian Studies, Departments of Music and South Asian Studies. Harvard University, 7/12-present"
             }
           ]
         },
@@ -122,7 +124,7 @@
             },
             {
               "type": "text",
-              "text": "Association for Cultural Equity, NY, NY (Alan Lomax, President): 12/94–7/96."
+              "text": "\nAssociation for Cultural Equity, NY, NY (Alan Lomax, President): 12/94–7/96."
             }
           ]
         },
@@ -138,26 +140,14 @@
             },
             {
               "type": "text",
-              "text": "Southern Asian Institute (6/95–5/97)"
+              "text": "\nSouthern Asian Institute (6/95–5/97)"
             },
             {
               "type": "hardBreak"
             },
             {
               "type": "text",
-              "text": "Department of Music (1/95–6/95)"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "attrs": {
-            "level": 2
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "EDUCATION"
+              "text": "\nDepartment of Music (1/95–6/95)"
             }
           ]
         },
@@ -166,14 +156,26 @@
           "content": [
             {
               "type": "text",
-              "text": "University of Illinois at Urbana-Champaign: Ph.D., Music (Ethnomusicology): 1/97"
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "EDUCATION"
             },
             {
               "type": "hardBreak"
             },
             {
               "type": "text",
-              "text": "Master of Music: 5/89; Phi Kappa Phi: 1987."
+              "text": "\nUniversity of Illinois at Urbana-Champaign: Ph.D., Music (Ethnomusicology): 1/97"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\nMaster of Music: 5/89; Phi Kappa Phi: 1987."
             }
           ]
         },
@@ -232,23 +234,23 @@
           ]
         },
         {
-          "type": "heading",
-          "attrs": {
-            "level": 2
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "LANGUAGES"
-            }
-          ]
-        },
-        {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "text": "Field: Tamil, Urdu/Hindi, Kota (South Dravidian spoken language), Persian/Tajiki, Wakhi (Eastern Iranian spoken language)"
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "LANGUAGES"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\nField: Tamil, Urdu/Hindi, Kota (South Dravidian spoken language), Persian/Tajiki, Wakhi (Eastern Iranian spoken language)"
             }
           ]
         },
@@ -262,23 +264,23 @@
           ]
         },
         {
-          "type": "heading",
-          "attrs": {
-            "level": 2
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "FIELD RESEARCH"
-            }
-          ]
-        },
-        {
           "type": "paragraph",
           "content": [
             {
               "type": "text",
-              "text": "More than six years in South India (mainly Tamil Nadu); fourteen months in North India (mainly Uttar Pradesh); fifteen months in Pakistan (mainly Panjab); eleven months in Tajikistan. Brief field visits to Kyrgyzstan, Uzbekistan, China (Xinjiang), Iran (Isfahan, Tehran, Qazvin), and Ghana (Ashanti region)."
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "FIELD RESEARCH"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\nMore than six years in South India (mainly Tamil Nadu); fourteen months in North India (mainly Uttar Pradesh); fifteen months in Pakistan (mainly Panjab); eleven months in Tajikistan. Brief field visits to Kyrgyzstan, Uzbekistan, China (Xinjiang), Iran (Isfahan, Tehran, Qazvin), and Ghana (Ashanti region)."
             }
           ]
         },
@@ -294,26 +296,14 @@
             },
             {
               "type": "text",
-              "text": "Fieldwork in Dushanbe and Ishkoshim, Tajikistan (funded by Asia Center, Harvard) 7/3-8/21/14"
+              "text": "\nFieldwork in Dushanbe and Ishkoshim, Tajikistan (funded by Asia Center, Harvard) 7/3-8/21/14"
             },
             {
               "type": "hardBreak"
             },
             {
               "type": "text",
-              "text": "affiliated with the University of Central Asia, Dushanbe"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "attrs": {
-            "level": 2
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "AWARDS AND HONORS SINCE 1990"
+              "text": "\naffiliated with the University of Central Asia, Dushanbe"
             }
           ]
         },
@@ -322,7 +312,19 @@
           "content": [
             {
               "type": "text",
-              "text": "(excludes language study grants and funds applied for within Harvard University)"
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "AWARDS AND HONORS SINCE 1990"
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n(excludes language study grants and funds applied for within Harvard University)"
             }
           ]
         },
@@ -365,7 +367,7 @@
             },
             {
               "type": "text",
-              "text": "(A lifetime achievement award)"
+              "text": "\n(A lifetime achievement award)"
             }
           ]
         },
@@ -374,12 +376,12 @@
           "content": [
             {
               "type": "text",
-              "text": "Artium Magistrum",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "Artium Magistrum"
             },
             {
               "type": "text",
@@ -392,12 +394,12 @@
           "content": [
             {
               "type": "text",
-              "text": "American Institute of Pakistan Studies",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "American Institute of Pakistan Studies"
             },
             {
               "type": "text",
@@ -414,12 +416,12 @@
             },
             {
               "type": "text",
-              "text": "The Black Cow’s Footprint: Time, Space and Music in the Lives of the Kotas of South India",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "The Black Cow’s Footprint: Time, Space and Music in the Lives of the Kotas of South India"
             },
             {
               "type": "text",
@@ -432,12 +434,12 @@
           "content": [
             {
               "type": "text",
-              "text": "Presidential Leave",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "Presidential Leave"
             },
             {
               "type": "text",
@@ -450,12 +452,12 @@
           "content": [
             {
               "type": "text",
-              "text": "Radcliffe Institute for Advanced Study, Advanced Seminar",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "Radcliffe Institute for Advanced Study, Advanced Seminar"
             },
             {
               "type": "text",
@@ -466,12 +468,16 @@
             },
             {
               "type": "text",
-              "text": "Radcliffe Institute for Advanced Study Fellowship",
+              "text": "\n"
+            },
+            {
+              "type": "text",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "Radcliffe Institute for Advanced Study Fellowship"
             },
             {
               "type": "text",
@@ -484,12 +490,12 @@
           "content": [
             {
               "type": "text",
-              "text": "American Council of Learned Societies",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "American Council of Learned Societies"
             },
             {
               "type": "text",
@@ -500,12 +506,16 @@
             },
             {
               "type": "text",
-              "text": "NEH summer stipend",
+              "text": "\n"
+            },
+            {
+              "type": "text",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "NEH summer stipend"
             },
             {
               "type": "text",
@@ -516,12 +526,16 @@
             },
             {
               "type": "text",
-              "text": "American Institute of Pakistan Studies",
+              "text": "\n"
+            },
+            {
+              "type": "text",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "American Institute of Pakistan Studies"
             },
             {
               "type": "text",
@@ -532,12 +546,16 @@
             },
             {
               "type": "text",
-              "text": "American Institute of Indian Studies",
+              "text": "\n"
+            },
+            {
+              "type": "text",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "American Institute of Indian Studies"
             },
             {
               "type": "text",
@@ -548,12 +566,16 @@
             },
             {
               "type": "text",
-              "text": "Fulbright-Hays",
+              "text": "\n"
+            },
+            {
+              "type": "text",
               "marks": [
                 {
                   "type": "italic"
                 }
-              ]
+              ],
+              "text": "Fulbright-Hays"
             },
             {
               "type": "text",
@@ -573,7 +595,7 @@
             },
             {
               "type": "text",
-              "text": "Jon B. Higgins Memorial Scholarship for the study of Indian classical music, Raga Mala Performing Arts of Canada, 1987 and 1988. (Awarded on the basis of demonstrated skill on the Karnatak vīṇā)"
+              "text": "\nJon B. Higgins Memorial Scholarship for the study of Indian classical music, Raga Mala Performing Arts of Canada, 1987 and 1988. (Awarded on the basis of demonstrated skill on the Karnatak vīṇā)"
             }
           ]
         }

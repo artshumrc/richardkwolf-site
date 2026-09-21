@@ -1,0 +1,170 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Performance",
+    "description": "Richard K. Wolf on playing the South Indian vīṇā, and recordings of the teachers and students who have performed with him at Harvard."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/2b871a03c7f316bc.webp",
+        "alt": "Seven musicians seated in a row on a low stage, playing plucked lutes and a keyboard before a pale curtain.",
+        "eyebrow": "",
+        "headline": "Performance",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I became a scholar and a teacher because I was fascinated by unfamiliar sounds—the subtle timbres of the South Indian mridangam’s layered heads, the overtone-rich strings of the tambura and other Indian lutes, the humorous madness of Sun Ra, the flowing texture of the Art Ensemble of Chicago, the "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "parole"
+            },
+            {
+              "type": "text",
+              "text": " of West African drumming, the resonant and powerful voices of jalis (griots) set off by the buzzy plucks of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kora"
+            },
+            {
+              "type": "text",
+              "text": " strings. I remember walking behind two regal "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "jalis"
+            },
+            {
+              "type": "text",
+              "text": " graced by long shimmering robes as they strolled through the Oberlin Arboretum. An urge to play the music I was hearing led me to visit India and Africa and come up with the idea that becoming a professional ethnomusicologist would help me sustain my addiction to playing. Many of us entered the field through performance. Once settled in an academic position, however, we struggle to carve out time for playing amid our myriad personal and professional responsibilities. This section of my site is devoted to my world of playing, a world I hope never to leave behind."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "This site features my performances on the South Indian "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "vīṇā,"
+            },
+            {
+              "type": "text",
+              "text": " an instrument I have been playing since 1982. Also included are recordings I made at Harvard University of some of my teachers and students performing musical traditions from other parts of the world: My "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kora"
+            },
+            {
+              "type": "text",
+              "text": " teacher Morikeba Kouyaté from Senegal, whom I met at an Ethiopian restaurant in Chicago; "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Dutar"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tambur"
+            },
+            {
+              "type": "text",
+              "text": " master Sirojiddin Juraev, who taught me in Dushanbe and came to Harvard University to work with me and my students in a course on Central Asian music; Photos and recordings Iranian musicians who have worked with me and my students since 1999. Further aspects of my pedagogy and examples of student work are presented on my "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/pedagogy/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "pedagogy page"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "soundcloud",
+      "attrs": {
+        "resource": "track",
+        "soundcloudId": "130346718",
+        "title": ""
+      }
+    },
+    {
+      "type": "figure",
+      "attrs": {
+        "path": "/uploads/18bf15087c9ea979.webp",
+        "alt": "Richard K. Wolf playing the vīṇā on a school stage, flanked by a mridangam player and a singer.",
+        "caption": "Richard Wolf and Umayalpuram Mali performing in Mannivakkam, Chennai, Aug 19, 2009"
+      }
+    }
+  ]
+}

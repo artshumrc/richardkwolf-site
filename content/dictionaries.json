@@ -1,0 +1,595 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Dictionaries",
+    "description": "Online dictionaries of Hindi, Urdu, Panjabi, Sindhi, Tamil, Telugu, Persian and Wakhi that Richard K. Wolf uses in his work, with his own Kota dictionary."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/b7675f43253e7939.webp",
+        "alt": "Aerial view of arid red and brown mountain ridges cut by a broad braided riverbed, with snow-capped peaks on the horizon.",
+        "eyebrow": "",
+        "headline": "Dictionaries",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "These are some of the online dictionaries I have found useful in my work as well as my own Kota dictionary, in progress:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Hindi and Urdu"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/platts/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Platts, John T. (John Thompson)."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "A dictionary of Urdu, classical Hindi, and English"
+            },
+            {
+              "type": "text",
+              "text": ". London: W. H. Allen & Co., 1884."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/caturvedi/index.html",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Mahendra Caturvedi."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "A practical Hindi-English dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". Delhi: National Publishing House, 1970."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Other Indic"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/singh/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Singh, Maya."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Panjabi dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". Lahore: Munshi Gulab Singh & Sons, 1895."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/soas/985",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Turner, R. L. (Ralph Lilley), Sir."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "A comparative dictionary of Indo-Aryan languages"
+            },
+            {
+              "type": "text",
+              "text": ". London: Oxford University Press, 1962-1966. Includes three supplements, published 1969-1"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/mewaram/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Parmanand Mewaram."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "A Sindhi-English dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". Hyderabad, Sind : The Sind Juvenile Co-operative Society, 1910."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.sanskrit-lexicon.uni-koeln.de/index.html",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Cologne Digital Sanskrit Dictionaries"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Dravidian Languages"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/tamil-lex/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "University of Madras."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Tamil lexicon"
+            },
+            {
+              "type": "text",
+              "text": ". [Madras], University of Madras, 1924-1936."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/brown/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Brown, Charles Philip."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "A Telugu-English dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". New ed., thoroughly rev. and brought up to date … 2nd ed. Madras: Promoting Christian Knowledge, 1903."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/burrow/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Burrow, T., and M. B. Emeneau."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "A Dravidian etymological dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". 2nd ed. Oxford [Oxfordshire]: Clarendon Press, 1984."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Wolf, Richard K. n.d. "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Kota-dictionary-9-2014.pdf",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Kota Dictionary"
+            },
+            {
+              "type": "text",
+              "text": ". Manuscript"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                }
+              ],
+              "text": "Persian"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://farsi123.com/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Farsi 123"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/hayyim/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Hayyim, Sulayman."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "New Persian-English dictionary, complete and modern, designed to give the English meanings of over 50,000 words, terms, idioms, and proverbs in the Persian language, as well as the transliteration of the words in English characters. Together with a sufficient treatment of all the grammatical features of the Persian Language"
+            },
+            {
+              "type": "text",
+              "text": ". [Teheran, Librairie-imprimerie] 1934-1936."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://dsal.uchicago.edu/dictionaries/steingass/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Steingass, Francis Joseph."
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "A Comprehensive Persian-English dictionary, including the Arabic words and phrases to be met with in Persian literature"
+            },
+            {
+              "type": "text",
+              "text": ". London: Routledge & K. Paul, 1892."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.ling.hawaii.edu/austroasiatic/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Austro-Asiatic Languages"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "bold"
+                },
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.lexilogos.com/english/russian_dictionary.htm",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Lexilogos Russian Dictionary"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

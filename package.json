@@ -11,7 +11,8 @@
 		"prepare": "svelte-kit sync || true",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"assert:clean-pages": "node scripts/assert-clean-pages.mjs",
-		"port:images": "node scripts/port-images.mjs"
+		"port:images": "node scripts/port-images.mjs",
+		"extract:pages": "node scripts/extract-pages.mjs"
 	},
 	"dependencies": {
 		"uncial": "^2.0.1",
@@ -21,6 +22,7 @@
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.50.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"node-html-parser": "^9.0.4",
 		"sharp": "^0.35.4",
 		"svelte": "^5.56.10",
 		"svelte-check": "^4.4.2",

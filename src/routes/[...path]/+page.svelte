@@ -3,6 +3,7 @@
 	import { Renderer } from 'uncial/render';
 	import { blocks, schema } from '$lib/blocks.js';
 	import { canonicalUrl } from '$lib/site-origin.js';
+	import { withBasePaths } from '$lib/rich-links.js';
 
 	let { data } = $props();
 
@@ -12,6 +13,7 @@
 	// <h1> stays in the document for readers of the outline and is hidden
 	// visually, rather than omitted.
 	const leadsWithHero = $derived(data.document?.content?.[0]?.type === 'hero');
+	const document = $derived(withBasePaths(data.document, base));
 </script>
 
 <svelte:head>
@@ -24,7 +26,7 @@
 
 <main>
 	<h1 class:visually-hidden={leadsWithHero}>{title}</h1>
-	<Renderer content={data.document} {blocks} {schema} />
+	<Renderer content={document} {blocks} {schema} />
 </main>
 
 <style>

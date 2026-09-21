@@ -1,0 +1,118 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Archives",
+    "description": "The archives holding Richard K. Wolf's field recordings and videos, where researchers may consult them on site."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/b7675f43253e7939.webp",
+        "alt": "Aerial view of arid red and brown mountain ridges cut by a broad braided riverbed, with snow-capped peaks on the horizon.",
+        "eyebrow": "",
+        "headline": "Archives",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "My field recordings and videos have been deposited in the following archives and are or will be available for researchers to consult on-site:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.indiastudies.org/ethnomusicology/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Archives and Research Center for Ethnomusicology (ARCE)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://hcl.harvard.edu/libraries/loebmusic/collections/archive.cfm",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Archive of World Music, Harvard University"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.indiana.edu/~libarchm/",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "The Archives of Traditional Music, Indiana University"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "https://sites.google.com/site/illinoismusicology/facilities",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Ethnomusicology Archives, University of Illinois at Urbana-Champaign"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Bibliographies",
+    "description": "Bibliographies related to Richard K. Wolf's research, beginning with a bibliography of music in Islam."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/b7675f43253e7939.webp",
+        "alt": "Aerial view of arid red and brown mountain ridges cut by a broad braided riverbed, with snow-capped peaks on the horizon.",
+        "eyebrow": "",
+        "headline": "Bibliographies",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "(This section of the site, under development, will contain bibliographies related to my research. See also "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/resources/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Resources"
+            },
+            {
+              "type": "text",
+              "text": " for other research related tools.)"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Music-in-Islam-Bibliography.pdf",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Music in Islam Bibliography"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
