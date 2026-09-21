@@ -1,0 +1,85 @@
+{
+  "type": "doc",
+  "version": 1,
+  "meta": {
+    "title": "Site information",
+    "description": "Site-wide navigation, contact details and footer text. This document renders no reader page.",
+    "siteName": "Richard K. Wolf",
+    "email": "richard@richardkwolf.com",
+    "contactLines": "Music Building\nHarvard University\nCambridge, MA\n02138",
+    "copyright": "© 2016 Richard K. Wolf. All rights reserved."
+  },
+  "content": [
+    {
+      "type": "navigation",
+      "attrs": {
+        "items": [
+          {
+            "label": "Research",
+            "link": "/research/",
+            "parent": ""
+          },
+          {
+            "label": "Ritual & Daily Life in South India",
+            "link": "/ritual-daily-life-in-south-india/",
+            "parent": "Research"
+          },
+          {
+            "label": "South Indian Classical Music",
+            "link": "/south-indian-classical-music/",
+            "parent": "Research"
+          },
+          {
+            "label": "Music in Islamic Contexts in India & Pakistan",
+            "link": "/music-in-islamic-contexts-in-india-pakistan/",
+            "parent": "Research"
+          },
+          {
+            "label": "Music of Central Asia",
+            "link": "/music-of-central-asia/",
+            "parent": "Research"
+          },
+          {
+            "label": "Music of Iran",
+            "link": "/music-of-iran/",
+            "parent": "Research"
+          },
+          {
+            "label": "Drums & Drummers",
+            "link": "/drums-drummers/",
+            "parent": "Research"
+          },
+          {
+            "label": "Music of South Asia, other",
+            "link": "/music-of-south-asia-other/",
+            "parent": "Research"
+          },
+          {
+            "label": "Publications",
+            "link": "/publications/",
+            "parent": ""
+          },
+          {
+            "label": "Positions, Education, Honors",
+            "link": "/positions-education-honors/",
+            "parent": ""
+          }
+        ],
+        "footerLinks": [
+          {
+            "label": "Research",
+            "link": "/research/"
+          },
+          {
+            "label": "Publications",
+            "link": "/publications/"
+          },
+          {
+            "label": "Positions, Education, Honors",
+            "link": "/positions-education-honors/"
+          }
+        ]
+      }
+    }
+  ]
+}

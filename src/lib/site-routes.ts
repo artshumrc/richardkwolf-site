@@ -25,15 +25,26 @@ function routeFor(modulePath: string): string {
 	return slug === 'index' ? '/' : `/${slug}/`;
 }
 
+/** Every reader page of the site, as a dropdown of real link targets. */
+export const PAGE_LINK_OPTIONS = Object.entries(metas)
+	.map(([modulePath, meta]) => {
+		const value = routeFor(modulePath);
+		return { value, label: String(meta?.title ?? value) };
+	})
+	.sort((left, right) => left.label.localeCompare(right.label));
+
+/** The page enum plus the one escape hatch, for Blocks that may link offsite. */
 export const LINK_OPTIONS = [
-	...Object.entries(metas)
-		.map(([modulePath, meta]) => {
-			const value = routeFor(modulePath);
-			return { value, label: String(meta?.title ?? value) };
-		})
-		.sort((left, right) => left.label.localeCompare(right.label)),
+	...PAGE_LINK_OPTIONS,
 	{ value: 'external', label: 'External URL' }
 ];
+
+/**
+ * Whether the Content tree holds a homepage. The masthead's wordmark links to
+ * `/` only once one exists, so prerendering does not crawl a route with no
+ * document behind it.
+ */
+export const HAS_HOME_PAGE = PAGE_LINK_OPTIONS.some((option) => option.value === '/');
 
 /** The href a Block's link attributes resolve to, base path included. */
 export function resolveBlockLink(link: string, externalUrl: string): string {

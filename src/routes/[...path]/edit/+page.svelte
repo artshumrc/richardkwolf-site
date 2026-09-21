@@ -2,7 +2,7 @@
 	import { dev } from '$app/environment';
 	import { EditorPage } from 'uncial-cms/svelte';
 	import type { Site, UncialCmsSiteConfig } from 'uncial-cms';
-	import { blocks, schema } from '$lib/blocks.js';
+	import { blocks, schemaFor } from '$lib/blocks.js';
 	import { CONTENT_DIR, siteConfig } from '$lib/site.js';
 
 	let { data } = $props();
@@ -25,7 +25,7 @@
 		sourcePath={data.sourcePath}
 		pagePath={data.pagePath}
 		{blocks}
-		{schema}
+		schema={schemaFor}
 		presentation="bare"
 		attributesPanel="overlay"
 	/>

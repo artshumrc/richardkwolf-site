@@ -24,8 +24,19 @@ export const MEDIA_DIR = `${STATIC_DIR}/uploads`;
  */
 const GENERATED_DOCUMENTS = ['image-manifest'];
 
+/**
+ * Content-directory path of the Site document. It is edited like any page but
+ * renders no reader page: it holds the site-wide metadata the footer reads and
+ * the navigation menu the header renders.
+ */
+export const SITE_DOCUMENT_PATH = 'site';
+
+function normalize(path: string): string {
+	return path.replace(/^\/+|\/+$/g, '');
+}
+
 function isGenerated(entry: ContentEntry): boolean {
-	return GENERATED_DOCUMENTS.includes(entry.path.replace(/^\/+|\/+$/g, ''));
+	return GENERATED_DOCUMENTS.includes(normalize(entry.path));
 }
 
 // The owning GitHub account is not yet decided (personal account or org).
@@ -54,12 +65,9 @@ export const siteConfig: UncialCmsSiteConfig = {
 	appSlug: 'uncial-cms'
 };
 
-/**
- * Whether a Content entry renders a reader page. The Site document will need to
- * be excluded here later.
- */
+/** Whether a Content entry renders a reader page. */
 export function isContentPage(entry: ContentEntry): boolean {
-	return !isGenerated(entry);
+	return isEditablePage(entry) && normalize(entry.path) !== SITE_DOCUMENT_PATH;
 }
 
 /** Whether a Content entry gets an Editor variant. */

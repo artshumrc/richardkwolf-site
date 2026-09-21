@@ -1,0 +1,65 @@
+@import './lib/fonts.css';
+
+/* The source theme's scheme: cream ground, near-black ink, oxblood accent. */
+:root {
+	--ink: #1a1a1a;
+	--on-ink: #efefef;
+	--surface: #ffffff;
+	--ground: #fbfaf7;
+	--rule: #dcd8d0;
+	--accent: #990000;
+	--accent-hover: #118888;
+	--page-gutter: 1rem;
+	--font-display: 'Old Standard TT', Georgia, serif;
+	--font-body: 'Vollkorn', Georgia, serif;
+	--font-ui: 'Lato', system-ui, sans-serif;
+}
+
+@media (min-width: 48rem) {
+	:root {
+		--page-gutter: 2rem;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	background: var(--ground);
+}
+
+body {
+	margin: 0;
+	color: var(--ink);
+	font-family: var(--font-body);
+	font-size: 1.0625rem;
+	line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-display);
+	line-height: 1.2;
+}
+
+a {
+	color: var(--accent);
+}
+
+a:hover {
+	color: var(--accent-hover);
+}
+
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+img {
+	max-width: 100%;
+}

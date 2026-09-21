@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import { mountIndexPage } from 'uncial-cms';
-	import { blocks, schema } from '$lib/blocks.js';
+	import { blocks, schemaFor } from '$lib/blocks.js';
 
 	let { data } = $props();
 	let target: HTMLElement;
@@ -11,7 +11,7 @@
 		const handle = mountIndexPage(target, {
 			config: data.config,
 			blocks,
-			schema,
+			schema: schemaFor,
 			basePath: base
 		});
 		return () => handle.destroy();

@@ -1,13 +1,21 @@
 // Block registry and schema for the site.
 import { createBlockRegistry, createSchema } from 'uncial/core';
+import { SITE_DOCUMENT_PATH } from '$lib/site.js';
 import { defineSvelteBlock } from 'uncial/runtime/svelte';
-import { LINK_OPTIONS } from '$lib/site-routes.js';
+import { LINK_OPTIONS, PAGE_LINK_OPTIONS } from '$lib/site-routes.js';
 import { areGalleryItems, type GalleryItem } from '$lib/gallery.js';
+import {
+	areFooterLinks,
+	areNavItems,
+	type FooterLink,
+	type NavItem
+} from '$lib/navigation.js';
 import Card from '$lib/blocks/Card.svelte';
 import CardRow from '$lib/blocks/CardRow.svelte';
 import Figure from '$lib/blocks/Figure.svelte';
 import Gallery from '$lib/blocks/Gallery.svelte';
 import Hero from '$lib/blocks/Hero.svelte';
+import Navigation from '$lib/blocks/Navigation.svelte';
 import Prose from '$lib/blocks/Prose.svelte';
 import SoundCloud from '$lib/blocks/SoundCloud.svelte';
 
@@ -130,6 +138,42 @@ const soundcloud = defineSvelteBlock({
 	content: false
 });
 
+// The Site document's navigation. Both lists are `list`-valued so the Content
+// Owner edits them as fields; their links are the page enum without the
+// external escape hatch, so a menu entry cannot point anywhere but a real page.
+const navigation = defineSvelteBlock({
+	id: 'navigation',
+	label: 'Navigation menu',
+	description: "The site's header menu and footer links.",
+	attributes: {
+		items: {
+			default: [] as NavItem[],
+			list: {
+				itemLabel: 'menu item',
+				fields: {
+					label: { default: '', placeholder: 'Menu label' },
+					link: { default: '/research/', options: PAGE_LINK_OPTIONS },
+					parent: { default: '', placeholder: 'Parent label, or blank for a top-level item' }
+				}
+			},
+			validate: areNavItems
+		},
+		footerLinks: {
+			default: [] as FooterLink[],
+			list: {
+				itemLabel: 'footer link',
+				fields: {
+					label: { default: '', placeholder: 'Link label' },
+					link: { default: '/research/', options: PAGE_LINK_OPTIONS }
+				}
+			},
+			validate: areFooterLinks
+		}
+	},
+	component: Navigation,
+	content: false
+});
+
 export const blocks = createBlockRegistry([
 	prose,
 	figure,
@@ -137,12 +181,37 @@ export const blocks = createBlockRegistry([
 	cardRow,
 	card,
 	gallery,
-	soundcloud
+	soundcloud,
+	navigation
 ]);
 
+// One flat metadata set, written out on every document. The site-wide values
+// are read from the Site document alone; on a Content page they stay empty.
+const metaFields = {
+	title: { default: 'Untitled page', required: true },
+	description: { default: '', required: false },
+	siteName: { default: '' },
+	email: { default: '' },
+	contactLines: { default: '', input: 'textarea' },
+	copyright: { default: '' }
+};
+
+/** The schema every Content page is written against. */
 export const schema = createSchema(blocks, {
-	metaFields: {
-		title: { default: 'Untitled page', required: true },
-		description: { default: '', required: false }
-	}
+	allowedBlocks: blocks.blocks.map((block) => block.id).filter((id) => id !== 'navigation'),
+	metaFields
 });
+
+/**
+ * The Site document's schema. The navigation Block belongs to it alone, and no
+ * page Block belongs on it.
+ */
+export const siteSchema = createSchema(blocks, {
+	allowedBlocks: ['navigation'],
+	metaFields
+});
+
+/** The schema a document at this site-relative path is written against. */
+export function schemaFor(path: string): ReturnType<typeof createSchema> {
+	return path.replace(/^\/+|\/+$/g, '') === SITE_DOCUMENT_PATH ? siteSchema : schema;
+}
