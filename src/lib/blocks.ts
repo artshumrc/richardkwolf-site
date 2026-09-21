@@ -2,11 +2,14 @@
 import { createBlockRegistry, createSchema } from 'uncial/core';
 import { defineSvelteBlock } from 'uncial/runtime/svelte';
 import { LINK_OPTIONS } from '$lib/site-routes.js';
+import { areGalleryItems, type GalleryItem } from '$lib/gallery.js';
 import Card from '$lib/blocks/Card.svelte';
 import CardRow from '$lib/blocks/CardRow.svelte';
 import Figure from '$lib/blocks/Figure.svelte';
+import Gallery from '$lib/blocks/Gallery.svelte';
 import Hero from '$lib/blocks/Hero.svelte';
 import Prose from '$lib/blocks/Prose.svelte';
+import SoundCloud from '$lib/blocks/SoundCloud.svelte';
 
 const nonEmpty = (value: unknown): value is string =>
 	typeof value === 'string' && value.trim().length > 0;
@@ -89,7 +92,53 @@ const card = defineSvelteBlock({
 	content: false
 });
 
-export const blocks = createBlockRegistry([prose, figure, hero, cardRow, card]);
+// `items` is hidden from the attributes panel and edited entirely on the
+// canvas: arranging a gallery needs thumbnails, which the `list` input cannot
+// show.
+const gallery = defineSvelteBlock({
+	id: 'gallery',
+	label: 'Gallery',
+	description: 'Photographs and videos in one responsive grid, with a lightbox.',
+	attributes: {
+		commentary: { default: '', input: 'textarea' },
+		items: {
+			default: [] as GalleryItem[],
+			input: 'hidden',
+			validate: areGalleryItems
+		}
+	},
+	component: Gallery,
+	content: false
+});
+
+// The site's last working audio. The widget is third-party, so like a Vimeo
+// item it is click-to-load.
+const soundcloud = defineSvelteBlock({
+	id: 'soundcloud',
+	label: 'SoundCloud recording',
+	description: 'A SoundCloud track or playlist, loaded only when a reader clicks it.',
+	attributes: {
+		resource: {
+			default: 'track' as 'track' | 'playlist',
+			options: ['track', 'playlist'] as const,
+			validate: (value: unknown) => value === 'track' || value === 'playlist'
+		},
+		soundcloudId: { default: '', required: true, validate: nonEmpty },
+		title: { default: '' }
+	},
+	component: SoundCloud,
+	content: false
+});
+
+export const blocks = createBlockRegistry([
+	prose,
+	figure,
+	hero,
+	cardRow,
+	card,
+	gallery,
+	soundcloud
+]);
 
 export const schema = createSchema(blocks, {
 	metaFields: {

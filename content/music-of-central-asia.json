@@ -1,9 +1,82 @@
 {
-  "type": "doc",
-  "version": 1,
-  "meta": {
-    "title": "Music of Central Asia",
-    "description": "Richard K. Wolf on Wakhi and Tajik song, poetry and performance in Central Asia."
-  },
-  "content": []
+	"type": "doc",
+	"version": 2,
+	"content": [
+		{
+			"type": "gallery",
+			"attrs": {
+				"commentary": "Fieldwork photographs and video from Central Asia.",
+				"items": [
+					{
+						"kind": "image",
+						"path": "/uploads/b3cec010b6f2ca65a4b47a34a97390c4.webp",
+						"vimeoId": "",
+						"poster": "",
+						"title": "Abdulloh Nazriev",
+						"caption": ""
+					},
+					{
+						"kind": "image",
+						"path": "/uploads/e73bd4c87332634019a52732b8e605d3.webp",
+						"vimeoId": "",
+						"poster": "",
+						"title": "15th-century military drum",
+						"caption": "A drum of the kind carried by Timurid military bands."
+					},
+					{
+						"kind": "image",
+						"path": "/uploads/451f5fbbc849197881a4f235766aa3d7.webp",
+						"vimeoId": "",
+						"poster": "",
+						"title": "Bazaar in Farghana",
+						"caption": ""
+					},
+					{
+						"kind": "image",
+						"path": "/uploads/ab409fd8c1d9002952e0993734107afd.webp",
+						"vimeoId": "",
+						"poster": "",
+						"title": "Calligraphy on the tomb of Timur, Samarqand",
+						"caption": ""
+					},
+					{
+						"kind": "image",
+						"path": "/uploads/9d8d69c80908ea8ef93c2c07fca5998b.webp",
+						"vimeoId": "",
+						"poster": "",
+						"title": "Ceiling, Samarqand",
+						"caption": ""
+					},
+					{
+						"kind": "vimeo",
+						"path": "",
+						"vimeoId": "110718583",
+						"poster": "/uploads/42851f7796d8a9d67e770237b74c6599.webp",
+						"title": "Example 17 (The musical lives of texts): Dhīma performed during Muharram in Delhi",
+						"caption": ""
+					}
+				],
+				"id": "23aa19f0-5f31-417c-aff1-d708739cfcc4"
+			}
+		},
+		{
+			"type": "soundcloud",
+			"attrs": {
+				"resource": "track",
+				"soundcloudId": "130346718",
+				"title": "Kotagiri Sivan, nāgasvaram",
+				"id": "01995209-1b8c-4d49-ae37-5c74d334bce1"
+			}
+		},
+		{
+			"type": "paragraph",
+			"attrs": {
+				"id": "fca42420-63b7-4410-b1f2-4c15dbbacb20"
+			}
+		}
+	],
+	"meta": {
+		"title": "Music of Central Asia",
+		"description": "Richard K. Wolf on Wakhi and Tajik song, poetry and performance in Central Asia."
+	}
 }
