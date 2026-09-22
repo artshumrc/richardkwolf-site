@@ -94,13 +94,16 @@ if (htmlFiles.length === 0) {
 const failures = [];
 const pages = new Map();
 const titles = new Map();
+let readerPages = 0;
 for (const htmlPath of htmlFiles) {
 	const page = `/${relative(buildDir, dirname(htmlPath))}/`.replace(/^\/\.\/$/, '/');
 	pages.set(page, htmlPath);
 	const html = readFileSync(htmlPath, 'utf-8');
 	const isEditorPage = page.endsWith('/edit/');
 	const isIndexPage = page === '/uncial/';
+	const isRedirectStub = html.includes('http-equiv="refresh"');
 	const hasSentinel = pageContainsSentinel(htmlPath);
+	if (!isEditorPage && !isIndexPage && !isRedirectStub && page !== '/404/') readerPages += 1;
 
 	if (isEditorPage && !hasSentinel) {
 		failures.push(`${page} is an editor variant but does not reference the CMS runtime.`);
@@ -138,8 +141,15 @@ for (const page of pages.keys()) {
 	}
 }
 
-// PAGE-COUNT (ticket 13): assert the expected reader-page count once all the
-// content exists. Deliberately no assertion yet — the content does not exist.
+// The site is content-complete and closed: 29 pages ported at their existing
+// slugs, four Portfolio pieces. A change here is either a page added on
+// purpose or a document that stopped rendering, and both should be deliberate.
+const EXPECTED_READER_PAGES = 33;
+if (readerPages !== EXPECTED_READER_PAGES) {
+	failures.push(
+		`expected ${EXPECTED_READER_PAGES} reader pages, found ${readerPages}: update EXPECTED_READER_PAGES if the change was intended.`
+	);
+}
 
 if (failures.length > 0) {
 	console.error('assert:clean-pages FAILED');

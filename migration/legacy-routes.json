@@ -1,0 +1,60 @@
+{
+	"/audiotest-cit/": "/",
+	"/test-post/": "/",
+
+	"/wazi/": "/music-of-central-asia/",
+	"/shahd-and-qalabandi/": "/music-of-central-asia/",
+	"/qasoid-molik-ul-mulku-loh-shahrikullohu/": "/music-of-central-asia/",
+	"/maulud/": "/music-of-central-asia/",
+	"/tillan-singing-rawapni-calay-ozam/": "/music-of-central-asia/",
+
+	"/song-pandavas-banishment/": "/tamil-songs/",
+	"/story-golla-devata/": "/tamil-songs/",
+	"/tamil/": "/tamil-songs/",
+
+	"/kota-god-song/": "/kotas-south-india/",
+	"/decmaynge/": "/kotas-south-india/",
+
+	"/masinis-lament/": "/laments/",
+	"/subramanis-oppari/": "/laments/",
+	"/karuppayis-oppari/": "/laments/",
+	"/wakhi-funeral-lament/": "/laments/",
+
+	"/s-rajam-singing-bhuvanesvariya-nene-mohanakalyani-raga/": "/south-indian-classical-music/",
+	"/n-ramani-flute-ragam-tanam-pallavi-todi-ragamalika/": "/south-indian-classical-music/",
+	"/kamakshi-amba-svarajati-bhairavi-raga-sung-voleti-venkateswarulu/": "/south-indian-classical-music/",
+
+	"/annotated-audio/": "/audiovisual/",
+
+	"/category/critiqueit/": "/audiovisual/",
+	"/category/critiqueit/page/2/": "/audiovisual/",
+	"/category/tajikistan/": "/music-of-central-asia/",
+	"/category/ghazal/": "/music-of-central-asia/",
+	"/category/wakhi/": "/music-of-central-asia/",
+	"/category/india-post/": "/research/",
+	"/category/research/": "/research/",
+	"/category/demo/": "/",
+	"/page_category/india/": "/research/",
+
+	"/tag/tamil/": "/tamil-songs/",
+	"/tag/laments/": "/laments/",
+	"/tag/kerala/": "/teyyam/",
+	"/tag/pakistan/": "/music-in-islamic-contexts-in-india-pakistan/",
+	"/tag/south-india/": "/ritual-daily-life-in-south-india/",
+	"/tag/tajiki/": "/music-of-central-asia/",
+
+	"/author/rwolf/": "/about/",
+	"/author/ashley-bradford/": "/",
+
+	"/portfolio/": "/portfolios/",
+	"/portfolio_cat/afghanistan/": "/portfolios/",
+	"/portfolio_cat/bayd/": "/portfolios/",
+	"/portfolio_cat/ghazal/": "/portfolios/",
+	"/portfolio_cat/india-portfolio/": "/portfolios/",
+	"/portfolio_cat/purbi/": "/portfolios/",
+	"/portfolio_cat/rubai/": "/portfolios/",
+	"/portfolio_cat/shahd/": "/portfolios/",
+	"/portfolio_cat/tajiki/": "/portfolios/",
+	"/portfolio_cat/tajikistan/": "/portfolios/",
+	"/portfolio_cat/wakhi/": "/portfolios/"
+}
