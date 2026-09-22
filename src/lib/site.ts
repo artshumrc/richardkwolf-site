@@ -16,14 +16,6 @@ export const STATIC_DIR = 'static';
 export const MEDIA_DIR = `${STATIC_DIR}/uploads`;
 
 /**
- * Content-directory JSON that is not a Content document. The Image manifest is
- * the image port's output: it renders no reader page, and an Editor variant for
- * it would let a save rewrite it as a Content document, taking every responsive
- * image on the site down. See docs/adr/0001-single-content-addressed-media-tree.
- */
-const GENERATED_DOCUMENTS = ['image-manifest'];
-
-/**
  * Content-directory path of the Site document. It is edited like any page but
  * renders no reader page: it holds the site-wide metadata the footer reads and
  * the navigation menu the header renders.
@@ -32,10 +24,6 @@ export const SITE_DOCUMENT_PATH = 'site';
 
 function normalize(path: string): string {
 	return path.replace(/^\/+|\/+$/g, '');
-}
-
-function isGenerated(entry: ContentEntry): boolean {
-	return GENERATED_DOCUMENTS.includes(normalize(entry.path));
 }
 
 // OPEN DECISION: the owning GitHub account is undecided (Richard's personal
@@ -66,10 +54,5 @@ export const siteConfig: UncialCmsSiteConfig = {
 
 /** Whether a Content entry renders a reader page. */
 export function isContentPage(entry: ContentEntry): boolean {
-	return isEditablePage(entry) && normalize(entry.path) !== SITE_DOCUMENT_PATH;
-}
-
-/** Whether a Content entry gets an Editor variant. */
-export function isEditablePage(entry: ContentEntry): boolean {
-	return !isGenerated(entry);
+	return normalize(entry.path) !== SITE_DOCUMENT_PATH;
 }

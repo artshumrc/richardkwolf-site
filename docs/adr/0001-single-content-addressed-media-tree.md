@@ -29,6 +29,9 @@ for the sake of readability that readers never see.
   same file are free.
 - Meaningful filenames are lost. Debugging an image means tracing its hash
   back through the port or the Image manifest rather than reading its name.
-- The Image manifest must be excluded from the editable-page predicate. It is
-  generated data, not a Content document, and an Editor variant that rewrote
-  it as one would break every responsive image on the site.
+- The Image manifest lives outside the Content directory, in `generated/`. It
+  is generated data, not a Content document, and an Editor variant that rewrote
+  it as one would break every responsive image on the site. A predicate is not
+  enough: `uncial-cms`'s Index page enumerates the Content directory itself and
+  takes no filter, so a manifest kept there would be offered for editing and
+  deletion whatever this site excluded.

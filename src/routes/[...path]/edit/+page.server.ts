@@ -2,7 +2,7 @@ import { dev } from '$app/environment';
 import { createEditorHandlers } from 'uncial-cms/sveltekit';
 import type { UncialCmsSiteConfig } from 'uncial-cms';
 import { blocks, schemaFor } from '$lib/blocks.js';
-import { CONTENT_DIR, isEditablePage, siteConfig } from '$lib/site.js';
+import { CONTENT_DIR, siteConfig } from '$lib/site.js';
 
 const config: UncialCmsSiteConfig = dev
 	? { forge: 'local', contentDir: siteConfig.contentDir, mediaDir: siteConfig.mediaDir }
@@ -12,8 +12,7 @@ const handlers = createEditorHandlers({
 	config,
 	localContentDir: CONTENT_DIR,
 	blocks,
-	schema: schemaFor,
-	exclude: (entry) => !isEditablePage(entry)
+	schema: schemaFor
 });
 
 export const entries = handlers.entries;

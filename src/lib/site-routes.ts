@@ -9,14 +9,10 @@ interface ContentMeta {
 	title?: unknown;
 }
 
-// The Site document holds site-wide metadata and the Image manifest is the
-// image port's output; neither renders a page, so neither is a link target.
+// The Site document holds site-wide metadata and renders no page, so it is not
+// a link target.
 const metas = import.meta.glob<ContentMeta>(
-	[
-		'../../content/**/*.json',
-		'!../../content/site.json',
-		'!../../content/image-manifest.json'
-	],
+	['../../content/**/*.json', '!../../content/site.json'],
 	{ eager: true, import: 'meta' }
 );
 

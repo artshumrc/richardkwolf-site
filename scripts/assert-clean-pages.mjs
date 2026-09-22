@@ -131,10 +131,10 @@ for (const [title, owners] of titles) {
 	}
 }
 
-// The Image manifest is generated data in the Content directory, not a Content
-// document. A route for it means the editable-page predicate has stopped
-// excluding it, and a save through that Editor variant would rewrite the
-// manifest as a document and break every responsive image on the site.
+// The Image manifest is the image port's output and lives outside the Content
+// directory. A route for it means it has drifted back in, and a save through
+// the Editor variant that would come with it would rewrite the manifest as a
+// Content document and break every responsive image on the site.
 for (const page of pages.keys()) {
 	if (/^\/image-manifest\//.test(page)) {
 		failures.push(`${page} exists: the Image manifest must have no route of its own.`);

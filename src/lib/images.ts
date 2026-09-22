@@ -4,7 +4,7 @@
 // that Content documents store. This module is the one place a media path is
 // prefixed with the base path.
 import { base } from '$app/paths';
-import manifest from '../../content/image-manifest.json';
+import manifest from '../../generated/image-manifest.json';
 
 export type ImageSource = {
 	src: string;
