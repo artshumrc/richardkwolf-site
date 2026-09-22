@@ -24,6 +24,12 @@ const SELF_ORIGIN = /^https?:\/\/(?:www\.)?(?:richardkwolf\.com|159\.203\.177\.1
 
 const WP_UPLOADS = /^\/wp-content\//i;
 
+// The metadata schema is one flat set written out in full on every document, so
+// a Content page carries the site-wide fields empty rather than omitting them.
+// Their declaration of record is `metaFields` in src/lib/blocks.ts; only the
+// Site document fills them in.
+const SITE_WIDE_META = { siteName: '', email: '', contactLines: '', copyright: '' };
+
 // The theme styles a page's opening sentence as a heading element. A real
 // section title on these pages runs to at most 46 characters and the shortest
 // such lede to 120, so length separates the two with room to spare.
@@ -583,7 +589,7 @@ function extract(slug) {
 	return {
 		type: 'doc',
 		version: CURRENT_DOCUMENT_VERSION,
-		meta: { title, description },
+		meta: { title, description, ...SITE_WIDE_META },
 		content: hero ? [hero, ...body] : body
 	};
 }

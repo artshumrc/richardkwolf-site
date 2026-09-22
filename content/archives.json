@@ -3,7 +3,11 @@
   "version": 2,
   "meta": {
     "title": "Archives",
-    "description": "The archives holding Richard K. Wolf's field recordings and videos, where researchers may consult them on site."
+    "description": "The archives holding Richard K. Wolf's field recordings and videos, where researchers may consult them on site.",
+    "siteName": "",
+    "email": "",
+    "contactLines": "",
+    "copyright": ""
   },
   "content": [
     {

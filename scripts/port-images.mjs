@@ -96,8 +96,12 @@ async function writeRendition(name, bytes) {
 /**
  * Transcode one original into the canonical WebP and its renditions, and return
  * the manifest entry. The canonical file's own bytes are what the hash names,
- * so the port and a browser upload — which likewise caps, transcodes, then
- * commits — produce the same name for the same picture.
+ * so a second run over the same photograph rewrites nothing.
+ *
+ * Author uploads land in the same tree under the same rule, but they are hashed
+ * by `uncial-cms`, which truncates to 32 hex characters where this port
+ * truncates to 16: a ported file and an uploaded one never share a name, even
+ * for the same picture.
  */
 async function port(bytes) {
 	const source = sharp(bytes, { failOn: 'error' }).rotate();

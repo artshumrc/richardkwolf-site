@@ -33,10 +33,13 @@ rendered pages actually reference, over HTTP, at the largest referenced variant.
 Attachments no page links to were left behind, along with the theme's derivative
 crops.
 
-**A 1.5 GB uploads directory.** The ported subset is ~522 images, held here as
-one content-addressed tree under `static/uploads/` (see
-`adr/0001-single-content-addressed-media-tree.md`). The rest stays on the
-droplet.
+**A 1.5 GB uploads directory.** What came across is 255 photographs and 59
+Vimeo poster frames — 314 content-addressed images, held with their responsive
+renditions as one tree under `static/uploads/`, 195 MB in 2146 files (see
+`adr/0001-single-content-addressed-media-tree.md`). The 522 image URLs the
+rendered pages reference are not 522 photographs: half of them are the theme's
+`-uai` crops of pictures the port already fetched at full size, and are aliased
+to them rather than ported. The rest stays on the droplet.
 
 **The one-time migration inputs** — the preserved source pages, sitemaps, image
 and PDF source maps and Vimeo poster map — were removed from the working tree in

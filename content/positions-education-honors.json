@@ -3,7 +3,11 @@
   "version": 2,
   "meta": {
     "title": "Positions, Education, Honors",
-    "description": "Academic positions, education, languages, field research, awards and honors for Richard K. Wolf."
+    "description": "Academic positions, education, languages, field research, awards and honors for Richard K. Wolf.",
+    "siteName": "",
+    "email": "",
+    "contactLines": "",
+    "copyright": ""
   },
   "content": [
     {

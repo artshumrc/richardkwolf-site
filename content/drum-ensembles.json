@@ -3,7 +3,11 @@
   "version": 2,
   "meta": {
     "title": "Drum Ensembles",
-    "description": "Drum ensembles of South India, a research area of Richard K. Wolf's still being written."
+    "description": "Drum ensembles of South India, a research area of Richard K. Wolf's still being written.",
+    "siteName": "",
+    "email": "",
+    "contactLines": "",
+    "copyright": ""
   },
   "content": [
     {

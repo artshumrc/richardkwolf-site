@@ -3,7 +3,11 @@
   "version": 2,
   "meta": {
     "title": "Dictionaries",
-    "description": "Online dictionaries of Hindi, Urdu, Panjabi, Sindhi, Tamil, Telugu, Persian and Wakhi that Richard K. Wolf uses in his work, with his own Kota dictionary."
+    "description": "Online dictionaries of Hindi, Urdu, Panjabi, Sindhi, Tamil, Telugu, Persian and Wakhi that Richard K. Wolf uses in his work, with his own Kota dictionary.",
+    "siteName": "",
+    "email": "",
+    "contactLines": "",
+    "copyright": ""
   },
   "content": [
     {
