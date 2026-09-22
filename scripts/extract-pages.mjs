@@ -53,8 +53,8 @@ const pdfSources = JSON.parse(readFileSync('migration/pdf-sources.json', 'utf8')
 const vimeoPosters = JSON.parse(readFileSync('migration/vimeo-posters.json', 'utf8'));
 
 /**
- * The retired posts whose galleries fold into a surviving page. Ticket 13
- * redirects each retired URL to the page that absorbed it.
+ * The retired posts whose galleries fold into a surviving page. The Legacy
+ * route map redirects each retired URL to the page that absorbed it.
  */
 const ABSORBED = { 'tamil-songs': ['tamil'] };
 
@@ -62,8 +62,8 @@ const ABSORBED = { 'tamil-songs': ['tamil'] };
  * Retired pages whose inline links repoint at the surviving page covering the
  * same material, so that the prose around them keeps working. Only prose links
  * are followed: a post-index module pointing at a retired page is the module
- * of a page that no longer exists, and is dropped with it. Ticket 13 redirects
- * the retired URL itself.
+ * of a page that no longer exists, and is dropped with it. The Legacy route
+ * map redirects the retired URL itself.
  */
 const RETIRED_LINKS = { '/shahd-and-qalabandi/': '/music-of-central-asia/' };
 

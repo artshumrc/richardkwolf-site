@@ -7,18 +7,6 @@
 // Block dynamically without dragging the CMS runtime into a reader page.
 import { MEDIA_DIR, STATIC_DIR } from '$lib/site.js';
 
-export interface EncodableImage {
-	width: number;
-	height: number;
-	close?: () => void;
-}
-
-/** Decode/encode seam, so the walk can be exercised without a browser. */
-export interface ImageEncoder {
-	decode: (file: Blob) => Promise<EncodableImage>;
-	encode: (image: EncodableImage, width: number, height: number, quality: number) => Promise<Blob>;
-}
-
 export interface PreparedImage {
 	bytes: Uint8Array;
 	filename: string;
@@ -34,24 +22,26 @@ const QUALITY_STEP = 0.1;
 const SIZE_STEP = 0.85;
 const MIN_EDGE = 320;
 
-const browserEncoder: ImageEncoder = {
-	decode: (file) => createImageBitmap(file),
-	encode: async (image, width, height, quality) => {
-		const canvas = document.createElement('canvas');
-		canvas.width = width;
-		canvas.height = height;
-		const context = canvas.getContext('2d');
-		if (!context) throw new Error('This browser cannot prepare images for upload.');
-		context.drawImage(image as CanvasImageSource, 0, 0, width, height);
-		const blob = await new Promise<Blob | null>((resolve) =>
-			canvas.toBlob(resolve, 'image/webp', quality)
-		);
-		if (!blob || blob.type !== 'image/webp') {
-			throw new Error('This browser cannot encode WebP images for upload.');
-		}
-		return blob;
+async function encodeWebp(
+	image: ImageBitmap,
+	width: number,
+	height: number,
+	quality: number
+): Promise<Blob> {
+	const canvas = document.createElement('canvas');
+	canvas.width = width;
+	canvas.height = height;
+	const context = canvas.getContext('2d');
+	if (!context) throw new Error('This browser cannot prepare images for upload.');
+	context.drawImage(image, 0, 0, width, height);
+	const blob = await new Promise<Blob | null>((resolve) =>
+		canvas.toBlob(resolve, 'image/webp', quality)
+	);
+	if (!blob || blob.type !== 'image/webp') {
+		throw new Error('This browser cannot encode WebP images for upload.');
 	}
-};
+	return blob;
+}
 
 function dimensionsWithin(width: number, height: number, longestEdge: number): [number, number] {
 	const sourceEdge = Math.max(width, height);
@@ -67,16 +57,15 @@ function dimensionsWithin(width: number, height: number, longestEdge: number): [
  */
 export async function downscaleImage(
 	file: File,
-	options: { maxBytes: number; encoder?: ImageEncoder }
+	options: { maxBytes: number }
 ): Promise<PreparedImage> {
-	const encoder = options.encoder ?? browserEncoder;
-	const image = await encoder.decode(file);
+	const image = await createImageBitmap(file);
 	let [width, height] = dimensionsWithin(image.width, image.height, MAX_EDGE);
 	let quality = INITIAL_QUALITY;
 
 	try {
 		while (true) {
-			const blob = await encoder.encode(image, width, height, quality);
+			const blob = await encodeWebp(image, width, height, quality);
 			if (blob.size <= options.maxBytes) {
 				const stem = file.name.replace(/\.[^.]*$/, '') || 'image';
 				return {
@@ -97,7 +86,7 @@ export async function downscaleImage(
 			quality = INITIAL_QUALITY;
 		}
 	} finally {
-		image.close?.();
+		image.close();
 	}
 
 	throw new Error(

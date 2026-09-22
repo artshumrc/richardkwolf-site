@@ -2,7 +2,7 @@
  * The image port: fetch every photograph the WordPress pages reference, and
  * every Vimeo poster frame the galleries need, content-address them, derive
  * responsive renditions, and write the Image manifest the renderer reads plus
- * the legacy-URL and poster maps later content tickets read.
+ * the legacy-URL and poster maps that `extract-pages.mjs` reads.
  *
  * Re-runnable without harm. Originals are cached under `.port-cache/`, and a
  * file's name is a hash of its own bytes, so a second run refetches nothing and

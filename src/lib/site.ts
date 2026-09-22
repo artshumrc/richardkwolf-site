@@ -3,8 +3,7 @@
 // This module carries no Svelte and no SvelteKit in its graph so that both the
 // app and `vite.config.ts` can import it. Blocks and schema live in
 // `$lib/blocks.js`, which does import Svelte.
-import type { SiteOptions } from 'uncial-cms';
-import type { UncialCmsSiteConfig } from 'uncial-cms';
+import type { SiteOptions, UncialCmsSiteConfig } from 'uncial-cms';
 import type { ContentEntry } from 'uncial-cms/sveltekit';
 
 /** Repo-root-relative directory holding Content documents. */
@@ -39,9 +38,9 @@ function isGenerated(entry: ContentEntry): boolean {
 	return GENERATED_DOCUMENTS.includes(normalize(entry.path));
 }
 
-// The owning GitHub account is not yet decided (personal account or org).
-// OPEN DECISION: replace the placeholder repo below once hosting is settled.
-// Nothing in this epic needs the real account; deployment is deferred.
+// OPEN DECISION: the owning GitHub account is undecided (Richard's personal
+// account, or the artshumrc org). Replace the placeholder below with
+// `<owner>/<repo>` once it is settled; see docs/handover.md.
 const PLACEHOLDER_REPO = 'TODO-OWNER/richardkwolf-site';
 
 /** Options for the Uncial Vite plugin (local Forge in dev, GitHub in build). */

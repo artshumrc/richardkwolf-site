@@ -3,15 +3,12 @@
 
 	interface Props {
 		children?: Snippet;
-		updateAttributes?: (attrs: Record<string, unknown>) => void;
 	}
 
-	let { children, updateAttributes }: Props = $props();
-
-	const editable = $derived(typeof updateAttributes === 'function');
+	let { children }: Props = $props();
 </script>
 
-<div class="prose-column" data-editable={editable ? '' : undefined}>
+<div class="prose-column">
 	{#if children}{@render children()}{/if}
 </div>
 

@@ -91,8 +91,8 @@ const card = defineSvelteBlock({
 		title: { default: '', required: true, validate: nonEmpty },
 		blurb: { default: '', input: 'textarea' },
 		// The dropdown is generated from the Content tree, so the Content Owner
-		// picks a real page. A stored value is only checked for being a path:
-		// a card may point at a page a later ticket has yet to author.
+		// picks a real page. A stored value is only checked for being non-empty,
+		// so a card whose target has since been deleted still renders.
 		link: { default: '/', required: true, options: LINK_OPTIONS, validate: nonEmpty },
 		externalUrl: { default: '', input: 'hidden' }
 	},
