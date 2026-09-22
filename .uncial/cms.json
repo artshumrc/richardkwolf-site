@@ -1,4 +1,4 @@
 {
-  "_comment": "Owning GitHub account undecided; TODO-OWNER is a placeholder. Allowlisting a bare *.github.io origin would grant the editor origin for every project page on that account; a custom domain is the documented fix.",
-  "allowedOrigins": ["https://TODO-OWNER.github.io", "http://localhost:5173"]
+  "_comment": "Allowlisting a bare *.github.io origin grants the editor origin for every project page on the artshumrc org. Acceptable while this review deployment serves at the Pages project URL; the custom-domain cutover removes it.",
+  "allowedOrigins": ["https://artshumrc.github.io", "http://localhost:5173"]
 }

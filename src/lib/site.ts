@@ -26,16 +26,15 @@ function normalize(path: string): string {
 	return path.replace(/^\/+|\/+$/g, '');
 }
 
-// OPEN DECISION: the owning GitHub account is undecided (Richard's personal
-// account, or the artshumrc org). Replace the placeholder below with
-// `<owner>/<repo>` once it is settled; see docs/handover.md.
-const PLACEHOLDER_REPO = 'TODO-OWNER/richardkwolf-site';
+// The review deployment. Moves to Richard's own account once the content
+// editing is proven here; see docs/handover.md.
+const REPO = 'artshumrc/richardkwolf-site';
 
 /** Options for the Uncial Vite plugin (local Forge in dev, GitHub in build). */
 export const siteOptions: SiteOptions = {
 	contentDir: CONTENT_DIR,
 	mediaDir: MEDIA_DIR,
-	github: { repo: PLACEHOLDER_REPO, branch: 'main' }
+	github: { repo: REPO, branch: 'main' }
 };
 
 /**
@@ -44,7 +43,7 @@ export const siteOptions: SiteOptions = {
  */
 export const siteConfig: UncialCmsSiteConfig = {
 	forge: 'github',
-	repo: PLACEHOLDER_REPO,
+	repo: REPO,
 	branch: 'main',
 	contentDir: CONTENT_DIR,
 	mediaDir: MEDIA_DIR,
