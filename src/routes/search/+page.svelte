@@ -25,11 +25,6 @@
 
 <main class="row">
 	<h1>Search</h1>
-	<p>
-		Search runs in your browser over the text of every page on this site. Diacritics are indexed
-		as written, and a query typed without them matches too.
-	</p>
-
 	<div class="search">
 		<!-- The config element renders nothing and carries the base-aware bundle
 		     location, so it is prerendered; the widget itself is not. -->
