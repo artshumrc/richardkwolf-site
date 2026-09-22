@@ -1,23 +1,42 @@
 @import './lib/fonts.css';
 
-/* The source theme's scheme: cream ground, near-black ink, oxblood accent. */
+/* The source theme's scheme: pale grey ground, oxblood accent, Vollkorn
+   display over Lato text, and grey rather than black body copy. */
 :root {
-	--ink: #1a1a1a;
+	--ink: #303133;
+	--body-ink: #777777;
 	--on-ink: #efefef;
 	--surface: #ffffff;
-	--ground: #fbfaf7;
-	--rule: #dcd8d0;
+	--ground: #f7f7f7;
+	--footer: #303133;
+	--footer-foot: #141618;
+	--rule: #eaeaea;
 	--accent: #990000;
-	--accent-hover: #118888;
-	--page-gutter: 1rem;
-	--font-display: 'Old Standard TT', Georgia, serif;
-	--font-body: 'Vollkorn', Georgia, serif;
-	--font-ui: 'Lato', system-ui, sans-serif;
+	/* A row's outer bound and its inner gutter. 1200 less two 36px gutters
+	   leaves the 1128px measure the source theme sets its prose in. */
+	--limit: 1200px;
+	--page-gutter: 1.25rem;
+	/* What a full-height Hero has to clear. Two stacked rows on a phone, where
+	   the menu sits under the name; one bar where it sits beside it. */
+	--masthead-height: 7.5rem;
+	/* The vertical step between two Blocks. Paragraphs inside one Block sit
+	   closer, headings that open a section further apart. */
+	--block-gap: 2.25rem;
+	--font-display: 'Vollkorn', Georgia, serif;
+	--font-body: 'Lato', system-ui, sans-serif;
 }
 
 @media (min-width: 48rem) {
 	:root {
-		--page-gutter: 2rem;
+		--page-gutter: 2.25rem;
+	}
+}
+
+/* The condition under which the masthead collapses to a single bar, as
+   SiteHeader states it. */
+@media (min-width: 56rem) and (hover: hover) {
+	:root {
+		--masthead-height: 75px;
 	}
 }
 
@@ -33,10 +52,10 @@ html {
 
 body {
 	margin: 0;
-	color: var(--ink);
+	color: var(--body-ink);
 	font-family: var(--font-body);
 	font-size: 1.0625rem;
-	line-height: 1.6;
+	line-height: 1.75;
 	/* Transliterated Tamil, Persian and Wakhi produce single words longer than a
 	   phone's reading column. Break them only when they cannot otherwise fit —
 	   never hyphenate, which would invent a break inside an orthography. */
@@ -47,16 +66,42 @@ h1,
 h2,
 h3,
 h4 {
+	margin: 0;
+	color: var(--ink);
 	font-family: var(--font-display);
+	font-weight: 400;
 	line-height: 1.2;
+}
+
+h1,
+h2 {
+	font-size: 2.375rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+}
+
+@media (max-width: 40rem) {
+	h1,
+	h2 {
+		font-size: 1.875rem;
+	}
 }
 
 a {
 	color: var(--accent);
+	font-weight: 700;
+	text-decoration: none;
 }
 
-a:hover {
-	color: var(--accent-hover);
+a:hover,
+a:focus-visible {
+	text-decoration: underline;
 }
 
 :focus-visible {
@@ -66,4 +111,42 @@ a:hover {
 
 img {
 	max-width: 100%;
+}
+
+/* One row of the page. Every Block that is not full-bleed wears this, so they
+   all line up on the same bound and gutter, and each carries its own top
+   margin — the rhythm then survives on the editor canvas, where the Blocks are
+   not siblings. */
+.row {
+	max-width: var(--limit);
+	margin-inline: auto;
+	margin-block-start: var(--block-gap);
+	padding-inline: var(--page-gutter);
+}
+
+/* A row that opens on a second-level heading opens a section, and the source
+   theme gives a section twice the space a neighbouring row gets. */
+.row:has(> h2:first-child) {
+	margin-block-start: 4.5rem;
+}
+
+/* Inside a Columns Block the columns are the rows, so the Blocks in them give
+   up their own bound, gutter and top margin. An inline `auto` margin would
+   also stop a column stretching to its track. */
+.columns > .row {
+	max-width: none;
+	margin-inline: 0;
+	margin-block-start: 0;
+	padding-inline: 0;
+}
+
+/* The Block that opens a document has the masthead above it. */
+.uncial-content > *:first-child {
+	margin-block-start: 0;
+}
+
+/* A Hero is a page opener rather than a neighbour, so the row under it starts
+   a section rather than continuing one. */
+.uncial-content > .hero + .row {
+	margin-block-start: 4.5rem;
 }

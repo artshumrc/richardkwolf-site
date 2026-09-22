@@ -170,7 +170,6 @@
 		border: 1px solid rgb(255 255 255 / 0.35);
 		background: none;
 		color: inherit;
-		font-family: var(--font-ui);
 		font-size: 0.9375rem;
 		cursor: pointer;
 	}

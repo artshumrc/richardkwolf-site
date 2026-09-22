@@ -10,8 +10,10 @@ import {
 	type FooterLink,
 	type NavItem
 } from '$lib/navigation.js';
+import Band from '$lib/blocks/Band.svelte';
 import Card from '$lib/blocks/Card.svelte';
 import CardRow from '$lib/blocks/CardRow.svelte';
+import Columns from '$lib/blocks/Columns.svelte';
 import Figure from '$lib/blocks/Figure.svelte';
 import Gallery from '$lib/blocks/Gallery.svelte';
 import Hero from '$lib/blocks/Hero.svelte';
@@ -23,12 +25,17 @@ const nonEmpty = (value: unknown): value is string =>
 	typeof value === 'string' && value.trim().length > 0;
 
 const COLUMN_CHOICES = [2, 3, 4];
+const HERO_HEIGHTS = ['standard', 'full'];
 
 const prose = defineSvelteBlock({
 	id: 'prose',
 	label: 'Prose',
 	description: 'A reading column for long-form prose.',
-	attributes: {},
+	// `dropcap` sets an oxblood initial on this Block's opening paragraph. It
+	// belongs to the paragraph that opens a page, not to every Prose Block.
+	attributes: {
+		dropcap: { default: false }
+	},
 	component: Prose,
 	content: { kind: 'flow' }
 });
@@ -60,11 +67,44 @@ const hero = defineSvelteBlock({
 		image: { default: '', required: true, validate: nonEmpty },
 		alt: { default: '', required: true, validate: nonEmpty },
 		eyebrow: { default: '' },
-		headline: { default: '', required: true, validate: nonEmpty },
-		lede: { default: '', input: 'textarea' }
+		// A textarea, because the source theme sets this banner line over several
+		// lines of its own choosing and the Hero honours the breaks it is given.
+		headline: { default: '', required: true, input: 'textarea', validate: nonEmpty },
+		lede: { default: '', input: 'textarea' },
+		// `full` gives the banner the whole window below the masthead, as the
+		// source theme does on the opening page alone.
+		height: {
+			default: 'standard',
+			options: HERO_HEIGHTS,
+			validate: (value: unknown) => HERO_HEIGHTS.includes(String(value))
+		}
 	},
 	component: Hero,
 	content: false
+});
+
+// A full-width photographic band carrying one heading, used to open a section
+// part-way down a page where a Hero would read as a second page opener.
+const band = defineSvelteBlock({
+	id: 'band',
+	label: 'Band',
+	description: 'A full-width photographic band stating a section heading.',
+	attributes: {
+		image: { default: '', required: true, validate: nonEmpty },
+		alt: { default: '', required: true, validate: nonEmpty },
+		headline: { default: '', required: true, validate: nonEmpty }
+	},
+	component: Band,
+	content: false
+});
+
+const columns = defineSvelteBlock({
+	id: 'columns',
+	label: 'Columns',
+	description: 'Two columns side by side, stacking on a phone.',
+	attributes: {},
+	component: Columns,
+	content: { kind: 'flow', allowedBlocks: ['prose', 'figure', 'gallery'] }
 });
 
 const cardRow = defineSvelteBlock({
@@ -179,6 +219,8 @@ export const blocks = createBlockRegistry([
 	prose,
 	figure,
 	hero,
+	band,
+	columns,
 	cardRow,
 	card,
 	gallery,

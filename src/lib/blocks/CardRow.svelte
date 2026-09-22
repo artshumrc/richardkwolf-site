@@ -9,7 +9,7 @@
 	let { columns = 3, children }: Props = $props();
 </script>
 
-<section class="card-row" style:--card-row-columns={columns}>
+<section class="row card-row" style:--card-row-columns={columns}>
 	{@render children?.()}
 </section>
 

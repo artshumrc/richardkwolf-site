@@ -2,7 +2,7 @@
 	// The Site document's only Block. It renders no reader page — the header and
 	// footer read the same attributes directly — so this is purely the canvas
 	// view of what the attributes panel is editing.
-	import { navBranches, type FooterLink, type NavItem } from '$lib/navigation.js';
+	import { navTree, type FooterLink, type NavItem, type NavNode } from '$lib/navigation.js';
 
 	interface Props {
 		items?: NavItem[];
@@ -11,8 +11,19 @@
 
 	let { items = [], footerLinks = [] }: Props = $props();
 
-	const branches = $derived(navBranches(items));
+	const tree = $derived(navTree(items));
 </script>
+
+{#snippet branch(nodes: NavNode[])}
+	{#each nodes as node (node.item.label)}
+		<li>
+			{node.item.label} <code>{node.item.link}</code>
+			{#if node.children.length > 0}
+				<ul>{@render branch(node.children)}</ul>
+			{/if}
+		</li>
+	{/each}
+{/snippet}
 
 <div class="navigation-preview">
 	<p class="navigation-preview__note">
@@ -20,18 +31,7 @@
 		attributes panel.
 	</p>
 	<ul class="navigation-preview__menu">
-		{#each branches as branch (branch.item.label)}
-			<li>
-				{branch.item.label} <code>{branch.item.link}</code>
-				{#if branch.children.length > 0}
-					<ul>
-						{#each branch.children as child (child.label)}
-							<li>{child.label} <code>{child.link}</code></li>
-						{/each}
-					</ul>
-				{/if}
-			</li>
-		{/each}
+		{@render branch(tree)}
 	</ul>
 	<p class="navigation-preview__note">Footer links</p>
 	<ul class="navigation-preview__menu">

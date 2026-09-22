@@ -4,35 +4,55 @@
 </script>
 
 <footer class="colophon">
-	<div class="colophon__columns">
-		<nav aria-label="Footer">
-			<ul>
-				{#each footerLinks as link (link.label)}
-					<li><a href="{base}{link.link}">{link.label}</a></li>
+	<div class="colophon__band">
+		<div class="colophon__columns">
+			<nav aria-label="Footer">
+				<p class="colophon__heading">Resources</p>
+				<ul>
+					{#each footerLinks as link (link.label)}
+						<li><a href="{base}{link.link}">{link.label}</a></li>
+					{/each}
+				</ul>
+			</nav>
+			<div>
+				<p class="colophon__heading">Contact</p>
+				<p><a href="mailto:{siteMeta.email}">{siteMeta.email}</a></p>
+			</div>
+			<address>
+				{#each contactLines as line (line)}
+					{line}<br />
 				{/each}
-			</ul>
-		</nav>
-		<div>
-			<p class="colophon__heading">Contact</p>
-			<p><a href="mailto:{siteMeta.email}">{siteMeta.email}</a></p>
+			</address>
 		</div>
-		<address>
-			{#each contactLines as line (line)}
-				{line}<br />
-			{/each}
-		</address>
 	</div>
-	<p class="colophon__copyright">{siteMeta.copyright}</p>
+	<div class="colophon__foot">
+		<p class="colophon__copyright">{siteMeta.copyright}</p>
+	</div>
 </footer>
 
 <style>
 	.colophon {
-		margin-top: 4rem;
-		padding: 2.5rem var(--page-gutter) 1.5rem;
-		background: var(--ink);
+		margin-block-start: 4rem;
 		color: var(--on-ink);
-		font-family: var(--font-ui);
-		font-size: 0.9375rem;
+		font-size: 1rem;
+	}
+
+	/* Two bands, the darker one carrying the copyright alone. */
+	.colophon__band {
+		padding: 2.5rem 0;
+		background: var(--footer);
+	}
+
+	.colophon__foot {
+		padding: 1.5rem 0;
+		background: var(--footer-foot);
+	}
+
+	.colophon__band > *,
+	.colophon__foot > * {
+		max-width: var(--limit);
+		margin-inline: auto;
+		padding-inline: var(--page-gutter);
 	}
 
 	.colophon__columns {
@@ -44,6 +64,11 @@
 
 	.colophon__heading {
 		margin: 0;
+		color: var(--body-ink);
+		font-size: 0.8125rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
 	}
 
 	ul {
@@ -57,17 +82,17 @@
 	}
 
 	address {
+		color: var(--body-ink);
 		font-style: normal;
 	}
 
 	a {
 		color: inherit;
+		font-weight: 400;
 	}
 
 	.colophon__copyright {
-		margin-top: 2rem;
-		padding-top: 1rem;
-		border-top: 1px solid rgb(255 255 255 / 0.2);
-		font-size: 0.875rem;
+		font-size: 0.8125rem;
+		text-align: center;
 	}
 </style>

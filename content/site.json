@@ -32,27 +32,27 @@
           {
             "label": "The Kotas of South India",
             "link": "/kotas-south-india/",
-            "parent": "Research"
+            "parent": "Ritual & Daily Life in South India"
           },
           {
             "label": "Other Nilgiri Groups",
             "link": "/other-nilgiri-groups/",
-            "parent": "Research"
+            "parent": "Ritual & Daily Life in South India"
           },
           {
             "label": "Tamil Songs",
             "link": "/tamil-songs/",
-            "parent": "Research"
+            "parent": "Ritual & Daily Life in South India"
           },
           {
             "label": "Teyyam",
             "link": "/teyyam/",
-            "parent": "Research"
+            "parent": "Ritual & Daily Life in South India"
           },
           {
             "label": "Drum Ensembles",
             "link": "/drum-ensembles/",
-            "parent": "Research"
+            "parent": "Ritual & Daily Life in South India"
           },
           {
             "label": "South Indian Classical Music",
@@ -92,12 +92,12 @@
           {
             "label": "Almora, Uttarakhand",
             "link": "/almora-uttarakhand/",
-            "parent": "Research"
+            "parent": "Music of South Asia, other"
           },
           {
             "label": "Indo-Caribbean",
             "link": "/indo-caribbean/",
-            "parent": "Research"
+            "parent": "Music of South Asia, other"
           },
           {
             "label": "Concepts",
@@ -127,12 +127,12 @@
           {
             "label": "Publications",
             "link": "/publications/",
-            "parent": ""
+            "parent": "About"
           },
           {
             "label": "Positions, Education, Honors",
             "link": "/positions-education-honors/",
-            "parent": ""
+            "parent": "About"
           }
         ],
         "footerLinks": [

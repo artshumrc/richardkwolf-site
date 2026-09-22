@@ -32,6 +32,14 @@
 </main>
 
 <style>
+	/* Only reached by a page that does not open on a Hero; it still needs to
+	   line up with the row below it. */
+	h1 {
+		max-width: var(--limit);
+		margin-inline: auto;
+		padding: var(--block-gap) var(--page-gutter) 0;
+	}
+
 	.visually-hidden {
 		position: absolute;
 		width: 1px;

@@ -20,7 +20,7 @@
 
 	let { commentary = '', items = [], updateAttributes }: Props = $props();
 
-	const SIZES = '(min-width: 64rem) 22rem, (min-width: 40rem) 45vw, 100vw';
+	const SIZES = '(min-width: 64rem) 360px, (min-width: 40rem) 45vw, 100vw';
 
 	let lightbox = $state<ReturnType<typeof Lightbox> | null>(null);
 	let grid = $state<HTMLElement | null>(null);
@@ -113,7 +113,7 @@
 	}
 </script>
 
-<section class="gallery">
+<section class="row gallery">
 	{#if commentary}<p class="gallery__commentary">{commentary}</p>{/if}
 
 	<ul class="gallery__grid" bind:this={grid}>
@@ -229,16 +229,17 @@
 
 <style>
 	.gallery__commentary {
-		max-width: 42rem;
 		margin: 0 0 1.5rem;
 	}
 
 	/* A grid, not a carousel: the whole gallery is visible at once and
-	   collapses to one column on a phone. */
+	   collapses to one column on a phone. `auto-fit` rather than `auto-fill`,
+	   so a gallery holding one video fills the row instead of sitting in the
+	   first of six empty tracks. */
 	.gallery__grid {
 		display: grid;
 		gap: 1.25rem;
-		grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -257,6 +258,13 @@
 		cursor: pointer;
 	}
 
+	/* `sizes` alone would size a video poster, which carries no CSS width of
+	   its own, to the hint rather than to its grid track. */
+	.gallery__grid :global(picture),
+	.gallery__grid :global(img) {
+		width: 100%;
+	}
+
 	.gallery__thumb :global(img) {
 		aspect-ratio: 4 / 3;
 		object-fit: cover;
@@ -264,11 +272,12 @@
 
 	figcaption {
 		margin-block-start: 0.5rem;
-		font-size: 0.875rem;
+		font-size: 0.75rem;
 	}
 
 	figcaption strong {
 		display: block;
+		font-weight: 600;
 	}
 
 	.gallery__editor {

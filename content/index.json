@@ -11,7 +11,22 @@
   },
   "content": [
     {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/b7675f43253e7939.webp",
+        "alt": "An aerial view of eroded red and grey folded mountains cut by a wide braided riverbed, with snow peaks on the horizon.",
+        "eyebrow": "",
+        "headline": "Richard K. Wolf\nEthnomusicological Research in\nSouth, Central, and West Asia",
+        "lede": "",
+        "height": "full",
+        "id": "8be09b30-b4e8-4369-91c4-5d9e4992cbbc"
+      }
+    },
+    {
       "type": "prose",
+      "attrs": {
+        "dropcap": true
+      },
       "content": [
         {
           "type": "paragraph",
@@ -131,66 +146,85 @@
       ]
     },
     {
-      "type": "gallery",
+      "type": "columns",
       "attrs": {
-        "commentary": "",
-        "items": [
-          {
-            "kind": "vimeo",
-            "path": "",
-            "vimeoId": "659651964",
-            "poster": "/uploads/0b197025d91dc50f.webp",
-            "title": "Two Poets and a River",
-            "caption": "Click to watch trailer"
+        "id": "c02be060-2b55-4ad0-8168-f5772e45796a"
+      },
+      "content": [
+        {
+          "type": "gallery",
+          "attrs": {
+            "commentary": "",
+            "items": [
+              {
+                "kind": "vimeo",
+                "path": "",
+                "vimeoId": "659651964",
+                "poster": "/uploads/0b197025d91dc50f.webp",
+                "title": "Two Poets and a River",
+                "caption": "Click to watch trailer"
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "type": "prose",
+          "attrs": {
+            "id": "287f2e1c-2642-482c-b04e-8f3ff74225b1"
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Using the Oxus river as a topos, the film "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "italic"
+                    }
+                  ],
+                  "text": "Two Poets and a River"
+                },
+                {
+                  "type": "text",
+                  "text": " explores themes of love and loss through the lives and musical poetry of the two most prominent and innovative Wakhi musicians in Central and South Asia: Qurbonsho in Tajikistan and Daulatsho in Afghanistan. These two poet-singers share a common language, faith, and family network and yet remain separated by vicissitudes of the 19th c. Great Game in Central Asia. The condition of being separated by a river evokes the feeling of separation (firāq) and grounds the poets’ discussions of love and loss in their own lives as well as in their musical arts. Richard K. Wolf shot and produced the film over 2.5 years (2012-2024) with the editorial collaboration of both Qurbonsho and Daulatsho, who narrate the film in Wakhi, Tajik and Dari. The film and soundtrack are distributed by "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "https://store.der.org/two-poets-and-a-river-p1077.aspx",
+                        "target": null,
+                        "rel": null,
+                        "title": null,
+                        "class": null
+                      }
+                    }
+                  ],
+                  "text": "Documentary Educational Resources"
+                },
+                {
+                  "type": "text",
+                  "text": "."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "prose",
+      "attrs": {
+        "id": "b857025b-5d7a-42ed-9932-399086d62c2f"
+      },
       "content": [
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "text": "Using the Oxus river as a topos, the film "
-            },
-            {
-              "type": "text",
-              "marks": [
-                {
-                  "type": "italic"
-                }
-              ],
-              "text": "Two Poets and a River"
-            },
-            {
-              "type": "text",
-              "text": " explores themes of love and loss through the lives and musical poetry of the two most prominent and innovative Wakhi musicians in Central and South Asia: Qurbonsho in Tajikistan and Daulatsho in Afghanistan. These two poet-singers share a common language, faith, and family network and yet remain separated by vicissitudes of the 19th c. Great Game in Central Asia. The condition of being separated by a river evokes the feeling of separation (firāq) and grounds the poets’ discussions of love and loss in their own lives as well as in their musical arts. Richard K. Wolf shot and produced the film over 2.5 years (2012-2024) with the editorial collaboration of both Qurbonsho and Daulatsho, who narrate the film in Wakhi, Tajik and Dari. The film and soundtrack are distributed by "
-            },
-            {
-              "type": "text",
-              "marks": [
-                {
-                  "type": "link",
-                  "attrs": {
-                    "href": "https://store.der.org/two-poets-and-a-river-p1077.aspx",
-                    "target": null,
-                    "rel": null,
-                    "title": null,
-                    "class": null
-                  }
-                }
-              ],
-              "text": "Documentary Educational Resources"
-            },
-            {
-              "type": "text",
-              "text": "."
-            }
-          ]
-        },
         {
           "type": "heading",
           "attrs": {
@@ -218,49 +252,68 @@
       ]
     },
     {
-      "type": "gallery",
+      "type": "columns",
       "attrs": {
-        "commentary": "",
-        "items": [
-          {
-            "kind": "vimeo",
-            "path": "",
-            "vimeoId": "95725780",
-            "poster": "/uploads/9e6a422bdddd6ecc.webp",
-            "title": "'Urs of Madho Lal Husain",
-            "caption": "Dhamali dancers and dhol drummers at the shrine of Sufi Saint Shah Husain, Lahore, Pakistan"
+        "id": "5fecd78f-fee4-4881-86a5-0b90157676fe"
+      },
+      "content": [
+        {
+          "type": "gallery",
+          "attrs": {
+            "commentary": "",
+            "items": [
+              {
+                "kind": "vimeo",
+                "path": "",
+                "vimeoId": "95725780",
+                "poster": "/uploads/9e6a422bdddd6ecc.webp",
+                "title": "'Urs of Madho Lal Husain",
+                "caption": "Dhamali dancers and dhol drummers at the shrine of Sufi Saint Shah Husain, Lahore, Pakistan"
+              }
+            ]
           }
-        ]
-      }
+        },
+        {
+          "type": "prose",
+          "attrs": {
+            "id": "979fc693-022d-4e1f-ad21-e69579566840"
+          },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "This is an ‘urs (Ar: “wedding”) commemorating the death day of Shah Husain (1539–1600), one of the most celebrated mystical poets of the Panjab. Known for his ecstatic dancing in red (lāl) garb and love for a Brahman boy named Mādho, this Sufi saint is popularly called Mādholāl Husain. Shah Husain is also famous for a type of poetry, called “kafi,” which treats complex symbolic themes of love, eroticism, and devotion in a compact form. I videotaped scenes of this ‘urs in 1997 while sitting in a banyan tree, my videocamera literally beginning to disintegrate as I taped (some of this is visible in the images). I edited together short clips to bring out themes of interest to me and brought the video back to the shrine 5 years later for feedback interviews with mendicants and ordinary shrine-goers. The results of this process as well as further details regarding the saint and the celebration are published in my article, "
+                },
+                {
+                  "type": "text",
+                  "marks": [
+                    {
+                      "type": "link",
+                      "attrs": {
+                        "href": "/pdfs/poetics_of_sufi_practice.pdf",
+                        "target": null,
+                        "rel": null,
+                        "title": null,
+                        "class": null
+                      }
+                    }
+                  ],
+                  "text": "The Poetics of Sufi Practice (2006)."
+                }
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "type": "prose",
+      "attrs": {
+        "id": "b495099f-e4d1-456d-b4a5-444b6e35af9a"
+      },
       "content": [
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "type": "text",
-              "text": "This is an ‘urs (Ar: “wedding”) commemorating the death day of Shah Husain (1539–1600), one of the most celebrated mystical poets of the Panjab. Known for his ecstatic dancing in red (lāl) garb and love for a Brahman boy named Mādho, this Sufi saint is popularly called Mādholāl Husain. Shah Husain is also famous for a type of poetry, called “kafi,” which treats complex symbolic themes of love, eroticism, and devotion in a compact form. I videotaped scenes of this ‘urs in 1997 while sitting in a banyan tree, my videocamera literally beginning to disintegrate as I taped (some of this is visible in the images). I edited together short clips to bring out themes of interest to me and brought the video back to the shrine 5 years later for feedback interviews with mendicants and ordinary shrine-goers. The results of this process as well as further details regarding the saint and the celebration are published in my article, "
-            },
-            {
-              "type": "text",
-              "marks": [
-                {
-                  "type": "link",
-                  "attrs": {
-                    "href": "/pdfs/poetics_of_sufi_practice.pdf",
-                    "target": null,
-                    "rel": null,
-                    "title": null,
-                    "class": null
-                  }
-                }
-              ],
-              "text": "The Poetics of Sufi Practice (2006)."
-            }
-          ]
-        },
         {
           "type": "heading",
           "attrs": {
@@ -362,19 +415,24 @@
               "text": "(honey)."
             }
           ]
-        },
-        {
-          "type": "heading",
-          "attrs": {
-            "level": 2
-          },
-          "content": [
-            {
-              "type": "text",
-              "text": "Ethnomusicological Fieldwork"
-            }
-          ]
-        },
+        }
+      ]
+    },
+    {
+      "type": "band",
+      "attrs": {
+        "image": "/uploads/aa0034a198cdba0f.webp",
+        "alt": "A nineteenth-century engraved map of India, naming Bombay, Hyderabad, Calcutta and the Bay of Bengal.",
+        "headline": "Ethnomusicological Fieldwork",
+        "id": "53ada72c-c849-45ae-b997-f4a008d704b1"
+      }
+    },
+    {
+      "type": "prose",
+      "attrs": {
+        "id": "744ff968-6c56-4eca-94a4-56c81ad321ae"
+      },
+      "content": [
         {
           "type": "heading",
           "attrs": {
@@ -390,22 +448,30 @@
       ]
     },
     {
-      "type": "figure",
+      "type": "columns",
       "attrs": {
-        "path": "/uploads/02ba1a6adc767ff5.webp",
-        "alt": "Richard K. Wolf in headphones filming with a shoulder-mounted video camera, a green and red shrine cloth behind him.",
-        "caption": ""
-      }
-    },
-    {
-      "type": "prose",
+        "id": "b9300bf3-2322-4822-add1-5ae50a0e68e2"
+      },
       "content": [
         {
-          "type": "paragraph",
+          "type": "figure",
+          "attrs": {
+            "path": "/uploads/02ba1a6adc767ff5.webp",
+            "alt": "Richard K. Wolf in headphones filming with a shoulder-mounted video camera, a green and red shrine cloth behind him.",
+            "caption": ""
+          }
+        },
+        {
+          "type": "prose",
           "content": [
             {
-              "type": "text",
-              "text": "As a freshman at Oberlin College in 1980, Richard Wolf was an active rock music composer, lead guitarist and student of Renaissance lute and classical guitar. Then an extraordinary concert of south Indian classical (Karnatak) music at Oberlin led him to make lifechanging decisions. He traveled to south India a few years later, where he studied Karnatak vina, vocal music, mridangam and Tamil."
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "As a freshman at Oberlin College in 1980, Richard Wolf was an active rock music composer, lead guitarist and student of Renaissance lute and classical guitar. Then an extraordinary concert of south Indian classical (Karnatak) music at Oberlin led him to make lifechanging decisions. He traveled to south India a few years later, where he studied Karnatak vina, vocal music, mridangam and Tamil."
+                }
+              ]
             }
           ]
         }

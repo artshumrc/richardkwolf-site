@@ -22,6 +22,9 @@
     },
     {
       "type": "prose",
+      "attrs": {
+        "dropcap": true
+      },
       "content": [
         {
           "type": "heading",

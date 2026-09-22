@@ -20,7 +20,7 @@
 	);
 </script>
 
-<div class="soundcloud">
+<div class="row soundcloud">
 	{#if playing}
 		<iframe src={widgetUrl} title={title || 'SoundCloud recording'} allow="autoplay"></iframe>
 	{:else}
@@ -32,11 +32,6 @@
 </div>
 
 <style>
-	.soundcloud {
-		max-width: 42rem;
-		margin-inline: auto;
-	}
-
 	iframe {
 		display: block;
 		width: 100%;

@@ -11,25 +11,20 @@
 	let { path = '', alt = '', caption = '', updateAttributes }: Props = $props();
 </script>
 
-<figure>
+<figure class="row">
 	<EditableImage
 		src={path}
 		{alt}
 		label="photograph"
-		sizes="(min-width: 48rem) 42rem, 100vw"
+		sizes="(min-width: 75rem) 1128px, 100vw"
 		onUpload={updateAttributes ? (src) => updateAttributes({ path: src }) : undefined}
 	/>
 	{#if caption}<figcaption>{caption}</figcaption>{/if}
 </figure>
 
 <style>
-	figure {
-		max-width: 42rem;
-		margin-inline: auto;
-	}
-
 	figcaption {
-		font-size: 0.875rem;
+		font-size: 0.75rem;
 		margin-block-start: 0.5rem;
 	}
 </style>

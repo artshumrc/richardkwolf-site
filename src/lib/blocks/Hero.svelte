@@ -7,6 +7,7 @@
 		eyebrow?: string;
 		headline?: string;
 		lede?: string;
+		height?: string;
 		updateAttributes?: (attrs: Record<string, unknown>) => void;
 	}
 
@@ -16,11 +17,12 @@
 		eyebrow = '',
 		headline = '',
 		lede = '',
+		height = 'standard',
 		updateAttributes
 	}: Props = $props();
 </script>
 
-<section class="hero">
+<section class="hero" class:hero--full={height === 'full'}>
 	<div class="hero__image">
 		<EditableImage
 			src={image}
@@ -44,35 +46,55 @@
 	.hero {
 		position: relative;
 		display: grid;
-		background: #1c1c1c;
+		min-height: max(20rem, 45vh);
+		/* Shows through until the photograph decodes, and behind its edges while
+		   a portrait picture is being covered into a landscape band. */
+		background: #141618;
 		color: #fff;
 	}
 
-	.hero__image {
-		grid-area: 1 / 1;
+	/* The opening page of the site, where the source theme gives the banner the
+	   whole window below the masthead. */
+	.hero--full {
+		/* `svh`, so a phone's retracting browser chrome cannot leave the banner
+		   taller than the window it is meant to fill. */
+		min-height: calc(100svh - var(--masthead-height));
 	}
 
-	/* The upload control shares the Hero's single grid cell with the headline,
-	   so it has to sit above it to stay clickable. */
+	/* Out of flow, so the photograph's own height never drives the band: the
+	   band is sized by `min-height` and by the headline, and the picture is
+	   covered into whatever that comes to. */
+	.hero__image {
+		position: absolute;
+		inset: 0;
+		overflow: hidden;
+	}
+
+	.hero__image :global(picture) {
+		display: block;
+		height: 100%;
+	}
+
+	/* Outweighs ResponsiveImage's own `img` rule, which has equal specificity. */
+	.hero__image :global(picture > img) {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	/* The upload control shares the Hero with the headline, so it has to sit
+	   above it to stay clickable. */
 	.hero__image :global(.image-upload) {
 		position: relative;
 		z-index: 2;
 	}
 
-	/* Outweighs ResponsiveImage's own `img` rule, which has equal specificity. */
-	.hero__image :global(picture > img) {
-		aspect-ratio: 16 / 7;
-		object-fit: cover;
-		opacity: 0.55;
-	}
-
 	.hero__content {
-		grid-area: 1 / 1;
 		z-index: 1;
 		align-self: center;
 		justify-self: center;
-		max-width: 48rem;
-		padding: 2rem 1.5rem;
+		width: 100%;
+		max-width: var(--limit);
+		padding: 2rem var(--page-gutter);
 		text-align: center;
 	}
 
@@ -85,8 +107,13 @@
 
 	.hero__headline {
 		margin: 0;
-		font-size: clamp(1.75rem, 5vw, 3rem);
-		line-height: 1.1;
+		color: inherit;
+		font-size: clamp(2.125rem, 5.5vw, 4.6875rem);
+		font-style: italic;
+		line-height: 1.2;
+		/* An authored line break is a break; everything else still wraps to the
+		   column, so a phone is not held to the desk's line lengths. */
+		white-space: pre-line;
 	}
 
 	.hero__lede {

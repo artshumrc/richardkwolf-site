@@ -7,7 +7,7 @@
 	<meta name="description" content="The requested page is not on this site." />
 </svelte:head>
 
-<main>
+<main class="row">
 	<h1>Page not found</h1>
 	<p>
 		That address is not part of this site. Some older addresses have moved; the
@@ -18,8 +18,6 @@
 
 <style>
 	main {
-		max-width: 40rem;
-		margin: 0 auto;
-		padding: 4rem 0;
+		padding-block: 4rem;
 	}
 </style>

@@ -23,9 +23,9 @@
 
 <PagefindAssets />
 
-<main>
+<main class="row">
 	<h1>Search</h1>
-	<p class="lede">
+	<p>
 		Search runs in your browser over the text of every page on this site. Diacritics are indexed
 		as written, and a query typed without them matches too.
 	</p>
@@ -45,7 +45,7 @@
 		{/if}
 	</div>
 	<noscript>
-		<p class="lede">
+		<p>
 			This site's search needs JavaScript, because the index is queried in your browser rather
 			than on a server. With scripting off, the
 			<a href="{base}/research/">research pages</a> and the
@@ -56,17 +56,13 @@
 
 <style>
 	main {
-		max-width: 52rem;
-		margin: 0 auto;
-		padding: 3rem 0 5rem;
+		padding-block: 3rem 5rem;
 	}
 
-	.lede {
-		max-width: 44rem;
-		color: var(--ink);
-	}
-
+	/* The page sits on the row like every other, but a field and a list of
+	   results read badly at the row's full measure. */
 	.search {
+		max-width: 42rem;
 		margin-top: 2rem;
 		/* The component UI reads its palette from these, so search inherits the
 		   site's scheme instead of shipping a second one. */

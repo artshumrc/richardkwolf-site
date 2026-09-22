@@ -31,7 +31,7 @@
 		src={image}
 		{alt}
 		label="card image"
-		sizes="(min-width: 48rem) 22rem, 100vw"
+		sizes="(min-width: 75rem) 360px, (min-width: 48rem) 33vw, 100vw"
 		onUpload={updateAttributes ? (src) => updateAttributes({ image: src }) : undefined}
 	/>
 	<h3 class="card__title">
@@ -67,6 +67,6 @@
 
 	.card__blurb {
 		margin: 0;
-		font-size: 0.9375rem;
+		font-size: 0.875rem;
 	}
 </style>
