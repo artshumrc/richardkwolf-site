@@ -297,6 +297,20 @@
 		font-size: 0.875rem;
 	}
 
+	/* The editor is used on a phone as much as at a desk; the controls are sized
+	   for a thumb rather than a cursor. */
+	.gallery__editor input,
+	.gallery__item-controls button,
+	.gallery__tools input,
+	.gallery__tools button {
+		min-height: 2.75rem;
+	}
+
+	.gallery__item-controls button,
+	.gallery__tools button {
+		padding-inline: 0.75rem;
+	}
+
 	[role='alert'] {
 		color: #a11;
 	}

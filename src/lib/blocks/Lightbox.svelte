@@ -49,7 +49,18 @@
 	}
 </script>
 
-<dialog bind:this={dialog} onkeydown={onKeydown} onclose={close} aria-label="Gallery">
+<!-- The dialog itself is the backdrop's hit area — it has no padding, so a click
+     that targets it rather than the panel inside came from outside the panel.
+     This is the touch equivalent of Escape. -->
+<dialog
+	bind:this={dialog}
+	onkeydown={onKeydown}
+	onclose={close}
+	onclick={(event) => {
+		if (event.target === dialog) dialog?.close();
+	}}
+	aria-label="Gallery"
+>
 	{#if isOpen && item}
 		<div class="lightbox">
 			<div class="lightbox__media">
@@ -95,6 +106,8 @@
 <style>
 	dialog {
 		width: min(64rem, 92vw);
+		max-width: none;
+		max-height: 92dvh;
 		padding: 0;
 		border: 0;
 		background: #101010;
@@ -105,18 +118,33 @@
 		background: rgb(0 0 0 / 0.8);
 	}
 
+	/* The media row is the only one that gives: on a short phone the caption and
+	   the controls keep their height and the photograph shrinks to fit. */
 	.lightbox {
 		display: grid;
+		max-height: 92dvh;
 		gap: 1rem;
+		grid-template-rows: minmax(0, 1fr) auto auto;
 		padding: 1rem;
 	}
 
+	.lightbox__media {
+		display: flex;
+		min-height: 0;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.lightbox__media :global(img) {
-		max-height: 70vh;
+		max-height: 100%;
 		width: auto;
 		max-width: 100%;
-		margin-inline: auto;
 		object-fit: contain;
+	}
+
+	.lightbox__detail {
+		max-height: 30dvh;
+		overflow-y: auto;
 	}
 
 	.lightbox__detail h2 {
@@ -134,6 +162,22 @@
 		flex-wrap: wrap;
 		gap: 0.5rem;
 		align-items: center;
+	}
+
+	.lightbox__controls button {
+		min-height: 2.75rem;
+		padding-inline: 1rem;
+		border: 1px solid rgb(255 255 255 / 0.35);
+		background: none;
+		color: inherit;
+		font-family: var(--font-ui);
+		font-size: 0.9375rem;
+		cursor: pointer;
+	}
+
+	.lightbox__controls button:disabled {
+		opacity: 0.4;
+		cursor: default;
 	}
 
 	.lightbox__close {

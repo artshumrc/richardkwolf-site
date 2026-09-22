@@ -37,6 +37,10 @@ body {
 	font-family: var(--font-body);
 	font-size: 1.0625rem;
 	line-height: 1.6;
+	/* Transliterated Tamil, Persian and Wakhi produce single words longer than a
+	   phone's reading column. Break them only when they cannot otherwise fit —
+	   never hyphenate, which would invent a break inside an orthography. */
+	overflow-wrap: break-word;
 }
 
 h1,
