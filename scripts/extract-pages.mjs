@@ -7,7 +7,14 @@
 // discarded. The design is rebuilt by eye elsewhere.
 //
 // Usage: node scripts/extract-pages.mjs [slug...]   (default: every slug in
-// migration/pages.json)
+// migration/pages.json). Run the two ports first: this reads the source maps
+// they write.
+//
+// HAZARD: the committed Content documents are the edited copy and re-running
+// this overwrites them. Captions in particular were repaired by hand after the
+// original extraction — an attribute-borne caption containing a double quote
+// is truncated at the quote here — so a re-run silently regresses them. Diff
+// the result before keeping it.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';

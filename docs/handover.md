@@ -41,13 +41,25 @@ rendered pages reference are not 522 photographs: half of them are the theme's
 `-uai` crops of pictures the port already fetched at full size, and are aliased
 to them rather than ported. The rest stays on the droplet.
 
-**The one-time migration inputs** — the preserved source pages, sitemaps, image
-and PDF source maps and Vimeo poster map — were removed from the working tree in
-the commit that closed the rebuild. They are in git history, and
-`scripts/extract-pages.mjs`, `scripts/port-images.mjs` and
-`scripts/port-pdfs.mjs` need them restored from there to re-run. The Legacy
-route map they sat beside is build input, not migration input, and now lives at
-`scripts/legacy-routes.json`.
+**The one-time migration inputs** stay in the working tree, at
+`migration/source/` — 3.4 MB of preserved source pages, sitemaps and image URL
+lists — beside `migration/pages.json`, the editorial values (alt text, page
+batch) the rendered pages do not carry. A clean checkout can therefore run
+`pnpm run port:images`, `pnpm run port:pdfs` and `pnpm run extract:pages` with
+no recovery from git history. Run them in that order: the two ports write the
+source maps (`migration/image-sources.json`, `migration/pdf-sources.json`,
+`migration/vimeo-posters.json`) that the extraction reads, and those maps are
+generated, so they are gitignored rather than committed. Both ports are
+idempotent — they content-address their output and cache originals under
+`.port-cache/` — so a second run refetches nothing and rewrites nothing.
+
+`extract:pages` is not idempotent in the same sense, and its output must not be
+committed blind. The Content documents are the *edited* copy: captions carrying
+a double quote are truncated by the extractor and were repaired by hand, so a
+re-run regresses five documents. Diff before keeping anything it writes.
+
+The Legacy route map that once sat beside these inputs is build input, not
+migration input, and lives at `scripts/legacy-routes.json`.
 
 ## What the deploy epic must do
 

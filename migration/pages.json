@@ -1,0 +1,145 @@
+{
+	"//": "Editorial values the rendered source pages do not carry, read by scripts/extract-pages.mjs. Keys of `pages` are the batch the script ports; `alt` is keyed by served media path.",
+	"alt": {
+		"/uploads/02856ad8e81c0461.webp": "Students in costume standing in a line on stage holding scripts, with a shrouded figure lying before them.",
+		"/uploads/02ba1a6adc767ff5.webp": "Richard K. Wolf in headphones filming with a shoulder-mounted video camera, a green and red shrine cloth behind him.",
+		"/uploads/038f8b7db500a171.webp": "An elderly man singing with his head thrown back among a press of listeners, in a warm-toned photograph.",
+		"/uploads/0779ac0cf2b7bee1.webp": "A woman singing with her eyes closed, held by other women pressed close around her.",
+		"/uploads/0cc799d0f06e2c56.webp": "A young woman seated on the floor beside a hand-cranked string winder, in a sepia photograph from the 1940s.",
+		"/uploads/11ad6859d2f137e3.webp": "Singers crowded together indoors around a man playing a small hourglass drum, a microphone in the foreground.",
+		"/uploads/165f9b4a86933f1b.webp": "Three Wakhi musicians seated on the floor of a mud-walled room with a bowed lute, a plucked rubab and a frame drum.",
+		"/uploads/18bf15087c9ea979.webp": "Richard K. Wolf playing the vīṇā on a school stage, flanked by a mridangam player and a singer.",
+		"/uploads/1b2572693f3243bc.webp": "A costumed teyyam performer in headdress and ornaments standing at night beside two drummers playing chenda.",
+		"/uploads/1fb88985369e9b56.webp": "Ismoil Nazriev seated on the floor at home playing a long-necked lute, two younger men behind him.",
+		"/uploads/21a76b7fbd94f66c.webp": "A row of Kota men and women seated together on a low stone wall, one holding a frame drum, hills behind them.",
+		"/uploads/2b871a03c7f316bc.webp": "Seven musicians seated in a row on a low stage, playing plucked lutes and a keyboard before a pale curtain.",
+		"/uploads/2be8c1f312d864c9.webp": "Two kora players seated on a darkened stage with a hand drummer standing behind them.",
+		"/uploads/2e61796ffcfb72dd.webp": "A reel-to-reel tape recorder, a microphone and an SLR camera arranged on a pale grainy ground.",
+		"/uploads/3241535886890de7.webp": "A large circular sand mandala in blocks of colour laid out on a street, with children kneeling at its edge.",
+		"/uploads/34c38331828f6f2f.webp": "Four of Richard K. Wolf's book covers standing in a row on a pale textured ground.",
+		"/uploads/366c1d3f8aabd846.webp": "Drummers carrying large barrel drums through a dense street procession, in black and white.",
+		"/uploads/3a4301b3d677b41f.webp": "An elderly woman in a white shawl seated on the ground, looking towards the camera.",
+		"/uploads/4278dd53d9b08754.webp": "A bearded man in white, wearing mirrored sunglasses, reading from a small book beneath a tree.",
+		"/uploads/5df6ec242a60ca09.webp": "A banner pairing a hillside village under cloud with a speaker standing at a lectern in a darkened hall.",
+		"/uploads/671978dc180ec4f2.webp": "Richard K. Wolf crouching beside a camera tripod on a rocky, grassy riverbank, wearing a hat and a checked shirt.",
+		"/uploads/8405548bc93c8317.webp": "A young mridangam player and three singers seated on the floor of a temple hall before a carved stone pillar.",
+		"/uploads/8520540057866f78.webp": "A crowded old-city street of shopfronts, handcarts and parked cars, in warm sepia tones.",
+		"/uploads/8600d981e9b4cb0d.webp": "Men in bright headbands striking pairs of wooden sticks together in a village stick dance, a drummer behind them.",
+		"/uploads/8af4086dfd50d0bb.webp": "Kota women and children in white shawls seated close together at a funeral, an elderly woman in the foreground.",
+		"/uploads/9644261ba839530a.webp": "A man wrapped in a patterned blanket standing before a tall bonfire of brushwood at dusk.",
+		"/uploads/96650b20f0fd9699.webp": "Two men dancing with arms raised, ringed by a crowd of onlookers, in black and white.",
+		"/uploads/aca9131e992e8908.webp": "Women in white shawls dancing in a long line on a green hillside meadow, arms raised, watched by a crowd.",
+		"/uploads/b1789f3624892f44.webp": "A musician sitting on a red carpet in a blue-walled room, talking across recording microphones and a camera on a tripod to a researcher seated opposite him.",
+		"/uploads/b6900cdc5eac7a58.webp": "The tiled muqarnas vault of an Iranian mosque portal, seen from below against a pale sky.",
+		"/uploads/b7675f43253e7939.webp": "Aerial view of arid red and brown mountain ridges cut by a broad braided riverbed, with snow-capped peaks on the horizon.",
+		"/uploads/cb9cd6ed71d0616d.webp": "Tamil singers in headcloths performing outdoors with frame drums, villagers and children seated on the slope behind them.",
+		"/uploads/cfd269ceee26b06b.webp": "A spoked wooden cartwheel leaning against a wall, repeated across a narrow banner in grainy black and white.",
+		"/uploads/d244d417ba0d2e6b.webp": "Two street musicians seated on the ground playing a bowed sarangi and small cymbals, a crowd standing around them.",
+		"/uploads/f40aab271c3dd633.webp": "A broad green Nilgiri hillside of grassland edged by dark sholas of trees under a pale sky.",
+		"/uploads/f93a8846e6dfd8ed.webp": "A black and white shopfront in India lettered in Hindi, tabla shells stacked on the pavement outside.",
+		"/uploads/fcec40701caab538.webp": "Two Tajik musicians performing at a microphone, one with a frame drum and one with a long-necked lute."
+	},
+	"pages": {
+		"about": {
+			"description": "Richard K. Wolf's path from rock guitar at Oberlin to ethnomusicological fieldwork in South and Central Asia, and the awards, editorships and service that followed."
+		},
+		"positions-education-honors": {
+			"description": "Academic positions, education, languages, field research, awards and honors for Richard K. Wolf."
+		},
+		"publications": {
+			"description": "Books, edited volumes, articles, reviews and recordings by Richard K. Wolf, many of them available here as offprints."
+		},
+		"concepts": {
+			"description": "Conceptual overviews of Richard K. Wolf's work on style, emotion, poetics, space and time, rhythm, and ethnographic creative writing, with links to the writings."
+		},
+		"performance": {
+			"description": "Richard K. Wolf on playing the South Indian vīṇā, and recordings of the teachers and students who have performed with him at Harvard."
+		},
+		"pedagogy": {
+			"description": "Teaching materials, course listings and student creative work from Richard K. Wolf's courses on music in Islamic contexts, South Asia and Central Asia."
+		},
+		"resources": {
+			"description": "Syllabi, handouts, romanisation tables, keyboards, fonts, maps and area studies links gathered for students and researchers of South and Central Asian music."
+		},
+		"archives": {
+			"description": "The archives holding Richard K. Wolf's field recordings and videos, where researchers may consult them on site."
+		},
+		"bibliographies": {
+			"description": "Bibliographies related to Richard K. Wolf's research, beginning with a bibliography of music in Islam."
+		},
+		"dictionaries": {
+			"description": "Online dictionaries of Hindi, Urdu, Panjabi, Sindhi, Tamil, Telugu, Persian and Wakhi that Richard K. Wolf uses in his work, with his own Kota dictionary."
+		},
+		"music-of-south-asia-other": {
+			"description": "Indo-Caribbean music in New York, the Nanda Devi festival in Almora, and other South Asian fieldwork outside Richard K. Wolf's main research areas."
+		},
+		"research": {
+			"description": "An overview of Richard K. Wolf's ethnomusicological research across India, Pakistan, Tajikistan, Afghanistan, Iran, Uzbekistan and Xinjiang, with a way in to each research area."
+		},
+		"ritual-daily-life-in-south-india": {
+			"description": "Richard K. Wolf on music in South Indian ritual and daily life, from Kota funerals and god ceremonies to the wider Tamil world around them."
+		},
+		"kotas-south-india": {
+			"description": "The Kota tribal people of the Nilgiri Hills: their villages, rituals, god and death repertoires, instruments and songs, with sixteen field videos."
+		},
+		"other-nilgiri-groups": {
+			"description": "The Todas, Irulas, Kurumbas, Paniyas and their neighbours in the Nilgiri Hills, and the intertwined musical systems of the plateau and the slopes."
+		},
+		"tamil-songs": {
+			"description": "Fieldwork photographs and video of Tamil singers, drummers and lament performers recorded in Tamilnadu between 1982 and 2000."
+		},
+		"teyyam": {
+			"description": "Teyyam possession performance in northern Kerala and the Wynad, with chenda drumming and recitation filmed by Richard K. Wolf."
+		},
+		"drum-ensembles": {
+			"description": "Drum ensembles of South India, a research area of Richard K. Wolf's still being written."
+		},
+		"south-indian-classical-music": {
+			"description": "Richard K. Wolf on Carnatic music, from his first hearing of T. Viswanathan's flute to fieldwork photographs of South Indian classical performance."
+		},
+		"music-in-islamic-contexts-in-india-pakistan": {
+			"description": "Qawwālī, soz, majlis and Muharram drumming in India and Pakistan, from Richard K. Wolf's fieldwork of 1995 onwards."
+		},
+		"music-of-central-asia": {
+			"description": "Fieldwork in Xinjiang, Gilgit-Baltistan, Uzbekistan, Tajikistan and the Wakhan corridor: eighty-eight photographs and seven films of Central Asian musicians."
+		},
+		"music-of-iran": {
+			"description": "Photographs and video from Richard K. Wolf's fieldwork in Iran, including zurkhaneh recitation, nauheh, maddh and rowzeh."
+		},
+		"laments": {
+			"description": "Lament across Richard K. Wolf's research: Kota āṭḷ, Tamil oppāri and Wakhi funeral song, and the emotional textures of ceremony."
+		},
+		"drums-drummers": {
+			"description": "Drums and drummers from Tamilnadu to Panjab, Gilgit and the Caribbean diaspora, in photographs and eight field films."
+		},
+		"almora-uttarakhand": {
+			"description": "The Nanda Devi festival and jagaran singing recorded by Richard K. Wolf in Almora, Uttarakhand, in 1998."
+		},
+		"indo-caribbean": {
+			"description": "Hosay in Manhattan: Indo-Caribbean tassa drumming and Muharram observance recorded in New York City in 1996."
+		},
+		"index": {
+			"source": "HOME",
+			"description": "Richard K. Wolf, professor of Music and South Asian Studies at Harvard: current ethnographic film projects, fieldwork across South and Central Asia, and a note on how he came to the field."
+		},
+		"audiovisual": {
+			"description": "Audio and video examples keyed to Richard K. Wolf's publications: Kota ritual music, Muharram drumming and Sufi dhamali, with two SoundCloud recordings."
+		},
+		"portfolio/the-voice-in-the-drum": {
+			"source": "portfolio__the-voice-in-the-drum",
+			"description": "The trailer for The Voice in the Drum: Music, Language and Emotion in Islamicate South Asia, Richard K. Wolf's 2014 book from the University of Illinois Press."
+		},
+		"portfolio/sah-na-jai-ho-re-allah": {
+			"source": "portfolio__sah-na-jai-ho-re-allah",
+			"description": "Nur Muhammad and Ashakali sing sah na jāī ho re allāh to sarangi accompaniment in Hallaur, Uttar Pradesh, recorded in October 1998."
+		},
+		"portfolio/ismoil-nazriev-2": {
+			"source": "portfolio__ismoil-nazriev-2",
+			"description": "Ismoil Nazriev, a Tajik hofiz from Darvoz, in photographs and film made in Dushanbe between 2012 and 2017."
+		},
+		"portfolio/wazi_tu_portfolio": {
+			"source": "portfolio__wazi_tu_portfolio",
+			"description": "Daulatsho of Yur, the leading Wakhi poet-singer of Afghanistan, and the making of his song wəzi tu ẓ̌ə jonət tu, in photographs and film."
+		}
+	}
+}

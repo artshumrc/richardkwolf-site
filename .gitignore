@@ -2,3 +2,9 @@ node_modules/
 .svelte-kit/
 build/
 .port-cache/
+
+# Written by the port scripts and read by scripts/extract-pages.mjs; regenerate
+# by re-running the ports rather than committing them.
+migration/image-sources.json
+migration/vimeo-posters.json
+migration/pdf-sources.json
