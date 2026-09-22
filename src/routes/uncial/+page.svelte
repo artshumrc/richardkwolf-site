@@ -2,16 +2,19 @@
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 	import { mountIndexPage } from 'uncial-cms';
-	import { blocks, schemaFor } from '$lib/blocks.js';
+	import { blocks, schema } from '$lib/blocks.js';
 
 	let { data } = $props();
 	let target: HTMLElement;
 
 	onMount(() => {
+		// The Index page seeds a new page's document itself, and `mountIndexPage`
+		// takes a schema rather than resolving a path-keyed factory: a new page is
+		// never the Site document, so the page schema is the right one.
 		const handle = mountIndexPage(target, {
 			config: data.config,
 			blocks,
-			schema: schemaFor,
+			schema,
 			basePath: base
 		});
 		return () => handle.destroy();

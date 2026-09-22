@@ -15,6 +15,11 @@
       "attrs": {
         "items": [
           {
+            "label": "About",
+            "link": "/about/",
+            "parent": ""
+          },
+          {
             "label": "Research",
             "link": "/research/",
             "parent": ""
@@ -22,6 +27,31 @@
           {
             "label": "Ritual & Daily Life in South India",
             "link": "/ritual-daily-life-in-south-india/",
+            "parent": "Research"
+          },
+          {
+            "label": "The Kotas of South India",
+            "link": "/kotas-south-india/",
+            "parent": "Research"
+          },
+          {
+            "label": "Other Nilgiri Groups",
+            "link": "/other-nilgiri-groups/",
+            "parent": "Research"
+          },
+          {
+            "label": "Tamil Songs",
+            "link": "/tamil-songs/",
+            "parent": "Research"
+          },
+          {
+            "label": "Teyyam",
+            "link": "/teyyam/",
+            "parent": "Research"
+          },
+          {
+            "label": "Drum Ensembles",
+            "link": "/drum-ensembles/",
             "parent": "Research"
           },
           {
@@ -45,6 +75,11 @@
             "parent": "Research"
           },
           {
+            "label": "Laments",
+            "link": "/laments/",
+            "parent": "Research"
+          },
+          {
             "label": "Drums & Drummers",
             "link": "/drums-drummers/",
             "parent": "Research"
@@ -53,6 +88,41 @@
             "label": "Music of South Asia, other",
             "link": "/music-of-south-asia-other/",
             "parent": "Research"
+          },
+          {
+            "label": "Almora, Uttarakhand",
+            "link": "/almora-uttarakhand/",
+            "parent": "Research"
+          },
+          {
+            "label": "Indo-Caribbean",
+            "link": "/indo-caribbean/",
+            "parent": "Research"
+          },
+          {
+            "label": "Concepts",
+            "link": "/concepts/",
+            "parent": ""
+          },
+          {
+            "label": "Audio/Visual",
+            "link": "/audiovisual/",
+            "parent": ""
+          },
+          {
+            "label": "Performance",
+            "link": "/performance/",
+            "parent": ""
+          },
+          {
+            "label": "Pedagogy",
+            "link": "/pedagogy/",
+            "parent": ""
+          },
+          {
+            "label": "Portfolios",
+            "link": "/portfolios/",
+            "parent": ""
           },
           {
             "label": "Publications",
@@ -77,6 +147,22 @@
           {
             "label": "Positions, Education, Honors",
             "link": "/positions-education-honors/"
+          },
+          {
+            "label": "Resources",
+            "link": "/resources/"
+          },
+          {
+            "label": "Bibliographies",
+            "link": "/bibliographies/"
+          },
+          {
+            "label": "Archives",
+            "link": "/archives/"
+          },
+          {
+            "label": "Dictionaries",
+            "link": "/dictionaries/"
           }
         ]
       }

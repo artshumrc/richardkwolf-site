@@ -14,7 +14,7 @@ import { dirname, join, resolve } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
 const build = resolve(root, 'build');
-const routesPath = resolve(root, 'migration/legacy-routes.json');
+const routesPath = resolve(import.meta.dirname, 'legacy-routes.json');
 
 // Both are supplied by the Pages configuration step in CI; a local build gets
 // the custom domain at the root, which is what the eventual cutover serves.
