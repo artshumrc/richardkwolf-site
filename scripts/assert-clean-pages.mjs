@@ -101,9 +101,14 @@ for (const htmlPath of htmlFiles) {
 	const html = readFileSync(htmlPath, 'utf-8');
 	const isEditorPage = page.endsWith('/edit/');
 	const isIndexPage = page === '/uncial/';
+	// Editing furniture, like the Index page: it finishes a sign-in and relays
+	// the code to the window that opened it. Nobody reads it.
+	const isAuthCallback = page === '/auth/callback/';
 	const isRedirectStub = html.includes('http-equiv="refresh"');
 	const hasSentinel = pageContainsSentinel(htmlPath);
-	if (!isEditorPage && !isIndexPage && !isRedirectStub && page !== '/404/') readerPages += 1;
+	if (!isEditorPage && !isIndexPage && !isAuthCallback && !isRedirectStub && page !== '/404/') {
+		readerPages += 1;
+	}
 
 	if (isEditorPage && !hasSentinel) {
 		failures.push(`${page} is an editor variant but does not reference the CMS runtime.`);

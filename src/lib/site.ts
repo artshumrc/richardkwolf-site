@@ -47,8 +47,14 @@ export const siteConfig: UncialCmsSiteConfig = {
 	branch: 'main',
 	contentDir: CONTENT_DIR,
 	mediaDir: MEDIA_DIR,
-	authWorkerUrl: 'https://uncial-cms-auth.dflood.workers.dev',
-	appSlug: 'uncial-cms'
+	// Sign-in does not go through uncial-cms's own auth worker: this site uses
+	// the org's shared broker, through the provider in
+	// `$lib/github-broker-session.ts`, which the editor mounts are handed
+	// directly. Nothing reads this field, and a URL here would be a worker
+	// address that answers nothing.
+	authWorkerUrl: '',
+	/** The App the broker holds the secret for; `uncial-cms doctor` checks it. */
+	appSlug: 'aws-lambda-broker'
 };
 
 /** Whether a Content entry renders a reader page. */

@@ -1,4 +1,4 @@
 {
-  "_comment": "Allowlisting a bare *.github.io origin grants the editor origin for every project page on the artshumrc org. Acceptable while this review deployment serves at the Pages project URL; the custom-domain cutover removes it.",
+  "_comment": "Read by uncial-cms's own auth worker, which this site does not use: sign-in goes through the org's shared broker, whose allowlist is the `origins` of its app entry in /github-broker/apps. Kept because `uncial-cms doctor` expects it.",
   "allowedOrigins": ["https://artshumrc.github.io", "http://localhost:5173"]
 }

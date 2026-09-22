@@ -4,6 +4,7 @@
 	import type { Site, UncialCmsSiteConfig } from 'uncial-cms';
 	import { blocks, schemaFor } from '$lib/blocks.js';
 	import { CONTENT_DIR, siteConfig } from '$lib/site.js';
+	import { brokerSessionProvider } from '$lib/github-broker-session.js';
 
 	let { data } = $props();
 
@@ -27,6 +28,7 @@
 		{blocks}
 		schema={schemaFor}
 		presentation="bare"
+		sessionProvider={config.forge === 'github' ? brokerSessionProvider : undefined}
 		attributesPanel="overlay"
 	/>
 </main>

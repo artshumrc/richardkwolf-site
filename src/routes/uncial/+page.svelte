@@ -3,6 +3,7 @@
 	import { base } from '$app/paths';
 	import { mountIndexPage } from 'uncial-cms';
 	import { blocks, schema } from '$lib/blocks.js';
+	import { brokerSessionProvider } from '$lib/github-broker-session.js';
 
 	let { data } = $props();
 	let target: HTMLElement;
@@ -15,7 +16,9 @@
 			config: data.config,
 			blocks,
 			schema,
-			basePath: base
+			basePath: base,
+			// The local Forge in development signs nobody in.
+			sessionProvider: data.config.forge === 'github' ? brokerSessionProvider : undefined
 		});
 		return () => handle.destroy();
 	});
