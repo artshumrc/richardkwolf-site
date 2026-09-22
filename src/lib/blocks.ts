@@ -33,15 +33,16 @@ const prose = defineSvelteBlock({
 	content: { kind: 'flow' }
 });
 
-// A single captioned photograph. `path` is a base-less served media path, so
-// the block carries no upload UI and no file-input attribute type; the
-// responsive renditions come from the Image manifest at render.
+// A single captioned photograph. `path` is a base-less served media path with
+// no declared input type: the upload UI lives inside the block on the canvas,
+// as it does on the Hero and the Card. The responsive renditions come from the
+// Image manifest at render.
 const figure = defineSvelteBlock({
 	id: 'figure',
 	label: 'Figure',
 	description: 'A single photograph with a caption.',
 	attributes: {
-		path: { default: '', required: true, placeholder: '/uploads/<hash>.webp' },
+		path: { default: '', required: true, validate: nonEmpty },
 		alt: { default: '', required: true },
 		caption: { default: '' }
 	},

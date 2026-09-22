@@ -1,6 +1,6 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "Site information",
     "description": "Site-wide navigation, contact details and footer text. This document renders no reader page.",
