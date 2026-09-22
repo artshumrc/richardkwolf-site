@@ -16,7 +16,7 @@
 		"extract:pages": "node scripts/extract-pages.mjs"
 	},
 	"dependencies": {
-		"uncial": "^2.0.1",
+		"uncial": "^2.0.2",
 		"uncial-cms": "^2.0.1"
 	},
 	"devDependencies": {
