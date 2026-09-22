@@ -1,82 +1,977 @@
 {
-	"type": "doc",
-	"version": 2,
-	"content": [
-		{
-			"type": "gallery",
-			"attrs": {
-				"commentary": "Fieldwork photographs and video from Central Asia.",
-				"items": [
-					{
-						"kind": "image",
-						"path": "/uploads/b3cec010b6f2ca65a4b47a34a97390c4.webp",
-						"vimeoId": "",
-						"poster": "",
-						"title": "Abdulloh Nazriev",
-						"caption": ""
-					},
-					{
-						"kind": "image",
-						"path": "/uploads/e73bd4c87332634019a52732b8e605d3.webp",
-						"vimeoId": "",
-						"poster": "",
-						"title": "15th-century military drum",
-						"caption": "A drum of the kind carried by Timurid military bands."
-					},
-					{
-						"kind": "image",
-						"path": "/uploads/451f5fbbc849197881a4f235766aa3d7.webp",
-						"vimeoId": "",
-						"poster": "",
-						"title": "Bazaar in Farghana",
-						"caption": ""
-					},
-					{
-						"kind": "image",
-						"path": "/uploads/ab409fd8c1d9002952e0993734107afd.webp",
-						"vimeoId": "",
-						"poster": "",
-						"title": "Calligraphy on the tomb of Timur, Samarqand",
-						"caption": ""
-					},
-					{
-						"kind": "image",
-						"path": "/uploads/9d8d69c80908ea8ef93c2c07fca5998b.webp",
-						"vimeoId": "",
-						"poster": "",
-						"title": "Ceiling, Samarqand",
-						"caption": ""
-					},
-					{
-						"kind": "vimeo",
-						"path": "",
-						"vimeoId": "110718583",
-						"poster": "/uploads/42851f7796d8a9d67e770237b74c6599.webp",
-						"title": "Example 17 (The musical lives of texts): Dhīma performed during Muharram in Delhi",
-						"caption": ""
-					}
-				],
-				"id": "23aa19f0-5f31-417c-aff1-d708739cfcc4"
-			}
-		},
-		{
-			"type": "soundcloud",
-			"attrs": {
-				"resource": "track",
-				"soundcloudId": "130346718",
-				"title": "Kotagiri Sivan, nāgasvaram",
-				"id": "01995209-1b8c-4d49-ae37-5c74d334bce1"
-			}
-		},
-		{
-			"type": "paragraph",
-			"attrs": {
-				"id": "fca42420-63b7-4410-b1f2-4c15dbbacb20"
-			}
-		}
-	],
-	"meta": {
-		"title": "Music of Central Asia",
-		"description": "Richard K. Wolf on Wakhi and Tajik song, poetry and performance in Central Asia."
-	}
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Music of Central Asia",
+    "description": "Fieldwork in Xinjiang, Gilgit-Baltistan, Uzbekistan, Tajikistan and the Wakhan corridor: eighty-eight photographs and seven films of Central Asian musicians."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/fcec40701caab538.webp",
+        "alt": "Two Tajik musicians performing at a microphone, one with a frame drum and one with a long-necked lute.",
+        "eyebrow": "",
+        "headline": "Music of Central Asia",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I became interested in the music of Central Asia in 1997 when I had the opportunity to travel by land from Lahore to Kashgar. I was struck by the different languages, foods and musical practices of those living in what is now Gilgit-Baltistan in northern Pakistan. As one ascends toward the source of the Indus river, the stark jagged mountains along the Karakoram highway give way to green meadows beyond the Kunjerab pass in China. I remember the border police, who searched our belongings invasively and walked off with some things, and I remember the marmots scampering through the tall grass. That trip lasted about a month and left me with a longing to return. In the mid 2000s, I revisited the material I had collected there when a colleague in history and I decided to coteach a course on the music and history of the silk road. But it wasn’t until 2012, when I designed a plan to conduct research on bards in Tajikistan, that I was able to return to Central Asia for a sustained period. There I began learning to perform from several musicians living in Dushanbe, including Ismoil Nazriev and Sirojiddin Juraev. I also initiated my work in the Wakhan corridor in the southeastern part of Tajikistan along the Panj river. This is the home of the Wakhis, a people who speak their own language and number about 80,000 worldwide. Part of my research has been devoted to comparing the musical practices of Wakhis in their four main countries of residence: Tajikistan, northern Afghanistan, northern Pakistan, and Xinjiang, China. I am currently preparing a monograph entitled "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Nightingale’s Despair: Music and Moral Being in Greater Central Asia"
+            },
+            {
+              "type": "text",
+              "text": " that considers the relationship between musicians as experienced and thoughtful human beings, and what they see themselves accomplishing through performance, as well as the various effects of such music on those who listen."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images: Xinjiang, China"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/3018865936ac1109.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dancer at Nighclub in Kashgar",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e0ead1167bf2d330.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dancing and Nagara Drumming Shadlukh Restaurant Urumchi",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/640e10a0a332a1cf.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ghalip Rahim Ghijak Player Kashgar",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/57047a93f018ed16.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Khaliq Haji Tambur Player Kashgar",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/3e74801e7c7d481f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Night Market in Kashgar 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/6322292445f365d9.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Night Market in Kashgar",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a8fc4a46dcd4f250.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tillahan-a Transient Musician-market in Urumchi 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/16dd6e4dcb15602b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tillahan-a Transient Musician-market in Urumchi",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/498654a5ade8821c.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Uyghur Nightclub Singers",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images: Gilgit-Baltistan, Northern Pakistan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/b0fc1c652320ebce.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Surnai",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/c462ec36562b65dd.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Sky near Chilas 1997",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/13ab97dda7000023.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Sky near Chilas 1997 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a7f24441f1aed3fd.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Singers Chilas 1997",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/bb957423e62eeb04.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Sign Karakoram Highway",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/fec68cc6f9287c92.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Rahmatullahbeg playing ghijak",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/068bb6956e4e1255.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Petroglyphs near Chilas 1997",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/f4ca3605da9ef85e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Petroglyphs near Chilas 1997 3",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/c6d073b54b5cb015.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Petroglyphs near Chilas 1997 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/9273e4ae590f7323.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nacheez playing sitar",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/1015345a6fa402f1.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Karakoram Highway July 1997",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a040a41997fe06b0.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Fazal Rahman Shirin Sado and Daulat Beg",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/f9b602c5fe599f3b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Damal",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e1b23bb63f760125.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dadang Hyder Bek",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images: Samarqand, Ferghana, Kokand and Tashkent, Uzbekistan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/ac43f971e89ac1f6.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "15th c. military drum",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e502d964f3f7c81f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Bazaar in Farghana 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/780c901c16aecd87.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Bazaar in Farghana 3",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/262cd4d9192e87a0.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Bazaar in Farghana",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/534cd2488ae48ba9.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Calligraphy on tomb of Timur Samarqand",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/4a742cff5442e10b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ceiling",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/84c04d3959118954.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dome shahizinda",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/43c15310ab30800b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Interior",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/87233e47242ce748.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Juma Mosque Kokand",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/700ecd4846039d2f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nan shop outside Kokand 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/2753c3a4f5b6272b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nan shop outside Kokand",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/fcb1154285571c90.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Quran Tashkent",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8b6b0e7450e10edb.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Registan interior 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/0d06900d12da853e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Registan interior 3",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/2ee12c5883429089.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Registan interior",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a742b0654f131f1e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Registan",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/2f441325939faa1f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Rishton ceramic workshop 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/1fb0732f2efabfbc.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Rishton ceramic workshop",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/4514f7320b5b4dea.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Rishton ceramic",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/7118a248310e73ce.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Shahizinda 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/b693d96537fc12db.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Shahizinda",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/f9105f23c4149259.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Silk factory in Margilan 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/65c6d18143545b3e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Silk factory in Margilan 3",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/95adbdc6a54f00ea.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Silk factory in Margilan 4",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/86cde1af0241b878.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Silk factory in Margilan",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/43949551bd4df221.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tomb of Timur in Samarqand",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/25eaa2acbb18e484.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tomb of Timur interior 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/14bd140ad6c72c9d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Woman in bazaar of Farghana",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/62853089996fe97f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Women selling chakka in Farghana",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images: Khiva and Bukhara, Uzbekistan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/c083f48187362e8d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Girl at wedding in Bukhara",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/783502a0bc4a1996.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Khiva 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/b54b084967c33c3d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Khiva aerial view",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8758fd5636389b46.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Khiva",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/2d885d818df8235c.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Synagogue and Rabbi in Bukhara",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a65f59c51d8e34c7.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tolib Temirov Bukhara",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/c1508e8425515cda.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tolib Temirov",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/4a011399b1606392.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Women at wedding in Bukhara",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images: Murghob, Tajikistan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/49403c131aaa3f4a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Hot Spring",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/ca7cc073c8cd5e5f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Kyrgyz boys near Murghob",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/7287c12e3608c017.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Milking a yak outside Murghob",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/1824191632c8822a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Murghob 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/1a515c2c35e3a893.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Murghob",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/48cb96fc21ee4dff.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Music School in Rangkul",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/35feaa28f6526b34.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Rangkul 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/0d147c9d950b8bd2.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Rangkul",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/b2f049d3e0d2976c.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Woman with Komuz outside Murghob",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/09132472c30570fa.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Yurt Interior 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/454aca3ab10b3dd8.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Yurt Interior",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/eb1133dbe8ac4e9e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Yurt",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images: Dushanbe, Tajikistan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/33438a096158105a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Abudulloh Nazriev Portrait",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e72eba2253fea489.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dastarkhon at Ismoil Nazriev's home",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/6922f4ff8b88111e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dustmurod ghijak",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a8644425566c0b95.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Eating at home of Ismoil Nazriev",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8647d782d3774126.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Genia's flowers in Dushanbe home",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/68b1f8cde1c420ea.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ismoil Nazriev 2015",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/3c04873abf609626.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ismoil Nazriev tuning",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/733479bbf412f424.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Marat Aripov in film",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/f065f9e079a9ec00.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "My home in Dushanbe Genia's flowers",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8f1d037457eb00cc.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nan shop, Ghani Abdullo lane",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/083fc3774202f5a8.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Portrait of Marat and his mother",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/d8fc1d3536fcb055.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Shauqmamad Pulodov and Qurbonsho",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/b9581d4afef032e2.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Sirojiddin Juraev playing dutor 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/427746da04349e2b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Sirojiddin Juraev playing dutor",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e9b0f4ccc4e9babf.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Sirojiddin, Khurshed and Behruz",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/ba03d713b7dcedf4.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tuy Dushanbe 2014",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Videos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207962188",
+            "poster": "/uploads/5d5062602ed1ec66.webp",
+            "title": "šak me maẓ̌ tayin",
+            "caption": "Wakhi song sung by Fazal Rahman Shirin Sado. Poet: Alam Jan Daryo. Recorded in Islamabad, March 3, 2013"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "202557179",
+            "poster": "/uploads/e9390c5244b06c33.webp",
+            "title": "Farhad Davlatov",
+            "caption": "One of Uzbekistan's finest singers accompanies his Khorazmi-dialect folk song on Azeri tar."
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "208014004",
+            "poster": "/uploads/23bedec93b053ded.webp",
+            "title": "Munojot",
+            "caption": "Ahmadjon Dodaev - Ghijak, Shomurod - Kashgar rubob, performing Munojot of Alisher Navoi, Tashkent, April 25, 2014"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "208022962",
+            "poster": "/uploads/e35f1758237e87dc.webp",
+            "title": "Falak bo ufarash: Folk quatrains sung by Firdaus and Hashimov",
+            "caption": "Recorded at the symposium on Falak, Dushanbe, October 2012"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "208024082",
+            "poster": "/uploads/a934487471944b18.webp",
+            "title": "Tolib and Obid Temirov sing Ishq Seli",
+            "caption": "Ghazal attributed to Shamsi Tabriz. Wedding reception at Mehranshoh restaurant, Bukhara, Uzbekistan, April 30, 2013"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "208025411",
+            "poster": "/uploads/c686e78dd2b9b2f9.webp",
+            "title": "Sar sar-i palez dil bar jonam",
+            "caption": "Folk singer from Northern Afghanistan Mer-i Maftun sings his own composition, 2016."
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "209147338",
+            "poster": "/uploads/9c3646b5f15a2bc2.webp",
+            "title": "Jashchylyk",
+            "caption": "Saadabay Shabdanov, master komuzchu (komuz player) from Osh, Kyrgyzstan, April 21, 2012"
+          }
+        ]
+      }
+    }
+  ]
 }

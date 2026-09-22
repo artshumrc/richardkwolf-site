@@ -1,9 +1,112 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "South Indian Classical Music",
-    "description": "Richard K. Wolf on Carnatic performance, rhythm and improvisation in South Indian classical music."
+    "description": "Richard K. Wolf on Carnatic music, from his first hearing of T. Viswanathan's flute to fieldwork photographs of South Indian classical performance."
   },
-  "content": []
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/8405548bc93c8317.webp",
+        "alt": "A young mridangam player and three singers seated on the floor of a temple hall before a carved stone pillar.",
+        "eyebrow": "",
+        "headline": "South Indian Classical Music",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Popular music of the 1960s and 1970s mediated my first exposures to Indian music and I was not alone. The sounds of George Harrison’s sitar in the music of the Beatles, acid rock’s tinny timbres and deep drones, distorted and compressed electric guitar solos—all these bespoke the extraordinary impact of Ravi Shankar and the romance of India on American culture. As a kid I remember putting together a guidebook on India, with a collage of images glued on and covered with scotch tape in imitation of laminate."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In 1980 I heard a different kind of Indian music: the flute-playing and singing of T. Viswanathan and the drumming of Ramnad Raghavan. This music was richly varied, rhythmically intricate, and timbrally less awash in overtones than the Hindustani music whose sounds were somewhat familiar to me."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I sensed the communication between the two men viscerally and wondered what potentials their improvisatory frameworks might have for me as a creative musician. Raghavan was living in Cleveland at the time and I was able to take mridangam lessons once a week through Oberlin’s Experimental College. Raghavan notated my lessons for me using such syllables as “tha, dhi, dhum, nam” to indicate strokes and dots to indicate rests. Once in a while he would devote a lesson to Karnatak music rhythmic theory, saying that he owed it to his tradition to teach both theory and practice. But there was no doubt that performance was central to his approach. His elder brother, he used to say, would tie him to a tree if he failed to practice enough. I found the once-a-week format of learning insufficient, and although I was learning rhythmic theory, I was not learning much about how Karnatak music as a whole worked."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/c1f32747dff62876.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/5686663b7fc1d2c5.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a2f445e9e2838a53.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/4909e8cf9232ec8a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/20359071da89da54.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "",
+            "caption": ""
+          }
+        ]
+      }
+    }
+  ]
 }

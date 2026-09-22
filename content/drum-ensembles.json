@@ -1,0 +1,109 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Drum Ensembles",
+    "description": "Drum ensembles of South India, a research area of Richard K. Wolf's still being written."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/8600d981e9b4cb0d.webp",
+        "alt": "Men in bright headbands striking pairs of wooden sticks together in a village stick dance, a drummer behind them.",
+        "eyebrow": "",
+        "headline": "Drum Ensembles",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "More Coming Soon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/07b53b3bd05f40a1.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Kāvaṭi dance accompanied by drums",
+            "caption": "Dharmapuri district, Tamilnadu, Dc-Jan 1998-99"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/c89681c385e7570b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Drummers from Dharmapuri",
+            "caption": "Tappaṭṭai, tuṭumpu, tācā, maṉmattaḷam, ḍol. Dec-Jan 1998-99"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/c570f963985f50d4.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dappu drummers in Telangana region of Andhra Pradesh",
+            "caption": "November 1998"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/f8da592e1eda550c.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Puja for Ankāḷaparamesvari",
+            "caption": "Shrine on roof of home of devotee named Sarasvati. Musicians: R. Mani and C. Sanmugam (pampai double drums); K. Valaraman (cilamba). Dec-Jan 1998-99"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e30b4bb53b31e912.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Possessed woman at goddess festival",
+            "caption": "Udukkai and tappatai players drum and sing invocations to the goddess. Sikkamman temple festival, Mullukorai, Ootacamund, Tamilnadu 8/91"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8600d981e9b4cb0d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Kolāṭṭam in Menasi village",
+            "caption": "A form of Tamil stick dancing. Dharmapuri, Tamilnadu, 1998"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/805c759988456372.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "varadharajan-3-92",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/dee23e35e467c960.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "kotas_kanadigas_sikkamman",
+            "caption": ""
+          }
+        ]
+      }
+    }
+  ]
+}

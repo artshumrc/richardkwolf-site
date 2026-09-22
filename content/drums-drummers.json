@@ -1,9 +1,224 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "Drums & Drummers",
-    "description": "Richard K. Wolf on drums, drummers and rhythmic practice across South and Central Asia."
+    "description": "Drums and drummers from Tamilnadu to Panjab, Gilgit and the Caribbean diaspora, in photographs and eight field films."
   },
-  "content": []
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/366c1d3f8aabd846.webp",
+        "alt": "Drummers carrying large barrel drums through a dense street procession, in black and white.",
+        "eyebrow": "",
+        "headline": "Drums & Drummers",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I have conducted research on drummers and drumming in Tamilnadu (see "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/ritual-daily-life-in-south-india/",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Ritual and Everyday Life in South India"
+            },
+            {
+              "type": "text",
+              "text": ") as well as in other parts of South and North India and in Pakistan.  My work focused on 1) the linking of different kinds of drum patterns to particular rituals; 2) representations of drumming and rhythm through language and syllables; 3) religious and political controversies over drumming; 4) the spread and local contextualization of the"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": " tāsha"
+            },
+            {
+              "type": "text",
+              "text": " drum; 5) broadly shared ideas of rhythmic organization that cross-cut language, region, and culture."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/44f8b1b1a7faaa47.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "sindhi drummers",
+            "caption": "Playing for wrestlers at Misri Shah shrine. June 12, 1997"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/3537ba32a77380c9.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Niamat Ali at Urs of Madho Lal Husain",
+            "caption": "Dhol players in Panjabi often spin while playing"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/d0c2c9c1b88c1bd3.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ḍāḍan played by Hyder Bek",
+            "caption": "Cylinder drum used by Ḍom musicians in Nazimabad village, Gilgit district, Northern Areas of Pakistan July 4 1997. Performance in Sust, Pakistan"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/14e8d8197a7febc1.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ḍāmal",
+            "caption": "Drums used by Ḍom musicians in Nazimabad village, Gilgit district, Northern Areas of Pakistan July 4 1997"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/6918faf45cc8960c.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Surna",
+            "caption": "Double reed instrument used by Ḍom musicians in Nazimabad village, Gilgit district, Northern Areas of Pakistan July 4 1997"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/4a83d40209369802.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Chenda",
+            "caption": "Chenda drums played at Teyyam ceremony, Wynad, March 1992"
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Videos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725781",
+            "poster": "/uploads/904542ffd23a045e.webp",
+            "title": "Sheri Bāja",
+            "caption": "Tāsha and ḍhol ensemble, with electronic organ, playing at wedding in Barkaz, near Hyderabad, Andhra Pradesh, 1998"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "106883938",
+            "poster": "/uploads/f93a8846e6dfd8ed.webp",
+            "title": "The Voice in the Drum Book Trailer",
+            "caption": ""
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "120197595",
+            "poster": "/uploads/00f313117c50d94d.webp",
+            "title": "Hosay in Manhattan",
+            "caption": "Indo-Caribbeans observing Hosay (Muharram) in Manhattan, 1996"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "202678990",
+            "poster": "/uploads/f2b87d515146def0.webp",
+            "title": "Runza Drum",
+            "caption": "Runza Yadagiri demonstrates one item in the vast repertoire of the runza drum in Andhra Pradesh. This one imitates the calls from the two battling armies of the Pūsa Pāṭi and the Obbili kingdoms"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "202678420",
+            "poster": "/uploads/7d3ad5046e0eb8ba.webp",
+            "title": "Atiamānkkōṭṭai Kalabhairavar Temple Festival",
+            "caption": "Puja and interaction with devotees, singers and drummers. Atiamānkkōṭṭai, Dharmapuri, Tamilnadu. April 3, 1991"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "202670380",
+            "poster": "/uploads/1e1beee4390393dc.webp",
+            "title": "Mushirabad Procession",
+            "caption": "Pirs Hasan and Husain riding Hindu and Muslim participants in Muharram rituals in Mushirabad, Hyderabad, Andhra Pradesh, May, 1998"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "110718583",
+            "poster": "/uploads/a892357698613e2e.webp",
+            "title": "Dhima near Nizamuddin",
+            "caption": "Dhīma as performed by Ghulam Hasnain Nizami and Mamraj's tāshā party during Muharram Dec 27, 2009, Delhi."
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207047399",
+            "poster": "/uploads/2aeeea2adb917643.webp",
+            "title": "Ankalaparamesvari Puja in Dharmapuri",
+            "caption": "Rooftop shrine for goddess Ankāḷaparamēsvari. Devotee responding to verses and drumming of Pampai drummers"
+          }
+        ]
+      }
+    }
+  ]
 }

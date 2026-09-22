@@ -1,9 +1,203 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "Music in Islamic Contexts in India & Pakistan",
-    "description": "Richard K. Wolf on drumming, shrine performance and Muslim musical practice in India and Pakistan."
+    "description": "Qawwālī, soz, majlis and Muharram drumming in India and Pakistan, from Richard K. Wolf's fieldwork of 1995 onwards."
   },
-  "content": []
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/038f8b7db500a171.webp",
+        "alt": "An elderly man singing with his head thrown back among a press of listeners, in a warm-toned photograph.",
+        "eyebrow": "",
+        "headline": "Music in Islamic Contexts in India & Pakistan",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In 1995-1996, I was in the process of completing my PhD dissertation on the music of the Kota tribe in the Nilgiris of South India when I was given the opportunity to embark on a new research project in North India and Pakistan. I had been supporting myself in New York City as the Director of Folk Arts for BACA/The Brooklyn Arts Council. In the course of fieldwork for that job, I was fortunate to meet members of the Indo-Caribbean community who were living in Brooklyn and Queens and to document some of the music and religious ceremonies they had brought and adapted for their new lives in New York (see Music in South Asia: Other). One of the most colorful and virtuosic of these traditions is that of the bass drums and the tassa—in South Asia, an ensemble known as "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "ḍhol-tāshā."
+            },
+            {
+              "type": "text",
+              "text": " Indo-Trinidadians play these drums for a variety of occasions including a local variation of Muharram that they call Hosay (after Husain). Learning about this led me to propose a project of investigating the status of this kind of ensemble in South Asia today. Indians, largely from what is now Uttar Pradesh and Bihar, began migrating to the West Indies beginning in the 1830s, mainly as indentured laborers. The ḍhol-tāshā ensembles of 19th century North India flourished in the context of royal processions and with the active participation of Wajid Ali Shah, the last Nawab of Avadh in Uttar Pradesh. A lively description of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tāshā"
+            },
+            {
+              "type": "text",
+              "text": " playing at that time can be found in the journalist Abdul Halim Sharar’s "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Lucknow: The last phase of an oriental culture"
+            },
+            {
+              "type": "text",
+              "text": "."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "96197214",
+            "poster": "/uploads/28ee72f5afc5d706.webp",
+            "title": "Badar Ali Khan",
+            "caption": "Badar Ali Khan and party performing qawwālī at the ‘urs of Baba Farid in Pakpattan, Pakistan."
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95750170",
+            "poster": "/uploads/1db9600efedfaa09.webp",
+            "title": "Kisse ne Kufe ke Raste me",
+            "caption": "Soz recited by Iqbal Ahmed Khan, Khwaja Hall, Nizamuddin Basti, Delhi, Dec 26, 2009"
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I eventually discovered that the world of the "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "majlis"
+            },
+            {
+              "type": "text",
+              "text": " (mourning assembly) and the world of the drums were connected through a small number of poetic texts and slogans (an article of Frank Korom’s in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The World of Music"
+            },
+            {
+              "type": "text",
+              "text": " [1994] initially alerted me to this possibility). Some of the drumming patterns performed for Muharram carry verbal messages. I also noticed a connection to my earlier work. I recalled ensembles of dalit drummers in Tamil Nadu playing on instruments that included those that looked like the ḍhol and the tāshā, and indeed, when I consulted my notes, I found that their names for these instruments were Tamilized variants: “"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "ṭol"
+            },
+            {
+              "type": "text",
+              "text": "” and “"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tājā"
+            },
+            {
+              "type": "text",
+              "text": ".” Finding these initial connections between Muslim and Hindu traditions of the North and low-caste ritual drumming traditions of the South led me to begin research on drumming traditions across the subcontinent, write several articles on the topic, and the book "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Voice in the Drum: Music, language and emotion in Islamicate South Asia"
+            },
+            {
+              "type": "text",
+              "text": " (University of Illinois Press, 2014). See the section of this site entitled Drum and Drummers for audio-visual examples of this work."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Since I had literally just finished the dissertation on the day of departing for South Asia, I was not yet prepared to conduct a specialized, focused piece of research on a new topic. Moreover, the Hindi-Urdu I had studied in graduate school a decade before had slowly faded from my active memory."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "For these reasons, I approached my fieldwork period from 11/96-2/99 as one of developing a new research area more broadly. In addition to my ostensible focus on ritual drumming (a project supported by the American Institute of Pakistan Studies), I documented a range of performance genres: religious recitations, songs in honor of the Prophet and other Muslim figures, Sufi drumming and dancing, qawwali, processional music, and a variety of folksongs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "After completing this fieldwork I began teaching at Harvard University and developed a course entitled Music in Islamic Contexts, which incorporated a number of these diverse field recordings. In subsequent visits to South Asia, these field recordings served and continue to serve as the basis for deeper and more prolonged inquiries into their respective traditions. Native speakers of Urdu, Panjabi, Seraiki, Sindhi, Baluchi, Telugu and other local languages have assisted me in properly transliterating and translating the texts of songs and recitations. This section of the website presents a cross-section of this fieldwork, including not only overtly religious performances, but also amalgams of Muslim and other local South Asian traditions, and musical performances that do not serve an expressly religious purpose but that nevertheless grow out of Muslim cultural milieux."
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

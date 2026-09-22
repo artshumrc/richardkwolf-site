@@ -1,9 +1,131 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "Ritual & Daily Life in South India",
-    "description": "Richard K. Wolf on music in ritual and daily life among the Kotas and other communities of South India."
+    "description": "Richard K. Wolf on music in South Indian ritual and daily life, from Kota funerals and god ceremonies to the wider Tamil world around them."
   },
-  "content": []
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/aca9131e992e8908.webp",
+        "alt": "Women in white shawls dancing in a long line on a green hillside meadow, arms raised, watched by a crowd.",
+        "eyebrow": "",
+        "headline": "Ritual & Daily Life in South India",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "\"Richard,” Rabbi Singer said to me in 1986, “there’s not an ounce of spirituality in India. You belong in schul!” I was working in an office supply store in my home town and the rabbi who’d bar-mitzvahed me 11 years earlier was dropping in to buy a spiral-bound notebook."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I was about to begin graduate school and the two years I’d spent in India had provided me with experiences and knowledge that would prove exceptionally useful in my career. But Rabbi Singer could only see the India of the 1960s hippies. I suppose his jump to this conclusion was not all that unreasonable. I was a bit of a hippie myself in high school—a longhair who played electric guitar and meditated. But I was not traveling to India to “find myself”—I was not searching for spirituality and I resented being associated with those who were. Hoping to resist the stereotype, I cut my hair short before leaving for India."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Music had initially drawn me to India, but when I arrived in South India in 1982 I could hardly fail to notice the profusion of ritual activity that had fascinated so many visitors before me. From the simple acts of cleaning one’s doorstep and drinking water to the complex ceremonies associated with marriage and worship at temples and mosques the country was a buzzing and bubbling field of activities whose significance escaped my grasp. At twenty years old and not yet academically trained in South Asian studies, I was not exposed to the academic counter currents that would in a few short years admonish scholars from the West for viewing India first and foremost as a religious place, as a place steeped in ancient traditions."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Although I was drawn to the complexity of what I saw around me, and I was certainly interested in the philosophical basis of ritual activity, I was not tempted to incorporate these aspects of Indian life into my own (unlike Indian music and food, which are very much part of my life at home)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "My primary research on ritual in South India concerns the Kota tribal people of the Nilgiris in South India, with whom I lived for several years beginning in 1990. That research alerted me to many of music’s functions in South Asian rituals broadly. These include to mark and/or stimulate subjective transformations, to broadcast information, to create guideposts for the emotional texture of a ceremony, to negotiate relationships among communities or between human and spiritual entities, and more generally to demarcate and constitute ritual segments of whatever significance. I consider my two major contributions to the study of ritual to be 1) highlighting the role of music in constituting and not merely accompanying significant rituals and 2) explaining the possible roles of music in what I call emotional contour and texture."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The majority of my field data on ritual in South India is from my research in the years 1990-92 and 1998.  My earliest field recordings, however, date back to 1982-83 and I return to South India regularly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cardRow",
+      "attrs": {
+        "columns": 3
+      },
+      "content": [
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/21a76b7fbd94f66c.webp",
+            "alt": "A row of Kota men and women seated together on a low stone wall, one holding a frame drum, hills behind them.",
+            "title": "The Kotas of South India",
+            "blurb": "The Kotas are a minority community of about 1,500-2,000 persons living in 7 villages of the Nilgiri Hills in South India. Ancient inhabitants of the region, they have been designated Scheduled Tribes by the government of India. I conducted…",
+            "link": "/kotas-south-india/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/1b2572693f3243bc.webp",
+            "alt": "A costumed teyyam performer in headdress and ornaments standing at night beside two drummers playing chenda.",
+            "title": "Teyyam",
+            "blurb": "Teyyam is a ritual dance of possession in Kerala, South india. Drummers perform ceṇḍa (large cylindrical drums) and a master recites tuneful invocations to bring on the possession of heavily made up, costumed, masked spirit mediums who……",
+            "link": "/teyyam/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/f40aab271c3dd633.webp",
+            "alt": "A broad green Nilgiri hillside of grassland edged by dark sholas of trees under a pale sky.",
+            "title": "Other Nilgiri Groups",
+            "blurb": "The Nilgiri peoples are divided geographically into those who primarily occupy the central plateau, the Todas, Kotas, and Badagas; those who occupy the slopes, the Ālu and Pālu Kurumba and Irula groups; and those living at lower elevations in or…",
+            "link": "/other-nilgiri-groups/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/8af4086dfd50d0bb.webp",
+            "alt": "Kota women and children in white shawls seated close together at a funeral, an elderly woman in the foreground.",
+            "title": "Laments",
+            "blurb": "This section of the site features examples of songs in memory of the dead sung by Tamils, Kotas, and Irulas.",
+            "link": "/laments/",
+            "externalUrl": ""
+          }
+        }
+      ]
+    }
+  ]
 }

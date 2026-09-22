@@ -1,0 +1,108 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Tamil Songs",
+    "description": "Fieldwork photographs and video of Tamil singers, drummers and lament performers recorded in Tamilnadu between 1982 and 2000."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/cb9cd6ed71d0616d.webp",
+        "alt": "Tamil singers in headcloths performing outdoors with frame drums, villagers and children seated on the slope behind them.",
+        "eyebrow": "",
+        "headline": "Tamil Songs",
+        "lede": ""
+      }
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/cb9cd6ed71d0616d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Singing for the goddess",
+            "caption": "Two Tamil musician sing songs in honor of the goddess Mariamman at a festival near Ootacamund, Tamil Nadu, 1991. They accompany themselves on uṭukkai (hourglass shaped drum) and tappaṭṭai (frame drum)"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/70715799bc39e85e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Mendicant",
+            "caption": "Tamilnadu, 1982-83"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/adc2ca7296fbcd54.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tamil Folk Singers",
+            "caption": "Kanniyappan and M Rasu (maybe), Madurai, Tamilnadu, 1982-83"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/eed8aed77b434d0f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Children of Parali village",
+            "caption": "Listening to the adults singing, Parali village, Tamilnadu, India, 1983"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/91834edcd4d60818.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Tamil folksingers",
+            "caption": "Madurai, Tamilnadu, 1982-82"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/c28827aaa2b2eaad.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Parali village 1983",
+            "caption": "Women singing lullabies and laments, surrounded by fellow villagers, Parali (near Madurai), Tamilnadu, India"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "87710091",
+            "poster": "/uploads/6d5e6c692a6f19da.webp",
+            "title": "Candira's lament",
+            "caption": "Candira, age 42 in 1999, sings a Tamil lament (oppari) for her daughter, who is still alive. Menaci village, Dharmapuri district, Tamilnadu, Jan 1, 2000"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8600d981e9b4cb0d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Kolāṭṭam in Menasi village",
+            "caption": "A form of Tamil stick dancing. Dharmapuri, Tamilnadu, 1998"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8405548bc93c8317.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Oduvars singing Tevaram",
+            "caption": "Madurai Minakshi temple, Mach 5, 2005"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e30b4bb53b31e912.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Possessed woman at goddess festival",
+            "caption": "Udukkai and tappatai players drum and sing invocations to the goddess. Sikkamman temple festival, Mullukorai, Ootacamund, Tamilnadu 8/91"
+          }
+        ]
+      }
+    }
+  ]
+}

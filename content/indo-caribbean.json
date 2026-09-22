@@ -1,0 +1,114 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Indo-Caribbean",
+    "description": "Hosay in Manhattan: Indo-Caribbean tassa drumming and Muharram observance recorded in New York City in 1996."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/3241535886890de7.webp",
+        "alt": "A large circular sand mandala in blocks of colour laid out on a street, with children kneeling at its edge.",
+        "eyebrow": "",
+        "headline": "Indo-Caribbean",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In the mid 1990s I was living in New York City working as the Director of the Folk Arts Program at BACA/The Brooklyn Arts Center.  In carrying out field research to document and present the arts and music of New York communities, I had the opportunity to work with Indo-Trinidadian and Indo-Guyanese musicians.  Their performances of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tāsha"
+            },
+            {
+              "type": "text",
+              "text": " and "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "ḍhol"
+            },
+            {
+              "type": "text",
+              "text": " (what they call tassa and bass) inspired me to trace these instruments back in India and Pakistan when I returned there in November 1996."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "120197595",
+            "poster": "/uploads/00f313117c50d94d.webp",
+            "title": "Hosay in Manhattan",
+            "caption": "Indo-Caribbeans observing Hosay (Muharram) in Manhattan, 1996"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/3036bebcf9d77f9f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Hosay New York City",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/abc2417533fb5fa9.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Hosay New York City",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/5300dd36315b1b4b.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Hosay New York City",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "US #1 Tassa drummers and others, Hosay celebration, 1 Sept 1996, Manhattan. The ancestors of these performers hailed mainly from Uttar Pradesh and Bihar in North India. As migrant laborers, they began traveling to the West Indies in the mid-19th century, carrying with them the knowledge to perform Muharram ceremonies. Over time they developed their own designs for tadjas (taziyas) to carry on procession and modified other objects and practices to suit their local needs and creative impulses. The tassa drum in Trinidad that accompanies these processions is somewhat wider in circumference than most of the cognate, shallow, bowl-shaped drums in India. The “bass” in Trinidad is also more massive than most of the dhols found in India that accompany the tasha. The name of the occasion too changed, from Muharram, to “Hosay,” a transformation of Husain. This video is edited to highlight moments in the sequence of events, two of which correspond to an important contrast often brought out through drumming: the excitement of battle versus sober mourning over the dead. 1) upbeat drumming (battle); 2) a view of the tadja; 3) a slow march played just after the tadja begins to be disassembled (the scene of death after the battle) 4) a change of mood signaled/cued by the speeding up of the drumming and followed by joyous dancing."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

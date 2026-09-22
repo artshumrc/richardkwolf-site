@@ -1,9 +1,207 @@
 {
   "type": "doc",
-  "version": 1,
+  "version": 2,
   "meta": {
     "title": "Music of Iran",
-    "description": "Richard K. Wolf on Iranian musical practice and its links with the traditions of South and Central Asia."
+    "description": "Photographs and video from Richard K. Wolf's fieldwork in Iran, including zurkhaneh recitation, nauheh, maddh and rowzeh."
   },
-  "content": []
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/b6900cdc5eac7a58.webp",
+        "alt": "The tiled muqarnas vault of an Iranian mosque portal, seen from below against a pale sky.",
+        "eyebrow": "",
+        "headline": "Music of Iran",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In December 2005, I was invited to participate in the conference on the music of greater Khorassan and Transoxiana in Tehran.  With the generous help of friends, colleagues, and the parents of one of my students, I was fortunate to attend a number of music-related events and document them."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/2510e2257806fda8.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Street view, Tehran",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/28d97bf934516fc1.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Panel, Tehran",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/b29ef6c2ca815606.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Military musicians",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/6ccdf792ca156e32.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Shemr",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/5459f15d2a62eb6d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Mr Maratib",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/f43319d1e82b6cb9.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Zurkhaneh: Shah Nameh reciter",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/2d01acdbb629030a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Zurkhaneh",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/90d03cc08465f22f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Isfahan",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/ba5557fed356c165.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Namaz",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e0b1c2aeb8d7fe1d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nauheh",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/943d4b2238abcd7a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ramin Jazayeri",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Video"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "120199486",
+            "poster": "/uploads/e275b5b8337f49b0.webp",
+            "title": "Ali Aqa Almajogi",
+            "caption": "Bakhshi recorded at the conference “Music of Khorosan and Transoxiana,” held at the Museum of Fine Arts in Tehran, January 3-4, 2006"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "120199487",
+            "poster": "/uploads/bc43193ea9b1be35.webp",
+            "title": "Motrebs performing at the Friday bazaar in Tehran, Dec 2005",
+            "caption": ""
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207167742",
+            "poster": "/uploads/78a4f770aed6bda2.webp",
+            "title": "Nauheh",
+            "caption": "Genre of martial dirge sung by Shiahs in memory of Husain, the grandson of the Prophet, and his family. Qazvin, Iran 2006"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207167723",
+            "poster": "/uploads/0e60944a477d037f.webp",
+            "title": "Maddh and Rowzeh",
+            "caption": "Shiah religious genres of chant, moving from praises to lamentations, recorded in Qazvin, Iran"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207313542",
+            "poster": "/uploads/059dce296d2d1a99.webp",
+            "title": "Zurkhaneh",
+            "caption": "Scenes from an Iranian"
+          }
+        ]
+      }
+    }
+  ]
 }

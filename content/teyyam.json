@@ -1,0 +1,85 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Teyyam",
+    "description": "Teyyam possession performance in northern Kerala and the Wynad, with chenda drumming and recitation filmed by Richard K. Wolf."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/1b2572693f3243bc.webp",
+        "alt": "A costumed teyyam performer in headdress and ornaments standing at night beside two drummers playing chenda.",
+        "eyebrow": "",
+        "headline": "Teyyam",
+        "lede": ""
+      }
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "120304713",
+            "poster": "/uploads/55abb9f60ffc70b2.webp",
+            "title": "Teyyam in Puzhamudi",
+            "caption": ""
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "87708828",
+            "poster": "/uploads/3ac38c8afc5bba7d.webp",
+            "title": "Paniyas at Chuliyoda",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "During my first period of fieldwork in the Nilgiri hills, 1990-92, I became interested in how the musical practices of the Nilgiris’ two tribal complexes (on the plateau and in the Wynad) relate to the vernacular musical traditions of the surrounding plains in Tamil Nadu, Kerala and Karnataka.  To investigate this on the Kerala side, I began to attend teyyam ceremonies.  The “season” of teyyam immediately precedes the hottest part of the year in South India, April and May.  One function of these ceremonies, along with those of the Mariyamman (goddess) festivals in Tamil Nadu which occur around the same time, is to create the optimal social and spiritual conditions for rain, coolness, and health."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In teyyam, drummers perform ceṇḍa (large cylindrical drums) and a master recites tuneful invocations to bring on the possession of heavily made up, costumed, masked spirit mediums who “dance.”  Key moments in their transformation include that in which the medium looks upon himself in a mirror, recognizes himself as the deity he is to embody, and shakes as he experiences a shift in consciousness.  The dancer/medium walks around the arena (kṣetram) with assistance if he is wearing gear that makes it difficult to balance.  Then he ascends a wooden stool (pīṭham).  This moment of further “becoming” the deity creates a momentary image equivalent to that of the carved statue/image (śila) of the deity in a Hindu temple, which also rests on a pīṭham.  In both cases, devotees understand the masked medium and the statue to be embodiments and not merely representations of the deity."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "In an-all night teyyam performance, participants act out mythological adventures related to local deities.  Key figures will wear elaborate costumes and walk with specific gaits that define their characters.  Drummers will perform special drum patterns for these individuals.  At certain points in the proceedings, the medium will walk to the edge of the arena and provide counsel for local villagers.  The villagers may ask advice about caring for a sick relative, blessings for the birth of a child, or about their crops.  This is one context in which tribal populations such as the Paniyas participate, as they too may seek counsel from the deity.  In the multi-community teyyam events I witnessed, the ceremonial area was divided up spatially according to ethnic affiliation.  Often the event was sponsored by the local merchant caste, Wynad Chettis.  The performers belonged to the malaimār caste.  Tribals present included Kattu Nayakas, Mullu Kurumbas, Betta Kurumbas and Paniyas.  However, in at least one of the events I witnessed, the organizers excluded the Paniyas, a tribe of lower rank who have long been subject to discrimination and even enslavement.  After attending a number of these ceremonies, I was invited to attend the teyyam celebration one of the malaimār groups performed for themselves."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "I drove to these ceremonies on my Yezdi motorcycle with my Kota friend and assistant R. Kambattan, a.k.a. Duryodhana.  I spoke in Tamil and my consultants spoke in Malayalam.  Although the two languages are very close, there were significant limits to what I could understand.  I welcome feedback from those with greater expertise to improve the documentation here (LINK). Materials in this section of the website include photographs and videos of ceremonies held March 1992 in the villages of Puzhamudi, Baḍeri (Kariattai temple), and Chuliyoḍa, Wynad district, Kerala."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

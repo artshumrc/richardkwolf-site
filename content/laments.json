@@ -1,0 +1,291 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Laments",
+    "description": "Lament across Richard K. Wolf's research: Kota āṭḷ, Tamil oppāri and Wakhi funeral song, and the emotional textures of ceremony."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/8af4086dfd50d0bb.webp",
+        "alt": "Kota women and children in white shawls seated close together at a funeral, an elderly woman in the foreground.",
+        "eyebrow": "",
+        "headline": "Laments",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "One set of themes that joins several of my South Indian research projects with those in North India, Pakistan and Iran concerns ritual mourning and lamentation. On the part of this site entitled “concepts” I explain my theoretical contribution to the study of music and emotion and provide links to my articles on the topic. Briefly, musical pieces, along with other forms of expression and representation, serve as public statements about what it means to relate emotionally to a given event. While these pieces and other expressive forms may connote emotion with some level of generality, individuals react to them in different ways and with varying degrees of intensity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/bc6d2ab90a7d70e1.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Karupayi",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/41109eb53c5ab70e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Subramani",
+            "caption": ""
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "87710091",
+            "poster": "/uploads/6d5e6c692a6f19da.webp",
+            "title": "Candira sings lament",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Key examples from my Kota research are some of the double-reed and drum pieces in the secondary mortuary ceremony. Kotas disagree whether these pieces should be viewed as sad funeral tunes ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tāv koḷ"
+            },
+            {
+              "type": "text",
+              "text": "), or as more emotionally uplifting tunes associated with the gods ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "devr"
+            },
+            {
+              "type": "text",
+              "text": "). Another example of emotional disagreement concerns drumming during the (originally) Muslim observance of Muharram. While some Shī‘ahs view drumming as a legitimate way to honor the memory of Imam Husain and the martyrdom of his followers in 680 C.E., others counter that Husain’s enemies beat the drum each time a member of Husain’s family was decapitated. Drumming, from this perspective, constitutes gloating over Husain’s defeat. Eschewing drumming themselves, these Shī‘ahs point to Sunnis who drum during Muharram and criticize them for jollity during a ceremony that they believe should inspire only dolor."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Many ceremonies, in fact, have a complex “emotional texture” that may remain in tension with attempts by participants to typify these ceremonies with simple labels like happy and sad. This section of the site features examples of songs in memory of the dead sung by Tamils, Kotas, and Irulas."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The listener may notice that some of the Kota songs featured here, called "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "āṭḷ,"
+            },
+            {
+              "type": "text",
+              "text": " do not sound lamentational. This is because the Kotas themselves recognize modalities of reflecting on the dead that are cheerful. Kota "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "āṭḷ"
+            },
+            {
+              "type": "text",
+              "text": "s are not sung during funerals but are rather composed a period of time after a death or other frightful event. Tamil laments, in style at least, are meant to represent grief."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "One type of Tamil lament is called "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "oppāri"
+            },
+            {
+              "type": "text",
+              "text": " (according to the Tamil Lexicon, the word probably derives from the verb "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "oppu"
+            },
+            {
+              "type": "text",
+              "text": "-, to make comparisons). In this genre, as in similar genres in many parts of the world, the lamenter sometimes refers to the deceased in evocative similes and metaphors. Although several styles of lament prevail in Tamil Nadu, a characteristic oppāri style involves the singer initiating a string of syllables on a high reciting tone and then, without taking a breath, descending to a lower range. With or without a breath, the singer continues from an initial pitch lower than the first and descends again. One or more other terraced, descending phrases may follow, after which the singer will spill out more syllables on the bottom pitch, extend the final word with “o” or “e.” As the performer gains momentum, the rate of pitches becomes very rapid, especially at the end of a set of phrases. After the singer runs out of breath, he or she takes a deep, often exaggerated breath, sobs, and then begins again."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Because the oppāri often involves exaggerated representations of crying, it can evoke humor for those listeners who are not emotionally invested in the funeral. "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Oppāri"
+            },
+            {
+              "type": "text",
+              "text": " can be sung by professional lamenters: males, females, male transvestites, and male transsexuals. But it is not uncommon, especially among Dalits, for the bereaved to lament for their own loved ones. Although "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "oppāri"
+            },
+            {
+              "type": "text",
+              "text": "s could potentially be outpourings of grief composed upon the spot, common themes and phrases appear in many "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "oppāri"
+            },
+            {
+              "type": "text",
+              "text": "s; women may teach "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "oppāri"
+            },
+            {
+              "type": "text",
+              "text": "s to their children; and some singers memorize or base their "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "oppāri"
+            },
+            {
+              "type": "text",
+              "text": "s on texts published in books."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/bf748401c770fdfd.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Masini's Lament",
+            "caption": "View of Siriur Mariyamman Temple, near Masini's home, 1992"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/76b85bdc519b49a6.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Decmaynge, āṭḷ sung by Penij",
+            "caption": "Photo: Kota Women at Funeral"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/7c6b1d562e9b8319.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Wakhi Funeral Lament",
+            "caption": ""
+          }
+        ]
+      }
+    }
+  ]
+}

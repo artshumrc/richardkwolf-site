@@ -43,6 +43,15 @@ const MARK_TAGS = new Map([
 const pagesFile = JSON.parse(readFileSync('migration/pages.json', 'utf8'));
 const imageSources = JSON.parse(readFileSync('migration/image-sources.json', 'utf8'));
 const pdfSources = JSON.parse(readFileSync('migration/pdf-sources.json', 'utf8'));
+const vimeoPosters = JSON.parse(readFileSync('migration/vimeo-posters.json', 'utf8'));
+
+/**
+ * The retired posts whose galleries fold into a surviving page. Ticket 13
+ * redirects each retired URL to the page that absorbed it.
+ */
+const ABSORBED = { 'tamil-songs': ['tamil'] };
+
+const VIMEO_URL = /player\.vimeo\.com\/video\/(\d+)/;
 
 const text = (value) => (value ?? '').normalize('NFC');
 
@@ -208,40 +217,140 @@ function figureBlock(wrapper) {
 	return { type: 'figure', attrs: { path, alt: altFor(path), caption } };
 }
 
+/** A tile's title and caption, wherever the theme happened to put them. */
+function tileText(tile, anchor) {
+	const title = anchor?.getAttribute('data-title') ?? tile.querySelector('.t-entry-title')?.text ?? '';
+	const caption = anchor?.getAttribute('data-caption') ?? tile.querySelector('.t-entry-meta')?.text ?? '';
+	return {
+		title: text(title).replace(/\s+/g, ' ').trim(),
+		caption: text(caption).replace(/\s+/g, ' ').trim()
+	};
+}
+
 /**
- * A theme carousel of Vimeo clips becomes one Gallery. The poster is the
- * attachment the carousel's thumbnail was cropped from, which the image port
- * already carries, so no Vimeo request is needed to rebuild the page.
+ * One thumbnail of a theme carousel or masonry grid as a Gallery item. A video
+ * is sometimes a lightbox link to the player and sometimes an iframe embedded
+ * in the tile itself; both become the same item, whose poster is the frame the
+ * image port fetched from Vimeo.
  */
-function galleryBlock(wrapper) {
-	const items = [];
-	for (const anchor of wrapper.querySelectorAll('a[href*="vimeo.com"]')) {
-		const vimeoId = /\/video\/(\d+)/.exec(anchor.getAttribute('href') ?? '')?.[1];
-		if (!vimeoId) continue;
-		const poster = mediaPath(anchor.querySelector('img')?.getAttribute('data-guid'));
-		items.push({
+function galleryItem(tile) {
+	const anchor = tile.querySelector('a.pushed[data-lbox]');
+	const iframe = tile.querySelector('iframe');
+	const href = anchor?.getAttribute('href') ?? '';
+	const { title, caption } = tileText(tile, anchor);
+
+	const vimeoId = (VIMEO_URL.exec(href) ?? VIMEO_URL.exec(iframe?.getAttribute('src') ?? ''))?.[1];
+	if (vimeoId) {
+		const poster = vimeoPosters[vimeoId];
+		return {
 			kind: 'vimeo',
 			path: '',
 			vimeoId,
-			poster,
-			title: text(anchor.getAttribute('data-title') ?? '').trim(),
-			caption: text(anchor.getAttribute('data-caption') ?? '').replace(/\s+/g, ' ').trim()
-		});
+			poster: poster?.path ?? '',
+			title: title || text(poster?.title ?? '').trim(),
+			caption
+		};
 	}
-	return items.length ? { type: 'gallery', attrs: { commentary: '', items } } : null;
+
+	const path = anchor && (mediaPath(href) || mediaPath(tile.querySelector('img')?.getAttribute('data-guid')));
+	return path ? { kind: 'image', path, vimeoId: '', poster: '', title, caption } : null;
+}
+
+/**
+ * A tile linking to another page of the site as a Card. A tile pointing at a
+ * page no later ticket has ported — a retired annotated-audio post, a
+ * portfolio piece — yields nothing, because the prerenderer crawls the link.
+ */
+function cardBlock(tile) {
+	const anchor = tile.querySelector('.t-entry-title a') ?? tile.querySelector('a.pushed[href]');
+	const { href, internal } = rewriteHref(anchor?.getAttribute('href'));
+	const image = mediaPath(tile.querySelector('img')?.getAttribute('data-guid'));
+	if (!internal || !image) return null;
+	const { title } = tileText(tile, null);
+	return {
+		type: 'card',
+		attrs: {
+			image,
+			alt: altFor(image),
+			title,
+			blurb: text(tile.querySelector('.t-entry-excerpt')?.text ?? '').replace(/\s+/g, ' ').trim(),
+			link: href,
+			externalUrl: ''
+		}
+	};
+}
+
+/**
+ * A carousel or masonry grid becomes a Gallery when its tiles are media, and a
+ * Card row when they are links to other pages. A grid whose tiles are all
+ * retired — the annotated-audio post lists — becomes nothing at all.
+ */
+function mediaGroup(container) {
+	const tiles = container.querySelectorAll('.tmb');
+	const items = tiles.map(galleryItem).filter(Boolean);
+	if (items.length > 0) return { type: 'gallery', attrs: { commentary: '', items } };
+
+	const cards = tiles.map(cardBlock).filter(Boolean);
+	if (cards.length === 0) return null;
+	return { type: 'cardRow', attrs: { columns: Math.min(cards.length, 3) }, content: cards };
+}
+
+/** A lone media module: a captioned photograph, or a Vimeo clip embedded inline. */
+function singleMedia(wrapper) {
+	const iframe = wrapper.querySelector('iframe');
+	const vimeoId = VIMEO_URL.exec(iframe?.getAttribute('src') ?? '')?.[1];
+	if (!vimeoId) return figureBlock(wrapper);
+	const poster = vimeoPosters[vimeoId];
+	return {
+		type: 'gallery',
+		attrs: {
+			commentary: '',
+			items: [
+				{
+					kind: 'vimeo',
+					path: '',
+					vimeoId,
+					poster: poster?.path ?? '',
+					title: text(iframe.getAttribute('title') ?? poster?.title ?? '').trim(),
+					caption: ''
+				}
+			]
+		}
+	};
 }
 
 function extractBody(root) {
 	const blocks = [];
 	let run = [];
+	/** Whether the last node in `run` is a label introducing the next module. */
+	let label = false;
+
 	const flush = () => {
 		if (run.length) blocks.push({ type: 'prose', content: run });
 		run = [];
 	};
+	const write = (node) => {
+		run.push(node);
+		label = false;
+	};
 	const push = (block) => {
-		if (!block) return;
+		if (!block) {
+			// A label whose module is all retired material loses its module, and
+			// would otherwise be left introducing whatever comes next.
+			if (label) run.pop();
+			label = false;
+			return;
+		}
+		// Adjacent carousels with nothing between them are one gallery that the
+		// theme happened to split; the headings mark the real groups.
+		const previous = blocks.at(-1);
+		if (block.type === 'gallery' && run.length === 0 && previous?.type === 'gallery') {
+			previous.attrs.items.push(...block.attrs.items);
+			return;
+		}
 		flush();
 		blocks.push(block);
+		label = false;
 	};
 
 	const walk = (el) => {
@@ -264,17 +373,20 @@ function extractBody(root) {
 					text(source.text).trim().length > HEADING_TEXT_LIMIT
 						? paragraph(source)
 						: heading(source, level);
-				if (node) run.push(node);
-			} else if (classes.includes('owl-carousel-wrapper')) {
-				push(galleryBlock(child));
+				if (node) {
+					write(node);
+					label = node.type === 'heading';
+				}
+			} else if (classes.includes('owl-carousel-wrapper') || classes.includes('isotope-system')) {
+				push(mediaGroup(child));
 			} else if (classes.includes('uncode-single-media')) {
-				push(figureBlock(child));
+				push(singleMedia(child));
 			} else if (tag === 'IFRAME') {
 				const src = child.getAttribute('src') ?? '';
 				if (src.includes('soundcloud.com')) push(soundcloudBlock(src));
 			} else if (FLOW_TAGS.has(tag)) {
 				const node = flowNode(child);
-				if (node) run.push(node);
+				if (node) write(node);
 			} else {
 				walk(child);
 			}
@@ -297,6 +409,27 @@ function heroBlock(document, title) {
 	};
 }
 
+/**
+ * Fold a retired post's gallery items into the page that inherits them. An
+ * item the page already carries — the two pages shared a clip — is not
+ * repeated.
+ */
+function absorb(blocks, slug) {
+	const source = extractBody(
+		parse(readFileSync(`${SOURCE_DIR}/${slug}.html`, 'utf8')).querySelector('.post-content')
+	);
+	const items = source.filter((block) => block.type === 'gallery').flatMap((block) => block.attrs.items);
+	if (items.length === 0) return;
+
+	const target = blocks.findLast((block) => block.type === 'gallery');
+	if (!target) {
+		blocks.push({ type: 'gallery', attrs: { commentary: '', items } });
+		return;
+	}
+	const held = new Set(target.attrs.items.map((item) => item.path || item.vimeoId));
+	target.attrs.items.push(...items.filter((item) => !held.has(item.path || item.vimeoId)));
+}
+
 function extract(slug) {
 	const document = parse(readFileSync(`${SOURCE_DIR}/${slug}.html`, 'utf8'));
 	const rawTitle = text(document.querySelector('title')?.text ?? '').trim();
@@ -306,6 +439,7 @@ function extract(slug) {
 
 	const hero = heroBlock(document, title);
 	const body = extractBody(document.querySelector('.post-content'));
+	for (const source of ABSORBED[slug] ?? []) absorb(body, source);
 
 	return {
 		type: 'doc',

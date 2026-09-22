@@ -1,0 +1,811 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "The Kotas of South India",
+    "description": "The Kota tribal people of the Nilgiri Hills: their villages, rituals, god and death repertoires, instruments and songs, with sixteen field videos."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/21a76b7fbd94f66c.webp",
+        "alt": "A row of Kota men and women seated together on a low stone wall, one holding a frame drum, hills behind them.",
+        "eyebrow": "",
+        "headline": "The Kotas of South India",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The Kotas are a minority community of about 1,500-2,000 persons living in 7 villages of the Nilgiri Hills in South India. Ancient inhabitants of the region, they have been designated Scheduled Tribes by the government of India, and are known by such Indian-language terms as"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": " ādivāsi"
+            },
+            {
+              "type": "text",
+              "text": " (original inhabitant) and "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "paḻankuṭi"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "makkaḷ"
+            },
+            {
+              "type": "text",
+              "text": " (ancient-race people). I conducted ethnographic research in the Nilgiris for 2 years, 1990-92, during most of which time I lived in the Kota village of Kolmel (Tamil: "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Kollimalai"
+            },
+            {
+              "type": "text",
+              "text": "), and I have made regular visits to the Nilgiris ever since."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Whereas “Kota” is their English name, they are known in local languages by variations of this term and in their own language by their ethnonym "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kōv"
+            },
+            {
+              "type": "text",
+              "text": ". The Kota language, which they call "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kōv mānt,"
+            },
+            {
+              "type": "text",
+              "text": " is closely related to that of the neighboring Toda tribe on the Nilgiri plateau. Both languages belong to the southern branch of the Dravidian language family and are believed to have broken off from the common ancestor of Tamil and Malayalam more than 2,000 years ago. The basis for this dating is the so-called palatalization rule: certain sounds in modern-day Tamil, such as the word “do or make,” "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "cey"
+            },
+            {
+              "type": "text",
+              "text": "-, represent evidence of a systematic phonetic shift in some words from the velum in back of the mouth to the roof of the mouth. The initial consonant in the Kota cognate, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "key"
+            },
+            {
+              "type": "text",
+              "text": "-, is an archaic feature preserved in Kota and Toda and now lost in Tamil and Malayalam."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "99626718",
+            "poster": "/uploads/44a5402b7d4a0264.webp",
+            "title": "Double funeral, Kota",
+            "caption": "Kurgoj village (Shollur Kokal) 1992, two people died within a day and two funerals were observed at the same time."
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730651",
+            "poster": "/uploads/3e846229170b189b.webp",
+            "title": "Kota Funeral Music",
+            "caption": "Played on verandah of bereaved's home in Kurgoj village, 2001"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725782",
+            "poster": "/uploads/e875733b0dc91a60.webp",
+            "title": "Kota musicians playing god tune",
+            "caption": "At the height of the annual god ceremony, Kotas play special melodies to call their gods"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725786",
+            "poster": "/uploads/f7a0d7f2b6a5dbe0.webp",
+            "title": "Friction Fire Preparation",
+            "caption": "For many Kota rituals, it is necessary to produce fire by friction. God ceremony, Kolmel, 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730652",
+            "poster": "/uploads/cd72af65171e0a27.webp",
+            "title": "House of the Bereaved",
+            "caption": "Kota women keeping vigil over the corpse at a Kota funeral, Kurgoj, 2001"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730654",
+            "poster": "/uploads/9da72f2c755e4d01.webp",
+            "title": "Kota Men Chant",
+            "caption": "When dancing and performing certain rituals for their gods, men intone"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731050",
+            "poster": "/uploads/d22f8ea1f6005fb0.webp",
+            "title": "Millet Pouring Ritual",
+            "caption": "During the secondary mortuary ceremony, millet is said to constitute the deceased. Mēnāṛ village, 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731053",
+            "poster": "/uploads/ee62543185510bea.webp",
+            "title": "Kota Women Singing",
+            "caption": "One of three mandatory Kota women's songs sung at criticual ritual junctures. This one pokes fun at characters in the village. Kolmel village, c. 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731054",
+            "poster": "/uploads/7d6e45e3fa4566f8.webp",
+            "title": "Pacāl Ōmayṇ",
+            "caption": "At critical junctures as an embodiment of unity and prayer, Kotas play all instruments at once. Kolmel village, c1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731056",
+            "poster": "/uploads/eb03e65b1dac3860.webp",
+            "title": "Paṭm Erykd Koḷ",
+            "caption": "Special melody played at end of god ceremony for removing metal offerings from temple pillars, while women dance, 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731057",
+            "poster": "/uploads/be686537cc9cf919.webp",
+            "title": "Kota prayer",
+            "caption": "Kotas pray before the temple saying"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "99628097",
+            "poster": "/uploads/62b25539ffe20a4d.webp",
+            "title": "Kota woman V. Mathi sings mourning song (āṭḷ)",
+            "caption": "The Kota tribal people of the Nilgiri Hills of South India sing and play a number of musical genres including that of the āṭl or mourning song. Some of them, such as this one, tell stories of how the subject of the song met their deaths. V. Mathi was a particularly expressive singer of this genre, making extensive gestures with her hands and eyes."
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "99626727",
+            "poster": "/uploads/9947d91fca2b4d5c.webp",
+            "title": "Cindamani Plays Kota Jaw Harp (pilj)",
+            "caption": "Cindamani is one of the few Kotas who still play the bamboo jaw harp, traditionally played by women during leisure times at home. The instrument is cremated along with the player's body when she dies, and it is said that the spirit of the deceased plays it on the way to the land of the dead."
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "99626374",
+            "poster": "/uploads/a9f4d426a2891a5c.webp",
+            "title": "Bugir Played by Mundan",
+            "caption": "Mundan, a Kota of Kurgoj village in the Nilgiris, plays the bamboo trumpet, bugīr, 2004"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "99626723",
+            "poster": "/uploads/48f12a932a079495.webp",
+            "title": "Kota Men Dancing",
+            "caption": "Kota men dancing for a secondary mortuary observance (varldav,"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "99626724",
+            "poster": "/uploads/b87949a571fc1aa5.webp",
+            "title": "Kota Women Dancing",
+            "caption": "Kota women dance at night during the annual god ceremony Jan 13, 1992"
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Once participants in an elaborate system of interchange of goods and services, the Kotas now participate in a modern rural and urban cash economy. They work in traditional occupations as agriculturalists, cultivating potatoes, carrots and other vegetables as well as tea and coffee; a small number of them continue to maintain the crafts of blacksmithing, carpentry, and pottery. Men and women are usually educated beyond the 10th standard (10th grade) nowadays and are employed in diverse professions, including those of medicine, law, engineering, and in various forms government service, including the postal service and the military."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Although my research was conducted in service of completing a PhD dissertation in ethnomusicology, I engaged in a broad and meticulous ethnographic study of many aspects of social and cultural life. I documented all the rituals associated with worship, agriculture, death and other aspects of the life cycle. I also focused extensively on conceptions and uses of space and time in music and in everyday life. In accounting for space, I mapped virtually every square centimeter of Kolmel village with a measuring tape and compass. The Kotas assisting me in this process took the opportunity to narrate for me the significance of each spot I drew on my green graph paper: where historical and miraculous events occurred, locations of deities or places treated with particular respect, the paths and locations associated with men, women, and children, and the ways in which the locations of family homes map onto kinship relations and physically trace aspects of village history. Many of the qualities associated with places change or have changed over time, either in a cyclical fashion over the course of the year, or in linear fashion as Kotas have developed the landscape and imbued it with new forms of significance."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Although no indigenous classification system comprehends all rituals and activities in which Kotas engage, they emphasize the distinction between death-related and god-related events and materials. In keeping with this classificatory emphasis, Kotas devote the majority of their ceremonial time to rituals for the gods and for the dead. The primary god-related ceremony is called devr, literally “god,” or in a Tamilized and Anglicized version of the ceremony’s name, “The Kambattarayya festival” or the “God ceremony.” Kamaṭn or Kambatten is the name of Kota first born men in all but a few villages and is the name of the Kota “father god.” The God ceremony is celebrated in most villages for 10-12 days in December-January. Its precise date depends on the sighting of the new moon. Funerals consist of rituals in and in front of the deceased’s house followed by a procession to the funeral ground and cremation. Now, the rituals are usually completed in a few days, but in earlier times Kotas would wait until other villages were informed and had time to send family representatives to walk and attend the funeral."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "After fatalities reach a critical mass, members of a village may decide to conduct a "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "varldāv"
+            },
+            {
+              "type": "text",
+              "text": "—a memorial celebration for all those who have died since the last such ceremony was held. This typically lasts between 3 and 8 days and is divided into two main parts, that conducted in the village in front of the houses of the bereaved and that held in the mortuary ground reserved for this purpose. The initial funeral, called "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "pac tāv"
+            },
+            {
+              "type": "text",
+              "text": ", is so called because the corpse is still moist or “green” ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "pac"
+            },
+            {
+              "type": "text",
+              "text": "); the "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "varldāv"
+            },
+            {
+              "type": "text",
+              "text": " is so named after the dry ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "varl"
+            },
+            {
+              "type": "text",
+              "text": ") bone relics that are preserved after the initial cremation and used as a ritual focus for the new ceremony. Many symbolic items in each of the complex ceremonies reinforce the distinction between “wet/green” and “dry.” The "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "varldāv"
+            },
+            {
+              "type": "text",
+              "text": " is meant to be the final sendoff for the spirits of the dead to travel to the land of the dead (or to meet with the gods in the sky, depending on local soteriological variations), and it transforms the village from a place contaminated by death to one renewed, purified, and ready for celebration of the gods."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The musical repertoire is similarly classified into the god repertoire and the death repertoire, although there are pieces that lie ambiguously on the borders of these categories. Kotas play outdoor instrumental music on double-reed instruments with conical bore called "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "koḷ"
+            },
+            {
+              "type": "text",
+              "text": " and accompany them with the frame drum tabaṭk and on cylindrical drums ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "par"
+            },
+            {
+              "type": "text",
+              "text": ")—kiṇvar (trebly timbre, making the sounds “"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kiṇ kiṇ"
+            },
+            {
+              "type": "text",
+              "text": "”) and dobar or gumbar (bassy timbre, making the sounds “"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "do do"
+            },
+            {
+              "type": "text",
+              "text": "” or “"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "gum gum"
+            },
+            {
+              "type": "text",
+              "text": "”). Each of these instrument names and types is cognate with those of other tribal peoples of the Nilgiris and among plains people. An example is the paṟai drum of the Tamils (cognate with “"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "par"
+            },
+            {
+              "type": "text",
+              "text": "”), from which the ethnonym "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "paṟaiyar"
+            },
+            {
+              "type": "text",
+              "text": " (English: Pariah) derives. Other instruments played along with this ensemble include the curved brass horn ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kob"
+            },
+            {
+              "type": "text",
+              "text": "), the cymbals ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "jālrāv"
+            },
+            {
+              "type": "text",
+              "text": "), and in special cases the kettle drum ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "ērdabaṭk"
+            },
+            {
+              "type": "text",
+              "text": "). In addition to these outdoor instruments associated with public rituals and festivals are the bamboo clarinet ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "pulāng"
+            },
+            {
+              "type": "text",
+              "text": ") and bamboo trumpet ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "bugīr"
+            },
+            {
+              "type": "text",
+              "text": "), both of which are used to play the same repertoire as the koḷ, but in intimate contexts and without accompaniment."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Women used to play a bamboo jew’s harp ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "pījl"
+            },
+            {
+              "type": "text",
+              "text": "), but almost nobody knows how to play it anymore. The"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": " pījl"
+            },
+            {
+              "type": "text",
+              "text": " and the"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": " bugīr"
+            },
+            {
+              "type": "text",
+              "text": " were cremated with the woman or man, respectively, who played it during her or his lifetime and it is said that the spirit of the deceased would play the instrument as it rose from the funeral pyre. Examples of both instruments can be found in the video examples above."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "The identity of an instrumental piece is determined by the melody on the"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": " koḷ"
+            },
+            {
+              "type": "text",
+              "text": " and for this reason a piece is called a "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "koḷ"
+            },
+            {
+              "type": "text",
+              "text": ". Individual "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "koḷ"
+            },
+            {
+              "type": "text",
+              "text": "s are named for their ritual contexts, the associated dance, and for associated stories, places and deities. In some cases many pieces belong to a single class—such as "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tiruganāṭ"
+            },
+            {
+              "type": "text",
+              "text": ", literally “turning dance.” Many pieces can be played for this dance. Other names point to unique contexts, such as the tune for lighting the funeral bier. Whereas musicians in any one village may know dozens of "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "koḷ"
+            },
+            {
+              "type": "text",
+              "text": "s, only a small number of accompaniment patterns and an even smaller number of names exist for these tunes. Naming practices vary, and some Kotas do not refer to elements of music using any terms at all. In Kolmel, they term an 8-beat pattern with accents (accented beats are indicated by “/” and unaccented beats by “.”) as follows / . . / . / . . "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tiruganāt dāk"
+            },
+            {
+              "type": "text",
+              "text": ", or “turning dance type,” even if it is not, in fact, used for a dance. They term patterns of 10, 7, and 6 beats "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "cādā dāk"
+            },
+            {
+              "type": "text",
+              "text": ", or “plain dance type,” again regardless of whether the piece is ever used to accompany a dance. Another, relatively rare, pattern is called koḷāḷ dāk; it is said to have been learned from dalit drummers of the Cakkiliyar caste. This pattern is used exclusively for pieces devoted to non-Kota deities, and to deities incorporated into the Kota pantheon in relatively recent times."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Although music is an essential and even constitutive part of significant ritual moments in the highly complex ceremonies for god and death, there is no special place for music in other life cycle ceremonies. This is particularly surprising in the case of weddings, because in most of South Asia, marriage is the most important event in a person’s life and families make enormous sacrifices in order to celebrate it as grandly as possible. Kotas consider it customary to observe wedding ceremonies modestly (from time to time wealthy members have violated this convention and were subjected to criticism). Moreover, a number of small rituals may be conducted over months or years that constitute forms of, or stages in, the marriage process. One of the possible reasons for this lack of emphasis on a single, momentus marriage in the life of an individual is that Kota men and women are free to divorce and remarry if their marriage is unsatisfactory. Put another way by one Kota consultant, marriage is a responsibility, not something merely to be celebrated. Moreover, although Kotas are now sensitive to the conservative moral codes that have become dominant throughout South Asia, it is more acceptable among Kotas than among most Tamil speaking, neighboring castes for young men and women to have relationships outside of marriage. Kota kinship terminology, not surprisingly, follows the Dravidian system. A man and woman of the same generation are classified as either brother and sister or husband and wife—that is, they are affines whether or not they are actually married. In practice, Kotas may marry or have intimate relations with members of the opposite sex in any of the other villages, or with those in one of the other exogamous divisions in the village. There are usually three such divisions in a village, and they are embodied in a cluster of houses called a "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kēr"
+            },
+            {
+              "type": "text",
+              "text": " (street)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Kota vocal music consists primarily of so-called god songs ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "devr pāṭ"
+            },
+            {
+              "type": "text",
+              "text": "), which are sung for the god ceremony and at the closing portions of the "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "varldāv,"
+            },
+            {
+              "type": "text",
+              "text": " and mourning songs ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "āṭḷ"
+            },
+            {
+              "type": "text",
+              "text": "), that take death or fearful events as their theme. Women sing god songs while dancing in a circle and clapping their hands—a musical format that is widespread in India and is, in the Tamil context, equivalent to "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "kummi"
+            },
+            {
+              "type": "text",
+              "text": " dancing and singing. The mourning songs are not laments in the sense of cried utterances at a funeral, but are rather organized, tuneful compositions put together after the singer or composer contemplates a tragedy. These songs may be composed and sung by either men or women, but women tend to maintain the repertoire more actively; since my research began in 1990, my impression is that fewer and fewer girls are interested in learning and composing these songs. Outside of these two main traditional genres, Kotas also sing lullabies ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "tālāṭ"
+            },
+            {
+              "type": "text",
+              "text": "), a variety of devotional songs that are not necessarily accompanied by hand-clapping and dance, and songs on a virtually unlimited range of topics, often drawing from melodies in common circulation. One influential composer, A. K. Rangan, began composing influential songs in the 1940s and 50s based on melodies of film songs. His songs continue to be sung as others are newly composed, become popular, and fade from memory. Kota popular songs in this way trace and preserve trends in the history of Indian popular song more generally."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

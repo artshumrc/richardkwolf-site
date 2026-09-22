@@ -1,0 +1,207 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Almora, Uttarakhand",
+    "description": "The Nanda Devi festival and jagaran singing recorded by Richard K. Wolf in Almora, Uttarakhand, in 1998."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/11ad6859d2f137e3.webp",
+        "alt": "Singers crowded together indoors around a man playing a small hourglass drum, a microphone in the foreground.",
+        "eyebrow": "",
+        "headline": "Almora, Uttarakhand",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "During the searing hot months of August and early September 1998 I left Lucknow to stay in the hilly region of Kumaon (now part of Uttarakhand, India), where I could work in a more comfortable environment, go for walks, and become acquainted with the culture of the area. That was the time the whole region was celebrating their local goddess Nanda Devi. In Almora, there was a multiday observance that included temple rituals, processions, continuous telling of the goddess’s story ("
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "jāgaṛ"
+            },
+            {
+              "type": "text",
+              "text": "), and nightly cultural programs of music, dance, drama and comedy from visiting artists of the larger region.  The gallery below includes photographs and links to video and audio recordings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "120201555",
+            "poster": "/uploads/8cc0b0b8319f1674.webp",
+            "title": "Choliyan Dance",
+            "caption": "Bhuvan Ram is one of the several Choliyan dance and music groups who participated in the celebration of the goddess Nanda Devi in Almora, Kumaon, Uttarakhan in August of 1998. They hail from the village of Jageswar. The performers and instruments are: Bhuvan Ram--leader; Arjun Ram--turi (trumpet); Dalip Ram--ḍhol (cylinder drum); Nathuram--nagara (kettle drum); Hira Ram--mashagbin (bagpipe); Rajendr Ram--damaon (kettle drum); Divan Ram--damaon (kettle drum)"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e668715e0b9fc2f5.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Almora Jagaran",
+            "caption": "A jagaran is a ceremony using music and texts to tell the story of a deity, and invoke spirits who speak through possessed mediums. Salla village, Almora, 3 Sept 1998"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/32ce4711f9b8228a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Almora Jagaran",
+            "caption": "A jagaran is a ceremony using music and texts to tell the story of a deity, and invoke spirits who speak through possessed mediums. Salla village, Almora, 3 Sept 1998"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/ab8e2d7f3d170c79.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Almora Jagaran",
+            "caption": "A jagaran is a ceremony using music and texts to tell the story of a deity, and invoke spirits who speak through possessed mediums. Salla village, Almora, 3 Sept 1998"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/4c854306fedaa714.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Almora Jagaran",
+            "caption": "A jagaran is a ceremony using music and texts to tell the story of a deity, and invoke spirits who speak through possessed mediums. Salla village, Almora, 3 Sept 1998"
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/20c93943d2866ad3.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Women at Nanda Devi temple",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/032233fd4d6a7ff1.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Woman in Salla village near Almora",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/6bb1c24318177ac7.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ransinha",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/aebb4a7793846f96.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Oil lamps and tridents for Nanda Devi",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/33dee0e886decdb4.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nandadevi Procession Almora",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/ccdf26267d584e91.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nandadevi Almora 1",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/ead091a5148f5d3d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nanda Devi Procession 1998",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/b8cb44dd328cbefc.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Nanda Devi Jagaran",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/e4c7ed8356967b7a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Mandala for Nanda Devi",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/dff3bbe3dab0dff7.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Jagaran singers",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/8d8ac21ef389cb53.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Jagaran singer at Nanda Devi",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/65a1bfddcf9ff76d.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Bhuvan Ram and Party 2",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/ea6412176a4fd43f.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Almora Jagaran 8 98-5",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/759fdbd358db4831.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Almora 1998",
+            "caption": ""
+          }
+        ]
+      }
+    }
+  ]
+}

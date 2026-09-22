@@ -1,14 +1,20 @@
 /**
- * The image port: fetch every photograph the WordPress pages reference,
- * content-address it, derive responsive renditions, and write the Image
- * manifest the renderer reads plus the legacy-URL map later content tickets
- * read.
+ * The image port: fetch every photograph the WordPress pages reference, and
+ * every Vimeo poster frame the galleries need, content-address them, derive
+ * responsive renditions, and write the Image manifest the renderer reads plus
+ * the legacy-URL and poster maps later content tickets read.
  *
  * Re-runnable without harm. Originals are cached under `.port-cache/`, and a
  * file's name is a hash of its own bytes, so a second run refetches nothing and
  * writes nothing.
  *
- * Usage: node scripts/port-images.mjs [--limit N] [--force]
+ * Usage: node scripts/port-images.mjs [--limit N] [--force] [--posters-only]
+ *
+ * `--posters-only` runs the Vimeo poster pass alone, against the committed
+ * Image manifest. The photographs are already ported and their served files
+ * are content-addressed, so refetching 660 MiB to add a poster would buy
+ * nothing and would drop an entry for any photograph the live site has since
+ * lost.
  */
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
@@ -23,6 +29,9 @@ const CACHE_DIR = '.port-cache/originals';
 const MEDIA_DIR = 'static/uploads';
 const MANIFEST_PATH = 'content/image-manifest.json';
 const SOURCE_MAP_PATH = 'migration/image-sources.json';
+const PAGES_DIR = 'migration/source/pages';
+const VIMEO_CACHE_DIR = '.port-cache/vimeo';
+const POSTER_MAP_PATH = 'migration/vimeo-posters.json';
 
 /** Responsive widths. A rendition is never wider than the source. */
 const WIDTHS = [400, 800, 1200, 2000];
@@ -37,6 +46,7 @@ const CONCURRENCY = 8;
 const args = process.argv.slice(2);
 const limit = Number(args[args.indexOf('--limit') + 1]) || Infinity;
 const force = args.includes('--force');
+const postersOnly = args.includes('--posters-only');
 
 /** `…/name-300x225.jpg` → `…/name.jpg`. A path with no size suffix is its own base. */
 function baseOf(path) {
@@ -171,7 +181,7 @@ function fetchPathFor(base) {
 
 await mkdir(MEDIA_DIR, { recursive: true });
 
-const targets = toPort.slice(0, limit === Infinity ? undefined : limit);
+const targets = postersOnly ? [] : toPort.slice(0, limit === Infinity ? undefined : limit);
 const counts = { fetched: 0, cached: 0 };
 const failures = [];
 const ported = new Map();
@@ -190,8 +200,59 @@ await mapWithConcurrency(targets, async (base) => {
 	}
 });
 
-const manifest = {};
+/**
+ * Poster frames for every Vimeo clip the pages embed. They come from Vimeo's
+ * own oEmbed endpoint rather than the theme's crops, several of which are
+ * small derivatives, and are committed so a reader page makes no third-party
+ * request until the poster is clicked.
+ */
+async function portPosters() {
+	const files = await readdir(PAGES_DIR);
+	const ids = new Set();
+	for (const file of files) {
+		const html = await readFile(join(PAGES_DIR, file), 'utf-8');
+		for (const [, id] of html.matchAll(/player\.vimeo\.com\/video\/(\d+)/g)) ids.add(id);
+	}
+
+	await mkdir(VIMEO_CACHE_DIR, { recursive: true });
+	const posters = {};
+	await mapWithConcurrency([...ids].sort(), async (id) => {
+		const cachePath = join(VIMEO_CACHE_DIR, `${id}.json`);
+		try {
+			let poster;
+			if (existsSync(cachePath) && !force) {
+				poster = JSON.parse(await readFile(cachePath, 'utf-8'));
+			} else {
+				const oembedUrl = `https://vimeo.com/api/oembed.json?url=${encodeURIComponent(
+					`https://vimeo.com/${id}`
+				)}&width=${MAX_WIDTH}`;
+				const response = await fetch(oembedUrl);
+				if (!response.ok) throw new Error(`oEmbed HTTP ${response.status}`);
+				const oembed = await response.json();
+				if (!oembed.thumbnail_url) throw new Error('oEmbed returned no poster');
+				const image = await fetch(oembed.thumbnail_url);
+				if (!image.ok) throw new Error(`poster HTTP ${image.status}`);
+				poster = {
+					title: oembed.title ?? '',
+					source: oembed.thumbnail_url,
+					bytes: Buffer.from(await image.arrayBuffer()).toString('base64')
+				};
+				await writeFile(cachePath, JSON.stringify(poster));
+			}
+			const { hash, entry } = await port(Buffer.from(poster.bytes, 'base64'));
+			posters[id] = { path: `/uploads/${hash}.webp`, title: poster.title, source: poster.source, entry };
+		} catch (error) {
+			failures.push(`vimeo ${id}: ${error.message}`);
+		}
+	});
+	return posters;
+}
+
+const posters = await portPosters();
+
+const manifest = postersOnly ? JSON.parse(await readFile(MANIFEST_PATH, 'utf-8')) : {};
 for (const { hash, entry } of ported.values()) manifest[`/uploads/${hash}.webp`] = entry;
+for (const { path, entry } of Object.values(posters)) manifest[path] = entry;
 
 /** Every legacy URL — originals, theme crops, aliased `-uai` sizes — to its served path. */
 const sourceMap = {};
@@ -213,7 +274,14 @@ const sorted = (object) =>
 
 await mkdir(dirname(MANIFEST_PATH), { recursive: true });
 await writeFile(MANIFEST_PATH, `${JSON.stringify(sorted(manifest), null, '\t')}\n`);
-await writeFile(SOURCE_MAP_PATH, `${JSON.stringify(sorted(sourceMap), null, '\t')}\n`);
+if (!postersOnly) {
+	await writeFile(SOURCE_MAP_PATH, `${JSON.stringify(sorted(sourceMap), null, '\t')}\n`);
+}
+
+const posterMap = Object.fromEntries(
+	Object.entries(posters).map(([id, { path, title, source }]) => [id, { path, title, source }])
+);
+await writeFile(POSTER_MAP_PATH, `${JSON.stringify(sorted(posterMap), null, '\t')}\n`);
 
 const mediaFiles = await readdir(MEDIA_DIR);
 console.log(
@@ -226,6 +294,7 @@ console.log(
 		`renditions written ${written.created}, already present ${written.present}`,
 		`manifest entries ${Object.keys(manifest).length}`,
 		`legacy URLs mapped ${Object.keys(sourceMap).length}`,
+		`vimeo posters ${Object.keys(posters).length}`,
 		`media files ${mediaFiles.length}`
 	].join('\n')
 );
