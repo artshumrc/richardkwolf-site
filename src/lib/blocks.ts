@@ -43,7 +43,7 @@ const figure = defineSvelteBlock({
 	description: 'A single photograph with a caption.',
 	attributes: {
 		path: { default: '', required: true, validate: nonEmpty },
-		alt: { default: '', required: true },
+		alt: { default: '', required: true, validate: nonEmpty },
 		caption: { default: '' }
 	},
 	component: Figure,

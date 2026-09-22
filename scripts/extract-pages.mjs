@@ -112,10 +112,10 @@ function pdfPath(pathname) {
 
 /**
  * An internal URL becomes a site-relative path, so the renderer can prefix the
- * base path; anything else is left exactly as written. A link to a page no
- * later ticket has ported yet keeps its absolute URL, because the prerenderer
- * crawls site-relative links and would fail the build on the missing route;
- * re-running once that page exists completes the rewrite.
+ * base path; anything else is left exactly as written. A link to an address
+ * that has no Content document behind it keeps its absolute URL, because the
+ * prerenderer crawls site-relative links and would fail the build on the
+ * missing route. Every such address is reported at the end of a run.
  */
 function rewriteHref(href) {
 	const raw = text(href).trim();
@@ -328,9 +328,9 @@ function galleryItem(tile) {
 }
 
 /**
- * A tile linking to another page of the site as a Card. A tile pointing at a
- * page no later ticket has ported — a retired annotated-audio post, a
- * portfolio piece — yields nothing, because the prerenderer crawls the link.
+ * A tile linking to another page of the site as a Card. A tile pointing at an
+ * address with no Content document behind it — a retired annotated-audio post,
+ * say — yields nothing, because the prerenderer crawls the link.
  */
 function cardBlock(tile) {
 	const anchor = tile.querySelector('.t-entry-title a') ?? tile.querySelector('a.pushed[href]');
