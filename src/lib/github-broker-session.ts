@@ -38,6 +38,32 @@ function callbackUrl(): string {
 	return `${window.location.origin}${base}/auth/callback/`;
 }
 
+/**
+ * A button, and the press of it.
+ *
+ * Both editor mounts sign in as they load rather than from a click, so
+ * `window.open` there is not gesture-driven and a browser blocks it whatever
+ * the reader has allowed — the popup blocker's default, and the first thing
+ * anyone opening the editor met. Waiting for a press here makes the sign-in
+ * window one the author asked for, which needs no browser setting at all.
+ */
+function pressToSignIn(): Promise<void> {
+	return new Promise((resolve) => {
+		const overlay = document.createElement('div');
+		overlay.className = 'broker-sign-in';
+		const button = document.createElement('button');
+		button.type = 'button';
+		button.textContent = 'Sign in with GitHub';
+		button.addEventListener('click', () => {
+			overlay.remove();
+			resolve();
+		});
+		overlay.append(button);
+		document.body.append(overlay);
+		button.focus();
+	});
+}
+
 function waitForRelay(popup: Window, state: string): Promise<string> {
 	return new Promise((resolve, reject) => {
 		const cleanup = () => {
@@ -145,8 +171,9 @@ export const brokerSessionProvider: SessionProvider = async (config) => {
 	authorize.searchParams.set('redirect_uri', redirectUri);
 	authorize.searchParams.set('state', state);
 
+	await pressToSignIn();
 	const popup = window.open(authorize.toString(), 'uncial-cms-auth', 'popup,width=640,height=760');
-	if (!popup) throw new Error('The sign-in popup was blocked; allow popups for this site.');
+	if (!popup) throw new Error('The sign-in window was blocked; allow popups for this site.');
 
 	try {
 		const code = await waitForRelay(popup, state);

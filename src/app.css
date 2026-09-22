@@ -150,3 +150,25 @@ img {
 .uncial-content > .hero + .row {
 	margin-block-start: 4.5rem;
 }
+
+/* The sign-in button the editor's broker provider raises. It lives outside
+   any component, so its styling lives here. */
+.broker-sign-in {
+	position: fixed;
+	inset: 0;
+	z-index: 100;
+	display: grid;
+	place-items: center;
+	background: rgba(48, 49, 51, 0.55);
+}
+
+.broker-sign-in button {
+	padding: 0.75rem 1.5rem;
+	border: 0;
+	background: var(--accent);
+	color: var(--on-ink);
+	font-family: var(--font-body);
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
