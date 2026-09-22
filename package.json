@@ -12,6 +12,7 @@
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"assert:clean-pages": "node scripts/assert-clean-pages.mjs",
 		"port:images": "node scripts/port-images.mjs",
+		"port:pdfs": "node scripts/port-pdfs.mjs",
 		"extract:pages": "node scripts/extract-pages.mjs"
 	},
 	"dependencies": {

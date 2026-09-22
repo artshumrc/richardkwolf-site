@@ -21,8 +21,6 @@ const TITLE_SUFFIX = ' - Richard K. Wolf';
 // staging server; links to it are internal links written by accident.
 const SELF_ORIGIN = /^https?:\/\/(?:www\.)?(?:richardkwolf\.com|159\.203\.177\.179)(?=[/?#]|$)/i;
 
-// Offprints and handouts still live at their WordPress URLs; ticket 9 ports
-// the files and rewrites these links.
 const WP_UPLOADS = /^\/wp-content\//i;
 
 // The theme styles a page's opening sentence as a heading element. A real
@@ -44,6 +42,7 @@ const MARK_TAGS = new Map([
 
 const pagesFile = JSON.parse(readFileSync('migration/pages.json', 'utf8'));
 const imageSources = JSON.parse(readFileSync('migration/image-sources.json', 'utf8'));
+const pdfSources = JSON.parse(readFileSync('migration/pdf-sources.json', 'utf8'));
 
 const text = (value) => (value ?? '').normalize('NFC');
 
@@ -63,6 +62,11 @@ function altFor(path) {
 /** Pages whose absolute self-origin links this run could not resolve. */
 const unported = new Set();
 
+/** The served path an offprint's WordPress URL was ported to, if any. */
+function pdfPath(pathname) {
+	return pdfSources[decodeURI(pathname).replace(/^\/+/, '')]?.path ?? '';
+}
+
 /**
  * An internal URL becomes a site-relative path, so the renderer can prefix the
  * base path; anything else is left exactly as written. A link to a page no
@@ -74,7 +78,13 @@ function rewriteHref(href) {
 	const raw = text(href).trim();
 	if (!SELF_ORIGIN.test(raw)) return { href: raw, internal: false };
 	const url = new URL(raw);
-	if (WP_UPLOADS.test(url.pathname)) return { href: raw, internal: false };
+	if (WP_UPLOADS.test(url.pathname)) {
+		// An offprint the port could not retrieve — one PDF has 404ed on the
+		// WordPress site for years — loses its link and keeps its prose, rather
+		// than carrying a dead URL across.
+		const path = pdfPath(url.pathname);
+		return path ? { href: path, internal: true } : { href: '', internal: false };
+	}
 	const path = url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`;
 	if (!existsSync(`${CONTENT_DIR}/${path.slice(1, -1)}.json`)) {
 		unported.add(path);

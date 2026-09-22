@@ -127,7 +127,7 @@
                 {
                   "type": "link",
                   "attrs": {
-                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/field-techniques-guide-2009.pdf",
+                    "href": "/pdfs/field-techniques-guide-2009.pdf",
                     "target": null,
                     "rel": null,
                     "title": null,
@@ -427,7 +427,7 @@
                 {
                   "type": "link",
                   "attrs": {
-                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Silk-Road-Course.pdf",
+                    "href": "/pdfs/Silk-Road-Course.pdf",
                     "target": null,
                     "rel": null,
                     "title": null,
@@ -543,7 +543,7 @@
                 {
                   "type": "link",
                   "attrs": {
-                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Creative-Ethnographic-Writing.pdf",
+                    "href": "/pdfs/Creative-Ethnographic-Writing.pdf",
                     "target": null,
                     "rel": null,
                     "title": null,
@@ -564,7 +564,7 @@
                 {
                   "type": "link",
                   "attrs": {
-                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Current-Methods-in-Ethnomusicology-2006.pdf",
+                    "href": "/pdfs/Current-Methods-in-Ethnomusicology-2006.pdf",
                     "target": null,
                     "rel": null,
                     "title": null,
@@ -585,7 +585,7 @@
                 {
                   "type": "link",
                   "attrs": {
-                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Music-and-Subjectivity-in-Asia.pdf",
+                    "href": "/pdfs/Music-and-Subjectivity-in-Asia.pdf",
                     "target": null,
                     "rel": null,
                     "title": null,
@@ -623,18 +623,6 @@
           "content": [
             {
               "type": "text",
-              "marks": [
-                {
-                  "type": "link",
-                  "attrs": {
-                    "href": "http://richardkwolf.com/wp-content/uploads/2015/02/Music-in-Islamic-Contexts.pdf",
-                    "target": null,
-                    "rel": null,
-                    "title": null,
-                    "class": null
-                  }
-                }
-              ],
               "text": "Music in Islamic Contexts"
             }
           ]
@@ -657,7 +645,7 @@
                 {
                   "type": "link",
                   "attrs": {
-                    "href": "http://richardkwolf.com/wp-content/uploads/2016/12/Performing-and-Theorizing-South-Indian-Music.pdf",
+                    "href": "/pdfs/Performing-and-Theorizing-South-Indian-Music.pdf",
                     "target": null,
                     "rel": null,
                     "title": null,
