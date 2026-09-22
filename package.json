@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"uncial": "^2.0.2",
-		"uncial-cms": "^2.0.1"
+		"uncial-cms": "^2.0.2"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",

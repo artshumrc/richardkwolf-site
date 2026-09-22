@@ -170,8 +170,8 @@ importers:
         specifier: ^2.0.2
         version: 2.0.2(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(happy-dom@20.14.5)(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2))
       uncial-cms:
-        specifier: ^2.0.1
-        version: 2.0.1(@sveltejs/kit@2.70.3(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(typescript@5.9.3)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(uncial@2.0.2(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(happy-dom@20.14.5)(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2)))
+        specifier: ^2.0.2
+        version: 2.0.2(@sveltejs/kit@2.70.3(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(typescript@5.9.3)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(uncial@2.0.2(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(happy-dom@20.14.5)(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2)))
     devDependencies:
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
@@ -1248,13 +1248,13 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  uncial-cms@2.0.1:
-    resolution: {integrity: sha512-KjlCkD+LrY03h7sNqDTjP4iGUKdpDtaTm+4dV5e+hrYU05jr2Cs/vlHAyevAw9ESciIOggEDP5YXiMXrZv/6LQ==}
+  uncial-cms@2.0.2:
+    resolution: {integrity: sha512-OPvhk9szYuhhznG1dV4bo0PAVWS8uYquUhO9I/N+3o5y98/LC2tJUSKk9zUdo4kJ3xCohC/bIyyalEzlvEsWLQ==}
     hasBin: true
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^5.0.0
-      uncial: ^2.0.1
+      uncial: ^2.0.3
     peerDependenciesMeta:
       '@sveltejs/kit':
         optional: true
@@ -2278,7 +2278,7 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  uncial-cms@2.0.1(@sveltejs/kit@2.70.3(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(typescript@5.9.3)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(uncial@2.0.2(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(happy-dom@20.14.5)(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2))):
+  uncial-cms@2.0.2(@sveltejs/kit@2.70.3(@sveltejs/vite-plugin-svelte@6.2.4(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(typescript@5.9.3)(vite@7.3.6(@types/node@26.6.2)))(svelte@5.57.1)(uncial@2.0.2(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(happy-dom@20.14.5)(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2))):
     dependencies:
       svelte: 5.57.1
       uncial: 2.0.2(@tiptap/extension-code-block@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(happy-dom@20.14.5)(svelte@5.57.1)(vite@7.3.6(@types/node@26.6.2))

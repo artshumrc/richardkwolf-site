@@ -6,3 +6,4 @@ allowBuilds:
 
 minimumReleaseAgeExclude:
   - uncial@2.0.2
+  - uncial-cms@2.0.2
