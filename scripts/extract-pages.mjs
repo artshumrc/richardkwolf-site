@@ -9,12 +9,6 @@
 // Usage: node scripts/extract-pages.mjs [slug...]   (default: every slug in
 // migration/pages.json). Run the two ports first: this reads the source maps
 // they write.
-//
-// HAZARD: the committed Content documents are the edited copy and re-running
-// this overwrites them. Captions in particular were repaired by hand after the
-// original extraction — an attribute-borne caption containing a double quote
-// is truncated at the quote here — so a re-run silently regresses them. Diff
-// the result before keeping it.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
@@ -538,14 +532,29 @@ function heroBlock(document, title) {
 }
 
 /**
+ * Read a source page, repairing the theme's malformed tile attributes before
+ * the parser sees them.
+ *
+ * The page builder writes `data-title` and `data-caption` with their inner
+ * double quotes unescaped, so an HTML parser ends the value at the first one
+ * and the rest of the caption — the transliteration this extraction exists to
+ * protect — is dropped. The real end of the value is the quote that a further
+ * attribute or the end of the tag follows; every quote before it is content.
+ */
+function readSource(file) {
+	return readFileSync(`${SOURCE_DIR}/${file}.html`, 'utf8').replace(
+		/\b(data-title|data-caption)="(.*?)"(?=\s+[a-zA-Z_:][-a-zA-Z0-9_:.]*\s*=|\s*\/?>)/gs,
+		(_, name, value) => `${name}="${value.replaceAll('"', '&quot;')}"`
+	);
+}
+
+/**
  * Fold a retired post's gallery items into the page that inherits them. An
  * item the page already carries — the two pages shared a clip — is not
  * repeated.
  */
 function absorb(blocks, slug) {
-	const source = extractBody(
-		parse(readFileSync(`${SOURCE_DIR}/${slug}.html`, 'utf8')).querySelector('.post-content')
-	);
+	const source = extractBody(parse(readSource(slug)).querySelector('.post-content'));
 	const items = source.filter((block) => block.type === 'gallery').flatMap((block) => block.attrs.items);
 	if (items.length === 0) return;
 
@@ -580,7 +589,7 @@ function portfolioBody(document) {
 
 function extract(slug) {
 	const page = pagesFile.pages[slug];
-	const document = parse(readFileSync(`${SOURCE_DIR}/${page?.source ?? slug}.html`, 'utf8'));
+	const document = parse(readSource(page?.source ?? slug));
 	const rawTitle = text(document.querySelector('title')?.text ?? '').trim();
 	const title = rawTitle.endsWith(TITLE_SUFFIX) ? rawTitle.slice(0, -TITLE_SUFFIX.length) : rawTitle;
 	const description = text(page?.description ?? '').trim();
