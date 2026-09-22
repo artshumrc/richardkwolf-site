@@ -24,7 +24,9 @@
 	<link rel="canonical" href={canonical} />
 </svelte:head>
 
-<main>
+<!-- The search index's scope: the article region only, so the masthead, the
+     menu and the footer do not pollute every result. -->
+<main data-pagefind-body>
 	<h1 class:visually-hidden={leadsWithHero}>{title}</h1>
 	<Renderer content={document} {blocks} {schema} />
 </main>

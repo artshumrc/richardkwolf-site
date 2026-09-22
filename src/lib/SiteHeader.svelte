@@ -57,6 +57,17 @@
 						{/if}
 					</li>
 				{/each}
+				<!-- Search sits in the menu rather than as a header search box, so no
+				     reader page carries the Pagefind bundle. -->
+				<li class="menu__item">
+					<a
+						href="{base}/search/"
+						aria-current={currentPath === '/search/' ? 'page' : undefined}
+						onclick={() => (menuOpen = false)}
+					>
+						Search
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</details>

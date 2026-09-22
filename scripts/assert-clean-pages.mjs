@@ -142,9 +142,10 @@ for (const page of pages.keys()) {
 }
 
 // The site is content-complete and closed: 29 pages ported at their existing
-// slugs, four Portfolio pieces. A change here is either a page added on
-// purpose or a document that stopped rendering, and both should be deliberate.
-const EXPECTED_READER_PAGES = 33;
+// slugs, four Portfolio pieces, and the search route. A change here is either a
+// page added on purpose or a document that stopped rendering, and both should be
+// deliberate.
+const EXPECTED_READER_PAGES = 34;
 if (readerPages !== EXPECTED_READER_PAGES) {
 	failures.push(
 		`expected ${EXPECTED_READER_PAGES} reader pages, found ${readerPages}: update EXPECTED_READER_PAGES if the change was intended.`
