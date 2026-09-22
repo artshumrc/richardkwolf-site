@@ -1,0 +1,144 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "sah na jāī ho re allāh",
+    "description": "Nur Muhammad and Ashakali sing sah na jāī ho re allāh to sarangi accompaniment in Hallaur, Uttar Pradesh, recorded in October 1998."
+  },
+  "content": [
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "sah na jāī ho re allāh, sung and performed on sarangi by Nur Muhammad and Ashakali, Hallaur, Uttar Pradesh. I traveled to eastern Uttar Pradesh with my friend and wonderful soz khan Saqlain Naqvi, in search of drumming traditions associated with Muharram observances."
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\nSaqlain had told me that in his wife’s home village, Hallaur, Shiahs themselves drum during Muharram. This is unusual in South Asia. Upon reaching Hallaur, I encountered not only drumming but also a range of other performance forms, several of them concerned with Muharram or inflected toward Karbala related themes because of the religious makeup of the population."
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Date: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "October 1998"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Location: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Hallaur, Uttar Pradesh"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Performers: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Nur Muhammad, Ashakali"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Instruments: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Sarangi"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "96199359",
+            "poster": "/uploads/4b1fab194e21fb78.webp",
+            "title": "Jogis",
+            "caption": ""
+          }
+        ]
+      }
+    }
+  ]
+}

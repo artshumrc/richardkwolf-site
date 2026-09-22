@@ -1,0 +1,63 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "The Voice in the Drum",
+    "description": "The trailer for The Voice in the Drum: Music, Language and Emotion in Islamicate South Asia, Richard K. Wolf's 2014 book from the University of Illinois Press."
+  },
+  "content": [
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "This is the trailer for the book, The Voice in the Drum: Music, language and emotion in Islamicate South Asia, by Richard K. Wolf. University of Illinois Press, October 2014. Based on extensive field research in India and Pakistan, this new study, written in the form of a novel, examines the ways drumming and voices interconnect over vast areas of South Asia and considers what it means for instruments to be voice-like and carry textual messages in particular contexts. This is the story of a family led by Ahmed Ali Khan, a North Indian ruler who revels in the glories of 19th century life, when many religious communities joined together harmoniously in grand processions. His journalist son Muharram Ali obsessively scours the subcontinent in pursuit of a music he naively hopes will dissolve religious and political barriers. The story charts the breakdown of this naiveté."
+            },
+            {
+              "type": "hardBreak"
+            },
+            {
+              "type": "text",
+              "text": "\n"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.press.uillinois.edu/books/catalog/95bsy6wx9780252038587.html",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "Buy the Book"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "106883938",
+            "poster": "/uploads/f93a8846e6dfd8ed.webp",
+            "title": "Book Trailer: The Voice in the Drum by Richard K. Wolf",
+            "caption": ""
+          }
+        ]
+      }
+    }
+  ]
+}

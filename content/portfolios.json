@@ -1,0 +1,72 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Portfolios",
+    "description": "Four multimedia portfolio pieces by Richard K. Wolf: Ismoil Nazriev, sah na jāī ho re allāh, The Voice in the Drum, and Wəzi tu ẓ̌ə jonət tu."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/b7675f43253e7939.webp",
+        "alt": "Aerial view of arid red and brown mountain ridges cut by a broad braided riverbed, with snow-capped peaks on the horizon.",
+        "eyebrow": "",
+        "headline": "Portfolios",
+        "lede": ""
+      }
+    },
+    {
+      "type": "cardRow",
+      "attrs": {
+        "columns": 4
+      },
+      "content": [
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/1fb88985369e9b56.webp",
+            "alt": "Ismoil Nazriev seated on the floor at home playing a long-necked lute, two younger men behind him.",
+            "title": "Ismoil Nazriev",
+            "blurb": "",
+            "link": "/portfolio/ismoil-nazriev-2/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/d244d417ba0d2e6b.webp",
+            "alt": "Two street musicians seated on the ground playing a bowed sarangi and small cymbals, a crowd standing around them.",
+            "title": "sah na jāī ho re allāh",
+            "blurb": "",
+            "link": "/portfolio/sah-na-jai-ho-re-allah/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/f93a8846e6dfd8ed.webp",
+            "alt": "A black and white shopfront in India lettered in Hindi, tabla shells stacked on the pavement outside.",
+            "title": "The Voice in the Drum",
+            "blurb": "",
+            "link": "/portfolio/the-voice-in-the-drum/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/165f9b4a86933f1b.webp",
+            "alt": "Three Wakhi musicians seated on the floor of a mud-walled room with a bowed lute, a plucked rubab and a frame drum.",
+            "title": "Wəzi tu ẓ̌ə jonət tu",
+            "blurb": "",
+            "link": "/portfolio/wazi_tu_portfolio/",
+            "externalUrl": ""
+          }
+        }
+      ]
+    }
+  ]
+}

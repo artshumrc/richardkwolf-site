@@ -1,0 +1,451 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Audio/Visual",
+    "description": "Audio and video examples keyed to Richard K. Wolf's publications: Kota ritual music, Muharram drumming and Sufi dhamali, with two SoundCloud recordings."
+  },
+  "content": [
+    {
+      "type": "hero",
+      "attrs": {
+        "image": "/uploads/2e61796ffcfb72dd.webp",
+        "alt": "A reel-to-reel tape recorder, a microphone and an SLR camera arranged on a pale grainy ground.",
+        "eyebrow": "",
+        "headline": "Audio/Visual",
+        "lede": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 2
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Audio / Visual Examples for Publications"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Many of my publications make reference to specific scenes, genres, and musical pieces captured on audio and video recordings. This section of the site provides links to both the media and to the original publications."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Doubleness, Matam"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Pain-Its-Transformations-Interface-Initiative/dp/0674024567",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Doubleness, "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Pain-Its-Transformations-Interface-Initiative/dp/0674024567",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "mātam"
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.amazon.com/Pain-Its-Transformations-Interface-Initiative/dp/0674024567",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": ", and Muharram drumming in South Asia.”"
+            },
+            {
+              "type": "text",
+              "text": " In "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Pain and its transformation"
+            },
+            {
+              "type": "text",
+              "text": ", 331-50., ed. Sarah Coakley and Kay Kaufman Shelemay. Cambridge: Harvard University Press. 2007"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "soundcloud",
+      "attrs": {
+        "resource": "track",
+        "soundcloudId": "150248019",
+        "title": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "The Black Cow’s Footprint"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "http://www.press.uillinois.edu/books/catalog/35rkh7td9780252031168.html",
+                    "target": "_blank",
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                },
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "The Black Cow’s Footprint: Time, Space and Music in the Lives of the Kotas of South India"
+            },
+            {
+              "type": "text",
+              "text": " (Delhi: Permanent Black, 2005; Urbana: University of Illinois Press, 2006.)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "soundcloud",
+      "attrs": {
+        "resource": "playlist",
+        "soundcloudId": "83374155",
+        "title": ""
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Emotional Dimensions"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/pdfs/emotional-dimensions-ritual-Kota.pdf",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“Emotional dimensions of ritual music among the Kotas, a south Indian tribe.”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Ethnomusicology"
+            },
+            {
+              "type": "text",
+              "text": " 45(3): 379–422. 2001"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725782",
+            "poster": "/uploads/e875733b0dc91a60.webp",
+            "title": "Kota musicians playing god tune",
+            "caption": "At the height of the annual god ceremony, Kotas play special melodies to call their gods"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725784",
+            "poster": "/uploads/18d48467e5de0051.webp",
+            "title": "Kota women singing",
+            "caption": "This song, traditionally sung for the annual Kota God Ceremony, describes a Chettiar merchant arriving in a Kota village to sell jewelry and trinkets. Kolmel village, 1991"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730649",
+            "poster": "/uploads/12bd596aab4e6398.webp",
+            "title": "Kota funeral",
+            "caption": "Funeral of two Kotas who died on consecutive days, Kurgoj village, 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725786",
+            "poster": "/uploads/f7a0d7f2b6a5dbe0.webp",
+            "title": "Friction Fire Preparation",
+            "caption": "For many Kota rituals, it is necessary to produce fire by friction. God ceremony, Kolmel, 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730651",
+            "poster": "/uploads/3e846229170b189b.webp",
+            "title": "Kota Funeral Music",
+            "caption": "Played on verandah of bereaved's home in Kurgoj village, 2001"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730652",
+            "poster": "/uploads/cd72af65171e0a27.webp",
+            "title": "House of the Bereaved",
+            "caption": "Kota women keeping vigil over the corpse at a Kota funeral, Kurgoj, 2001"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730653",
+            "poster": "/uploads/76f426c9c6de4423.webp",
+            "title": "Kota and Toda Mélange",
+            "caption": "An imaginative recreation of what Toda funerals were once like with Kota musical participation"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95730654",
+            "poster": "/uploads/9da72f2c755e4d01.webp",
+            "title": "Kota Men Chant",
+            "caption": "When dancing and performing certain rituals for their gods, men intone"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731050",
+            "poster": "/uploads/d22f8ea1f6005fb0.webp",
+            "title": "Millet Pouring Ritual",
+            "caption": "During the secondary mortuary ceremony, millet is said to constitute the deceased. Mēnāṛ village, 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731053",
+            "poster": "/uploads/ee62543185510bea.webp",
+            "title": "Kota Women Singing",
+            "caption": "One of three mandatory Kota women's songs sung at criticual ritual junctures. This one pokes fun at characters in the village. Kolmel village, c. 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731054",
+            "poster": "/uploads/7d6e45e3fa4566f8.webp",
+            "title": "Pacāl Ōmayṇ",
+            "caption": "At critical junctures as an embodiment of unity and prayer, Kotas play all instruments at once. Kolmel village, c1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731056",
+            "poster": "/uploads/eb03e65b1dac3860.webp",
+            "title": "Paṭm Erykd Koḷ",
+            "caption": "Special melody played at end of god ceremony for removing metal offerings from temple pillars, while women dance, 1992"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95731057",
+            "poster": "/uploads/be686537cc9cf919.webp",
+            "title": "Kota prayer",
+            "caption": "Kotas pray before the temple saying"
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Poetics of Sufi Practice"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/pdfs/poetics_of_sufi_practice.pdf",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
+              "text": "“The Poetics of ‘Sufi’ Practice: Drumming, Dancing, and Complex Agency at Madho Lāl Husain (And Beyond).”"
+            },
+            {
+              "type": "text",
+              "text": " "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "American Ethnologist"
+            },
+            {
+              "type": "text",
+              "text": " 33(2): 246-268. (Reprinted 2010 in "
+            },
+            {
+              "type": "text",
+              "marks": [
+                {
+                  "type": "italic"
+                }
+              ],
+              "text": "Islam and Society in Pakistan: Anthropological Perspectives"
+            },
+            {
+              "type": "text",
+              "text": ", ed. Magnus Marsden. Karachi: OUP) 2006"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725780",
+            "poster": "/uploads/9e6a422bdddd6ecc.webp",
+            "title": "'Urs of Madho Lal Husain",
+            "caption": "Dhamali dancers and dhol drummers at the shrine of Sufi Saint Shah Husain, Lahore, Pakistan"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "95725781",
+            "poster": "/uploads/904542ffd23a045e.webp",
+            "title": "Sheri Bāja",
+            "caption": "Tāsha and ḍhol ensemble, with electronic organ, playing at wedding in Barkaz, near Hyderabad, Andhra Pradesh, 1998"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -198,6 +198,25 @@
           ]
         }
       ]
+    },
+    {
+      "type": "cardRow",
+      "attrs": {
+        "columns": 2
+      },
+      "content": [
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/d244d417ba0d2e6b.webp",
+            "alt": "Two street musicians seated on the ground playing a bowed sarangi and small cymbals, a crowd standing around them.",
+            "title": "sah na jāī ho re allāh",
+            "blurb": "sah na jāī ho re allāh, sung and performed on sarangi by Nur Muhammad and Ashakali, Hallaur, Uttar Pradesh. I traveled to eastern Uttar Pradesh with my friend and wonderful soz khan Saqlain Naqvi, in search of drumming traditions associated with Muharram observances. Saqlain had told me that in his wife’s home village, Hallaur, Shiahs themselves drum during Muharram. This is…",
+            "link": "/portfolio/sah-na-jai-ho-re-allah/",
+            "externalUrl": ""
+          }
+        }
+      ]
     }
   ]
 }

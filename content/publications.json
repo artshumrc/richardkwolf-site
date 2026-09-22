@@ -44,9 +44,9 @@
                 {
                   "type": "link",
                   "attrs": {
-                    "href": "http://richardkwolf.com/portfolio/the-voice-in-the-drum/",
-                    "target": "_blank",
-                    "rel": "noopener noreferrer",
+                    "href": "/portfolio/the-voice-in-the-drum/",
+                    "target": null,
+                    "rel": null,
                     "title": null,
                     "class": null
                   }

@@ -1,0 +1,243 @@
+{
+  "type": "doc",
+  "version": 2,
+  "meta": {
+    "title": "Ismoil Nazriev",
+    "description": "Ismoil Nazriev, a Tajik hofiz from Darvoz, in photographs and film made in Dushanbe between 2012 and 2017."
+  },
+  "content": [
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Ismoil Nazriev is a Tajik hofiz, a singer of classical Persian/Tajik poetry who accompanies himself on a long necked lute. He is from the region of Darvoz, the western gateway to the Pamir mountains in Tajikistan.  His father Abdullo Nazriev was one of the notable exponents of the Darvoz style, having picked up music on his own during WWII and later performing with the likes of Akasharif Juraev.  Ismoil was trained in Persian literature and taught at the university level until his father urged him to join the conservatory and help pass their tradition on to others.  He recently retired from the conservatory, but continues to perform actively for weddings and other cultural programs.  I have been learning from Ismoil Nazriev since 2012."
+            }
+          ]
+        },
+        {
+          "type": "bulletList",
+          "content": [
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Date: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "2012-2017"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Location: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Dushanbe, Tajikistan"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Performers: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Ismoil Nazriev, Dustmurod and others"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "listItem",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "type": "text",
+                      "marks": [
+                        {
+                          "type": "bold"
+                        }
+                      ],
+                      "text": "Instruments: "
+                    },
+                    {
+                      "type": "text",
+                      "text": "Soz, Kasghgar rubob, ghijak, synthesizer, daff"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Images"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "image",
+            "path": "/uploads/bec342463afee20c.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ismoil Nazriev in Marats house",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/1fb88985369e9b56.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ismoil Nazriev at home",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/33438a096158105a.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Abudulloh Nazriev Portrait",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/68b1f8cde1c420ea.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ismoil Nazriev 2015",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/a8644425566c0b95.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Eating at home of Ismoil Nazriev",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/6922f4ff8b88111e.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Dustmurod ghijak",
+            "caption": ""
+          },
+          {
+            "kind": "image",
+            "path": "/uploads/3c04873abf609626.webp",
+            "vimeoId": "",
+            "poster": "",
+            "title": "Ismoil Nazriev tuning",
+            "caption": ""
+          }
+        ]
+      }
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "Video"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "gallery",
+      "attrs": {
+        "commentary": "",
+        "items": [
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207846351",
+            "poster": "/uploads/8b41f112b220d3ff.webp",
+            "title": "Ismoil Nazriev sings falak",
+            "caption": "Quatrains (Tojiki/Persian) in falak style. Poets: Umar Khayyom, Abū-Sa'īd Abul-Khayr, Jalaluddin Rumi, Abu Abuala Rudaki and others. Ismoil Nazriev: vocal and Kashgar rubob; Dustmurod: Doira and vocal. Recorded by Richard Wolf in Dushanbe, Tajikistan, May 7, 2013"
+          },
+          {
+            "kind": "vimeo",
+            "path": "",
+            "vimeoId": "207844885",
+            "poster": "/uploads/19e36b26c381be70.webp",
+            "title": "Ismoil Nazriev",
+            "caption": "Noted Tajik singer of classical Persian verse Ismoil Nazriev performing at a wedding reception in Dushanbe, Tajikistan along with his son on synthesizer and his disciple Dustmurod on ghijak (here electric violin). Aug 8, 2014"
+          }
+        ]
+      }
+    }
+  ]
+}

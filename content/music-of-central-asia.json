@@ -49,6 +49,53 @@
           "content": [
             {
               "type": "text",
+              "text": "Portfolios"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "cardRow",
+      "attrs": {
+        "columns": 2
+      },
+      "content": [
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/1fb88985369e9b56.webp",
+            "alt": "Ismoil Nazriev seated on the floor at home playing a long-necked lute, two younger men behind him.",
+            "title": "Ismoil Nazriev",
+            "blurb": "Ismoil Nazriev is a Tajik hofiz, a singer of classical Persian/Tajik poetry who accompanies himself on a long necked lute. He is from the region of Darvoz, the western gateway to the Pamir mountains in Tajikistan. His father Abdullo Nazriev was one of the notable exponents of…",
+            "link": "/portfolio/ismoil-nazriev-2/",
+            "externalUrl": ""
+          }
+        },
+        {
+          "type": "card",
+          "attrs": {
+            "image": "/uploads/165f9b4a86933f1b.webp",
+            "alt": "Three Wakhi musicians seated on the floor of a mud-walled room with a bowed lute, a plucked rubab and a frame drum.",
+            "title": "Wəzi tu ẓ̌ə jonət tu",
+            "blurb": "Daulatsho lives at an altitude of about 10,500 feet in the remote village of Yur in the upper Wakhan of Afghanistan, several days walk from cell phone reception (and even there, the cell towers are across the river in Tajikistan), and electrified for a few hours a day with local…",
+            "link": "/portfolio/wazi_tu_portfolio/",
+            "externalUrl": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "content": [
+        {
+          "type": "heading",
+          "attrs": {
+            "level": 3
+          },
+          "content": [
+            {
+              "type": "text",
               "text": "Images: Xinjiang, China"
             }
           ]

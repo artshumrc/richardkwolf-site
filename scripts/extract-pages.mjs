@@ -9,7 +9,8 @@
 // Usage: node scripts/extract-pages.mjs [slug...]   (default: every slug in
 // migration/pages.json)
 
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname } from 'node:path';
 import { parse } from 'node-html-parser';
 import { CURRENT_DOCUMENT_VERSION } from 'uncial/core';
 
@@ -50,6 +51,26 @@ const vimeoPosters = JSON.parse(readFileSync('migration/vimeo-posters.json', 'ut
  * redirects each retired URL to the page that absorbed it.
  */
 const ABSORBED = { 'tamil-songs': ['tamil'] };
+
+/**
+ * Retired pages whose inline links repoint at the surviving page covering the
+ * same material, so that the prose around them keeps working. Only prose links
+ * are followed: a post-index module pointing at a retired page is the module
+ * of a page that no longer exists, and is dropped with it. Ticket 13 redirects
+ * the retired URL itself.
+ */
+const RETIRED_LINKS = { '/shahd-and-qalabandi/': '/music-of-central-asia/' };
+
+/**
+ * The homepage's Featured Audio Annotation section is a decided special case:
+ * the module that pulled the retired Shahd and Qalabandi post goes, Richard's
+ * prose about the recording stays, and the link the module carried moves onto
+ * the performer's name in that prose. The recording's material now sits on the
+ * Music of Central Asia page.
+ */
+const REPOINTED_PROSE = {
+	index: { phrase: 'Ismoil Nazriev', href: '/music-of-central-asia/' }
+};
 
 const VIMEO_URL = /player\.vimeo\.com\/video\/(\d+)/;
 
@@ -104,8 +125,19 @@ function rewriteHref(href) {
 	return { href: `${path}${url.search}`, internal: true };
 }
 
+/** A link to a retired page, rewritten to the page that inherited its material. */
+function retire(href) {
+	const raw = text(href ?? '').trim();
+	if (!SELF_ORIGIN.test(raw)) return raw;
+	const url = new URL(raw);
+	const replacement = RETIRED_LINKS[url.pathname.endsWith('/') ? url.pathname : `${url.pathname}/`];
+	if (!replacement) return raw;
+	url.pathname = replacement;
+	return url.href;
+}
+
 function linkMark(el) {
-	const { href, internal } = rewriteHref(el.getAttribute('href'));
+	const { href, internal } = rewriteHref(retire(el.getAttribute('href')));
 	if (!href) return null;
 	const target = internal ? null : el.getAttribute('target') || null;
 	return {
@@ -186,9 +218,35 @@ function list(el) {
 	return { type: el.tagName === 'OL' ? 'orderedList' : 'bulletList', content: items };
 }
 
+/**
+ * The Date / Location / Performers row a portfolio piece closes on, which the
+ * theme laid out as label-and-value spans inside one paragraph.
+ */
+function detailList(el) {
+	const items = el.querySelectorAll('.detail-container').map((container) => {
+		const label = text(container.querySelector('.detail-label')?.text ?? '').trim();
+		const value = text(container.querySelector('.detail-value')?.text ?? '').trim();
+		if (!label || !value) return null;
+		return {
+			type: 'listItem',
+			content: [
+				{
+					type: 'paragraph',
+					content: [
+						{ type: 'text', marks: [{ type: 'bold' }], text: `${label}: ` },
+						{ type: 'text', text: value }
+					]
+				}
+			]
+		};
+	});
+	const content = items.filter(Boolean);
+	return content.length ? { type: 'bulletList', content } : null;
+}
+
 function flowNode(el) {
 	const tag = el.tagName;
-	if (tag === 'P') return paragraph(el);
+	if (tag === 'P') return detailList(el) ?? paragraph(el);
 	if (tag === 'BLOCKQUOTE') {
 		const inner = el.childNodes.filter((n) => n.nodeType === 1 && FLOW_TAGS.has(n.tagName)).map(flowNode);
 		const content = inner.filter(Boolean);
@@ -292,15 +350,26 @@ function mediaGroup(container) {
 
 	const cards = tiles.map(cardBlock).filter(Boolean);
 	if (cards.length === 0) return null;
-	return { type: 'cardRow', attrs: { columns: Math.min(cards.length, 3) }, content: cards };
+	// Two is the narrowest row the Block offers, so a lone card still sits in one.
+	return { type: 'cardRow', attrs: { columns: Math.min(Math.max(cards.length, 2), 3) }, content: cards };
 }
 
-/** A lone media module: a captioned photograph, or a Vimeo clip embedded inline. */
+/**
+ * A lone media module: a captioned photograph, or a single Vimeo clip. The clip
+ * is sometimes an inline iframe and sometimes a lightbox link over a poster
+ * crop; the latter is still a video, not the photograph it appears to be.
+ */
 function singleMedia(wrapper) {
 	const iframe = wrapper.querySelector('iframe');
-	const vimeoId = VIMEO_URL.exec(iframe?.getAttribute('src') ?? '')?.[1];
+	const anchor = wrapper.querySelector('a.pushed[data-lbox]');
+	const vimeoId = (
+		VIMEO_URL.exec(iframe?.getAttribute('src') ?? '') ??
+		VIMEO_URL.exec(anchor?.getAttribute('href') ?? '')
+	)?.[1];
 	if (!vimeoId) return figureBlock(wrapper);
 	const poster = vimeoPosters[vimeoId];
+	const tile = wrapper.querySelector('.tmb');
+	const { title, caption } = tile ? tileText(tile, anchor) : { title: '', caption: '' };
 	return {
 		type: 'gallery',
 		attrs: {
@@ -311,12 +380,22 @@ function singleMedia(wrapper) {
 					path: '',
 					vimeoId,
 					poster: poster?.path ?? '',
-					title: text(iframe.getAttribute('title') ?? poster?.title ?? '').trim(),
-					caption: ''
+					title: title || text(iframe?.getAttribute('title') ?? poster?.title ?? '').trim(),
+					caption
 				}
 			]
 		}
 	};
+}
+
+/**
+ * A page-builder heading sometimes holds a title span and a subtitle span with
+ * nothing between them, the theme's stylesheet having made the second a line of
+ * its own. Put the break back so the two do not run together.
+ */
+function splitHeadingLines(source) {
+	const spans = source.childNodes.filter((node) => node.nodeType === 1 && node.tagName === 'SPAN');
+	for (const span of spans.slice(1)) span.insertAdjacentHTML('beforebegin', '<br>');
 }
 
 function extractBody(root) {
@@ -368,6 +447,7 @@ function extractBody(root) {
 			if (classes.includes('vc_custom_heading_wrap')) {
 				const source = child.querySelector('h1, h2, h3, h4, h5, h6');
 				if (!source) continue;
+				splitHeadingLines(source);
 				const level = Math.min(4, Math.max(2, Number(source.tagName.slice(1))));
 				const node =
 					text(source.text).trim().length > HEADING_TEXT_LIMIT
@@ -396,6 +476,41 @@ function extractBody(root) {
 	walk(root);
 	flush();
 	return blocks;
+}
+
+/**
+ * Link a page's first mention of a phrase, in place, at the page that inherited
+ * the material the phrase's module used to point at.
+ */
+function repoint(blocks, slug) {
+	const repointing = REPOINTED_PROSE[slug];
+	if (!repointing) return;
+	const { phrase, href } = repointing;
+	const mark = { type: 'link', attrs: { href, target: null, rel: null, title: null, class: null } };
+
+	const link = (nodes) => {
+		for (const [index, node] of nodes.entries()) {
+			if (node.type !== 'text') {
+				if (node.content && link(node.content)) return true;
+				continue;
+			}
+			const at = node.text.indexOf(phrase);
+			if (at === -1 || node.marks?.length) continue;
+			const parts = [
+				{ type: 'text', text: node.text.slice(0, at) },
+				{ type: 'text', marks: [mark], text: phrase },
+				{ type: 'text', text: node.text.slice(at + phrase.length) }
+			].filter((part) => part.text.length > 0);
+			nodes.splice(index, 1, ...parts);
+			return true;
+		}
+		return false;
+	};
+
+	for (const block of blocks) {
+		if (block.content && link(block.content)) return;
+	}
+	throw new Error(`${slug}: no unlinked mention of "${phrase}" to repoint at ${href}`);
 }
 
 function heroBlock(document, title) {
@@ -430,16 +545,40 @@ function absorb(blocks, slug) {
 	target.attrs.items.push(...items.filter((item) => !held.has(item.path || item.vimeoId)));
 }
 
+/**
+ * A portfolio piece is laid out as a media column beside an information
+ * sidebar, and the sidebar is where its essay lives. The rebuilt page opens on
+ * that prose and the media follows it, as every other page of the site does.
+ * The Google Maps widget two of the pieces embed is a WordPress plugin and is
+ * not carried across; the theme renders it from a script, so discarding the
+ * script discards the map.
+ */
+function portfolioBody(document) {
+	const body = document.querySelector('.portfolio-body');
+	const sidebar = body.querySelector('.col-widgets-sidebar');
+	const info = sidebar.querySelector('.info-content');
+	// The piece's title is the page's own, and the share bar is theme chrome
+	// whose label and value spans would otherwise read as a detail row.
+	for (const el of info.querySelectorAll('.post-title-wrapper, .post-footer')) el.remove();
+	const prose = extractBody(info);
+	sidebar.remove();
+	return [...prose, ...extractBody(body)];
+}
+
 function extract(slug) {
-	const document = parse(readFileSync(`${SOURCE_DIR}/${slug}.html`, 'utf8'));
+	const page = pagesFile.pages[slug];
+	const document = parse(readFileSync(`${SOURCE_DIR}/${page?.source ?? slug}.html`, 'utf8'));
 	const rawTitle = text(document.querySelector('title')?.text ?? '').trim();
 	const title = rawTitle.endsWith(TITLE_SUFFIX) ? rawTitle.slice(0, -TITLE_SUFFIX.length) : rawTitle;
-	const description = text(pagesFile.pages[slug]?.description ?? '').trim();
+	const description = text(page?.description ?? '').trim();
 	if (!title || !description) throw new Error(`${slug}: both a title and a description are required`);
 
 	const hero = heroBlock(document, title);
-	const body = extractBody(document.querySelector('.post-content'));
+	const body = document.querySelector('.post-content')
+		? extractBody(document.querySelector('.post-content'))
+		: portfolioBody(document);
 	for (const source of ABSORBED[slug] ?? []) absorb(body, source);
+	repoint(body, slug);
 
 	return {
 		type: 'doc',
@@ -452,7 +591,9 @@ function extract(slug) {
 const slugs = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(pagesFile.pages);
 for (const slug of slugs) {
 	const document = extract(slug);
-	writeFileSync(`${CONTENT_DIR}/${slug}.json`, `${JSON.stringify(document, null, 2)}\n`);
+	const file = `${CONTENT_DIR}/${slug}.json`;
+	mkdirSync(dirname(file), { recursive: true });
+	writeFileSync(file, `${JSON.stringify(document, null, 2)}\n`);
 	console.log(`${slug}: ${document.content.length} blocks`);
 }
 
