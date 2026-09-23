@@ -39,6 +39,15 @@
       ]
     },
     {
+      "type": "map",
+      "attrs": {
+        "lat": 36.7347725,
+        "lng": 73.118966,
+        "zoom": 8,
+        "label": "Yur village"
+      }
+    },
+    {
       "type": "prose",
       "content": [
         {

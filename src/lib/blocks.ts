@@ -17,12 +17,15 @@ import Columns from '$lib/blocks/Columns.svelte';
 import Figure from '$lib/blocks/Figure.svelte';
 import Gallery from '$lib/blocks/Gallery.svelte';
 import Hero from '$lib/blocks/Hero.svelte';
+import LocationMap from '$lib/blocks/LocationMap.svelte';
 import Navigation from '$lib/blocks/Navigation.svelte';
 import Prose from '$lib/blocks/Prose.svelte';
 import SoundCloud from '$lib/blocks/SoundCloud.svelte';
 
 const nonEmpty = (value: unknown): value is string =>
 	typeof value === 'string' && value.trim().length > 0;
+
+const isCoordinate = (value: unknown) => Number.isFinite(Number(value));
 
 const COLUMN_CHOICES = [2, 3, 4];
 const HERO_HEIGHTS = ['standard', 'full'];
@@ -179,6 +182,22 @@ const soundcloud = defineSvelteBlock({
 	content: false
 });
 
+// Where a recording was made, as the source site marked it on a Google map.
+// The stored coordinates are the ones that map carried.
+const locationMap = defineSvelteBlock({
+	id: 'map',
+	label: 'Map',
+	description: 'A marked location on a map.',
+	attributes: {
+		lat: { default: 0, required: true, validate: isCoordinate },
+		lng: { default: 0, required: true, validate: isCoordinate },
+		zoom: { default: 6, validate: (value: unknown) => Number.isInteger(Number(value)) },
+		label: { default: '' }
+	},
+	component: LocationMap,
+	content: false
+});
+
 // The Site document's navigation. Both lists are `list`-valued so the Content
 // Owner edits them as fields; their links are the page enum without the
 // external escape hatch, so a menu entry cannot point anywhere but a real page.
@@ -225,6 +244,7 @@ export const blocks = createBlockRegistry([
 	card,
 	gallery,
 	soundcloud,
+	locationMap,
 	navigation
 ]);
 

@@ -129,6 +129,15 @@
       ]
     },
     {
+      "type": "map",
+      "attrs": {
+        "lat": 27,
+        "lng": 82,
+        "zoom": 6,
+        "label": "Hallaur, Uttar Pradesh"
+      }
+    },
+    {
       "type": "gallery",
       "attrs": {
         "commentary": "",

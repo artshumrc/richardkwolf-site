@@ -228,19 +228,19 @@
       ]
     },
     {
+      "type": "figure",
+      "attrs": {
+        "path": "/uploads/0779ac0cf2b7bee1.webp",
+        "alt": "A woman singing with her eyes closed, held by other women pressed close around her.",
+        "caption": "A Kota woman laments at her mother-in-law’s funeral, Jan 17 2015."
+      }
+    },
+    {
       "type": "columns",
       "attrs": {
         "id": "2d7c8962-7fd7-44a2-bf8b-bf583dee9e4d"
       },
       "content": [
-        {
-          "type": "figure",
-          "attrs": {
-            "path": "/uploads/0779ac0cf2b7bee1.webp",
-            "alt": "A woman singing with her eyes closed, held by other women pressed close around her.",
-            "caption": "A Kota woman laments at her mother-in-law’s funeral, Jan 17 2015."
-          }
-        },
         {
           "type": "prose",
           "attrs": {
@@ -255,7 +255,15 @@
                   "text": "My theoretical contribution to the study of music and emotion lies in the idea of musical “emotive” and its role in what I call emotional contour and texture. The theory is grounded in my fieldwork on ceremonies of the Kota tribe in South India and public Islamic observances in South Asia (mainly Shī‘ī and Sufi). In my 2001 article, “Emotional dimensions. . .,” I draw upon William Reddy’s concept of the emotive as a distinctive type of verbal utterance, whereby the utterer undergoes emotional transformation as result of making a self-referential emotional statement. For example, saying “I am sad,” does not just describe one’s emotional state, it also contributes to one’s experience of sadness. Certain kinds of pieces or gestures function musically as emotives when members of a society have assigned highly conventionalized emotional meanings to them, either through naming or associating them with moments in a ritual process. In ceremonial contexts such as those of the Kotas, performances of particular musical pieces and other rituals serve as emotional guideposts, framing or suggesting changing emotional associations in time. Because the actual experiences of individuals may differ from the idealized representations of emotional meaning, I identify a dynamic in which Kotas perform music pieces and individuals react idiosyncratically, knowing but perhaps not feeling the conventional associations of the pieces, and experiencing each emotional nuance to a different degree. Each ceremony can be viewed as a timeline articulated by musical and other emotives. I term the sequences of responses of any one experiencing subject over time as the “emotional contour” of a ceremony. Envisioning the emotional contour as a strand, the multiple strands that make up the complex responses to conventionalized musical gestures over time weave together what I call the “emotional texture” of a ceremony.For the Kotas, I focus on the major ceremonies of god and death, the “god ceremony” (devr) and the secondary mortuary ceremony or “dry funeral” (varldāv), each of which exhibits a variety of emotional nuances that are guided, in part, by music. Interest in the emotional complexity of funerals cross-culturally (where deaths are, to various degrees, both mourned and celebrated) led me to focus on the affectively multivalent ceremony of Muharram in North India and Pakistan. Muharram commemorates the battle in 680 C.E. between Husain (son of the Prophet, Muhammad) and his party, and the henchmen of the Ummayad Caliphate. Contemporary observances of Muharram in South Asia may include special drumming patterns, songs, tuneful poetic recitations that are not considered songs, and instrumental music."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "attrs": {
+            "id": "2393954c-50a0-40f6-ac54-a5082d2f1440"
+          },
+          "content": [
             {
               "type": "paragraph",
               "content": [
@@ -547,19 +555,19 @@
       ]
     },
     {
+      "type": "figure",
+      "attrs": {
+        "path": "/uploads/96650b20f0fd9699.webp",
+        "alt": "Two men dancing with arms raised, ringed by a crowd of onlookers, in black and white.",
+        "caption": "Sindhi men dancing at a wedding reception at the border of Jaro village. June 1997. Thatta district, Sindh, Pakistan"
+      }
+    },
+    {
       "type": "columns",
       "attrs": {
         "id": "d97164ae-59b8-4f5d-b670-20a225f29ba1"
       },
       "content": [
-        {
-          "type": "figure",
-          "attrs": {
-            "path": "/uploads/96650b20f0fd9699.webp",
-            "alt": "Two men dancing with arms raised, ringed by a crowd of onlookers, in black and white.",
-            "caption": "Sindhi men dancing at a wedding reception at the border of Jaro village. June 1997. Thatta district, Sindh, Pakistan"
-          }
-        },
         {
           "type": "prose",
           "attrs": {
@@ -587,7 +595,15 @@
                   "text": " variously to describe techniques for constructing a literary work, allude to an artistic twist in social action (giving rise to the popular pair of terms “politics and poetics of. . .”), and draw attention to the manipulation of form (as in Jakobson’s “focus on the message for its own sake”). Aristotle, Roman Jakobson, Michael Herzfeld and many others have drawn attention to parallelism and its social analog, mimesis. Significant are the differences between the object of parallelism and the new utterance or action, which is seen as a meaningful deformation of it. I have expanded the discussion from language and social action to embrace aspects of music and dance. In my 2006 article, I show how musicians and dancers relate with one another, worship God, identify with interconnected Sufi saints, and activate local codes with respect to gender, language, and classical music in contemporary Pakistan."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "attrs": {
+            "id": "b09eb517-c71a-4784-94e1-5a40ae900e1e"
+          },
+          "content": [
             {
               "type": "paragraph",
               "content": [
@@ -860,19 +876,19 @@
       ]
     },
     {
+      "type": "figure",
+      "attrs": {
+        "path": "/uploads/8520540057866f78.webp",
+        "alt": "A crowded old-city street of shopfronts, handcarts and parked cars, in warm sepia tones.",
+        "caption": "Lahore, March 1997"
+      }
+    },
+    {
       "type": "columns",
       "attrs": {
         "id": "88922930-d10d-4c02-bc53-c350a49fc413"
       },
       "content": [
-        {
-          "type": "figure",
-          "attrs": {
-            "path": "/uploads/8520540057866f78.webp",
-            "alt": "A crowded old-city street of shopfronts, handcarts and parked cars, in warm sepia tones.",
-            "caption": "Lahore, March 1997"
-          }
-        },
         {
           "type": "prose",
           "attrs": {
@@ -991,7 +1007,15 @@
                   "text": " I argue against the tendency to equate “rhythm” with the percussion section in an ensemble. Instead, following a number of scholars, I suggest that drumming and conventional melodies (i.e. those articulated by the voice, piano, violin etc) are both kinds of melodies, the former “stroke melodies” and the latter “tone melodies.” Both kinds of melodies are equally defined by rhythm."
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "attrs": {
+            "id": "5bd7bcf3-2ae0-4bef-87b1-0c4051470ff2"
+          },
+          "content": [
             {
               "type": "paragraph",
               "content": [
@@ -1131,46 +1155,38 @@
       ]
     },
     {
-      "type": "columns",
+      "type": "figure",
       "attrs": {
-        "id": "998e6685-57f5-4cf6-a0f6-269a3a5e0ba5"
+        "path": "/uploads/3a4301b3d677b41f.webp",
+        "alt": "An elderly woman in a white shawl seated on the ground, looking towards the camera.",
+        "caption": "Kota woman in Kolmel village, January 2015."
+      }
+    },
+    {
+      "type": "prose",
+      "attrs": {
+        "id": "21b3eac1-5056-4afa-b350-40328c91607d"
       },
       "content": [
         {
-          "type": "figure",
-          "attrs": {
-            "path": "/uploads/3a4301b3d677b41f.webp",
-            "alt": "An elderly woman in a white shawl seated on the ground, looking towards the camera.",
-            "caption": "Kota woman in Kolmel village, January 2015."
-          }
-        },
-        {
-          "type": "prose",
-          "attrs": {
-            "id": "21b3eac1-5056-4afa-b350-40328c91607d"
-          },
+          "type": "paragraph",
           "content": [
             {
-              "type": "paragraph",
-              "content": [
+              "type": "text",
+              "text": "My writings on emotion, spacetime, and poetics all concern subjectivity in that they concern the manifold ways in which individuals may experience the world. However, "
+            },
+            {
+              "type": "text",
+              "marks": [
                 {
-                  "type": "text",
-                  "text": "My writings on emotion, spacetime, and poetics all concern subjectivity in that they concern the manifold ways in which individuals may experience the world. However, "
-                },
-                {
-                  "type": "text",
-                  "marks": [
-                    {
-                      "type": "italic"
-                    }
-                  ],
-                  "text": "The Voice in the Drum "
-                },
-                {
-                  "type": "text",
-                  "text": "approaches issues of subjectivity differently. In this book I chose to frame my ethnographic research on ritual drumming and Islamic ritual in the form of a novel. I created a fictional character, named Ali, and followed the development of his career as a journalist and later as a scholar. In the course of his life, Ali encounters the subjects of my fieldwork, speaking in their own voices and very often identified by their actual names. In conventional ethnographic accounts, it is generally not appropriate to attribute thoughts and feelings to social actors based on their behaviors. We may intuit aspects of our field consultants’ inner worlds, and we can interpret their statements (if any) about their thoughts and feelings, but it would be wrong to think that fieldwork truly allows us to get inside anyone else’s head. One of the reasons I chose to frame the book as an interaction between fictional and real characters was in order to explore a set of ethnographically plausible inner thoughts and feelings, without pretending that I could attribute them to any particular person. Through Ali’s moments of introspection, conversation, and note-taking, the reader has the opportunity to view several possible ways of interpreting drumming and other kinds of musical activities in Sufi and Shī‘ī contexts. The fact that any fictional account must be “true” to particular historical and cultural contexts, and the contingencies of this and all fieldwork, raises questions throughout concerning what it means to be a “real” and “fictional” character in this book."
+                  "type": "italic"
                 }
-              ]
+              ],
+              "text": "The Voice in the Drum "
+            },
+            {
+              "type": "text",
+              "text": "approaches issues of subjectivity differently. In this book I chose to frame my ethnographic research on ritual drumming and Islamic ritual in the form of a novel. I created a fictional character, named Ali, and followed the development of his career as a journalist and later as a scholar. In the course of his life, Ali encounters the subjects of my fieldwork, speaking in their own voices and very often identified by their actual names. In conventional ethnographic accounts, it is generally not appropriate to attribute thoughts and feelings to social actors based on their behaviors. We may intuit aspects of our field consultants’ inner worlds, and we can interpret their statements (if any) about their thoughts and feelings, but it would be wrong to think that fieldwork truly allows us to get inside anyone else’s head. One of the reasons I chose to frame the book as an interaction between fictional and real characters was in order to explore a set of ethnographically plausible inner thoughts and feelings, without pretending that I could attribute them to any particular person. Through Ali’s moments of introspection, conversation, and note-taking, the reader has the opportunity to view several possible ways of interpreting drumming and other kinds of musical activities in Sufi and Shī‘ī contexts. The fact that any fictional account must be “true” to particular historical and cultural contexts, and the contingencies of this and all fieldwork, raises questions throughout concerning what it means to be a “real” and “fictional” character in this book."
             }
           ]
         }

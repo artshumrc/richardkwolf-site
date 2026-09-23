@@ -16,6 +16,7 @@
 		"extract:pages": "node scripts/extract-pages.mjs"
 	},
 	"dependencies": {
+		"leaflet": "^1.9.4",
 		"uncial": "^2.0.2",
 		"uncial-cms": "^2.0.2"
 	},
@@ -23,6 +24,7 @@
 		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.50.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
+		"@types/leaflet": "^1.9.22",
 		"node-html-parser": "^9.0.4",
 		"pagefind": "^1.5.2",
 		"sharp": "^0.35.4",
