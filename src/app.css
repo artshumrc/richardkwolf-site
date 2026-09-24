@@ -151,6 +151,61 @@ img {
 	margin-block-start: 4.5rem;
 }
 
+/* White type over a photograph: a faint frosted patch fitted to the text,
+   so the photograph stays sharp and bright everywhere the type is not.
+
+   The patch is too light to guarantee contrast on its own, and blur only
+   softens a bright patch rather than removing one. The guarantee is the
+   outline painted under each glyph: over a pure white pixel, black at 0.5
+   leaves 4:1 at the glyph's edge, above the 3:1 floor for large type; 0.6
+   leaves 5.2:1 for body-size type. The mask fades only across the padding
+   and bleed, which assume the element's padding is `2rem var(--page-gutter)`.
+   Needs a z-index on the element, to keep the patch above the photograph,
+   and a clipping ancestor, as the bleed overhangs. */
+.scrim {
+	--scrim-edge: 0.5;
+	--scrim-bleed-block: 3rem;
+	--scrim-bleed-inline: 6rem;
+	position: relative;
+	/* Stroke first, so the fill covers its inner half and only a rim shows. */
+	paint-order: stroke fill;
+	-webkit-text-stroke: 3px rgb(0 0 0 / var(--scrim-edge));
+	text-shadow: 0 1px 16px rgb(0 0 0 / 0.35);
+}
+
+.scrim::before {
+	--fade-block: calc(var(--scrim-bleed-block) + 2rem);
+	--fade-inline: calc(var(--scrim-bleed-inline) + var(--page-gutter));
+	content: '';
+	position: absolute;
+	z-index: -1;
+	inset: calc(-1 * var(--scrim-bleed-block)) calc(-1 * var(--scrim-bleed-inline));
+	background: rgb(0 0 0 / 0.18);
+	/* Safari before 18 honours only the prefixed property. */
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	mask:
+		linear-gradient(
+			to right,
+			transparent,
+			rgb(0 0 0 / 0.5) calc(var(--fade-inline) / 2),
+			#000 var(--fade-inline),
+			#000 calc(100% - var(--fade-inline)),
+			rgb(0 0 0 / 0.5) calc(100% - var(--fade-inline) / 2),
+			transparent
+		),
+		linear-gradient(
+			to bottom,
+			transparent,
+			rgb(0 0 0 / 0.5) calc(var(--fade-block) / 2),
+			#000 var(--fade-block),
+			#000 calc(100% - var(--fade-block)),
+			rgb(0 0 0 / 0.5) calc(100% - var(--fade-block) / 2),
+			transparent
+		);
+	mask-composite: intersect;
+}
+
 /* The sign-in button the editor's broker provider raises. It lives outside
    any component, so its styling lives here. */
 .broker-sign-in {

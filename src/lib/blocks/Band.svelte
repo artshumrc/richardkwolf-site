@@ -14,7 +14,7 @@
 	<div class="band__image">
 		<ResponsiveImage path={image} {alt} sizes="100vw" />
 	</div>
-	<h2 class="band__headline">{headline}</h2>
+	<h2 class="band__headline scrim">{headline}</h2>
 </section>
 
 <style>
@@ -23,6 +23,7 @@
 		display: grid;
 		min-height: 22.5rem;
 		margin-block-start: 4.5rem;
+		overflow: clip;
 		background: #141618;
 		color: #fff;
 	}
@@ -45,22 +46,12 @@
 		object-fit: cover;
 	}
 
-	/* A light wash, enough to hold white type over a bright map without
-	   dimming the picture the way the Hero's dark ground would. */
-	.band__image::after {
-		content: '';
-		position: absolute;
-		inset: 0;
-		background: #303133;
-		opacity: 0.18;
-	}
-
 	.band__headline {
 		z-index: 1;
 		align-self: center;
 		justify-self: center;
-		width: 100%;
-		max-width: var(--limit);
+		width: fit-content;
+		max-width: min(100%, var(--limit));
 		margin: 0;
 		padding: 2rem var(--page-gutter);
 		color: inherit;

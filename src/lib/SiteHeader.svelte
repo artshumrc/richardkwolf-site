@@ -223,6 +223,14 @@
 			gap: 0 1.25rem;
 		}
 
+		/* The source theme's 28px spacing, once the bar has room for it beside
+		   the name. */
+		@media (min-width: 64rem) {
+			.menu {
+				gap: 0 1.75rem;
+			}
+		}
+
 		.menu__item {
 			position: relative;
 		}

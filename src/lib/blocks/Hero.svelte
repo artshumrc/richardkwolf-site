@@ -24,7 +24,7 @@
 	<div class="hero__image">
 		<ResponsiveImage path={image} {alt} sizes="100vw" loading="eager" />
 	</div>
-	<div class="hero__content">
+	<div class="hero__content scrim" class:scrim--text={eyebrow || lede}>
 		{#if eyebrow}<p class="hero__eyebrow">{eyebrow}</p>{/if}
 		<!-- The page's own <h1> is visually hidden when a Hero opens the
 		document, so this heading states the title once. -->
@@ -40,6 +40,7 @@
 		min-height: max(20rem, 45vh);
 		/* Shows through until the photograph decodes, and behind its edges while
 		   a portrait picture is being covered into a landscape band. */
+		overflow: clip;
 		background: #141618;
 		color: #fff;
 	}
@@ -76,10 +77,16 @@
 		z-index: 1;
 		align-self: center;
 		justify-self: center;
-		width: 100%;
-		max-width: var(--limit);
+		/* Fitted, so the scrim sits behind the words rather than across the
+		   whole row. */
+		width: fit-content;
+		max-width: min(100%, var(--limit));
 		padding: 2rem var(--page-gutter);
 		text-align: center;
+	}
+
+	.scrim--text {
+		--scrim-edge: 0.6;
 	}
 
 	.hero__eyebrow {
