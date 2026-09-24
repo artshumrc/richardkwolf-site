@@ -13,11 +13,13 @@
 	const sources = $derived(responsiveImage(path));
 </script>
 
-<picture>
-	{#if sources.webp}<source type="image/webp" srcset={sources.webp} {sizes} />{/if}
-	{#if sources.jpeg}<source type="image/jpeg" srcset={sources.jpeg} {sizes} />{/if}
-	<img src={sources.src} {alt} {loading} decoding="async" />
-</picture>
+{#if path}
+	<picture>
+		{#if sources.webp}<source type="image/webp" srcset={sources.webp} {sizes} />{/if}
+		{#if sources.jpeg}<source type="image/jpeg" srcset={sources.jpeg} {sizes} />{/if}
+		<img src={sources.src} {alt} {loading} decoding="async" />
+	</picture>
+{/if}
 
 <style>
 	img {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import EditableImage from './EditableImage.svelte';
+	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 	import ExternalUrlField from './ExternalUrlField.svelte';
 	import { resolveBlockLink } from '$lib/site-routes.js';
 
@@ -27,12 +27,10 @@
 </script>
 
 <article class="card">
-	<EditableImage
-		src={image}
+	<ResponsiveImage
+		path={image}
 		{alt}
-		label="card image"
 		sizes="(min-width: 75rem) 360px, (min-width: 48rem) 33vw, 100vw"
-		onUpload={updateAttributes ? (src) => updateAttributes({ image: src }) : undefined}
 	/>
 	<h3 class="card__title">
 		{#if href}<a {href}>{title}</a>{:else}{title}{/if}

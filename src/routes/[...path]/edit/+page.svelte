@@ -1,9 +1,11 @@
 <script lang="ts">
 	import { dev } from '$app/environment';
+	import { base } from '$app/paths';
 	import { EditorPage } from 'uncial-cms/svelte';
-	import type { Site, UncialCmsSiteConfig } from 'uncial-cms';
+	import { cmsImageSource, defineSite, type UncialCmsSiteConfig } from 'uncial-cms';
 	import { blocks, schemaFor } from '$lib/blocks.js';
-	import { CONTENT_DIR, siteConfig } from '$lib/site.js';
+	import { isRendition, thumbnailImage } from '$lib/images.js';
+	import { STATIC_DIR, siteConfig, siteOptions } from '$lib/site.js';
 	import { brokerSessionProvider } from '$lib/github-broker-session.js';
 
 	let { data } = $props();
@@ -12,11 +14,13 @@
 		? { forge: 'local', contentDir: siteConfig.contentDir, mediaDir: siteConfig.mediaDir }
 		: siteConfig;
 
-	const site: Site = {
-		config,
-		localOnly: false,
-		autosaveMs: undefined,
-		localContentDir: CONTENT_DIR
+	const site = { ...defineSite(siteOptions, { dev }), config };
+
+	const cmsImages = cmsImageSource(config, { base, staticDir: STATIC_DIR });
+	const imageSource = {
+		...cmsImages,
+		browse: async () => (await cmsImages.browse!()).filter((path) => !isRendition(path)),
+		thumbnail: thumbnailImage
 	};
 </script>
 
@@ -30,5 +34,6 @@
 		presentation="bare"
 		sessionProvider={config.forge === 'github' ? brokerSessionProvider : undefined}
 		attributesPanel="overlay"
+		{imageSource}
 	/>
 </main>

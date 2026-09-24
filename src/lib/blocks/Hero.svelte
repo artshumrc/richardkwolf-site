@@ -1,5 +1,5 @@
 <script lang="ts">
-	import EditableImage from './EditableImage.svelte';
+	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 
 	interface Props {
 		image?: string;
@@ -8,7 +8,6 @@
 		headline?: string;
 		lede?: string;
 		height?: string;
-		updateAttributes?: (attrs: Record<string, unknown>) => void;
 	}
 
 	let {
@@ -17,21 +16,13 @@
 		eyebrow = '',
 		headline = '',
 		lede = '',
-		height = 'standard',
-		updateAttributes
+		height = 'standard'
 	}: Props = $props();
 </script>
 
 <section class="hero" class:hero--full={height === 'full'}>
 	<div class="hero__image">
-		<EditableImage
-			src={image}
-			{alt}
-			label="hero image"
-			sizes="100vw"
-			loading="eager"
-			onUpload={updateAttributes ? (src) => updateAttributes({ image: src }) : undefined}
-		/>
+		<ResponsiveImage path={image} {alt} sizes="100vw" loading="eager" />
 	</div>
 	<div class="hero__content">
 		{#if eyebrow}<p class="hero__eyebrow">{eyebrow}</p>{/if}
@@ -79,13 +70,6 @@
 	.hero__image :global(picture > img) {
 		height: 100%;
 		object-fit: cover;
-	}
-
-	/* The upload control shares the Hero with the headline, so it has to sit
-	   above it to stay clickable. */
-	.hero__image :global(.image-upload) {
-		position: relative;
-		z-index: 2;
 	}
 
 	.hero__content {

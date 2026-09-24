@@ -1,24 +1,17 @@
 <script lang="ts">
-	import EditableImage from './EditableImage.svelte';
+	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 
 	interface Props {
 		path?: string;
 		alt?: string;
 		caption?: string;
-		updateAttributes?: (attrs: Record<string, unknown>) => void;
 	}
 
-	let { path = '', alt = '', caption = '', updateAttributes }: Props = $props();
+	let { path = '', alt = '', caption = '' }: Props = $props();
 </script>
 
 <figure class="row">
-	<EditableImage
-		src={path}
-		{alt}
-		label="photograph"
-		sizes="(min-width: 75rem) 1128px, 100vw"
-		onUpload={updateAttributes ? (src) => updateAttributes({ path: src }) : undefined}
-	/>
+	<ResponsiveImage {path} {alt} sizes="(min-width: 75rem) 1128px, 100vw" />
 	{#if caption}<figcaption>{caption}</figcaption>{/if}
 </figure>
 

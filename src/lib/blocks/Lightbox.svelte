@@ -4,16 +4,15 @@
 	// `<dialog>.showModal()` supplies the focus trap and the Escape handling, so
 	// neither is reimplemented here; what is added is arrow-key navigation and
 	// returning focus to whatever opened it.
-	import GalleryPicture from './GalleryPicture.svelte';
+	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 	import VimeoPlayer from './VimeoPlayer.svelte';
 	import { itemAlt, type GalleryItem } from '$lib/gallery.js';
 
 	interface Props {
 		items: GalleryItem[];
-		previews?: Record<string, string>;
 	}
 
-	let { items, previews = {} }: Props = $props();
+	let { items }: Props = $props();
 
 	let dialog = $state<HTMLDialogElement | null>(null);
 	let index = $state(0);
@@ -72,17 +71,10 @@
 							title={item.title}
 							alt={itemAlt(item)}
 							sizes="90vw"
-							previewUrl={previews[item.poster]}
 						/>
 					{/key}
 				{:else}
-					<GalleryPicture
-						path={item.path}
-						alt={itemAlt(item)}
-						sizes="90vw"
-						loading="eager"
-						previewUrl={previews[item.path]}
-					/>
+					<ResponsiveImage path={item.path} alt={itemAlt(item)} sizes="90vw" loading="eager" />
 				{/if}
 			</div>
 			<div class="lightbox__detail">

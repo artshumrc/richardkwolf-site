@@ -43,16 +43,14 @@ const prose = defineSvelteBlock({
 	content: { kind: 'flow' }
 });
 
-// A single captioned photograph. `path` is a base-less served media path with
-// no declared input type: the upload UI lives inside the block on the canvas,
-// as it does on the Hero and the Card. The responsive renditions come from the
-// Image manifest at render.
+// A single captioned photograph. The responsive renditions come from the Image
+// manifest at render.
 const figure = defineSvelteBlock({
 	id: 'figure',
 	label: 'Figure',
 	description: 'A single photograph with a caption.',
 	attributes: {
-		path: { default: '', required: true, validate: nonEmpty },
+		path: { default: '', required: true, input: 'image', validate: nonEmpty },
 		alt: { default: '', required: true, validate: nonEmpty },
 		caption: { default: '' }
 	},
@@ -60,14 +58,12 @@ const figure = defineSvelteBlock({
 	content: false
 });
 
-// `image` is a plain string attribute: the upload UI lives inside the block on
-// the canvas, so the attributes panel never renders a file input.
 const hero = defineSvelteBlock({
 	id: 'hero',
 	label: 'Hero',
 	description: 'A photographic page opener stating the page title.',
 	attributes: {
-		image: { default: '', required: true, validate: nonEmpty },
+		image: { default: '', required: true, input: 'image', validate: nonEmpty },
 		alt: { default: '', required: true, validate: nonEmpty },
 		eyebrow: { default: '' },
 		// A textarea, because the source theme sets this banner line over several
@@ -93,7 +89,7 @@ const band = defineSvelteBlock({
 	label: 'Band',
 	description: 'A full-width photographic band stating a section heading.',
 	attributes: {
-		image: { default: '', required: true, validate: nonEmpty },
+		image: { default: '', required: true, input: 'image', validate: nonEmpty },
 		alt: { default: '', required: true, validate: nonEmpty },
 		headline: { default: '', required: true, validate: nonEmpty }
 	},
@@ -130,7 +126,7 @@ const card = defineSvelteBlock({
 	label: 'Card',
 	description: 'A linked photographic card for another page on the site.',
 	attributes: {
-		image: { default: '', required: true, validate: nonEmpty },
+		image: { default: '', required: true, input: 'image', validate: nonEmpty },
 		alt: { default: '', required: true, validate: nonEmpty },
 		title: { default: '', required: true, validate: nonEmpty },
 		blurb: { default: '', input: 'textarea' },
@@ -144,9 +140,9 @@ const card = defineSvelteBlock({
 	content: false
 });
 
-// `items` is hidden from the attributes panel and edited entirely on the
-// canvas: arranging a gallery needs thumbnails, which the `list` input cannot
-// show.
+// Every field shows on every item: the list input has no per-kind fields. An
+// image item fills `path`; a video item `vimeoId` and `poster`, which the
+// canvas's Add video fetches from Vimeo.
 const gallery = defineSvelteBlock({
 	id: 'gallery',
 	label: 'Gallery',
@@ -155,7 +151,17 @@ const gallery = defineSvelteBlock({
 		commentary: { default: '', input: 'textarea' },
 		items: {
 			default: [] as GalleryItem[],
-			input: 'hidden',
+			list: {
+				itemLabel: 'gallery item',
+				fields: {
+					kind: { default: 'image', options: ['image', 'vimeo'] },
+					path: { default: '', input: 'image' },
+					vimeoId: { default: '', placeholder: 'Vimeo id' },
+					poster: { default: '', input: 'image' },
+					title: { default: '' },
+					caption: { default: '' }
+				}
+			},
 			validate: areGalleryItems
 		}
 	},

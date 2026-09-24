@@ -4,6 +4,7 @@
 // that Content documents store. This module is the one place a media path is
 // prefixed with the base path.
 import { base } from '$app/paths';
+import { resolveImageSrc } from 'uncial/render';
 import manifest from '../../generated/image-manifest.json';
 
 export type ImageSource = {
@@ -29,13 +30,13 @@ function srcset(sources: ImageSource[]): string {
 }
 
 /**
- * Responsive sources for a served media path. A path the port never saw — a
- * fresh upload awaiting its next deploy, say — degrades to the plain file
- * rather than throwing.
+ * Responsive sources for a stored image value. A path the port never saw — a
+ * fresh upload, or the editor's `blob:` preview of one — degrades to the plain
+ * URL rather than throwing.
  */
 export function responsiveImage(path: string): ResponsiveSources {
 	const entry = entries[path];
-	if (!entry) return { src: `${base}${path}`, webp: '', jpeg: '' };
+	if (!entry) return { src: resolveImageSrc(path, base), webp: '', jpeg: '' };
 
 	const webp = entry.srcset.filter((source) => source.type === 'image/webp');
 	const jpeg = entry.srcset.filter((source) => source.type === 'image/jpeg');
@@ -45,4 +46,15 @@ export function responsiveImage(path: string): ResponsiveSources {
 		webp: srcset(webp),
 		jpeg: srcset(jpeg)
 	};
+}
+
+/** The narrowest rendition, for the editor's image picker tiles. */
+export function thumbnailImage(path: string): string {
+	const narrowest = entries[path]?.srcset.find((source) => source.type === 'image/webp');
+	return resolveImageSrc(narrowest?.src ?? path, base);
+}
+
+/** A port rendition (`<hash>-<width>.<ext>`), never itself a stored value. */
+export function isRendition(path: string): boolean {
+	return /-\d+\.(jpg|webp)$/.test(path);
 }

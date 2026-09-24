@@ -1,25 +1,18 @@
 <script lang="ts">
-	import EditableImage from './EditableImage.svelte';
+	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 
 	interface Props {
 		image?: string;
 		alt?: string;
 		headline?: string;
-		updateAttributes?: (attrs: Record<string, unknown>) => void;
 	}
 
-	let { image = '', alt = '', headline = '', updateAttributes }: Props = $props();
+	let { image = '', alt = '', headline = '' }: Props = $props();
 </script>
 
 <section class="band">
 	<div class="band__image">
-		<EditableImage
-			src={image}
-			{alt}
-			label="band image"
-			sizes="100vw"
-			onUpload={updateAttributes ? (src) => updateAttributes({ image: src }) : undefined}
-		/>
+		<ResponsiveImage path={image} {alt} sizes="100vw" />
 	</div>
 	<h2 class="band__headline">{headline}</h2>
 </section>
@@ -50,11 +43,6 @@
 	.band__image :global(picture > img) {
 		height: 100%;
 		object-fit: cover;
-	}
-
-	.band__image :global(.image-upload) {
-		position: relative;
-		z-index: 2;
 	}
 
 	/* A light wash, enough to hold white type over a bright map without

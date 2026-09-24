@@ -17,8 +17,8 @@
 	},
 	"dependencies": {
 		"leaflet": "^1.9.4",
-		"uncial": "^2.0.2",
-		"uncial-cms": "^2.0.2"
+		"uncial": "^4.0.0",
+		"uncial-cms": "^4.0.2"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.10",

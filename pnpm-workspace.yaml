@@ -5,5 +5,5 @@ allowBuilds:
   esbuild: true
 
 minimumReleaseAgeExclude:
-  - uncial@2.0.2
-  - uncial-cms@2.0.2
+  - uncial@4.0.0
+  - uncial-cms@4.0.2

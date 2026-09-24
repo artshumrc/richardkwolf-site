@@ -2,7 +2,7 @@
 	// Click-to-load Vimeo. The poster is self-hosted and the iframe does not
 	// exist until a reader asks for it, so loading a page of ninety thumbnails
 	// costs no request to player.vimeo.com.
-	import GalleryPicture from './GalleryPicture.svelte';
+	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 	import { vimeoPlayerUrl } from '$lib/vimeo.js';
 
 	interface Props {
@@ -11,10 +11,9 @@
 		title: string;
 		alt: string;
 		sizes?: string;
-		previewUrl?: string;
 	}
 
-	let { vimeoId, poster = '', title, alt, sizes = '100vw', previewUrl }: Props = $props();
+	let { vimeoId, poster = '', title, alt, sizes = '100vw' }: Props = $props();
 
 	let playing = $state(false);
 </script>
@@ -34,7 +33,7 @@
 			onclick={() => (playing = true)}
 			aria-label={title ? `Play “${title}”` : 'Play video'}
 		>
-			<GalleryPicture path={poster} {alt} {sizes} {previewUrl} />
+			<ResponsiveImage path={poster} {alt} {sizes} />
 			<span class="vimeo__play" aria-hidden="true">▶</span>
 		</button>
 	{/if}
