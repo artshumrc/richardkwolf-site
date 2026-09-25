@@ -9,9 +9,6 @@
 
 	const title = $derived(String(data.meta.title ?? 'Untitled page'));
 	const canonical = $derived(canonicalUrl(data.path, base));
-	// A page that opens on a Hero states its title in the Hero's headline. The
-	// <h1> stays in the document for readers of the outline and is hidden
-	// visually, rather than omitted.
 	const leadsWithHero = $derived(data.document?.content?.[0]?.type === 'hero');
 	const document = $derived(withBasePaths(data.document, base));
 </script>
@@ -24,16 +21,12 @@
 	<link rel="canonical" href={canonical} />
 </svelte:head>
 
-<!-- The search index's scope: the article region only, so the masthead, the
-     menu and the footer do not pollute every result. -->
 <main data-pagefind-body>
 	<h1 class:visually-hidden={leadsWithHero}>{title}</h1>
 	<Renderer content={document} {blocks} {schema} />
 </main>
 
 <style>
-	/* Only reached by a page that does not open on a Hero; it still needs to
-	   line up with the row below it. */
 	h1 {
 		max-width: var(--limit);
 		margin-inline: auto;

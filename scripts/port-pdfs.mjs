@@ -1,17 +1,3 @@
-/**
- * The offprint port: fetch every PDF the WordPress pages link to, optimise it
- * with Ghostscript, and write the legacy-URL map that the page extraction
- * reads to rewrite those links.
- *
- * Re-runnable without harm. Originals are cached under `.port-cache/`, so a
- * second run refetches nothing.
- *
- * Unlike images, offprints keep their filenames rather than being
- * content-addressed: they are citable scholarly artifacts and the filename is
- * part of how a reader finds and shares one (ADR 0001 governs images only).
- *
- * Usage: node scripts/port-pdfs.mjs [--force] [--printer <name>...]
- */
 import { execFile } from 'node:child_process';
 import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -27,21 +13,15 @@ const PDF_DIR = 'static/pdfs';
 const SOURCE_MAP_PATH = 'migration/pdf-sources.json';
 const SERVED_BASE = '/pdfs';
 
-/** A fetch smaller than this is a redirect stub or an error page, not a PDF. */
 const MINIMUM_BYTES = 10 * 1024;
 const CONCURRENCY = 4;
 
 const args = process.argv.slice(2);
 const force = args.includes('--force');
-/**
- * Offprints whose scanned pages are illegible at `/ebook`'s 150 dpi and are
- * downsampled at 300 dpi instead. Legibility wins over the size target.
- */
 const printerQuality = new Set(
 	args.flatMap((arg, index) => (args[index - 1] === '--printer' ? [arg] : []))
 );
 
-/** Every self-hosted PDF the preserved pages link to, as site paths. */
 async function referencedPdfs() {
 	const paths = new Set();
 	for (const file of await readdir(PAGES_DIR)) {
@@ -58,7 +38,6 @@ async function referencedPdfs() {
 async function fetchToCache(sourcePath) {
 	const cachePath = join(CACHE_DIR, sourcePath);
 	if (existsSync(cachePath) && !force) return { bytes: await readFile(cachePath), cached: true };
-	// The naked host these links name 301s twice, so redirects must be followed.
 	const response = await fetch(`${ORIGIN}/${sourcePath}`, { redirect: 'follow' });
 	if (!response.ok) throw new Error(`HTTP ${response.status}`);
 	const bytes = Buffer.from(await response.arrayBuffer());
@@ -69,12 +48,6 @@ async function fetchToCache(sourcePath) {
 	return { bytes, cached: false };
 }
 
-/**
- * Ghostscript, then whichever of the two files is smaller. Several of these
- * offprints are scans whose own encoder beats pdfwrite's, and gs happily
- * writes a larger file than it read; keeping the original there costs nothing
- * and risks no legibility.
- */
 async function optimise(sourcePath, name) {
 	const out = join(PDF_DIR, name);
 	if (existsSync(out) && !force) return { written: false, kept: false };
@@ -83,8 +56,6 @@ async function optimise(sourcePath, name) {
 		'-sDEVICE=pdfwrite',
 		'-dCompatibilityLevel=1.5',
 		`-dPDFSETTINGS=${printerQuality.has(name) ? '/printer' : '/ebook'}`,
-		// Left on — the default — pdfwrite copies DCT-encoded scans through
-		// verbatim, so a JPEG-scanned offprint comes out byte for byte as big.
 		'-dPassThroughJPEGImages=false',
 		'-dNOPAUSE',
 		'-dQUIET',

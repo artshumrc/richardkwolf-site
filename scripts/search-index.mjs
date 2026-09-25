@@ -1,14 +1,4 @@
 #!/usr/bin/env node
-/**
- * Post-build search index: Pagefind over the built HTML, so the index is
- * derived from the rendered pages and cannot drift from them.
- *
- * Scope is declared in the markup rather than here. The reader page marks its
- * article region `data-pagefind-body`, and Pagefind's rule is that once any
- * page declares a body, pages that declare none are excluded outright — which
- * is what keeps Editor variants, the Index page, the 404 page and the Legacy
- * route stubs out of the results.
- */
 import { existsSync, readFileSync, readdirSync, rmSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
 import * as pagefind from 'pagefind';

@@ -1,22 +1,3 @@
-/**
- * The clean-pages build gate: reader pages ship zero CMS JavaScript, every
- * Editor variant ships it, and every reader page carries distinct metadata.
- *
- * Node only and dependency-free: it greps the build directory with nothing
- * installed but node itself.
- *
- * Sentinel discipline: for each `index.html` the gate resolves the transitive
- * JavaScript closure of its scripts — `src`/`href` attributes plus dynamic
- * `import('…')` specifiers in the HTML, then static `from '…'` imports
- * transitively in JS — and asserts the `uncial-cms` runtime sentinel is absent
- * from every reader page and present on every Editor variant. The Index page
- * (`/uncial/`) is ignored for the sentinel.
- *
- * JS sources follow static imports only, deliberately not dynamic ones: the
- * SvelteKit router dynamically imports every route module lazily, so following
- * dynamic imports in JS would pull every Editor variant into every reader
- * page's closure and the gate could never pass.
- */
 import { readdirSync, readFileSync } from 'node:fs';
 import { dirname, join, relative } from 'node:path';
 
@@ -101,8 +82,6 @@ for (const htmlPath of htmlFiles) {
 	const html = readFileSync(htmlPath, 'utf-8');
 	const isEditorPage = page.endsWith('/edit/');
 	const isIndexPage = page === '/uncial/';
-	// Editing furniture, like the Index page: it finishes a sign-in and relays
-	// the code to the window that opened it. Nobody reads it.
 	const isAuthCallback = page === '/auth/callback/';
 	const isRedirectStub = html.includes('http-equiv="refresh"');
 	const hasSentinel = pageContainsSentinel(htmlPath);
@@ -116,8 +95,6 @@ for (const htmlPath of htmlFiles) {
 		failures.push(`${page} is a content page but ships uncial-cms JavaScript.`);
 	}
 
-	// Editor variants carry no page metadata of their own; the title and
-	// description assertions apply to reader pages and the Index page.
 	if (!isEditorPage) {
 		const title = pageTitle(html);
 		const description = pageDescription(html);
@@ -136,20 +113,12 @@ for (const [title, owners] of titles) {
 	}
 }
 
-// The Image manifest is the image port's output and lives outside the Content
-// directory. A route for it means it has drifted back in, and a save through
-// the Editor variant that would come with it would rewrite the manifest as a
-// Content document and break every responsive image on the site.
 for (const page of pages.keys()) {
 	if (/^\/image-manifest\//.test(page)) {
 		failures.push(`${page} exists: the Image manifest must have no route of its own.`);
 	}
 }
 
-// The site is content-complete and closed: 29 pages ported at their existing
-// slugs, four Portfolio pieces, and the search route. A change here is either a
-// page added on purpose or a document that stopped rendering, and both should be
-// deliberate.
 const EXPECTED_READER_PAGES = 34;
 if (readerPages !== EXPECTED_READER_PAGES) {
 	failures.push(

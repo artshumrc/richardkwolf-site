@@ -1,8 +1,4 @@
 <script lang="ts">
-	// The Gallery: photographs and Vimeo videos in one responsive grid. Items
-	// are edited in the attributes panel; the canvas adds only Add video, which
-	// fetches the poster from Vimeo. `uncial-cms` is imported inside the handler
-	// so the CMS runtime stays out of every reader page's import graph.
 	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 	import Lightbox from './Lightbox.svelte';
 	import VimeoPlayer from './VimeoPlayer.svelte';
@@ -18,7 +14,9 @@
 
 	let { commentary = '', items = [], updateAttributes }: Props = $props();
 
-	const SIZES = '(min-width: 64rem) 360px, (min-width: 40rem) 45vw, 100vw';
+	const SIZES = '(min-width: 64rem) 280px, (min-width: 40rem) 45vw, 100vw';
+
+	const inline = $derived(items.length === 1 && items[0].kind === 'vimeo' ? items[0] : null);
 
 	let lightbox = $state<ReturnType<typeof Lightbox> | null>(null);
 	let busy = $state(false);
@@ -33,8 +31,6 @@
 			if (!vimeoId) throw new Error('That is not a Vimeo id or URL.');
 			const { title, file } = await fetchVimeoPoster(vimeoId);
 			const { cmsImageSource } = await import('uncial-cms');
-			// Only the media dir is read off the config, and it is the same in
-			// development; the commit goes through the active editor session.
 			const poster = await cmsImageSource(siteConfig).upload!(file);
 			updateAttributes?.({
 				items: [...items, { ...EMPTY_ITEM, kind: 'vimeo', vimeoId, poster, title }]
@@ -51,39 +47,47 @@
 <section class="row gallery">
 	{#if commentary}<p class="gallery__commentary">{commentary}</p>{/if}
 
-	<ul class="gallery__grid">
-		{#each items as item, index (index)}
-			<li class="gallery__item">
-				<figure>
-					{#if item.kind === 'vimeo'}
-						<VimeoPlayer
-							vimeoId={item.vimeoId}
-							poster={item.poster}
-							title={item.title}
-							alt={itemAlt(item)}
-							sizes={SIZES}
-						/>
-					{:else}
+	{#if inline}
+		<figure>
+			<VimeoPlayer
+				vimeoId={inline.vimeoId}
+				poster={inline.poster}
+				title={inline.title}
+				alt={itemAlt(inline)}
+				sizes="(min-width: 75rem) 1128px, 100vw"
+			/>
+			{#if inline.title || inline.caption}<figcaption>{@render caption(inline)}</figcaption>{/if}
+		</figure>
+	{:else}
+		<ul class="gallery__grid">
+			{#each items as item, index (index)}
+				<li>
+					<figure>
 						<button
 							type="button"
 							class="gallery__thumb"
 							onclick={() => lightbox?.open(index)}
-							aria-label={item.title ? `View “${item.title}”` : 'View photograph'}
+							aria-label={item.kind === 'vimeo'
+								? item.title
+									? `Play “${item.title}”`
+									: 'Play video'
+								: item.title
+									? `View “${item.title}”`
+									: 'View photograph'}
 						>
-							<ResponsiveImage path={item.path} alt={itemAlt(item)} sizes={SIZES} />
+							<ResponsiveImage
+								path={item.kind === 'vimeo' ? item.poster : item.path}
+								alt={itemAlt(item)}
+								sizes={SIZES}
+							/>
+							{#if item.kind === 'vimeo'}<span class="gallery__play" aria-hidden="true">▶</span>{/if}
 						</button>
-					{/if}
-					{#if item.title || item.caption}
-						<figcaption>
-							{#if item.title}<strong>{item.title}</strong>{/if}
-							{#if item.caption}<span>{item.caption}</span>{/if}
-						</figcaption>
-					{/if}
-				</figure>
-
-			</li>
-		{/each}
-	</ul>
+						{#if item.title || item.caption}<figcaption>{@render caption(item)}</figcaption>{/if}
+					</figure>
+				</li>
+			{/each}
+		</ul>
+	{/if}
 
 	{#if updateAttributes}
 		<div class="gallery__tools">
@@ -111,21 +115,21 @@
 	{/if}
 </section>
 
-<Lightbox bind:this={lightbox} {items} />
+{#snippet caption(item: GalleryItem)}
+	{#if item.title}<strong>{item.title}</strong>{:else}{item.caption}{/if}
+{/snippet}
+
+{#if !inline}<Lightbox bind:this={lightbox} {items} />{/if}
 
 <style>
 	.gallery__commentary {
 		margin: 0 0 1.5rem;
 	}
 
-	/* A grid, not a carousel: the whole gallery is visible at once and
-	   collapses to one column on a phone. `auto-fit` rather than `auto-fill`,
-	   so a gallery holding one video fills the row instead of sitting in the
-	   first of six empty tracks. */
 	.gallery__grid {
 		display: grid;
 		gap: 1.25rem;
-		grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -136,33 +140,63 @@
 	}
 
 	.gallery__thumb {
+		position: relative;
 		display: block;
 		width: 100%;
+		aspect-ratio: 4 / 3;
 		padding: 0;
 		border: 0;
-		background: none;
+		background: #1c1c1c;
 		cursor: pointer;
+		overflow: hidden;
 	}
 
-	/* `sizes` alone would size a video poster, which carries no CSS width of
-	   its own, to the hint rather than to its grid track. */
-	.gallery__grid :global(picture),
-	.gallery__grid :global(img) {
+	.gallery__thumb :global(picture),
+	.gallery__thumb :global(img) {
 		width: 100%;
+		height: 100%;
 	}
 
 	.gallery__thumb :global(img) {
-		aspect-ratio: 4 / 3;
 		object-fit: cover;
+		transition: scale 0.3s ease;
+	}
+
+	.gallery__thumb:hover :global(img),
+	.gallery__thumb:focus-visible :global(img) {
+		scale: 1.04;
+	}
+
+	.gallery__play {
+		position: absolute;
+		inset: 50% auto auto 50%;
+		translate: -50% -50%;
+		display: grid;
+		place-items: center;
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		background: rgb(0 0 0 / 0.65);
+		color: #fff;
+		padding-left: 0.2em;
+	}
+
+	.gallery__thumb:hover .gallery__play,
+	.gallery__thumb:focus-visible .gallery__play {
+		background: rgb(0 0 0 / 0.85);
 	}
 
 	figcaption {
+		display: -webkit-box;
 		margin-block-start: 0.5rem;
+		overflow: hidden;
 		font-size: 0.75rem;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		line-clamp: 2;
 	}
 
 	figcaption strong {
-		display: block;
 		font-weight: 600;
 	}
 
@@ -175,8 +209,6 @@
 		font-size: 0.875rem;
 	}
 
-	/* The editor is used on a phone as much as at a desk; the controls are sized
-	   for a thumb rather than a cursor. */
 	.gallery__tools input,
 	.gallery__tools button {
 		min-height: 2.75rem;

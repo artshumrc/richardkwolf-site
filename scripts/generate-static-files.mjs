@@ -1,14 +1,4 @@
 #!/usr/bin/env node
-/**
- * Post-build pass: Legacy route stubs, the 404 filename Pages serves, the
- * sitemap and robots.txt — and the metadata gate that fails the build.
- *
- * Node only and dependency-free, like the clean-pages gate beside it.
- *
- * A canonical page is one whose HTML carries a `<link rel="canonical">`.
- * Editor variants, the Index page, the 404 page and the stubs written here all
- * lack one, which is what keeps them out of the sitemap.
- */
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 
@@ -16,8 +6,6 @@ const root = resolve(import.meta.dirname, '..');
 const build = resolve(root, 'build');
 const routesPath = resolve(import.meta.dirname, 'legacy-routes.json');
 
-// Both are supplied by the Pages configuration step in CI; a local build gets
-// the custom domain at the root, which is what the eventual cutover serves.
 const origin = (process.env.PUBLIC_SITE_ORIGIN || 'https://www.richardkwolf.com').replace(/\/+$/, '');
 const base = process.env.BASE_PATH ?? '';
 
@@ -44,12 +32,6 @@ function htmlFiles(directory) {
 		.map((entry) => join(entry.parentPath, entry.name));
 }
 
-/**
- * A `<meta http-equiv="refresh">` stub. GitHub Pages offers no server-side
- * redirect, so the refresh is the mechanism; the canonical link tells crawlers
- * where the page went and the visible link answers a reader whose browser
- * honours neither.
- */
 function redirectPage(source, target) {
 	const canonical = `${origin}${base}${target}`;
 	const href = escapeHtml(`${base}${target}`);
@@ -73,8 +55,6 @@ function redirectPage(source, target) {
 
 const legacyRoutes = Object.entries(JSON.parse(readFileSync(routesPath, 'utf8')));
 
-// A stub over a real page would hide it; a stub pointing at a stub, or at a
-// page that does not exist, strands the reader. Both are build failures.
 const sources = new Set(legacyRoutes.map(([source]) => source));
 for (const [source, target] of legacyRoutes) {
 	if (sources.has(target)) {
@@ -94,7 +74,6 @@ for (const [source, target] of legacyRoutes) {
 	writeFileSync(path, redirectPage(source, target));
 }
 
-// Pages serves `/404.html` for any miss, whatever the requested path.
 writeFileSync(join(build, '404.html'), readFileSync(join(build, '404', 'index.html')));
 
 const canonicalUrls = new Set();

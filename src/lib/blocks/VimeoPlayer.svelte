@@ -1,7 +1,4 @@
 <script lang="ts">
-	// Click-to-load Vimeo. The poster is self-hosted and the iframe does not
-	// exist until a reader asks for it, so loading a page of ninety thumbnails
-	// costs no request to player.vimeo.com.
 	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
 	import { vimeoPlayerUrl } from '$lib/vimeo.js';
 

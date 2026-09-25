@@ -1,7 +1,5 @@
 @import './lib/fonts.css';
 
-/* The source theme's scheme: pale grey ground, oxblood accent, Vollkorn
-   display over Lato text, and grey rather than black body copy. */
 :root {
 	--ink: #303133;
 	--body-ink: #777777;
@@ -12,15 +10,9 @@
 	--footer-foot: #141618;
 	--rule: #eaeaea;
 	--accent: #990000;
-	/* A row's outer bound and its inner gutter. 1200 less two 36px gutters
-	   leaves the 1128px measure the source theme sets its prose in. */
 	--limit: 1200px;
 	--page-gutter: 1.25rem;
-	/* What a full-height Hero has to clear. Two stacked rows on a phone, where
-	   the menu sits under the name; one bar where it sits beside it. */
 	--masthead-height: 7.5rem;
-	/* The vertical step between two Blocks. Paragraphs inside one Block sit
-	   closer, headings that open a section further apart. */
 	--block-gap: 2.25rem;
 	--font-display: 'Vollkorn', Georgia, serif;
 	--font-body: 'Lato', system-ui, sans-serif;
@@ -32,8 +24,6 @@
 	}
 }
 
-/* The condition under which the masthead collapses to a single bar, as
-   SiteHeader states it. */
 @media (min-width: 56rem) and (hover: hover) {
 	:root {
 		--masthead-height: 75px;
@@ -56,9 +46,6 @@ body {
 	font-family: var(--font-body);
 	font-size: 1.0625rem;
 	line-height: 1.75;
-	/* Transliterated Tamil, Persian and Wakhi produce single words longer than a
-	   phone's reading column. Break them only when they cannot otherwise fit —
-	   never hyphenate, which would invent a break inside an orthography. */
 	overflow-wrap: break-word;
 }
 
@@ -113,10 +100,6 @@ img {
 	max-width: 100%;
 }
 
-/* One row of the page. Every Block that is not full-bleed wears this, so they
-   all line up on the same bound and gutter, and each carries its own top
-   margin — the rhythm then survives on the editor canvas, where the Blocks are
-   not siblings. */
 .row {
 	max-width: var(--limit);
 	margin-inline: auto;
@@ -124,15 +107,10 @@ img {
 	padding-inline: var(--page-gutter);
 }
 
-/* A row that opens on a second-level heading opens a section, and the source
-   theme gives a section twice the space a neighbouring row gets. */
 .row:has(> h2:first-child) {
 	margin-block-start: 4.5rem;
 }
 
-/* Inside a Columns Block the columns are the rows, so the Blocks in them give
-   up their own bound, gutter and top margin. An inline `auto` margin would
-   also stop a column stretching to its track. */
 .columns > .row {
 	max-width: none;
 	margin-inline: 0;
@@ -140,74 +118,30 @@ img {
 	padding-inline: 0;
 }
 
-/* The Block that opens a document has the masthead above it. */
 .uncial-content > *:first-child {
 	margin-block-start: 0;
 }
 
-/* A Hero is a page opener rather than a neighbour, so the row under it starts
-   a section rather than continuing one. */
 .uncial-content > .hero + .row {
 	margin-block-start: 4.5rem;
 }
 
-/* White type over a photograph: a faint frosted patch fitted to the text,
-   so the photograph stays sharp and bright everywhere the type is not.
+.scrim::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgb(0 0 0 / 0.18);
+	-webkit-backdrop-filter: blur(4px);
+	backdrop-filter: blur(4px);
+}
 
-   The patch is too light to guarantee contrast on its own, and blur only
-   softens a bright patch rather than removing one. The guarantee is the
-   outline painted under each glyph: over a pure white pixel, black at 0.5
-   leaves 4:1 at the glyph's edge, above the 3:1 floor for large type; 0.6
-   leaves 5.2:1 for body-size type. The mask fades only across the padding
-   and bleed, which assume the element's padding is `2rem var(--page-gutter)`.
-   Needs a z-index on the element, to keep the patch above the photograph,
-   and a clipping ancestor, as the bleed overhangs. */
-.scrim {
+.scrim-text {
 	--scrim-edge: 0.5;
-	--scrim-bleed-block: 3rem;
-	--scrim-bleed-inline: 6rem;
-	position: relative;
-	/* Stroke first, so the fill covers its inner half and only a rim shows. */
 	paint-order: stroke fill;
 	-webkit-text-stroke: 3px rgb(0 0 0 / var(--scrim-edge));
 	text-shadow: 0 1px 16px rgb(0 0 0 / 0.35);
 }
 
-.scrim::before {
-	--fade-block: calc(var(--scrim-bleed-block) + 2rem);
-	--fade-inline: calc(var(--scrim-bleed-inline) + var(--page-gutter));
-	content: '';
-	position: absolute;
-	z-index: -1;
-	inset: calc(-1 * var(--scrim-bleed-block)) calc(-1 * var(--scrim-bleed-inline));
-	background: rgb(0 0 0 / 0.18);
-	/* Safari before 18 honours only the prefixed property. */
-	-webkit-backdrop-filter: blur(6px);
-	backdrop-filter: blur(6px);
-	mask:
-		linear-gradient(
-			to right,
-			transparent,
-			rgb(0 0 0 / 0.5) calc(var(--fade-inline) / 2),
-			#000 var(--fade-inline),
-			#000 calc(100% - var(--fade-inline)),
-			rgb(0 0 0 / 0.5) calc(100% - var(--fade-inline) / 2),
-			transparent
-		),
-		linear-gradient(
-			to bottom,
-			transparent,
-			rgb(0 0 0 / 0.5) calc(var(--fade-block) / 2),
-			#000 var(--fade-block),
-			#000 calc(100% - var(--fade-block)),
-			rgb(0 0 0 / 0.5) calc(100% - var(--fade-block) / 2),
-			transparent
-		);
-	mask-composite: intersect;
-}
-
-/* The sign-in button the editor's broker provider raises. It lives outside
-   any component, so its styling lives here. */
 .broker-sign-in {
 	position: fixed;
 	inset: 0;

@@ -1,8 +1,4 @@
 <script lang="ts">
-	// Click-to-load SoundCloud, for the three surviving recordings. The widget
-	// iframe does not exist until a reader asks for it, so no request reaches
-	// w.soundcloud.com on page load.
-
 	interface Props {
 		resource?: 'track' | 'playlist';
 		soundcloudId?: string;
@@ -22,7 +18,12 @@
 
 <div class="row soundcloud">
 	{#if playing}
-		<iframe src={widgetUrl} title={title || 'SoundCloud recording'} allow="autoplay"></iframe>
+		<iframe
+			class="soundcloud--{resource}"
+			src={widgetUrl}
+			title={title || 'SoundCloud recording'}
+			allow="autoplay"
+		></iframe>
 	{:else}
 		<button type="button" onclick={() => (playing = true)} disabled={!soundcloudId}>
 			<span class="soundcloud__play" aria-hidden="true">▶</span>
@@ -35,8 +36,12 @@
 	iframe {
 		display: block;
 		width: 100%;
-		height: 10.5rem;
+		height: 166px;
 		border: 0;
+	}
+
+	.soundcloud--playlist {
+		height: 450px;
 	}
 
 	button {

@@ -1,4 +1,3 @@
-// Block registry and schema for the site.
 import { createBlockRegistry, createSchema } from 'uncial/core';
 import { SITE_DOCUMENT_PATH } from '$lib/site.js';
 import { defineSvelteBlock } from 'uncial/runtime/svelte';
@@ -34,8 +33,6 @@ const prose = defineSvelteBlock({
 	id: 'prose',
 	label: 'Prose',
 	description: 'A reading column for long-form prose.',
-	// `dropcap` sets an oxblood initial on this Block's opening paragraph. It
-	// belongs to the paragraph that opens a page, not to every Prose Block.
 	attributes: {
 		dropcap: { default: false }
 	},
@@ -43,8 +40,6 @@ const prose = defineSvelteBlock({
 	content: { kind: 'flow' }
 });
 
-// A single captioned photograph. The responsive renditions come from the Image
-// manifest at render.
 const figure = defineSvelteBlock({
 	id: 'figure',
 	label: 'Figure',
@@ -66,12 +61,8 @@ const hero = defineSvelteBlock({
 		image: { default: '', required: true, input: 'image', validate: nonEmpty },
 		alt: { default: '', required: true, validate: nonEmpty },
 		eyebrow: { default: '' },
-		// A textarea, because the source theme sets this banner line over several
-		// lines of its own choosing and the Hero honours the breaks it is given.
 		headline: { default: '', required: true, input: 'textarea', validate: nonEmpty },
 		lede: { default: '', input: 'textarea' },
-		// `full` gives the banner the whole window below the masthead, as the
-		// source theme does on the opening page alone.
 		height: {
 			default: 'standard',
 			options: HERO_HEIGHTS,
@@ -82,8 +73,6 @@ const hero = defineSvelteBlock({
 	content: false
 });
 
-// A full-width photographic band carrying one heading, used to open a section
-// part-way down a page where a Hero would read as a second page opener.
 const band = defineSvelteBlock({
 	id: 'band',
 	label: 'Band',
@@ -130,9 +119,6 @@ const card = defineSvelteBlock({
 		alt: { default: '', required: true, validate: nonEmpty },
 		title: { default: '', required: true, validate: nonEmpty },
 		blurb: { default: '', input: 'textarea' },
-		// The dropdown is generated from the Content tree, so the Content Owner
-		// picks a real page. A stored value is only checked for being non-empty,
-		// so a card whose target has since been deleted still renders.
 		link: { default: '/', required: true, options: LINK_OPTIONS, validate: nonEmpty },
 		externalUrl: { default: '', input: 'hidden' }
 	},
@@ -140,9 +126,6 @@ const card = defineSvelteBlock({
 	content: false
 });
 
-// Every field shows on every item: the list input has no per-kind fields. An
-// image item fills `path`; a video item `vimeoId` and `poster`, which the
-// canvas's Add video fetches from Vimeo.
 const gallery = defineSvelteBlock({
 	id: 'gallery',
 	label: 'Gallery',
@@ -169,8 +152,6 @@ const gallery = defineSvelteBlock({
 	content: false
 });
 
-// The site's last working audio. The widget is third-party, so like a Vimeo
-// item it is click-to-load.
 const soundcloud = defineSvelteBlock({
 	id: 'soundcloud',
 	label: 'SoundCloud recording',
@@ -188,8 +169,6 @@ const soundcloud = defineSvelteBlock({
 	content: false
 });
 
-// Where a recording was made, as the source site marked it on a Google map.
-// The stored coordinates are the ones that map carried.
 const locationMap = defineSvelteBlock({
 	id: 'map',
 	label: 'Map',
@@ -204,9 +183,6 @@ const locationMap = defineSvelteBlock({
 	content: false
 });
 
-// The Site document's navigation. Both lists are `list`-valued so the Content
-// Owner edits them as fields; their links are the page enum without the
-// external escape hatch, so a menu entry cannot point anywhere but a real page.
 const navigation = defineSvelteBlock({
 	id: 'navigation',
 	label: 'Navigation menu',
@@ -254,8 +230,6 @@ export const blocks = createBlockRegistry([
 	navigation
 ]);
 
-// One flat metadata set, written out on every document. The site-wide values
-// are read from the Site document alone; on a Content page they stay empty.
 const metaFields = {
 	title: { default: 'Untitled page', required: true },
 	description: { default: '', required: false },
@@ -265,22 +239,16 @@ const metaFields = {
 	copyright: { default: '' }
 };
 
-/** The schema every Content page is written against. */
 export const schema = createSchema(blocks, {
 	allowedBlocks: blocks.blocks.map((block) => block.id).filter((id) => id !== 'navigation'),
 	metaFields
 });
 
-/**
- * The Site document's schema. The navigation Block belongs to it alone, and no
- * page Block belongs on it.
- */
 export const siteSchema = createSchema(blocks, {
 	allowedBlocks: ['navigation'],
 	metaFields
 });
 
-/** The schema a document at this site-relative path is written against. */
 export function schemaFor(path: string): ReturnType<typeof createSchema> {
 	return path.replace(/^\/+|\/+$/g, '') === SITE_DOCUMENT_PATH ? siteSchema : schema;
 }

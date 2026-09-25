@@ -21,8 +21,6 @@
 		flex-direction: column;
 	}
 
-	/* No gutter here: a Hero and a Band run the full width of the window, and
-	   every other Block holds itself to one row's width. */
 	.site__body {
 		flex: 1;
 	}

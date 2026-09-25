@@ -14,13 +14,10 @@
 </div>
 
 <style>
-	/* The browser's own block margins would fight the rhythm set below. */
 	.prose-column :global(> *) {
 		margin: 0;
 	}
 
-	/* Paragraphs of one passage sit close; a heading opens a little space, and
-	   a second-level heading opens a section. */
 	.prose-column :global(> * + *) {
 		margin-block-start: 1.125rem;
 	}
@@ -34,10 +31,6 @@
 		margin-block-start: 4.5rem;
 	}
 
-	/* The source theme sets an oxblood initial on the paragraph that opens a
-	   page — the first paragraph of this Block, which a heading may precede.
-	   Sized against the paragraph's own type, so it stays three lines deep at
-	   every width. */
 	.prose-column--dropcap :global(> p:first-of-type::first-letter) {
 		float: left;
 		margin-inline-end: 0.07em;
@@ -45,5 +38,16 @@
 		font-family: var(--font-display);
 		font-size: 6.6em;
 		line-height: 0.67;
+	}
+
+	@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+		.prose-column--dropcap :global(> p:first-of-type::first-letter) {
+			float: none;
+			margin-inline-end: 0.45em;
+			-webkit-initial-letter: 3;
+			initial-letter: 3;
+			font-size: inherit;
+			line-height: inherit;
+		}
 	}
 </style>

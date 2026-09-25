@@ -1,21 +1,3 @@
-/**
- * The image port: fetch every photograph the WordPress pages reference, and
- * every Vimeo poster frame the galleries need, content-address them, derive
- * responsive renditions, and write the Image manifest the renderer reads plus
- * the legacy-URL and poster maps that `extract-pages.mjs` reads.
- *
- * Re-runnable without harm. Originals are cached under `.port-cache/`, and a
- * file's name is a hash of its own bytes, so a second run refetches nothing and
- * writes nothing.
- *
- * Usage: node scripts/port-images.mjs [--limit N] [--force] [--posters-only]
- *
- * `--posters-only` runs the Vimeo poster pass alone, against the committed
- * Image manifest. The photographs are already ported and their served files
- * are content-addressed, so refetching 660 MiB to add a poster would buy
- * nothing and would drop an entry for any photograph the live site has since
- * lost.
- */
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -33,11 +15,8 @@ const PAGES_DIR = 'migration/source/pages';
 const VIMEO_CACHE_DIR = '.port-cache/vimeo';
 const POSTER_MAP_PATH = 'migration/vimeo-posters.json';
 
-/** Responsive widths. A rendition is never wider than the source. */
 const WIDTHS = [400, 800, 1200, 2000];
-/** The canonical served file is capped here, as browser uploads are. */
 const MAX_WIDTH = 2000;
-/** Hash prefix length. 16 hex chars is 64 bits: collision-free at this scale. */
 const HASH_LENGTH = 16;
 const WEBP = { quality: 72, effort: 6 };
 const JPEG = { quality: 72, mozjpeg: true };
@@ -48,7 +27,6 @@ const limit = Number(args[args.indexOf('--limit') + 1]) || Infinity;
 const force = args.includes('--force');
 const postersOnly = args.includes('--posters-only');
 
-/** `…/name-300x225.jpg` → `…/name.jpg`. A path with no size suffix is its own base. */
 function baseOf(path) {
 	return path.replace(/-(\d+)x(\d+)(\.[A-Za-z]+)$/, '$3');
 }
@@ -58,7 +36,6 @@ function sizeOf(path) {
 	return match ? Number(match[1]) * Number(match[2]) : Infinity;
 }
 
-/** `…/name-uai.jpg` → `…/name.jpg`, else null. */
 function twinOf(path) {
 	const match = path.match(/^(.*)-uai(\.[A-Za-z]+)$/);
 	return match ? match[1] + match[2] : null;
@@ -72,7 +49,6 @@ async function readList(path) {
 async function fetchToCache(sourcePath) {
 	const cachePath = join(CACHE_DIR, sourcePath);
 	if (existsSync(cachePath) && !force) return { bytes: await readFile(cachePath), cached: true };
-	// The naked host 301s twice, so redirects must be followed.
 	const response = await fetch(`${ORIGIN}/${sourcePath}`, { redirect: 'follow' });
 	if (!response.ok) throw new Error(`HTTP ${response.status}`);
 	const bytes = Buffer.from(await response.arrayBuffer());
@@ -93,16 +69,6 @@ async function writeRendition(name, bytes) {
 	written.created += 1;
 }
 
-/**
- * Transcode one original into the canonical WebP and its renditions, and return
- * the manifest entry. The canonical file's own bytes are what the hash names,
- * so a second run over the same photograph rewrites nothing.
- *
- * Author uploads land in the same tree under the same rule, but they are hashed
- * by `uncial-cms`, which truncates to 32 hex characters where this port
- * truncates to 16: a ported file and an uploaded one never share a name, even
- * for the same picture.
- */
 async function port(bytes) {
 	const source = sharp(bytes, { failOn: 'error' }).rotate();
 	const { width: sourceWidth } = await source.metadata();
@@ -119,8 +85,6 @@ async function port(bytes) {
 	await writeRendition(`${hash}.webp`, canonical);
 
 	const srcset = [{ src: `/uploads/${hash}.webp`, width: canonicalWidth, type: 'image/webp' }];
-	// Renditions sit on the declared grid; a picture narrower than the smallest
-	// grid width gets one rendition at its own width so no entry is format-less.
 	const widths = WIDTHS.filter((width) => width <= canonicalWidth);
 	if (widths.length === 0) widths.push(canonicalWidth);
 	for (const width of widths) {
@@ -154,7 +118,6 @@ async function mapWithConcurrency(items, worker) {
 const bases = await readList(SOURCE_LIST);
 const referenced = await readList(VARIANT_LIST);
 
-/** Every referenced URL, grouped under the base filename it is a variant of. */
 const variantsByBase = new Map(bases.map((base) => [base, new Set([base])]));
 for (const path of referenced) {
 	const base = baseOf(path);
@@ -163,13 +126,6 @@ for (const path of referenced) {
 }
 
 const baseSet = new Set(bases);
-/**
- * The theme's `-uai` crops: their unsuffixed original was never generated (the
- * URL soft-404s with HTML at status 200) and the only sizes the pages reference
- * are 258px thumbnails of a photograph we already port at full size. Each one
- * is therefore aliased to its plain twin rather than ported, so a legacy
- * thumbnail URL resolves to the full responsive set.
- */
 const aliases = new Map();
 const toPort = [];
 for (const base of bases) {
@@ -178,7 +134,6 @@ for (const base of bases) {
 	else toPort.push(base);
 }
 
-/** Largest referenced variant of a base: the unsuffixed original when it exists. */
 function fetchPathFor(base) {
 	return [...variantsByBase.get(base)].sort((a, b) => sizeOf(b) - sizeOf(a))[0];
 }
@@ -204,12 +159,6 @@ await mapWithConcurrency(targets, async (base) => {
 	}
 });
 
-/**
- * Poster frames for every Vimeo clip the pages embed. They come from Vimeo's
- * own oEmbed endpoint rather than the theme's crops, several of which are
- * small derivatives, and are committed so a reader page makes no third-party
- * request until the poster is clicked.
- */
 async function portPosters() {
 	const files = await readdir(PAGES_DIR);
 	const ids = new Set();
@@ -258,7 +207,6 @@ const manifest = postersOnly ? JSON.parse(await readFile(MANIFEST_PATH, 'utf-8')
 for (const { hash, entry } of ported.values()) manifest[`/uploads/${hash}.webp`] = entry;
 for (const { path, entry } of Object.values(posters)) manifest[path] = entry;
 
-/** Every legacy URL — originals, theme crops, aliased `-uai` sizes — to its served path. */
 const sourceMap = {};
 for (const [base, { hash, sourceUrl }] of ported) {
 	for (const variant of variantsByBase.get(base)) {

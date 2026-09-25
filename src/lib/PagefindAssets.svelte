@@ -1,8 +1,4 @@
 <script lang="ts">
-	// Pagefind's bundle is build output, so Vite never sees it and cannot
-	// rewrite its URL. The base path differs between the Pages project URL and
-	// the custom domain, so both the stylesheet and the module are resolved
-	// against `base` at runtime.
 	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
 

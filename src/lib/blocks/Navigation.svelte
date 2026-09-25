@@ -1,7 +1,4 @@
 <script lang="ts">
-	// The Site document's only Block. It renders no reader page — the header and
-	// footer read the same attributes directly — so this is purely the canvas
-	// view of what the attributes panel is editing.
 	import { navTree, type FooterLink, type NavItem, type NavNode } from '$lib/navigation.js';
 
 	interface Props {

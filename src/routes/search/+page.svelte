@@ -4,10 +4,6 @@
 	import PagefindAssets from '$lib/PagefindAssets.svelte';
 	import { canonicalUrl } from '$lib/site-origin.js';
 
-	// Pagefind is client-side by definition, so the prerendered page carries the
-	// <noscript> explanation and mounts the search box only once scripting has
-	// proved itself. Emitting the widget statically would leave a reader without
-	// JavaScript staring at an empty panel.
 	let scripted = $state(false);
 	onMount(() => (scripted = true));
 </script>
@@ -26,8 +22,6 @@
 <main class="row">
 	<h1>Search</h1>
 	<div class="search">
-		<!-- The config element renders nothing and carries the base-aware bundle
-		     location, so it is prerendered; the widget itself is not. -->
 		<pagefind-config
 			instance="site"
 			base-url={`${base}/`}
@@ -54,13 +48,9 @@
 		padding-block: 3rem 5rem;
 	}
 
-	/* The page sits on the row like every other, but a field and a list of
-	   results read badly at the row's full measure. */
 	.search {
 		max-width: 42rem;
 		margin-top: 2rem;
-		/* The component UI reads its palette from these, so search inherits the
-		   site's scheme instead of shipping a second one. */
 		--pf-text: var(--ink);
 		--pf-text-secondary: var(--ink);
 		--pf-text-muted: var(--ink);

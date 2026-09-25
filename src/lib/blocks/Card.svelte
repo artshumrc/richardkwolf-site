@@ -52,7 +52,6 @@
 		gap: 0.5rem;
 	}
 
-	/* Outweighs ResponsiveImage's own `img` rule, which has equal specificity. */
 	.card :global(picture > img) {
 		aspect-ratio: 1 / 1;
 		object-fit: cover;

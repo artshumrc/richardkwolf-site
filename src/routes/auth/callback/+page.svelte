@@ -14,8 +14,6 @@
 			errorDescription: params.get('error_description') ?? ''
 		};
 
-		// Reached directly rather than as a popup: there is nobody to hand the
-		// code to, and closing a window the user opened themselves is rude.
 		if (!window.opener) {
 			orphaned = true;
 			return;

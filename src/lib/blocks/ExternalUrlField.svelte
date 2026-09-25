@@ -1,6 +1,4 @@
 <script lang="ts">
-	// Shown on the canvas only once a link attribute is set to "external", so an
-	// internal link stays a dropdown of real pages.
 	interface Props {
 		label: string;
 		value: string;

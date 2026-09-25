@@ -1,12 +1,7 @@
 <script lang="ts">
-	// A small custom lightbox over a Gallery's items.
-	//
-	// `<dialog>.showModal()` supplies the focus trap and the Escape handling, so
-	// neither is reimplemented here; what is added is arrow-key navigation and
-	// returning focus to whatever opened it.
 	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
-	import VimeoPlayer from './VimeoPlayer.svelte';
 	import { itemAlt, type GalleryItem } from '$lib/gallery.js';
+	import { vimeoPlayerUrl } from '$lib/vimeo.js';
 
 	interface Props {
 		items: GalleryItem[];
@@ -16,10 +11,9 @@
 
 	let dialog = $state<HTMLDialogElement | null>(null);
 	let index = $state(0);
-	// A closed dialog is display:none, but its images would still be fetched, so
-	// nothing inside it is rendered until it opens.
 	let isOpen = $state(false);
 	let opener: HTMLElement | null = null;
+	let touchStart: { x: number; y: number } | null = null;
 
 	const item = $derived(items[index]);
 
@@ -40,6 +34,15 @@
 		opener?.focus();
 	}
 
+	function onTouchEnd(event: TouchEvent): void {
+		if (!touchStart) return;
+		const touch = event.changedTouches[0];
+		const dx = touch.clientX - touchStart.x;
+		const dy = touch.clientY - touchStart.y;
+		touchStart = null;
+		if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1);
+	}
+
 	function onKeydown(event: KeyboardEvent): void {
 		if (event.key === 'ArrowRight') step(1);
 		else if (event.key === 'ArrowLeft') step(-1);
@@ -48,13 +51,15 @@
 	}
 </script>
 
-<!-- The dialog itself is the backdrop's hit area — it has no padding, so a click
-     that targets it rather than the panel inside came from outside the panel.
-     This is the touch equivalent of Escape. -->
 <dialog
 	bind:this={dialog}
 	onkeydown={onKeydown}
 	onclose={close}
+	ontouchstart={(event) => {
+		const touch = event.touches[0];
+		touchStart = { x: touch.clientX, y: touch.clientY };
+	}}
+	ontouchend={onTouchEnd}
 	onclick={(event) => {
 		if (event.target === dialog) dialog?.close();
 	}}
@@ -63,84 +68,125 @@
 	{#if isOpen && item}
 		<div class="lightbox">
 			<div class="lightbox__media">
-				{#if item.kind === 'vimeo'}
-					{#key item.vimeoId}
-						<VimeoPlayer
-							vimeoId={item.vimeoId}
-							poster={item.poster}
-							title={item.title}
-							alt={itemAlt(item)}
-							sizes="90vw"
-						/>
-					{/key}
-				{:else}
-					<ResponsiveImage path={item.path} alt={itemAlt(item)} sizes="90vw" loading="eager" />
-				{/if}
+				{#key index}
+					{#if item.kind === 'vimeo'}
+						<div class="lightbox__video">
+							<iframe
+								src={vimeoPlayerUrl(item.vimeoId, true)}
+								title={item.title || `Vimeo video ${item.vimeoId}`}
+								allow="autoplay; fullscreen; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					{:else}
+						<ResponsiveImage path={item.path} alt={itemAlt(item)} sizes="94vw" loading="eager" />
+					{/if}
+				{/key}
 			</div>
-			<div class="lightbox__detail">
-				{#if item.title}<h2>{item.title}</h2>{/if}
-				{#if item.caption}<p>{item.caption}</p>{/if}
-			</div>
-			<div class="lightbox__controls">
-				<button type="button" onclick={() => step(-1)} disabled={items.length < 2}>
-					Previous
-				</button>
-				<span aria-live="polite">{index + 1} of {items.length}</span>
-				<button type="button" onclick={() => step(1)} disabled={items.length < 2}>Next</button>
-				<button type="button" class="lightbox__close" onclick={() => dialog?.close()}>
-					Close
-				</button>
-			</div>
+			<button
+				type="button"
+				class="lightbox__step lightbox__prev"
+				onclick={() => step(-1)}
+				disabled={items.length < 2}
+				aria-label="Previous"
+			>
+				<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 5 8 12 15 19" /></svg>
+			</button>
+			<button
+				type="button"
+				class="lightbox__step lightbox__next"
+				onclick={() => step(1)}
+				disabled={items.length < 2}
+				aria-label="Next"
+			>
+				<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 5 16 12 9 19" /></svg>
+			</button>
+			{#if item.title || item.caption}
+				<div class="lightbox__detail">
+					{#if item.title}<h2>{item.title}</h2>{/if}
+					{#if item.caption}<p>{item.caption}</p>{/if}
+				</div>
+			{/if}
+			<span class="lightbox__count" aria-live="polite">{index + 1} of {items.length}</span>
+			<button type="button" class="lightbox__close" onclick={() => dialog?.close()}>
+				Close
+			</button>
 		</div>
 	{/if}
 </dialog>
 
 <style>
 	dialog {
-		width: min(64rem, 92vw);
+		width: min(72rem, 94%);
 		max-width: none;
-		max-height: 92dvh;
+		height: 92dvh;
+		max-height: none;
 		padding: 0;
 		border: 0;
 		background: #101010;
 		color: #f4f4f4;
 	}
 
-	dialog::backdrop {
-		background: rgb(0 0 0 / 0.8);
+	dialog:focus {
+		outline: none;
 	}
 
-	/* The media row is the only one that gives: on a short phone the caption and
-	   the controls keep their height and the photograph shrinks to fit. */
+	dialog::backdrop {
+		background: rgb(0 0 0 / 0.85);
+	}
+
 	.lightbox {
 		display: grid;
-		max-height: 92dvh;
-		gap: 1rem;
-		grid-template-rows: minmax(0, 1fr) auto auto;
+		height: 100%;
+		box-sizing: border-box;
+		gap: 0.75rem 1rem;
+		grid-template:
+			'count . close' auto
+			'prev media next' minmax(0, 1fr)
+			'. detail .' auto
+			/ auto minmax(0, 1fr) auto;
+		align-items: center;
 		padding: 1rem;
 	}
 
 	.lightbox__media {
-		display: flex;
+		grid-area: media;
+		align-self: stretch;
+		display: grid;
+		place-items: center;
 		min-height: 0;
-		align-items: center;
-		justify-content: center;
+		container-type: size;
 	}
 
 	.lightbox__media :global(img) {
-		max-height: 100%;
 		width: auto;
-		max-width: 100%;
+		max-width: 100cqw;
+		max-height: 100cqh;
 		object-fit: contain;
 	}
 
+	.lightbox__video {
+		width: min(100cqw, 100cqh * 16 / 9);
+		aspect-ratio: 16 / 9;
+		background: #000;
+	}
+
+	.lightbox__video iframe {
+		display: block;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
+
 	.lightbox__detail {
-		max-height: 30dvh;
+		grid-area: detail;
+		max-height: 25dvh;
 		overflow-y: auto;
 	}
 
 	.lightbox__detail h2 {
 		margin: 0;
+		color: inherit;
 		font-size: 1.125rem;
 	}
 
@@ -149,29 +195,84 @@
 		font-size: 0.9375rem;
 	}
 
-	.lightbox__controls {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-		align-items: center;
+	.lightbox__count {
+		grid-area: count;
+		font-size: 0.875rem;
+		opacity: 0.8;
 	}
 
-	.lightbox__controls button {
+	button {
+		min-width: 2.75rem;
 		min-height: 2.75rem;
-		padding-inline: 1rem;
 		border: 1px solid rgb(255 255 255 / 0.35);
 		background: none;
 		color: inherit;
+		font: inherit;
 		font-size: 0.9375rem;
 		cursor: pointer;
 	}
 
-	.lightbox__controls button:disabled {
+	button:hover:not(:disabled),
+	button:focus-visible {
+		background: rgb(255 255 255 / 0.12);
+	}
+
+	button:disabled {
 		opacity: 0.4;
 		cursor: default;
 	}
 
+	.lightbox__step {
+		width: 3rem;
+		height: 3rem;
+		display: grid;
+		place-items: center;
+		padding: 0;
+		border-radius: 50%;
+	}
+
+	.lightbox__step svg {
+		width: 1.25rem;
+		height: 1.25rem;
+		fill: none;
+		stroke: currentColor;
+		stroke-width: 2;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+	}
+
+	.lightbox__prev {
+		grid-area: prev;
+	}
+
+	.lightbox__next {
+		grid-area: next;
+	}
+
 	.lightbox__close {
-		margin-inline-start: auto;
+		grid-area: close;
+		justify-self: end;
+		padding-inline: 1rem;
+	}
+
+	@media (max-width: 40rem) {
+		dialog {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+
+		.lightbox {
+			grid-template:
+				'media media media media' minmax(0, 1fr)
+				'detail detail detail detail' auto
+				'prev count next close' auto
+				/ auto 1fr auto auto;
+			padding: 0.75rem;
+		}
+
+		.lightbox__count {
+			justify-self: center;
+		}
 	}
 </style>

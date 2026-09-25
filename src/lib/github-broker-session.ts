@@ -1,28 +1,13 @@
-// Sign-in for the deployed editor, against the org's shared broker.
-//
-// uncial-cms ships a provider for its own auth worker, which mints an
-// installation token over a PKCE popup. The broker this site signs in through
-// is the artshumrc Lambda (`artshumrc/infrastructure`, `github_broker/`), which
-// does one thing: exchange an authorisation code for a user-to-server token,
-// because `github.com/login/oauth/access_token` sends no CORS headers and a
-// browser cannot make that call itself. Every other request the editor makes
-// goes straight to `api.github.com`, which allows any origin. The two brokers'
-// wire protocols do not meet, so this provider speaks the Lambda's.
-
 import { base } from '$app/paths';
 import type { ForgeSession, GitHubSiteConfig, SessionProvider, UncialCmsSiteConfig } from 'uncial-cms';
 
-/** The shared broker, and the App whose secret it holds. Repoint both together. */
 const BROKER_ORIGIN = 'https://github-broker.darthcrimson.org';
 const CLIENT_ID = 'Iv23liRxexPEW2AKFG12';
 
-/** Where the App is installed and granted access to this repository. */
 export const APP_SLUG = 'aws-lambda-broker';
 
-/** Names this site's own callback message, so no other page's can be mistaken for it. */
 const RELAY = 'richardkwolf-github-auth';
 
-/** What the callback page posts back to the window that opened it. */
 export interface RelayMessage {
 	source: typeof RELAY;
 	code: string;
@@ -33,20 +18,10 @@ export interface RelayMessage {
 
 export const RELAY_SOURCE = RELAY;
 
-/** The page GitHub returns to, which exists only to relay and close. */
 function callbackUrl(): string {
 	return `${window.location.origin}${base}/auth/callback/`;
 }
 
-/**
- * A button, and the press of it.
- *
- * Both editor mounts sign in as they load rather than from a click, so
- * `window.open` there is not gesture-driven and a browser blocks it whatever
- * the reader has allowed — the popup blocker's default, and the first thing
- * anyone opening the editor met. Waiting for a press here makes the sign-in
- * window one the author asked for, which needs no browser setting at all.
- */
 function pressToSignIn(): Promise<void> {
 	return new Promise((resolve) => {
 		const overlay = document.createElement('div');
@@ -72,13 +47,9 @@ function waitForRelay(popup: Window, state: string): Promise<string> {
 		};
 
 		const onMessage = (event: MessageEvent) => {
-			// The callback page is served from this origin, so anything from
-			// elsewhere is not it.
 			if (event.origin !== window.location.origin) return;
 			const data = event.data as Partial<RelayMessage> | null;
 			if (data?.source !== RELAY || typeof data.state !== 'string') return;
-			// The whole of the cross-site request forgery protection on a flow
-			// GitHub gives no PKCE: a callback this window did not ask for.
 			if (data.state !== state) return;
 			cleanup();
 			if (data.error) {
@@ -122,8 +93,6 @@ async function exchange(code: string, redirectUri: string): Promise<{ token: str
 	}
 
 	const body = (await response.json().catch(() => ({}))) as TokenResponse;
-	// The broker passes GitHub's status through, and GitHub answers 200 for a
-	// refusal, so the body decides rather than the status.
 	if (!body.access_token) {
 		throw new Error(body.error_description || `Sign-in failed (${body.error ?? response.status}).`);
 	}
@@ -146,7 +115,6 @@ async function readUser(token: string): Promise<ForgeSession['user']> {
 	return {
 		login: user.login,
 		name: user.name ?? user.login,
-		// The address GitHub attributes a commit to without publishing anything.
 		email: `${user.id}+${user.login}@users.noreply.github.com`
 	};
 }
@@ -155,12 +123,6 @@ function isGitHubConfig(config: UncialCmsSiteConfig): config is GitHubSiteConfig
 	return config.forge === 'github';
 }
 
-/**
- * Opens GitHub's authorisation screen in a popup, takes the code its callback
- * relays back, and exchanges it at the broker for a token the editor commits
- * with. The token is the signed-in user's own, so what they may edit is what
- * they may already push.
- */
 export const brokerSessionProvider: SessionProvider = async (config) => {
 	if (!isGitHubConfig(config)) throw new Error('The broker signs in to a GitHub Forge only.');
 

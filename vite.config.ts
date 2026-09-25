@@ -12,15 +12,8 @@ const pagefindContentTypes: Record<string, string> = {
 	'.pagefind': 'application/wasm'
 };
 
-/**
- * Serves the Pagefind bundle in development. The index is build output, so the
- * dev server has nothing to serve from `static/`; this hands it the files
- * `pnpm dev`'s preceding build wrote to `build/pagefind`.
- */
 function pagefindDevAssets(): Plugin {
 	const root = resolve('build/pagefind');
-	// The dev server honours BASE_PATH as the build does, so the prefix the
-	// client asks under has to be stripped before the path is resolved.
 	const prefix = `${(process.env.BASE_PATH ?? '').replace(/\/+$/, '')}/pagefind/`;
 
 	return {
@@ -74,8 +67,5 @@ function pagefindDevAssets(): Plugin {
 
 export default defineConfig({
 	plugins: [...uncialCms(siteOptions), pagefindDevAssets(), sveltekit()],
-	// `pnpm dev` builds first so the middleware above has a bundle to serve;
-	// nothing under build/ is source, so keep its ~1k files out of the
-	// watcher's inotify budget.
 	server: { watch: { ignored: ['**/build/**'] } }
 });

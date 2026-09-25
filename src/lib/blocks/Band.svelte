@@ -11,10 +11,10 @@
 </script>
 
 <section class="band">
-	<div class="band__image">
+	<div class="band__image scrim">
 		<ResponsiveImage path={image} {alt} sizes="100vw" />
 	</div>
-	<h2 class="band__headline scrim">{headline}</h2>
+	<h2 class="band__headline scrim-text">{headline}</h2>
 </section>
 
 <style>
@@ -23,12 +23,10 @@
 		display: grid;
 		min-height: 22.5rem;
 		margin-block-start: 4.5rem;
-		overflow: clip;
 		background: #141618;
 		color: #fff;
 	}
 
-	/* Out of flow, for the reason the Hero's picture is. */
 	.band__image {
 		position: absolute;
 		inset: 0;
@@ -40,7 +38,6 @@
 		height: 100%;
 	}
 
-	/* Outweighs ResponsiveImage's own `img` rule, which has equal specificity. */
 	.band__image :global(picture > img) {
 		height: 100%;
 		object-fit: cover;
@@ -50,8 +47,8 @@
 		z-index: 1;
 		align-self: center;
 		justify-self: center;
-		width: fit-content;
-		max-width: min(100%, var(--limit));
+		width: 100%;
+		max-width: var(--limit);
 		margin: 0;
 		padding: 2rem var(--page-gutter);
 		color: inherit;

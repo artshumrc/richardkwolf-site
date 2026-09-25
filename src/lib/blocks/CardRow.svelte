@@ -20,8 +20,6 @@
 		grid-template-columns: repeat(var(--card-row-columns), minmax(0, 1fr));
 	}
 
-	/* The source theme's carousels are replaced by a grid that collapses to one
-	   column on a phone. */
 	@media (max-width: 48rem) {
 		.card-row {
 			grid-template-columns: minmax(0, 1fr);

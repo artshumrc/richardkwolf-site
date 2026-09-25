@@ -1,8 +1,3 @@
-/* Self-hosted Latin and Latin Extended subsets of the site's two faces.
-   The prose carries transliterated Tamil, Persian and Wakhi diacritics, so
-   Latin Extended is not optional; no page may call out to Google Fonts.
-   Vollkorn ships as a variable font, hence a weight range on one file. */
-
 @font-face {
 	font-family: 'Lato';
 	font-style: italic;

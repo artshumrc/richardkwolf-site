@@ -37,7 +37,6 @@
 		font-size: 1rem;
 	}
 
-	/* Two bands, the darker one carrying the copyright alone. */
 	.colophon__band {
 		padding: 2.5rem 0;
 		background: var(--footer);

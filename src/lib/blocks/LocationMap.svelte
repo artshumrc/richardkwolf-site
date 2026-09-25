@@ -1,8 +1,4 @@
 <script lang="ts">
-	// The fieldwork locations the source site marked on a Google map, drawn with
-	// Leaflet over OpenStreetMap tiles. Leaflet touches `window` on import, so it
-	// is pulled in on mount rather than at module scope, which also keeps it out
-	// of the prerendered bundle.
 	import { onMount } from 'svelte';
 	import 'leaflet/dist/leaflet.css';
 
