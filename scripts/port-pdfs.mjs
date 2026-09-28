@@ -13,6 +13,11 @@ const PDF_DIR = 'static/pdfs';
 const SOURCE_MAP_PATH = 'migration/pdf-sources.json';
 const SERVED_BASE = '/pdfs';
 
+const RELOCATED = {
+	'wp-content/uploads/2015/02/Music-in-Islamic-Contexts.pdf':
+		'wp-content/uploads/2016/12/Music-in-Islamic-Contexts.pdf'
+};
+
 const MINIMUM_BYTES = 10 * 1024;
 const CONCURRENCY = 4;
 
@@ -38,7 +43,9 @@ async function referencedPdfs() {
 async function fetchToCache(sourcePath) {
 	const cachePath = join(CACHE_DIR, sourcePath);
 	if (existsSync(cachePath) && !force) return { bytes: await readFile(cachePath), cached: true };
-	const response = await fetch(`${ORIGIN}/${sourcePath}`, { redirect: 'follow' });
+	const response = await fetch(`${ORIGIN}/${RELOCATED[sourcePath] ?? sourcePath}`, {
+		redirect: 'follow'
+	});
 	if (!response.ok) throw new Error(`HTTP ${response.status}`);
 	const bytes = Buffer.from(await response.arrayBuffer());
 	if (bytes.length < MINIMUM_BYTES) throw new Error(`${bytes.length} bytes: not a PDF`);
@@ -95,7 +102,10 @@ await mapWithConcurrency(sources, async (sourcePath) => {
 		const { written, kept } = await optimise(sourcePath, name);
 		if (written) counts.optimised += 1;
 		if (kept) counts.kept += 1;
-		sourceMap[sourcePath] = { path: `${SERVED_BASE}/${name}`, source: `${ORIGIN}/${sourcePath}` };
+		sourceMap[sourcePath] = {
+			path: `${SERVED_BASE}/${name}`,
+			source: `${ORIGIN}/${RELOCATED[sourcePath] ?? sourcePath}`
+		};
 	} catch (error) {
 		failures.push(`${sourcePath}: ${error.message}`);
 	}

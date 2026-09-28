@@ -627,6 +627,18 @@
           "content": [
             {
               "type": "text",
+              "marks": [
+                {
+                  "type": "link",
+                  "attrs": {
+                    "href": "/pdfs/Music-in-Islamic-Contexts.pdf",
+                    "target": null,
+                    "rel": null,
+                    "title": null,
+                    "class": null
+                  }
+                }
+              ],
               "text": "Music in Islamic Contexts"
             }
           ]
