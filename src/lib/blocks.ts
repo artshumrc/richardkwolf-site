@@ -231,8 +231,8 @@ export const blocks = createBlockRegistry([
 ]);
 
 const metaFields = {
-	title: { default: 'Untitled page', required: true },
-	description: { default: '', required: false },
+	title: { default: '', required: true },
+	description: { default: '', required: true },
 	siteName: { default: '' },
 	email: { default: '' },
 	contactLines: { default: '', input: 'textarea' },
