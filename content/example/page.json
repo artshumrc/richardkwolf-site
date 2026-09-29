@@ -6,7 +6,13 @@
 			"type": "paragraph",
 			"attrs": {
 				"id": "fdaa8e09-bbed-4832-ad22-b538eed4e3a8"
-			}
+			},
+			"content": [
+				{
+					"type": "text",
+					"text": "Hello!"
+				}
+			]
 		}
 	],
 	"meta": {
