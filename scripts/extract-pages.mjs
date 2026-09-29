@@ -237,19 +237,20 @@ function galleryItem(tile) {
 	const { title, caption } = tileText(tile, anchor);
 
 	const vimeoId = (VIMEO_URL.exec(href) ?? VIMEO_URL.exec(iframe?.getAttribute('src') ?? ''))?.[1];
+	const tileImage = mediaPath(tile.querySelector('img')?.getAttribute('data-guid'));
 	if (vimeoId) {
 		const poster = vimeoPosters[vimeoId];
 		return {
 			kind: 'vimeo',
 			path: '',
 			vimeoId,
-			poster: poster?.path ?? '',
+			poster: tileImage || (poster?.path ?? ''),
 			title: title || text(poster?.title ?? '').trim(),
 			caption
 		};
 	}
 
-	const path = anchor && (mediaPath(href) || mediaPath(tile.querySelector('img')?.getAttribute('data-guid')));
+	const path = anchor && (mediaPath(href) || tileImage);
 	return path ? { kind: 'image', path, vimeoId: '', poster: '', title, caption } : null;
 }
 
@@ -292,6 +293,7 @@ function singleMedia(wrapper) {
 	if (!vimeoId) return figureBlock(wrapper);
 	const poster = vimeoPosters[vimeoId];
 	const tile = wrapper.querySelector('.tmb');
+	const tileImage = mediaPath(tile?.querySelector('img')?.getAttribute('data-guid'));
 	const { title, caption } = tile ? tileText(tile, anchor) : { title: '', caption: '' };
 	return {
 		type: 'gallery',
@@ -302,7 +304,7 @@ function singleMedia(wrapper) {
 					kind: 'vimeo',
 					path: '',
 					vimeoId,
-					poster: poster?.path ?? '',
+					poster: tileImage || (poster?.path ?? ''),
 					title: title || text(iframe?.getAttribute('title') ?? poster?.title ?? '').trim(),
 					caption
 				}
