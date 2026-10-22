@@ -13,7 +13,7 @@
     {
       "type": "hero",
       "attrs": {
-        "image": "/uploads/b6900cdc5eac7a58.webp",
+        "image": "/uploads/2e30b33f4449c94f.webp",
         "alt": "The tiled muqarnas vault of an Iranian mosque portal, seen from below against a pale sky.",
         "eyebrow": "",
         "headline": "Music of Iran",
@@ -56,7 +56,7 @@
         "items": [
           {
             "kind": "image",
-            "path": "/uploads/2510e2257806fda8.webp",
+            "path": "/uploads/1872c51c55a238ce.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Street view, Tehran",
@@ -64,7 +64,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/28d97bf934516fc1.webp",
+            "path": "/uploads/b96ff2475cbd9ab5.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Panel, Tehran",
@@ -72,7 +72,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/b29ef6c2ca815606.webp",
+            "path": "/uploads/53e027e71d157d76.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Military musicians",
@@ -80,7 +80,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/6ccdf792ca156e32.webp",
+            "path": "/uploads/e160a820cb13ccf2.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Shemr",
@@ -88,7 +88,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/5459f15d2a62eb6d.webp",
+            "path": "/uploads/8ab40d87dcd2c89e.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Mr Maratib",
@@ -96,7 +96,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/f43319d1e82b6cb9.webp",
+            "path": "/uploads/9fe2b9889aa88507.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Zurkhaneh: Shah Nameh reciter",
@@ -104,7 +104,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/2d01acdbb629030a.webp",
+            "path": "/uploads/10cbdb9e47201898.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Zurkhaneh",
@@ -112,7 +112,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/90d03cc08465f22f.webp",
+            "path": "/uploads/3651fd171c24e653.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Isfahan",
@@ -120,7 +120,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/ba5557fed356c165.webp",
+            "path": "/uploads/bf20db009ce810ff.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Namaz",
@@ -128,7 +128,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/e0b1c2aeb8d7fe1d.webp",
+            "path": "/uploads/9074a0c8b8c498c1.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Nauheh",
@@ -136,7 +136,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/943d4b2238abcd7a.webp",
+            "path": "/uploads/b27ca5b873cf7b6a.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Ramin Jazayeri",
@@ -171,7 +171,7 @@
             "kind": "vimeo",
             "path": "",
             "vimeoId": "120199486",
-            "poster": "/uploads/ea2681de8d7b60cd.webp",
+            "poster": "/uploads/da83e33f6d954266.webp",
             "title": "Ali Aqa Almajogi",
             "caption": "Bakhshi recorded at the conference “Music of Khorosan and Transoxiana,” held at the Museum of Fine Arts in Tehran, January 3-4, 2006"
           },
@@ -179,7 +179,7 @@
             "kind": "vimeo",
             "path": "",
             "vimeoId": "120199487",
-            "poster": "/uploads/eb819791e5c795b8.webp",
+            "poster": "/uploads/3ecbeca457be53ab.webp",
             "title": "Motrebs performing at the Friday bazaar in Tehran, Dec 2005",
             "caption": ""
           },
@@ -187,7 +187,7 @@
             "kind": "vimeo",
             "path": "",
             "vimeoId": "207167742",
-            "poster": "/uploads/c08374a7719d4564.webp",
+            "poster": "/uploads/d05244a97f2fd494.webp",
             "title": "Nauheh",
             "caption": "Genre of martial dirge sung by Shiahs in memory of Husain, the grandson of the Prophet, and his family. Qazvin, Iran 2006"
           },
@@ -195,7 +195,7 @@
             "kind": "vimeo",
             "path": "",
             "vimeoId": "207167723",
-            "poster": "/uploads/01247d5bc5701a80.webp",
+            "poster": "/uploads/e40ef063ece7c237.webp",
             "title": "Maddh and Rowzeh",
             "caption": "Shiah religious genres of chant, moving from praises to lamentations, recorded in Qazvin, Iran"
           },
@@ -203,7 +203,7 @@
             "kind": "vimeo",
             "path": "",
             "vimeoId": "207313542",
-            "poster": "/uploads/4260bd89581f11ab.webp",
+            "poster": "/uploads/e8baa1e47a63fec9.webp",
             "title": "Zurkhaneh",
             "caption": "Scenes from an Iranian \"house of strength\" (zurkhaneh), Isfahan, December 2005"
           }

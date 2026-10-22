@@ -8,7 +8,7 @@ export type ImageSource = {
 	type: 'image/webp' | 'image/jpeg';
 };
 
-export type ManifestEntry = { srcset: ImageSource[] };
+export type ManifestEntry = { width: number; height: number; srcset: ImageSource[] };
 
 export type ResponsiveSources = {
 	src: string;
@@ -34,6 +34,12 @@ export function responsiveImage(path: string): ResponsiveSources {
 		webp: srcset(webp),
 		jpeg: srcset(jpeg)
 	};
+}
+
+export function coverSizes(path: string, boxHeight: string): string {
+	const entry = entries[path];
+	if (!entry) return '100vw';
+	return `max(100vw, calc(${boxHeight} * ${(entry.width / entry.height).toFixed(3)}))`;
 }
 
 export function thumbnailImage(path: string): string {

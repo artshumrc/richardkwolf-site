@@ -18,8 +18,8 @@ const POSTER_MAP_PATH = 'migration/vimeo-posters.json';
 const WIDTHS = [400, 800, 1200, 2000];
 const MAX_WIDTH = 2000;
 const HASH_LENGTH = 16;
-const WEBP = { quality: 72, effort: 6 };
-const JPEG = { quality: 72, mozjpeg: true };
+const WEBP = { quality: 82, effort: 6 };
+const JPEG = { quality: 82, mozjpeg: true };
 const CONCURRENCY = 8;
 
 const args = process.argv.slice(2);
@@ -75,11 +75,11 @@ async function port(bytes) {
 	if (!sourceWidth) throw new Error('no width in metadata');
 
 	const canonicalWidth = Math.min(sourceWidth, MAX_WIDTH);
-	const canonical = await sharp(bytes)
+	const { data: canonical, info } = await sharp(bytes)
 		.rotate()
 		.resize({ width: canonicalWidth, withoutEnlargement: true })
 		.webp(WEBP)
-		.toBuffer();
+		.toBuffer({ resolveWithObject: true });
 	const hash = createHash('sha256').update(canonical).digest('hex').slice(0, HASH_LENGTH);
 
 	await writeRendition(`${hash}.webp`, canonical);
@@ -98,7 +98,7 @@ async function port(bytes) {
 	}
 
 	srcset.sort((a, b) => a.type.localeCompare(b.type) || a.width - b.width);
-	return { hash, entry: { srcset } };
+	return { hash, entry: { width: info.width, height: info.height, srcset } };
 }
 
 async function mapWithConcurrency(items, worker) {

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
+	import { coverSizes } from '$lib/images.js';
 
 	interface Props {
 		image?: string;
@@ -8,11 +9,13 @@
 	}
 
 	let { image = '', alt = '', headline = '' }: Props = $props();
+
+	const sizes = $derived(coverSizes(image, '22.5rem'));
 </script>
 
 <section class="band">
 	<div class="band__image scrim">
-		<ResponsiveImage path={image} {alt} sizes="100vw" />
+		<ResponsiveImage path={image} {alt} {sizes} />
 	</div>
 	<h2 class="band__headline scrim-text">{headline}</h2>
 </section>

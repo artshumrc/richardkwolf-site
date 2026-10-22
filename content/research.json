@@ -13,7 +13,7 @@
     {
       "type": "hero",
       "attrs": {
-        "image": "/uploads/b1789f3624892f44.webp",
+        "image": "/uploads/a9e0d95353186711.webp",
         "alt": "A musician sitting on a red carpet in a blue-walled room, talking across recording microphones and a camera on a tripod to a researcher seated opposite him.",
         "eyebrow": "",
         "headline": "Research",
@@ -58,7 +58,7 @@
         {
           "type": "card",
           "attrs": {
-            "image": "/uploads/4278dd53d9b08754.webp",
+            "image": "/uploads/ce4165b5082bb866.webp",
             "alt": "A bearded man in white, wearing mirrored sunglasses, reading from a small book beneath a tree.",
             "title": "Music of South Asia, other",
             "blurb": "",
@@ -69,7 +69,7 @@
         {
           "type": "card",
           "attrs": {
-            "image": "/uploads/b6900cdc5eac7a58.webp",
+            "image": "/uploads/2e30b33f4449c94f.webp",
             "alt": "The tiled muqarnas vault of an Iranian mosque portal, seen from below against a pale sky.",
             "title": "Music of Iran",
             "blurb": "",
@@ -80,7 +80,7 @@
         {
           "type": "card",
           "attrs": {
-            "image": "/uploads/366c1d3f8aabd846.webp",
+            "image": "/uploads/b92d6db56edae487.webp",
             "alt": "Drummers carrying large barrel drums through a dense street procession, in black and white.",
             "title": "Drums & Drummers",
             "blurb": "",
@@ -91,7 +91,7 @@
         {
           "type": "card",
           "attrs": {
-            "image": "/uploads/fcec40701caab538.webp",
+            "image": "/uploads/63368fcf89ec2215.webp",
             "alt": "Two Tajik musicians performing at a microphone, one with a frame drum and one with a long-necked lute.",
             "title": "Music of Central Asia",
             "blurb": "",
@@ -102,7 +102,7 @@
         {
           "type": "card",
           "attrs": {
-            "image": "/uploads/038f8b7db500a171.webp",
+            "image": "/uploads/05e3fb636f938f87.webp",
             "alt": "An elderly man singing with his head thrown back among a press of listeners, in a warm-toned photograph.",
             "title": "Music in Islamic Contexts in India & Pakistan",
             "blurb": "",
@@ -113,7 +113,7 @@
         {
           "type": "card",
           "attrs": {
-            "image": "/uploads/aca9131e992e8908.webp",
+            "image": "/uploads/33ded5ae7600bbae.webp",
             "alt": "Women in white shawls dancing in a long line on a green hillside meadow, arms raised, watched by a crowd.",
             "title": "Ritual & Daily Life in South India",
             "blurb": "",
@@ -124,7 +124,7 @@
         {
           "type": "card",
           "attrs": {
-            "image": "/uploads/8405548bc93c8317.webp",
+            "image": "/uploads/914e522d9b664c7e.webp",
             "alt": "A young mridangam player and three singers seated on the floor of a temple hall before a carved stone pillar.",
             "title": "South Indian Classical Music",
             "blurb": "",
@@ -158,7 +158,7 @@
         "items": [
           {
             "kind": "image",
-            "path": "/uploads/8405548bc93c8317.webp",
+            "path": "/uploads/914e522d9b664c7e.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Oduvars singing Tevaram",
@@ -166,7 +166,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/e30b4bb53b31e912.webp",
+            "path": "/uploads/721efda42693a01d.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Possessed woman at goddess festival",
@@ -174,7 +174,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/038f8b7db500a171.webp",
+            "path": "/uploads/05e3fb636f938f87.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Men singing dorḥa",
@@ -182,7 +182,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/1d3e8a619dd21ee6.webp",
+            "path": "/uploads/e5a7a284aeadb683.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Tolib Temirov",
@@ -190,7 +190,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/7d0f0d802a002349.webp",
+            "path": "/uploads/ee6bd59dc2679c31.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Daud Bandagi Kirmani Urs",
@@ -198,7 +198,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/0e4c35cbe7a9773a.webp",
+            "path": "/uploads/5326216108e4deac.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Mausoleum, Tehran, Dec 2006",
@@ -206,7 +206,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/6bdaba6fb83c6fc1.webp",
+            "path": "/uploads/95f1211909caa2b6.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Ransing",
@@ -214,7 +214,7 @@
           },
           {
             "kind": "image",
-            "path": "/uploads/153e52851c57f38c.webp",
+            "path": "/uploads/dbffe1d9cd349b97.webp",
             "vimeoId": "",
             "poster": "",
             "title": "Office",

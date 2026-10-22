@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ResponsiveImage from '$lib/ResponsiveImage.svelte';
+	import { coverSizes } from '$lib/images.js';
 
 	interface Props {
 		image?: string;
@@ -18,11 +19,13 @@
 		lede = '',
 		height = 'standard'
 	}: Props = $props();
+
+	const sizes = $derived(coverSizes(image, height === 'full' ? '100vh' : 'max(20rem, 45vh)'));
 </script>
 
 <section class="hero" class:hero--full={height === 'full'}>
 	<div class="hero__image scrim">
-		<ResponsiveImage path={image} {alt} sizes="100vw" loading="eager" />
+		<ResponsiveImage path={image} {alt} {sizes} loading="eager" />
 	</div>
 	<div class="hero__content scrim-text" class:scrim-text--small={eyebrow || lede}>
 		{#if eyebrow}<p class="hero__eyebrow">{eyebrow}</p>{/if}
