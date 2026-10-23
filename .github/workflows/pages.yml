@@ -49,8 +49,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          PUBLIC_SITE_ORIGIN: ${{ steps.pages.outputs.origin }}
+          PUBLIC_SITE_ORIGIN: https://richardkwolf.com
         run: pnpm run build
 
       - name: Assert content pages ship no CMS JavaScript
